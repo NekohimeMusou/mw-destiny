@@ -8,6 +8,8 @@
         "verified": 11
     },
     "url": "https://github.com/NekohimeMusou/mw-destiny",
+    "manifest": "https://raw.githubusercontent.com/NekohimeMusou/mw-destiny/main/system.json",
+    "download": "https://github.com/NekohimeMusou/mw-destiny/releases/download/v0.0.1/mw-destiny-v0.0.1.zip",
     "authors": [
         {
             "name": "Nekohime Musou",
