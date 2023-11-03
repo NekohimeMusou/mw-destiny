@@ -1,0 +1,8 @@
+<div class="stats flexrow flex-group-center">
+  {{#each system.attributes as |attr key|}}
+  <div class="stat flexcol">
+    <a class="resource-label attribute-roll" data-attr="{{key}}">{{caps key}}</a>
+    <input type="number" name="system.attributes.{{key}}" value="{{attr}}"/>
+  </div>
+  {{/each}}
+</div>

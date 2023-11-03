@@ -1,0 +1,38 @@
+{
+    "MWDESTINY": {
+        "tabs": {
+            "main": "Main",
+            "description": "Description"
+        },
+        "dialog": {
+            "rollModifier": "Roll Modifier"
+        },
+        "attributes": {
+            "str": "Strength",
+            "rfl": "Reflexes",
+            "int": "Intelligence",
+            "wil": "Willpower",
+            "cha": "Charisma",
+            "edg": "Edge"
+        },
+        "mechanic": {
+            "physDamage": "Physical Damage",
+            "fatigueDamage": "Fatigue Damage",
+            "attributes": "Attributes",
+            "attribute": "Attribute",
+            "link": "Link",
+            "rank": "Rank"
+        },
+        "sheet": {
+            "locked": "Locked",
+            "createItem": "Create Item",
+            "addItem": "Add Item",
+            "editItem": "Edit Item",
+            "deleteItem": "Delete Item"
+        },
+        "skills": {
+            "skill": "Skill",
+            "total": "Total"
+        }
+    }
+}

@@ -1,13 +1,12 @@
 {
     "Actor": {
         "types": ["pc"],
-        "htmlFields": ["description"],
+        "htmlFields": ["description", "history", "personality"],
         "pc": {}
     },
     "Item": {
-        "types": ["skill", "trait"],
+        "types": ["skill"],
         "htmlFields": ["description"],
-        "skill": {},
-        "trait": {}
+        "skill": {}
     }
 }

@@ -1,0 +1,23 @@
+<form class="flexcol flex-group-center">
+  <div class="resource-label">{{title}}</div>
+  <div class="flexcol">
+    <label>{{localize "MWDESTINY.dialog.rollModifier"}}:</label>
+    <input type="number" placeholder="0" name="mod" data-dtype="Number"/>
+  </div>
+  {{#if attributeRoll}}
+  <div class="flexrow">
+    <div class="flexcol">
+      <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}} 1</div>
+      <select disabled>
+        {{selectOptions ../MWDESTINY.attributes selected=attr1}}
+      </select>
+    </div>
+    <div class="flexcol">
+      <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}} 2</div>
+      <select name="attr2">
+        {{selectOptions ../MWDESTINY.attributes selected=attr1}}
+      </select>
+    </div>
+  </div>
+  {{/if}}
+</form>
