@@ -1,0 +1,24 @@
+env:
+  browser: true
+  jquery: true
+  es2022: true
+extends: 
+  - eslint:recommended
+  - google
+  - "@typhonjs-fvtt/eslint-config-foundry.js"
+parserOptions:
+  sourceType: module
+rules:
+  max-len: off
+  require-jsdoc: off
+  linebreak-style: off
+  no-shadow:
+  - error
+  - builtinGlobals: true
+    hoist: all
+    allow:
+    - event
+  quotes:
+  - error
+  - double
+  - avoidEscape: true
