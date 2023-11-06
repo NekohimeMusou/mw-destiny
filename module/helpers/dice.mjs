@@ -7,7 +7,13 @@ export async function rollTest(rollData, title, attr1, skillRank) {
 
   if (cancelled) return;
 
+  const term2 = attr2 ? `@${attr2}` : skillRank;
 
+  const rollFormula = `2d6 + @${attr1} + ${term2} + ${mod || 0}`;
+
+  const roll = await new Roll(rollFormula, rollData).roll({async: true});
+
+  const total = roll.total;
 }
 
 async function showRollDialog(title) {
