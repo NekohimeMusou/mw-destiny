@@ -1,10 +1,5 @@
 <form class="flexcol flex-group-center">
   <div class="resource-label">{{title}}</div>
-  <div class="flexcol">
-    <label>{{localize "MWDESTINY.dialog.rollModifier"}}:</label>
-    <input type="number" placeholder="0" name="mod" data-dtype="Number"/>
-  </div>
-  {{#if attributeRoll}}
   <div class="flexrow">
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}} 1</div>
@@ -12,12 +7,25 @@
         {{selectOptions ../MWDESTINY.attributes selected=attr1}}
       </select>
     </div>
+    {{#if skillRank}}
+    <div class="flexcol">
+      <div class="resource-label">{{localize "MWDESTINY.skills.rank"}}</div>
+      <input type="Number" value="{{skillRank}}" disabled/>
+    </div>
+    {{else}}
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}} 2</div>
       <select name="attr2">
-        {{selectOptions ../MWDESTINY.attributes selected=attr1}}
+        {{selectOptions ../MWDESTINY.attributes blank="(Unskilled)"}}
       </select>
     </div>
+    {{/if}}
   </div>
-  {{/if}}
+  <select name="roll-difficulty">
+    {{selectOptions MWDESTINY.rollDifficulties localize=true}}
+  </select>
+  <div class="flexrow">
+    <label>{{localize "MWDESTINY.dialog.rollModifier"}}:</label>
+    <input type="number" placeholder="0" name="mod" data-dtype="Number"/>
+  </div>
 </form>

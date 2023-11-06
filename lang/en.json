@@ -5,7 +5,13 @@
             "description": "Description"
         },
         "dialog": {
-            "rollModifier": "Roll Modifier"
+            "rollModifier": "Roll Modifier",
+            "difficulty": {
+                "opposed": "Opposed",
+                "easy": "Easy (2d6)",
+                "average": "Average (3d6)",
+                "hard": "Hard (4d6)"
+            }
         },
         "attributes": {
             "str": "Strength",
@@ -32,7 +38,8 @@
         },
         "skills": {
             "skill": "Skill",
-            "total": "Total"
+            "total": "Total",
+            "rank": "Skill Rank"
         }
     }
 }
