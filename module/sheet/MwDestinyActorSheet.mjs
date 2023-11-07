@@ -1,4 +1,5 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/active-effects.mjs";
+import {rollTest} from "../helpers/dice.mjs";
 
 export default class MwDestinyActorSheet extends ActorSheet {
   /** @override */
@@ -71,6 +72,7 @@ export default class MwDestinyActorSheet extends ActorSheet {
     // Skills pane
     html.find(".item-link-select").change((ev) => this.#onItemLinkSelect(ev));
     html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
+    html.find(".roll-test").click((ev) => this.#onSheetRoll(ev));
   }
 
   /**
@@ -126,5 +128,16 @@ export default class MwDestinyActorSheet extends ActorSheet {
     const updates = Object.fromEntries([[fieldName, newValue]]);
 
     await item.update(updates);
+  }
+
+  async #onSheetRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    const skillRank = parseInt(dataset.skillRank || 0);
+    const attr = dataset.attr;
+    const isSkill = dataset.isSkill;
+
+    return await rollTest(this.actor.getRollData(), `${dataset.rollLabel} Roll`, {attr, skillRank, isSkill});
   }
 }

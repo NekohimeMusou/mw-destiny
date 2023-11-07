@@ -9,7 +9,7 @@ export default class MwDestinyActor extends Actor {
     const data = foundry.utils.deepClone(super.getRollData());
 
     for (const [k, v] of Object.entries(data.attributes)) {
-      data[k] = v.value;
+      data[k] = v;
     }
 
     return data;

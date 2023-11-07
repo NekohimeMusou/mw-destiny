@@ -1,22 +1,54 @@
-export async function rollTest(rollData, title, attr1, skillRank) {
-  const {mod, difficulty, term2, cancelled} = await showRollDialog(title);
+export async function rollTest(rollData, title, {attr=null, skillRank=null, isSkill=false}={}) {
+  const {mod, difficulty, term2, cancelled} = await showRollDialog(title, {attr, skillRank, isSkill});
 
+  // TODO: Fix this so the roll chat output shows like "INT + INT" or "INT + RFL" or w/e
   if (cancelled) return;
 
-  const rollFormula = `2d6 + @${attr1} + ${term2} + ${mod || 0}`;
+  const rollFormula = `2d6 + @${attr} + ${term2} + ${mod}`;
 
-  const roll = await new Roll(rollFormula, rollData).roll({async: true});
+  const playerRoll = await new Roll(rollFormula, rollData).roll({async: true});
 
-  const total = roll.total;
+  // If difficulty is null, return the roll by itself
+  // If not, roll the difficulty dice
+  const rolls = [playerRoll];
+
+  const parts = [];
+
+  if (difficulty) {
+    const difficultyDice = `${CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || "3d6"}`;
+
+    const difficultyRoll = await new Roll(difficultyDice, rollData).roll({async: true});
+
+    const successMsg = `<h3>${playerRoll.total >= difficultyRoll.total ? "Success!" : "Failure!"}</h3>`;
+
+    const totalMsg = `<h3>${playerRoll.total} vs. ${difficultyRoll.total}</h3>`;
+
+    parts.push(successMsg, totalMsg, await playerRoll.render(), await difficultyRoll.render());
+  } else {
+    parts.push(await playerRoll.render());
+  }
+
+  const content = `<div class="flexcol">\n${parts.join("\n")}\n</div>`;
+
+  const chatData = {
+    user: game.user.id,
+    speaker: ChatMessage.getSpeaker(),
+    rolls,
+    content,
+    type: CONST.CHAT_MESSAGE_TYPES.ROLL,
+    flavor: title,
+  };
+
+  return await ChatMessage.create(chatData);
 }
 
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
-async function showRollDialog(title, {attr1=null, skillRank=null}={}) {
+async function showRollDialog(title, {attr=null, skillRank=null, isSkill=false}={}) {
   async function _processRollOptions(form) {
     // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
     // If skillRank > 0, it's a skill roll: return the skill ranks as an int
     // If attr2 exists, it's an attribute roll; return "@[attr]"
-    const term2 = form.attr2.value ? `@${form.attr2.value}` : `${form.skillRank.value || 0}`;
+    const term2 = form?.attr2?.value ? `@${form.attr2.value}` : `${parseInt(form?.skillRank?.value || 0)}`;
     return {
       mod: parseInt(form.mod.value || 0),
       difficulty: form.difficulty.value,
@@ -25,7 +57,7 @@ async function showRollDialog(title, {attr1=null, skillRank=null}={}) {
   }
 
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
-  const content = await renderTemplate(template, {title, attr1, skillRank, MWDESTINY: CONFIG.MWDESTINY});
+  const content = await renderTemplate(template, {title, attr, skillRank, isSkill, MWDESTINY: CONFIG.MWDESTINY});
 
   return new Promise((resolve) => new Dialog({
     title,
