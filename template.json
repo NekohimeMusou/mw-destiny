@@ -5,8 +5,9 @@
         "pc": {}
     },
     "Item": {
-        "types": ["skill"],
+        "types": ["skill", "weapon"],
         "htmlFields": ["description"],
-        "skill": {}
+        "skill": {},
+        "weapon": {}
     }
 }

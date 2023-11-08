@@ -40,6 +40,18 @@
             "skill": "Skill",
             "total": "Total",
             "rank": "Skill Rank"
+        },
+        "combat": {
+            "damageTypes": {
+                "other": "Other",
+                "ballistic": "Ballistic",
+                "energy": "Energy"
+            },
+            "range": {
+                "close": "Close",
+                "near": "Near",
+                "far": "Far"
+            }
         }
     }
 }

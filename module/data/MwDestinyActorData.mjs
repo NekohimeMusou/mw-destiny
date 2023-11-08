@@ -60,4 +60,10 @@ export default class MwDestinyActorData extends foundry.abstract.DataModel {
       attributes,
     };
   }
+
+  get strBonus() {
+    if (this.attributes.str < 3) return 0;
+    if (this.attributes.str < 5) return 1;
+    return 2;
+  }
 }

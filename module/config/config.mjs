@@ -12,4 +12,14 @@ export const MWDESTINY = {
     average: "3d6",
     hard: "4d6",
   },
+  damageTypes: {
+    other: "MWDESTINY.combat.damageTypes.other",
+    ballistic: "MWDESTINY.combat.damageTypes.ballistic",
+    energy: "MWDESTINY.combat.damageTypes.energy",
+  },
+  weaponRanges: {
+    close: "MWDESTINY.combat.range.close",
+    near: "MWDESTINY.combat.range.near",
+    far: "MWDESTINY.combat.range.far",
+  },
 };
