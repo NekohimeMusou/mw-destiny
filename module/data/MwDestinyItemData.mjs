@@ -38,15 +38,12 @@ export default class MwDestinyItemData extends foundry.abstract.DataModel {
       }),
       ranges: new fields.ObjectField({
         required: false,
-        initial: {
-          close: 0,
-        },
       }),
     };
-  },
+  }
 
   get damage() {
-    const baseDamage = this.baseDamage;
+    const baseDamage = this.baseDamage || 0;
     if (this.isStrPowered) {
       const str = this.attributes.str;
       if (str < 3) return baseDamage;
@@ -54,5 +51,24 @@ export default class MwDestinyItemData extends foundry.abstract.DataModel {
       return baseDamage + 2;
     }
     return 0;
+  }
+
+  get damageCode() {
+    if (this.isFatigueWeapon) return `${this.damage}F`;
+    return `${this.damage}`;
+  }
+
+  get rangeLabels() {
+    function rangeLabel(r) {
+      if (r == null) return "—";
+      if (r === 0) return "OK";
+      return r;
+    }
+
+    if (this.parent.type !== "weapon") return {};
+
+    const ranges = Object.keys(CONFIG.MWDESTINY.weaponRanges);
+
+    return Object.fromEntries(ranges.map((r) => [r, rangeLabel(this.ranges?.[r])]));
   }
 }

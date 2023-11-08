@@ -51,7 +51,9 @@
                 "close": "Close",
                 "near": "Near",
                 "far": "Far"
-            }
+            },
+            "damage": "Damage",
+            "weapon": "Weapon"
         }
     }
 }

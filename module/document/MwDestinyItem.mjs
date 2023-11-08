@@ -20,10 +20,6 @@ export default class MwDestinyItem extends Item {
 
   _prepareWeaponData() {
     if (this.type !== "weapon") return;
-
-    if (this.system.isStrPowered) {
-      this.system.damage += this.actor.system.strBonus;
-    }
   }
 
   /** @inheritdoc */
