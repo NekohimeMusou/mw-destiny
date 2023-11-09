@@ -3,17 +3,21 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
 
+    const defaultRanges = ["close", "near", "far"].map(
+        (r) => ({label: `MWDESTINY.combat.range.${r}`, usable: false, mod: 0}),
+    );
+
     return {
       description: new fields.HTMLField(),
       baseDamage: new fields.NumberField({
         required: true,
-        integer: true,
+        initial: 0,
       }),
       damageType: new fields.StringField({
         required: true,
-        initial: "other",
+        nullable: true,
       }),
-      isFatigueWeapon: new fields.BooleanField({
+      isStunWeapon: new fields.BooleanField({
         required: true,
         initial: false,
       }),
@@ -21,8 +25,9 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
         required: true,
         initial: false,
       }),
-      ranges: new fields.ObjectField({
+      range: new fields.ObjectField({
         required: true,
+        default: defaultRanges,
       }),
     };
   }

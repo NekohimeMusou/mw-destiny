@@ -27,7 +27,8 @@
             "attributes": "Attributes",
             "attribute": "Attribute",
             "link": "Link",
-            "rank": "Rank"
+            "rank": "Rank",
+            "mod": "Mod"
         },
         "sheet": {
             "locked": "Locked",
@@ -47,13 +48,16 @@
                 "ballistic": "Ballistic",
                 "energy": "Energy"
             },
+            "damageType": "Damage Type",
             "range": {
                 "close": "Close",
                 "near": "Near",
                 "far": "Far"
             },
             "damage": "Damage",
-            "weapon": "Weapon"
+            "weapon": "Weapon",
+            "stun": "Stun",
+            "strPowered": "Strength Powered"
         }
     }
 }

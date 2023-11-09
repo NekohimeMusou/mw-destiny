@@ -2,14 +2,14 @@
   <ol class="items-list">
     <li class="item flexrow items-header">
       <div class="item-name">{{localize "MWDESTINY.combat.weapon"}}</div>
-      <div class="item-damage">{{localize "MWDESTINY.combat.damage"}}</div>
+      <div class="item-damage">Dmg</div>
       <div class="item-close-range">{{localize "MWDESTINY.combat.range.close"}}</div>
       <div class="item-near-range">{{localize "MWDESTINY.combat.range.near"}}</div>
       <div class="item-far-range">{{localize "MWDESTINY.combat.range.far"}}</div>
       <div class="item-str-powered">STR?</div>
       <div class="item-fatigue">Stun?</div>
       <div class="item-controls">
-        <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="skill">
+        <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="weapon">
           <i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>
       </div>
     </li>
@@ -17,7 +17,6 @@
     <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name">
         <div class="item-image">
-          {{!-- Click class goes here --}}
           <a><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
         <input type="text" class="item-field" data-dtype="String" data-field-name="name" value="{{item.name}}"/>
@@ -25,6 +24,7 @@
       <div class="item-damage item-prop">
         <input type="text" value="{{item.system.damageCode}}" disabled/>
       </div>
+      {{!-- TODO: Fix this to match new data model --}}
       <div class="item-close-range item-prop">{{item.rangeLabels.close}}</div>
       <div class="item-near-range item-prop">{{item.rangeLabels.near}}</div>
       <div class="item-far-range item-prop">{{item.rangeLabels.far}}</div>

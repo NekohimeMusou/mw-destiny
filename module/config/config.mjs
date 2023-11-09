@@ -13,7 +13,6 @@ export const MWDESTINY = {
     hard: "4d6",
   },
   damageTypes: {
-    other: "MWDESTINY.combat.damageTypes.other",
     ballistic: "MWDESTINY.combat.damageTypes.ballistic",
     energy: "MWDESTINY.combat.damageTypes.energy",
   },
