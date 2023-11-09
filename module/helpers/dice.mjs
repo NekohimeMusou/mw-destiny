@@ -48,7 +48,8 @@ async function showRollDialog(title, {attr=null, skillRank=null, isSkill=false}=
     // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
     // If skillRank > 0, it's a skill roll: return the skill ranks as an int
     // If attr2 exists, it's an attribute roll; return "@[attr]"
-    const term2 = form?.attr2?.value ? `@${form.attr2.value}` : `${parseInt(form?.skillRank?.value || 0)}`;
+    const attr2 = form.attr2?.value;
+    const term2 = attr2 ? `@${attr2}` : `${parseInt(skillRank || 0)}`;
     return {
       mod: parseInt(form.mod.value || 0),
       difficulty: form.difficulty.value,

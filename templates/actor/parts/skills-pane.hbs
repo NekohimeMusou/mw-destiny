@@ -1,7 +1,7 @@
-<div class="flexcol">
+<div class="flexcol flex-center">
   <ol class="items-list">
     <li class="item flexrow items-header">
-      <div class="item-name">{{localize "MWDESTINY.skills.skill"}}</div>
+      <div class="item-name flex3">{{localize "MWDESTINY.skills.skill"}}</div>
       <div class="item-total">{{localize "MWDESTINY.skills.total"}}</div>
       <div class="item-link">{{localize "MWDESTINY.mechanic.link"}}</div>
       <div class="item-rank">{{localize "MWDESTINY.mechanic.rank"}}</div>
@@ -10,8 +10,8 @@
       </div>
     </li>
     {{#each skills as |item|}}
-    <li class="item flexrow" data-item-id="{{item._id}}">
-      <div class="item-name">
+    <li class="item flexrow flex-center" data-item-id="{{item._id}}">
+      <div class="item-name flex3">
         <div class="item-image">
           <a class="roll-test" data-roll-label="{{item.name}}" data-is-skill="1", data-attr="{{item.system.link}}" data-skill-rank="{{item.system.rank}}"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>

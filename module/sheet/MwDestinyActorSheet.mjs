@@ -7,8 +7,8 @@ export default class MwDestinyActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["mw-destiny", "sheet", "actor"],
       template: "systems/mw-destiny/templates/actor/actor-sheet.hbs",
-      width: 1000,
-      height: 800,
+      width: 800,
+      height: 600,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "main"}],
     });
   }

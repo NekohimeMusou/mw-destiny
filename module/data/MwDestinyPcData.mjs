@@ -1,4 +1,4 @@
-export default class MwDestinyActorData extends foundry.abstract.DataModel {
+export default class MwDestinyPcData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
