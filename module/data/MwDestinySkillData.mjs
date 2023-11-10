@@ -20,6 +20,10 @@ export default class MwDestinySkillData extends foundry.abstract.DataModel {
         initial: 0,
         integer: true,
       }),
+      weaponSkill: new fields.StringField({
+        required: true,
+        initial: "melee",
+      }),
     };
   }
 }

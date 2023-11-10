@@ -54,8 +54,14 @@
                 "near": "Near",
                 "far": "Far"
             },
+            "skills": {
+                "melee": "Melee Combat",
+                "projectile": "Projectile Weapons",
+                "smallArms": "Small Arms"
+            },
             "damage": "Damage",
             "weapon": "Weapon",
+            "weaponSkill": "Weapon Skill",
             "stun": "Stun",
             "strPowered": "Strength Powered"
         }

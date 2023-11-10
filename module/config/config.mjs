@@ -2,23 +2,23 @@ export const MWDESTINY = {
   attributes: Object.fromEntries(
       ["str", "rfl", "int", "wil", "cha", "edg"]
           .map((a) => [a, a.toUpperCase()])),
-  rollDifficulties: {
-    easy: "MWDESTINY.dialog.difficulty.easy",
-    average: "MWDESTINY.dialog.difficulty.average",
-    hard: "MWDESTINY.dialog.difficulty.hard",
-  },
+  rollDifficulties: Object.fromEntries(
+      ["easy", "average", "hard"]
+          .map((d) => [d, `MWDESTINY.dialog.difficulty.${d}`])),
   rollDifficultyDice: {
     easy: "2d6",
     average: "3d6",
     hard: "4d6",
   },
-  damageTypes: {
-    ballistic: "MWDESTINY.combat.damageTypes.ballistic",
-    energy: "MWDESTINY.combat.damageTypes.energy",
-  },
-  weaponRanges: {
-    close: "MWDESTINY.combat.range.close",
-    near: "MWDESTINY.combat.range.near",
-    far: "MWDESTINY.combat.range.far",
-  },
+  damageTypes: Object.fromEntries(
+      ["ballistic", "energy"]
+          .map((s) => [s, `MWDESTINY.combat.damageTypes.${s}`])),
+  weaponRanges: Object.fromEntries(
+      ["close", "near", "far"]
+          .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
+  ),
+  weaponSkills: Object.fromEntries(
+      ["melee", "projectile", "smallArms"]
+          .map((s) => [s, `MWDESTINY.combat.skills.${s}`]),
+  ),
 };
