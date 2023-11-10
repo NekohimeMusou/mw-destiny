@@ -63,7 +63,8 @@
             "weapon": "Weapon",
             "weaponSkill": "Weapon Skill",
             "stun": "Stun",
-            "strPowered": "Strength Powered"
+            "strPowered": "Strength Powered",
+            "defenseMod": "Defense Mod"
         }
     }
 }

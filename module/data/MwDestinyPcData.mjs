@@ -58,6 +58,10 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         }),
       }),
       attributes,
+      defenseMod: new fields.NumberField({
+        required: true,
+        nullable: true,
+      }),
     };
   }
 
