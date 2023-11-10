@@ -3,10 +3,6 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
 
-    const defaultRanges = ["close", "near", "far"].map(
-        (r) => ({label: `MWDESTINY.combat.range.${r}`, usable: false, mod: 0}),
-    );
-
     return {
       description: new fields.HTMLField(),
       baseDamage: new fields.NumberField({
@@ -27,8 +23,21 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
       }),
       range: new fields.ObjectField({
         required: true,
-        default: defaultRanges,
+        initial: Object.fromEntries(["close", "near", "far"].map(
+            (r) => [r, {usable: false, mod: null}],
+        )),
+      }),
+      damageCode: new fields.StringField({
+        required: false,
       }),
     };
+  }
+
+  get damage() {
+    if (this.isStrPowered) {
+      return this.baseDamage + this.parent.strBonus || 0;
+    }
+
+    return this.baseDamage;
   }
 }

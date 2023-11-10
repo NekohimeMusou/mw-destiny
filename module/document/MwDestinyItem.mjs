@@ -7,6 +7,9 @@ export default class MwDestinyItem extends Item {
   /** @override */
   prepareBaseData() {
     this._prepareSkillData();
+  }
+  /** @override */
+  prepareDerivedData() {
     this._prepareWeaponData();
   }
 
@@ -20,6 +23,27 @@ export default class MwDestinyItem extends Item {
 
   _prepareWeaponData() {
     if (this.type !== "weapon") return;
+
+    for (const r of Object.values(this.system.range)) {
+      if (!r.usable) {
+        r.label = "—";
+      } else if (!r.mod) {
+        r.label = "OK";
+      } else {
+        r.label = r.mod;
+      }
+    }
+
+    let typeCode = "";
+
+    if (this.system.damageType === "ballistic") typeCode = " (B)";
+    if (this.system.damageType === "energy") typeCode = " (E)";
+
+    if (this.system.isStunWeapon) {
+      this.system.damageCode = `${this.system.baseDamage}F${typeCode}`;
+    } else {
+      this.system.damageCode = `${this.system.baseDamage}${typeCode}`;
+    }
   }
 
   /** @inheritdoc */

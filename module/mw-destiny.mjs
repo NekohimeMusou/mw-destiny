@@ -1,6 +1,7 @@
 // Import data model classes
 import MwDestinyPcData from "./data/MwDestinyPcData.mjs";
 import MwDestinySkillData from "./data/MwDestinySkillData.mjs";
+import MwDestinyWeaponData from "./data/MwDestinyWeaponData.mjs";
 // Import document classes
 import MwDestinyActor from "./document/MwDestinyActor.mjs";
 import MwDestinyItem from "./document/MwDestinyItem.mjs";
@@ -38,7 +39,7 @@ function registerDocumentClasses() {
 function registerDataModels() {
   CONFIG.Actor.dataModels.pc = MwDestinyPcData;
   CONFIG.Item.dataModels.skill = MwDestinySkillData;
-  // CONFIG.Item.dataModels.weapon = MwDestinyWeaponData;
+  CONFIG.Item.dataModels.weapon = MwDestinyWeaponData;
 }
 
 function registerSheetApplications() {
