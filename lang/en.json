@@ -57,7 +57,8 @@
             "skills": {
                 "melee": "Melee Combat",
                 "projectile": "Projectile Weapons",
-                "smallArms": "Small Arms"
+                "smallArms": "Small Arms",
+                "gunnery": "Gunnery"
             },
             "damage": "Damage",
             "weapon": "Weapon",

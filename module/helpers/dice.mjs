@@ -1,5 +1,5 @@
-export async function rollTest(rollData, title, {attr=null, skillRank=null, isSkill=false}={}) {
-  const {mod, difficulty, term2, cancelled} = await showRollDialog(title, {attr, skillRank, isSkill});
+export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null}={}) {
+  const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName});
 
   // TODO: Fix this so the roll chat output shows like "INT + INT" or "INT + RFL" or w/e
   if (cancelled) return;
@@ -13,6 +13,8 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, isSk
   const rolls = [playerRoll];
 
   const parts = [];
+
+  parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
 
   if (difficulty) {
     const difficultyDice = `${CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || "3d6"}`;
@@ -43,7 +45,7 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, isSk
 }
 
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
-async function showRollDialog(title, {attr=null, skillRank=null, isSkill=false}={}) {
+async function showRollDialog(title, {attr=null, skillRank=null, skillName=null}={}) {
   async function _processRollOptions(form) {
     // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
     // If skillRank > 0, it's a skill roll: return the skill ranks as an int
@@ -54,11 +56,12 @@ async function showRollDialog(title, {attr=null, skillRank=null, isSkill=false}=
       mod: parseInt(form.mod.value || 0),
       difficulty: form.difficulty.value,
       term2,
+      attr2,
     };
   }
 
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
-  const content = await renderTemplate(template, {title, attr, skillRank, isSkill, MWDESTINY: CONFIG.MWDESTINY});
+  const content = await renderTemplate(template, {title, attr, skillRank, skillName, MWDESTINY: CONFIG.MWDESTINY});
 
   return new Promise((resolve) => new Dialog({
     title,

@@ -1,5 +1,4 @@
 <form class="flexcol flex-group-center">
-  <div class="resource-label">{{title}}</div>
   <div class="flexrow">
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}}{{#unless skillRank}} 1{{/unless}}</div>
@@ -7,7 +6,7 @@
         {{selectOptions MWDESTINY.attributes selected=attr}}
       </select>
     </div>
-    {{#if isSkill}}
+    {{#if skillName}}
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.skills.rank"}}</div>
       <input type="Number" name="skill-rank" value="{{skillRank}}" disabled/>
