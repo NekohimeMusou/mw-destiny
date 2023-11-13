@@ -15,14 +15,13 @@
     <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name flex2">
         <div class="item-image">
-          <a><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
+          <a class="roll-test" data-roll-label="{{item.name}} Attack" data-is-skill="1" data-attr="{{item.system.weaponSkill.system.link}}" data-skill-rank="{{item.system.weaponSkill.system.rank}}"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
         <input type="text" class="item-field" data-dtype="String" data-field-name="name" value="{{item.name}}"/>
       </div>
       <div class="item-damage item-prop">
         <input type="text" data-dtype="String" value="{{system.damageCode}}" disabled/>
       </div>
-      {{!-- TODO: Fix this to match new data model --}}
       {{#each system.range}}
       <div class="item-prop flex-group-center">
         <input type="text" value="{{label}}" disabled/>

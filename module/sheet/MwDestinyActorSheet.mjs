@@ -141,6 +141,6 @@ export default class MwDestinyActorSheet extends ActorSheet {
     const attr = dataset.attr;
     const isSkill = dataset.isSkill;
 
-    return await rollTest(this.actor.getRollData(), `${dataset.rollLabel} Roll`, {attr, skillRank, isSkill});
+    return await rollTest(this.actor.getRollData(), dataset.rollLabel, {attr, skillRank, isSkill});
   }
 }

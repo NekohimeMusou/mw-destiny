@@ -30,9 +30,9 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
       damageCode: new fields.StringField({
         required: false,
       }),
-      weaponSkill: new fields.StringField({
+      weaponSkillType: new fields.StringField({
         required: true,
-        initial: "melee",
+        nullable: true,
       }),
     };
   }

@@ -44,6 +44,8 @@ export default class MwDestinyItem extends Item {
     } else {
       this.system.damageCode = `${this.system.baseDamage}${typeCode}`;
     }
+
+    this.weaponSkill = this.actor.items.find((i) => i.system.weaponSkillType === this.system.weaponSkillType);
   }
 
   /** @inheritdoc */
