@@ -34,6 +34,9 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
         required: true,
         nullable: true,
       }),
+      weaponSkill: new fields.ObjectField({
+        required: false,
+      }),
     };
   }
 
