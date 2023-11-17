@@ -1,13 +1,15 @@
 {
     "Actor": {
-        "types": ["pc"],
+        "types": ["pc", "hardware"],
         "htmlFields": ["description", "history", "personality"],
-        "pc": {}
+        "pc": {},
+        "hardware": {}
     },
     "Item": {
-        "types": ["skill", "weapon"],
+        "types": ["skill", "weapon", "heavy-weapon"],
         "htmlFields": ["description"],
         "skill": {},
-        "weapon": {}
+        "weapon": {},
+        "heavy-weapon": {}
     }
 }

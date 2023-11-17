@@ -2,16 +2,18 @@
 import MwDestinyPcData from "./data/MwDestinyPcData.mjs";
 import MwDestinySkillData from "./data/MwDestinySkillData.mjs";
 import MwDestinyWeaponData from "./data/MwDestinyWeaponData.mjs";
+import MwDestinyHardwareData from "./data/MwDestinyHardwareData.mjs";
+import MwDestinyHeavyWeaponData from "./data/MwDestinyHeavyWeaponData.mjs";
 // Import document classes
 import MwDestinyActor from "./document/MwDestinyActor.mjs";
 import MwDestinyItem from "./document/MwDestinyItem.mjs";
 // Import sheet classes
-import MwDestinyActorSheet from "./sheet/MwDestinyActorSheet.mjs";
+import MwDestinyPcSheet from "./sheet/MwDestinyPcSheet.mjs";
+import MwDestinyHardwareSheet from "./sheet/MwDestinyHardwareSheet.mjs";
 import MwDestinyItemSheet from "./sheet/MwDestinyItemSheet.mjs";
 // Import helper/utility classes and constants
 import {MWDESTINY} from "./config/config.mjs";
 import preloadHandlebarsTemplates from "./config/templates.mjs";
-
 
 Hooks.once("init", async function() {
   console.log("MWDESTINY | Initializing MechWarrior: Destiny game system");
@@ -38,13 +40,16 @@ function registerDocumentClasses() {
 
 function registerDataModels() {
   CONFIG.Actor.dataModels.pc = MwDestinyPcData;
+  CONFIG.Actor.dataModels.hardware = MwDestinyHardwareData;
   CONFIG.Item.dataModels.skill = MwDestinySkillData;
   CONFIG.Item.dataModels.weapon = MwDestinyWeaponData;
+  CONFIG.Item.dataModels.heavyWeapon = MwDestinyHeavyWeaponData;
 }
 
 function registerSheetApplications() {
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("mw-destiny", MwDestinyActorSheet, {makeDefault: true});
+  Actors.registerSheet("mw-destiny", MwDestinyPcSheet, {types: ["pc"], makeDefault: true});
+  Actors.registerSheet("mw-destiny", MwDestinyHardwareSheet, {types: ["hardware"], makeDefault: true});
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("mw-destiny", MwDestinyItemSheet, {makeDefault: true});
 }
