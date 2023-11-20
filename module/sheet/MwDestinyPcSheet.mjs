@@ -62,12 +62,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     html.find(".item-create").click(this.#onItemCreate.bind(this));
 
     // Delete Inventory Item
-    html.find(".item-delete").click((ev) => {
-      const li = $(ev.currentTarget).parents(".item");
-      const item = this.actor.items.get(li.data("itemId"));
-      item.delete();
-      li.slideUp(200, () => this.render(false));
-    });
+    html.find(".item-delete").click((ev) => this.#onItemDelete(ev));
 
     // Active Effect management
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
@@ -103,6 +98,24 @@ export default class MwDestinyPcSheet extends ActorSheet {
 
     // Finally, create the item!
     return await Item.create(itemData, {parent: this.actor});
+  }
+
+  async #onItemDelete(event) {
+    const li = $(event.currentTarget).parents(".item");
+    const item = this.actor.items.get(li.data("itemId"));
+
+    const confirmDelete = await Dialog.confirm({
+      title: "Delete Item",
+      content: `<p>Really delete ${item.name}?</p>`,
+      yes: () => true,
+      no: () => false,
+      defaultYes: false,
+    });
+
+    if (!confirmDelete) return;
+
+    item.delete();
+    li.slideUp(200, () => this.render(false));
   }
 
   async #onItemLinkSelect(event) {
