@@ -24,11 +24,9 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
             (r) => [r, {usable: false, mod: null}],
         )),
       }),
-      damageCode: new fields.StringField(),
       weaponSkillType: new fields.StringField({
         nullable: true,
       }),
-      weaponSkill: new fields.ObjectField(),
     };
   }
 
@@ -38,5 +36,27 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
     }
 
     return this.baseDamage;
+  }
+
+  get weaponSkill() {
+    return this.parent.actor.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+  }
+
+  get damageCode() {
+    let typeString = "";
+
+    switch (this.damageType) {
+      case "ballistic":
+        typeString = " (B)";
+        break;
+      case "missile":
+        typeString = " (M)";
+        break;
+      case "energy":
+        typeString = " (E)";
+        break;
+    }
+
+    return this.isStunWeapon ? `${this.damage}F${typeString}` : `${this.damage}F${typeString}`;
   }
 }
