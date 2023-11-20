@@ -37,7 +37,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const weapons = context.items.filter((i) => i.type === "weapon");
 
     // TODO: Try foundry.utils.mergeObject
-    Object.assign(context, {
+    foundry.utils.mergeObject(context, {
       system, flags, rollData, effects, skills, weapons, MWDESTINY,
     });
 
