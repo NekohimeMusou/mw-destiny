@@ -22,10 +22,8 @@ export default class MwDestinyItemSheet extends ItemSheet {
   getData() {
     const context = super.getData();
 
-    const itemData = this.item.toObject(false);
-
-    const system = itemData.system;
-    const flags = itemData.flags;
+    const system = this.item.system;
+    const flags = this.item.flags;
     const rollData = this.item.getRollData() || {};
     const effects = prepareActiveEffectCategories(this.item.effects);
     const MWDESTINY = CONFIG.MWDESTINY;

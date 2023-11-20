@@ -17,11 +17,9 @@ export default class MwDestinyPcSheet extends ActorSheet {
   getData() {
     const context = super.getData();
 
-    const actorData = this.actor.toObject(false);
-
     // Add the actor's data to context.data for easier access, as well as flags
-    const system = actorData.system;
-    const flags = actorData.flags;
+    const system = this.actor.system;
+    const flags = this.actor.flags;
 
     // Add global config data
     const MWDESTINY = CONFIG.MWDESTINY;
@@ -32,9 +30,9 @@ export default class MwDestinyPcSheet extends ActorSheet {
     // Prepare active effects
     const effects = prepareActiveEffectCategories(this.actor.effects);
 
-    const skills = context.items.filter((i) => i.type === "skill");
+    const skills = this.actor.items.filter((i) => i.type === "skill");
 
-    const weapons = context.items.filter((i) => i.type === "weapon");
+    const weapons = this.actor.items.filter((i) => i.type === "weapon");
 
     // TODO: Try foundry.utils.mergeObject
     foundry.utils.mergeObject(context, {

@@ -6,24 +6,21 @@ export default class MwDestinyItem extends Item {
 
   /** @override */
   prepareBaseData() {
-    this._prepareSkillData();
   }
   /** @override */
   prepareDerivedData() {
+    this._prepareSkillData();
     this._prepareWeaponData();
   }
 
   _prepareSkillData() {
     if (this.type !== "skill") return;
-
-    const linkedAttribute = this.actor?.system.attributes[this.system.link];
-
-    this.system.total = this.system.rank + linkedAttribute;
   }
 
   _prepareWeaponData() {
     if (this.type !== "weapon") return;
 
+    // DataModel getters?
     for (const r of Object.values(this.system.range)) {
       if (!r.usable) {
         r.label = "—";

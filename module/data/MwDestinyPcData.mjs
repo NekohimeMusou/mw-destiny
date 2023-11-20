@@ -3,6 +3,19 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
 
+    const attributes = new fields.SchemaField(
+        Object.fromEntries(
+            ["str", "rfl", "int", "wil", "cha", "edg"].map(
+                (a) => [a,
+                  new fields.NumberField({
+                    initial: 1,
+                    integer: true,
+                    positive: true,
+                  }),
+                ],
+            ),
+        ));
+
     return {
       description: new fields.HTMLField(),
       physDamage: new fields.SchemaField({
@@ -39,18 +52,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
           integer: true,
         }),
       }),
-      attributes: new fields.SchemaField(
-          Object.fromEntries(
-              ["str", "rfl", "int", "wil", "cha", "edg"].map(
-                  (a) => [a,
-                    new fields.NumberField({
-                      initial: 1,
-                      integer: true,
-                      positive: true,
-                    }),
-                  ],
-              ),
-          )),
+      attributes,
     };
   }
 

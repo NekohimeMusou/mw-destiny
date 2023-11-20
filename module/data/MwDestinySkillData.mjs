@@ -15,11 +15,13 @@ export default class MwDestinySkillData extends foundry.abstract.DataModel {
         initial: 0,
         integer: true,
       }),
-      total: new fields.NumberField({
-        initial: 0,
-        integer: true,
-      }),
       weaponSkillType: new fields.StringField(),
     };
+  }
+
+  get total() {
+    const linkedAttribute = this.parent.actor.system.attributes[this.link] || 0;
+
+    return this.rank + linkedAttribute;
   }
 }
