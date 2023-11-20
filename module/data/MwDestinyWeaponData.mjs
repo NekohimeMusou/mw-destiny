@@ -10,15 +10,12 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
         initial: 0,
       }),
       damageType: new fields.StringField({
-        required: true,
         nullable: true,
       }),
       isStunWeapon: new fields.BooleanField({
-        required: true,
         initial: false,
       }),
       isStrPowered: new fields.BooleanField({
-        required: true,
         initial: false,
       }),
       range: new fields.ObjectField({
@@ -27,16 +24,11 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
             (r) => [r, {usable: false, mod: null}],
         )),
       }),
-      damageCode: new fields.StringField({
-        required: false,
-      }),
+      damageCode: new fields.StringField(),
       weaponSkillType: new fields.StringField({
-        required: true,
         nullable: true,
       }),
-      weaponSkill: new fields.ObjectField({
-        required: false,
-      }),
+      weaponSkill: new fields.ObjectField(),
     };
   }
 

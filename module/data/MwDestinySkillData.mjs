@@ -16,7 +16,6 @@ export default class MwDestinySkillData extends foundry.abstract.DataModel {
         integer: true,
       }),
       total: new fields.NumberField({
-        required: true,
         initial: 0,
         integer: true,
       }),
