@@ -34,7 +34,7 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
 
   get damage() {
     if (this.isStrPowered) {
-      return this.baseDamage + this.parent.strBonus || 0;
+      return this.baseDamage + (this.parent.actor.system.strBonus || 0);
     }
 
     return this.baseDamage;

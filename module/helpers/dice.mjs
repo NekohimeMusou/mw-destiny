@@ -1,4 +1,4 @@
-export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null}={}) {
+export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName});
 
   // TODO: Fix this so the roll chat output shows like "INT + INT" or "INT + RFL" or w/e
@@ -15,6 +15,10 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
   const parts = [];
 
   parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
+
+  if (damageCode) {
+    parts.push(`<h3>Damage: ${damageCode}</h3>`);
+  }
 
   if (difficulty) {
     const difficultyDice = `${CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || "3d6"}`;

@@ -34,16 +34,13 @@ export default class MwDestinyItem extends Item {
       }
     }
 
-    let typeCode = "";
+    let typeString = "";
 
-    if (this.system.damageType === "ballistic") typeCode = " (B)";
-    if (this.system.damageType === "energy") typeCode = " (E)";
+    if (this.damageType === "ballistic") typeString = " (B)";
+    else if (this.damageType === "missile") typeString = " (M)";
+    else if (this.damageType === "energy") typeString = " (E)";
 
-    if (this.system.isStunWeapon) {
-      this.system.damageCode = `${this.system.baseDamage}F${typeCode}`;
-    } else {
-      this.system.damageCode = `${this.system.baseDamage}${typeCode}`;
-    }
+    this.system.damageCode = this.system.isStunWeapon ? `${this.system.damage}F${typeString}` : `${this.system.damage}${typeString}`;
 
     this.system.weaponSkill = this.actor.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.system.weaponSkillType);
   }
