@@ -30,13 +30,12 @@ export default class MwDestinyPcSheet extends ActorSheet {
     // Prepare active effects
     const effects = prepareActiveEffectCategories(this.actor.effects);
 
-    const skills = this.actor.items.filter((i) => i.type === "skill");
+    const items = Object.fromEntries(Object.keys(CONFIG.Item.dataModels).map(
+        (i) => [i, this.actor.items.filter((k) => k.type === i)],
+    ));
 
-    const weapons = this.actor.items.filter((i) => i.type === "weapon");
-
-    // TODO: Try foundry.utils.mergeObject
     foundry.utils.mergeObject(context, {
-      system, flags, rollData, effects, skills, weapons, MWDESTINY,
+      system, flags, rollData, effects, ...items, MWDESTINY,
     });
 
     return context;

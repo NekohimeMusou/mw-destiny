@@ -17,7 +17,8 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         ));
 
     return {
-      description: new fields.HTMLField(),
+      history: new fields.HTMLField(),
+      personality: new fields.HTMLField(),
       physDamage: new fields.SchemaField({
         min: new fields.NumberField({
           required: true,

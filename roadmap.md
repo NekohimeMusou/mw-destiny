@@ -11,13 +11,11 @@
 
 ### QoL SHIT
 
-- ~~Show weapon damage in chat card~~ (DONE)
 - Think of a better way to link weapons to skills
   - Automatically add the 3 weapon skills + martial arts "weapon" to a new actor, with a 0 rank?
 - Look for other things that can be rollable tables - Add them to a compendium
   - Crit effects
 - Calculate the speed modifier for your target in 'mech-scale combat
-- ~~Confirmation dialog for deleting skills~~ (DONE)
 
 ### FANCY BULLSHIT WHAT MIGHT BE HARDER THAN I THINK
 
