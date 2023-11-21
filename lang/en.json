@@ -15,7 +15,8 @@
         },
         "bio": {
             "history": "History",
-            "personality": "Personality"
+            "personality": "Personality",
+            "tags": "Tags"
         },
         "attributes": {
             "str": "Strength",
