@@ -6,7 +6,7 @@
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is defined in pc-sheet.mjs --}}
     <a class="item" data-tab="main">{{localize "MWDESTINY.tabs.main"}}</a>
-    <a class="item" data-tab="description">{{localize "MWDESTINY.tabs.description"}}</a>
+    <a class="item" data-tab="history">{{localize "MWDESTINY.tabs.history"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -16,10 +16,9 @@
       {{> "systems/mw-destiny/templates/actor/parts/tab-main.hbs"}}
     </div>
 
-    {{!-- Description Tab --}}
-    <div class="tab description" data-group="primary" data-tab="description">
-      {{!-- If you want TinyMCE editors to output inline rolls when rendered, you need to pass the actor's roll data to the rollData property. --}}
-      {{editor system.history target="system.history" rollData=rollData button=true owner=owner editable=editable}}
+    {{!-- History Tab --}}
+    <div class="tab history" data-group="primary" data-tab="history">
+      {{> "systems/mw-destiny/templates/actor/parts/tab-history.hbs"}}
     </div>
 
   </section>

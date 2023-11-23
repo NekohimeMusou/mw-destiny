@@ -2,7 +2,8 @@
     "MWDESTINY": {
         "tabs": {
             "main": "Main",
-            "description": "Description"
+            "history": "History",
+            "personality": "Personality"
         },
         "dialog": {
             "rollModifier": "Roll Modifier",
