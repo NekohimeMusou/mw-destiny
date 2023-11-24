@@ -19,6 +19,11 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
     return {
       history: new fields.HTMLField(),
       personality: new fields.HTMLField(),
+      lifeModules: new fields.SchemaField(Object.fromEntries(
+          ["faction", "childhood", "higherEd", "realLife"].map(
+              (m) => [m, new fields.StringField()],
+          ),
+      )),
       physDamage: new fields.SchemaField({
         min: new fields.NumberField({
           required: true,
@@ -62,6 +67,9 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       }),
       dispositions: new fields.ArrayField(new fields.StringField(), {
         initial: Array(4).fill(""),
+      }),
+      equipment: new fields.ArrayField(new fields.StringField(), {
+        initial: Array(6).fill(""),
       }),
     };
   }

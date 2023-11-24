@@ -20,7 +20,14 @@
             "personality": "Personality",
             "tags": "Tags",
             "dispositions": "Dispositions",
-            "cues": "Cues"
+            "cues": "Cues",
+            "lifeModules": "Life Modules"
+        },
+        "lifeModules": {
+            "faction": "Faction",
+            "childhood": "Childhood",
+            "higherEd": "Higher Education",
+            "realLife": "Real Life"
         },
         "attributes": {
             "str": "Strength",
@@ -37,7 +44,8 @@
             "attribute": "Attribute",
             "link": "Link",
             "rank": "Rank",
-            "mod": "Mod"
+            "mod": "Mod",
+            "equipment": "Equipment"
         },
         "sheet": {
             "locked": "Locked",

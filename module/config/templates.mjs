@@ -10,6 +10,8 @@ export default async function preloadHandlebarsTemplates() {
     "systems/mw-destiny/templates/actor/parts/weapons-pane.hbs",
     "systems/mw-destiny/templates/actor/parts/cues-pane.hbs",
     "systems/mw-destiny/templates/actor/parts/dispositions-pane.hbs",
+    "systems/mw-destiny/templates/actor/parts/equipment-pane.hbs",
+    "systems/mw-destiny/templates/actor/parts/life-modules-pane.hbs",
     "systems/mw-destiny/templates/item/parts/header.hbs",
     "systems/mw-destiny/templates/item/parts/item-weapon-main.hbs",
     "systems/mw-destiny/templates/item/parts/item-heavy-weapon-main.hbs",
