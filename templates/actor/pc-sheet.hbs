@@ -6,7 +6,9 @@
   <nav class="sheet-tabs tabs" data-group="primary">
     {{!-- Default tab is defined in pc-sheet.mjs --}}
     <a class="item" data-tab="main">{{localize "MWDESTINY.tabs.main"}}</a>
+    <a class="item" data-tab="cues">{{localize "MWDESTINY.tabs.cues"}}</a>
     <a class="item" data-tab="history">{{localize "MWDESTINY.tabs.history"}}</a>
+    <a class="item" data-tab="personality">{{localize "MWDESTINY.tabs.personality"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -16,9 +18,19 @@
       {{> "systems/mw-destiny/templates/actor/parts/tab-main.hbs"}}
     </div>
 
+    {{!-- Cues Tab --}}
+    <div class="tab cues" data-group="primary" data-tab="cues">
+      {{> "systems/mw-destiny/templates/actor/parts/tab-cues.hbs"}}
+    </div>
+
     {{!-- History Tab --}}
     <div class="tab history" data-group="primary" data-tab="history">
       {{> "systems/mw-destiny/templates/actor/parts/tab-history.hbs"}}
+    </div>
+
+    {{!-- Personality Tab --}}
+    <div class="tab personality" data-group="primary" data-tab="personality">
+      {{> "systems/mw-destiny/templates/actor/parts/tab-personality.hbs"}}
     </div>
 
   </section>

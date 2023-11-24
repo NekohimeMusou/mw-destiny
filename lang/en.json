@@ -3,7 +3,8 @@
         "tabs": {
             "main": "Main",
             "history": "History",
-            "personality": "Personality"
+            "personality": "Personality",
+            "cues": "Cues"
         },
         "dialog": {
             "rollModifier": "Roll Modifier",
@@ -17,7 +18,9 @@
         "bio": {
             "history": "History",
             "personality": "Personality",
-            "tags": "Tags"
+            "tags": "Tags",
+            "dispositions": "Dispositions",
+            "cues": "Cues"
         },
         "attributes": {
             "str": "Strength",
