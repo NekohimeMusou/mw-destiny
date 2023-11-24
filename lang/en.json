@@ -73,7 +73,10 @@
             "weapon": "Weapon",
             "weaponSkill": "Weapon Skill",
             "stun": "Stun",
-            "strPowered": "Strength Powered"
+            "strPowered": "Strength Powered",
+            "armor": "Armor",
+            "armorType": "Armor Type",
+            "armorEffect": "Armor Effect"
         }
     }
 }

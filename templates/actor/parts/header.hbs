@@ -4,32 +4,52 @@
     <h1 class="charname">
         <input name="name" type="text" value="{{actor.name}}" placeholder="Name">
     </h1>
-    <div class="resources grid grid-2col">
-      {{!-- Row 1 --}}
-      <div class="resource flex-group-center">
-        <label for="system.physDamage.value" class="resource-label">{{localize "MWDESTINY.mechanic.physDamage"}}</label>
-        <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.physDamage.value" value="{{system.physDamage.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.physDamage.max" value="{{system.physDamage.max}}" data-dtype="Number"/>
+    <div class="resources flexcol">
+      <div class="flexrow flex-group-center">
+        <div class="resource flex-group-center">
+          <label for="system.physDamage.value" class="resource-label">{{localize "MWDESTINY.mechanic.physDamage"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.physDamage.value" value="{{system.physDamage.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="system.physDamage.max" value="{{system.physDamage.max}}" data-dtype="Number"/>
+          </div>
         </div>
-      </div>
 
-      <div class="resource flex-group-center">
-        <label for="system.fatigueDamage.value" class="resource-label">{{localize "MWDESTINY.mechanic.fatigueDamage"}}</label>
-        <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="system.fatigueDamage.value" value="{{system.fatigueDamage.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="system.fatigueDamage.max" value="{{system.fatigueDamage.max}}" data-dtype="Number"/>
+        <div class="resource flex-group-center">
+          <label for="system.fatigueDamage.value" class="resource-label">{{localize "MWDESTINY.mechanic.fatigueDamage"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.fatigueDamage.value" value="{{system.fatigueDamage.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="system.fatigueDamage.max" value="{{system.fatigueDamage.max}}" data-dtype="Number"/>
+          </div>
+        </div>
+
+        <div class="resource flex-group-center">
+          <label for="system.armor.hp.value" class="resource-label">{{localize "MWDESTINY.combat.armor"}}</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.armor.hp.value" value="{{system.armor.hp.value}}" data-dtype="Number"/>
+            <span> / </span>
+            <input type="text" name="system.armor.hp.max" value="{{system.armor.hp.max}}" data-dtype="Number"/>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="resource flexcol flex-group-center">
-      <div class="resource-label">{{localize "MWDESTINY.bio.tags"}}</div>
-      <div class="flexrow">
-        {{#each system.tags}}
-        <input type="text" name="system.tags.{{@index}}" data-dtype="String" value="{{this}}"/>
-        {{/each}}
+      <div class="flexrow flex-group-center">
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.combat.armorType"}}</label>
+          <input type="text" name="system.armor.type" value="{{system.armor.type}}" data-dtype="String"/>
+        </div>
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.combat.armorEffect"}}</label>
+          <input type="text" name="system.armor.effect" value="{{system.armor.effect}}" data-dtype="String"/>
+        </div>
+      </div>
+      <div class="resource flexcol flex-group-center">
+        <div class="resource-label">{{localize "MWDESTINY.bio.tags"}}</div>
+        <div class="flexrow">
+          {{#each system.tags}}
+          <input type="text" name="system.tags.{{@index}}" data-dtype="String" value="{{this}}"/>
+          {{/each}}
+        </div>
       </div>
     </div>
   </div>
