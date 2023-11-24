@@ -68,6 +68,25 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       dispositions: new fields.ArrayField(new fields.StringField(), {
         initial: Array(4).fill(""),
       }),
+      armor: new fields.SchemaField({
+        hp: new fields.SchemaField({
+          min: new fields.NumberField({
+            initial: 0,
+            integer: true,
+          }),
+          max: new fields.NumberField({
+            initial: 1,
+            integer: true,
+            positive: true,
+          }),
+          value: new fields.NumberField({
+            initial: 1,
+            integer: true,
+          }),
+        }),
+        type: new fields.StringField(),
+        effect: new fields.StringField(),
+      }),
       equipment: new fields.ArrayField(new fields.StringField(), {
         initial: Array(6).fill(""),
       }),
