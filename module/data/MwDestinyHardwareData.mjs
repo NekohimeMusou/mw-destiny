@@ -7,34 +7,40 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
         ["head", "torso", "armLeft", "armRight", "legLeft", "legRight"]
             .map((p) => [p, new fields.SchemaField({
               armor: new fields.SchemaField({
-                min: new fields.NumberField(),
-                max: new fields.NumberField(),
-                value: new fields.NumberField(),
+                min: new fields.NumberField({min: 0, integer: true}),
+                max: new fields.NumberField({min: 1, integer: true}),
+                value: new fields.NumberField({min: 0, integer: true}),
               }),
               structure: new fields.SchemaField({
-                min: new fields.NumberField(),
-                max: new fields.NumberField(),
-                value: new fields.NumberField(),
+                min: new fields.NumberField({min: 0, integer: true}),
+                max: new fields.NumberField({min: 1, integer: true}),
+                value: new fields.NumberField({min: 0, integer: true}),
               }),
             })])));
 
     return {
       description: new fields.HTMLField(),
-      tonnage: new fields.NumberField({
-        required: true,
-        integer: true,
-      }),
-      movement: new fields.NumberField({
-        required: true,
-        integer: true,
-      }),
+      model: new fields.StringField(),
+      tonnage: new fields.NumberField({integer: true}),
+      movement: new fields.NumberField({integer: true}),
       hasJumpJets: new fields.BooleanField(),
-      heatDissipation: new fields.NumberField({
-        required: true,
-        integer: true,
+      heatDissipation: new fields.NumberField({integer: true}),
+      tags: new fields.ArrayField(new fields.StringField(), {
+        initial: Array(5).fill(""),
       }),
-      tags: new fields.ArrayField(new fields.StringField({initial: ""})),
       hp,
+      heat: new fields.NumberField({min: 0, integer: true}),
+      equipment: new fields.ArrayField(new fields.StringField(), {
+        initial: Array(6).fill(""),
+      }),
     };
+  }
+
+  get weightClass() {
+    if (this.tonnage < 40) return "light";
+    if (this.tonnage < 60) return "medium";
+    if (this.tonnage < 80) return "heavy";
+    if (this.tonnage <= 100) return "assault";
+    return "superheavy";
   }
 }
