@@ -29,5 +29,14 @@
             "name": "English",
             "path": "lang/en.json"
         }
+    ],
+    "packs": [
+        {
+            "name": "hit-locations",
+            "label": "Hit Locations",
+            "system": "mw-destiny",
+            "type": "RollTable",
+            "path": "packs/hit-locations"
+        }
     ]
 }

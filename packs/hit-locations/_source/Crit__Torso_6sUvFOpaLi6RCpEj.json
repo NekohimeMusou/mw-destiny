@@ -1,0 +1,87 @@
+{
+  "folder": "MPxtO51U5LLuMLOY",
+  "name": "Crit: Torso",
+  "_id": "6sUvFOpaLi6RCpEj",
+  "img": "icons/svg/explosion.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "nUjwSO38rgudZZz0",
+      "text": "Ammo explosion ('Mech destroyed) OR Primary Weapon/Torso Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!6sUvFOpaLi6RCpEj.nUjwSO38rgudZZz0"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "ZRNkaAJ3GmKG185a",
+      "text": "Primary Weapon/Torso Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!6sUvFOpaLi6RCpEj.ZRNkaAJ3GmKG185a"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "drawn": false,
+      "_id": "eSk5wm5VremPCuVs",
+      "text": "Gyro damaged: -2 on Piloting tests. 2nd hit: Unable to spend movement",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!6sUvFOpaLi6RCpEj.eSk5wm5VremPCuVs"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "drawn": false,
+      "_id": "5m1fVqQTdrAQRg7w",
+      "text": "Engine shielding damaged: Gain 1 Heat at end of Narration. 2nd hit: Engine + 'Mech destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!6sUvFOpaLi6RCpEj.5m1fVqQTdrAQRg7w"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797181355,
+    "modifiedTime": 1700799400979,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "1d6",
+  "_key": "!tables!6sUvFOpaLi6RCpEj"
+}

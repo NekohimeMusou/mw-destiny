@@ -1,0 +1,57 @@
+{
+  "folder": "74uRV7lBkueF2eA7",
+  "name": "Crit: Rear",
+  "_id": "KZV3ue4CqspChTCk",
+  "img": "icons/svg/explosion.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        2
+      ],
+      "drawn": false,
+      "_id": "PLEAXzL00aK42Nxs",
+      "text": "Ammo explosion (unit destroyed) OR -1 max Movement.",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!KZV3ue4CqspChTCk.PLEAXzL00aK42Nxs"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        3,
+        6
+      ],
+      "drawn": false,
+      "_id": "A8YtQAeCUsfOEI9G",
+      "text": "-1 max Movement.",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!KZV3ue4CqspChTCk.A8YtQAeCUsfOEI9G"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700799044572,
+    "modifiedTime": 1700799403767,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "",
+  "_key": "!tables!KZV3ue4CqspChTCk"
+}

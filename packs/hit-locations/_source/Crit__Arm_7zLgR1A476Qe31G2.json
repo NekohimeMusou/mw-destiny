@@ -1,0 +1,57 @@
+{
+  "folder": "MPxtO51U5LLuMLOY",
+  "name": "Crit: Arm",
+  "_id": "7zLgR1A476Qe31G2",
+  "img": "icons/svg/explosion.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "eTkqVKJxTqGSdN0L",
+      "text": "Ammo explosion (Arm destroyed) OR Primary Weapon/Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!7zLgR1A476Qe31G2.eTkqVKJxTqGSdN0L"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        2,
+        6
+      ],
+      "drawn": false,
+      "_id": "p52J3luf4zRv1MDn",
+      "text": "Primary Weapon/Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!7zLgR1A476Qe31G2.p52J3luf4zRv1MDn"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797339554,
+    "modifiedTime": 1700799400979,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "1d6",
+  "_key": "!tables!7zLgR1A476Qe31G2"
+}

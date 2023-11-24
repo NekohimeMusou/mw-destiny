@@ -1,0 +1,19 @@
+{
+  "name": "Aerospace",
+  "sorting": "a",
+  "folder": null,
+  "type": "RollTable",
+  "_id": "sBg8b65P9p7cExzc",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797160051,
+    "modifiedTime": 1700799402621,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "_key": "!folders!sBg8b65P9p7cExzc"
+}

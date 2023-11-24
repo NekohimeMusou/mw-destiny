@@ -1,0 +1,139 @@
+{
+  "name": "Hit Location ('Mech)",
+  "_id": "4XJI3399uC7utjdi",
+  "img": "icons/svg/dice-target.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "EHMX0UDJWpy2v0dg",
+      "text": "Torso (Crit)",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "documentCollection": "RollTable",
+      "_key": "!tables.results!4XJI3399uC7utjdi.EHMX0UDJWpy2v0dg"
+    },
+    {
+      "type": 0,
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        3,
+        4
+      ],
+      "drawn": false,
+      "_id": "owoJjZTy2RI1tSHQ",
+      "text": "Right Arm",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!4XJI3399uC7utjdi.owoJjZTy2RI1tSHQ"
+    },
+    {
+      "type": 0,
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "drawn": false,
+      "_id": "37JhEb6TEpXht3uk",
+      "text": "Right Leg",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!4XJI3399uC7utjdi.37JhEb6TEpXht3uk"
+    },
+    {
+      "type": 0,
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        6,
+        8
+      ],
+      "drawn": false,
+      "_id": "XG0scLcVx4LGJ1g6",
+      "text": "Torso",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!4XJI3399uC7utjdi.XG0scLcVx4LGJ1g6"
+    },
+    {
+      "type": 0,
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "drawn": false,
+      "_id": "aeCYE5CWPmcmdiC4",
+      "text": "Left Leg",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!4XJI3399uC7utjdi.aeCYE5CWPmcmdiC4"
+    },
+    {
+      "type": 0,
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        10,
+        11
+      ],
+      "drawn": false,
+      "_id": "4KeeZPhXvtWfieuO",
+      "text": "Left Arm",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!4XJI3399uC7utjdi.4KeeZPhXvtWfieuO"
+    },
+    {
+      "type": 0,
+      "documentCollection": "RollTable",
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_id": "HJnWI9AFvgTwol4v",
+      "text": "Head (Spend Plot Point for full damage)",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!4XJI3399uC7utjdi.HJnWI9AFvgTwol4v"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "folder": "MPxtO51U5LLuMLOY",
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700796917352,
+    "modifiedTime": 1700799400979,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "2d6",
+  "_key": "!tables!4XJI3399uC7utjdi"
+}

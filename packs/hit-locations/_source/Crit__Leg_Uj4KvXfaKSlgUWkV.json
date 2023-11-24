@@ -1,0 +1,57 @@
+{
+  "folder": "MPxtO51U5LLuMLOY",
+  "name": "Crit: Leg",
+  "_id": "Uj4KvXfaKSlgUWkV",
+  "img": "icons/svg/explosion.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "drawn": false,
+      "_id": "RnEjZBlsb3khxfUe",
+      "text": "Ammo explosion (Leg destroyed) OR Leg Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!Uj4KvXfaKSlgUWkV.RnEjZBlsb3khxfUe"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        2,
+        6
+      ],
+      "drawn": false,
+      "_id": "5MNTceCU7aJW79Rx",
+      "text": "-1 maximum Movement.",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!Uj4KvXfaKSlgUWkV.5MNTceCU7aJW79Rx"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797387221,
+    "modifiedTime": 1700799400979,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "",
+  "_key": "!tables!Uj4KvXfaKSlgUWkV"
+}

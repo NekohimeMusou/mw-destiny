@@ -1,0 +1,132 @@
+{
+  "folder": "sBg8b65P9p7cExzc",
+  "name": "Hit Location (Aerospace)",
+  "_id": "wekgDIDBbQJ08UHM",
+  "img": "icons/svg/dice-target.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "zGW8TQkZM12dNeYd",
+      "text": "Nose",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.zGW8TQkZM12dNeYd"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "1hbnbq10VzOKq9BP",
+      "text": "Aft",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.1hbnbq10VzOKq9BP"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        4,
+        6
+      ],
+      "drawn": false,
+      "_id": "EZbQHKsdVFuWbfQk",
+      "text": "Right Wing",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.EZbQHKsdVFuWbfQk"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "kGE41aaUV905ahSm",
+      "text": "Nose",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.kGE41aaUV905ahSm"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        8,
+        10
+      ],
+      "drawn": false,
+      "_id": "TMkCTBtYUetDHSJA",
+      "text": "Left Wing",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.TMkCTBtYUetDHSJA"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_id": "tjtDJDJSzNCsthj2",
+      "text": "Aft",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.tjtDJDJSzNCsthj2"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_id": "xIOJOQEzOo3lJITy",
+      "text": "Nose",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!wekgDIDBbQJ08UHM.xIOJOQEzOo3lJITy"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797769132,
+    "modifiedTime": 1700799402602,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "2d6",
+  "_key": "!tables!wekgDIDBbQJ08UHM"
+}

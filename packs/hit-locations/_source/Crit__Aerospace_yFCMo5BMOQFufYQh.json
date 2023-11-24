@@ -1,0 +1,162 @@
+{
+  "folder": "sBg8b65P9p7cExzc",
+  "name": "Crit: Aerospace",
+  "_id": "yFCMo5BMOQFufYQh",
+  "img": "icons/svg/explosion.svg",
+  "description": "",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "drawn": false,
+      "_id": "RGnzLlIbeiUw478S",
+      "text": "Nose Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.RGnzLlIbeiUw478S"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "drawn": false,
+      "_id": "CLFbOJPpTvHJjOuO",
+      "text": "Avionics damaged: -2 to Piloting tests",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.CLFbOJPpTvHJjOuO"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "drawn": false,
+      "_id": "pIf5v4gDXm48AtoZ",
+      "text": "Fuel tank hit: Roll 2d6; on 10+, fuel tank explodes and unit is destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.pIf5v4gDXm48AtoZ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        5,
+        6
+      ],
+      "drawn": false,
+      "_id": "svsFNbZTlXhVgpaQ",
+      "text": "Right Wing Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.svsFNbZTlXhVgpaQ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "drawn": false,
+      "_id": "2pqkbIP7tCSkH4gZ",
+      "text": "Engine shielding damaged: -1 max Movement, add +2 Heat tokens at end of next narration. 2nd hit: Engine + unit destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.2pqkbIP7tCSkH4gZ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        8,
+        9
+      ],
+      "drawn": false,
+      "_id": "cw9T3VcivLNXXJwo",
+      "text": "Left Wing Weapon Group destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.cw9T3VcivLNXXJwo"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        10,
+        10
+      ],
+      "drawn": false,
+      "_id": "XHyJsmJFxDGkqpmM",
+      "text": "Ammo explosion: Unit destroyed",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.XHyJsmJFxDGkqpmM"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        11,
+        11
+      ],
+      "drawn": false,
+      "_id": "CMhU2Isa6PpgNptQ",
+      "text": "Bomb: Carried bomb is rendered useless; does not explode",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.CMhU2Isa6PpgNptQ"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_id": "cYPBaC5Ph4TrJoOb",
+      "text": "Cockpit: Pilot takes 3 Physical damage",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!yFCMo5BMOQFufYQh.cYPBaC5Ph4TrJoOb"
+    }
+  ],
+  "replacement": true,
+  "displayRoll": true,
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797906446,
+    "modifiedTime": 1700799402602,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "formula": "2d6",
+  "_key": "!tables!yFCMo5BMOQFufYQh"
+}

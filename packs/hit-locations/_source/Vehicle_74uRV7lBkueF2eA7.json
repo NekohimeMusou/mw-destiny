@@ -1,0 +1,19 @@
+{
+  "name": "Vehicle",
+  "sorting": "a",
+  "folder": null,
+  "type": "RollTable",
+  "_id": "74uRV7lBkueF2eA7",
+  "sort": 100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.3",
+    "coreVersion": "11.315",
+    "createdTime": 1700797156793,
+    "modifiedTime": 1700799403787,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "_key": "!folders!74uRV7lBkueF2eA7"
+}
