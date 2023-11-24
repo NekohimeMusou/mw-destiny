@@ -4,7 +4,8 @@
             "main": "Main",
             "history": "History",
             "personality": "Personality",
-            "cues": "Cues"
+            "cues": "Cues",
+            "description": "Description"
         },
         "dialog": {
             "rollModifier": "Roll Modifier",
