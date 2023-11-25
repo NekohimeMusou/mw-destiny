@@ -1,0 +1,40 @@
+<div class="flexcol">
+  <ol class="items-list">
+    <li class="item flexrow items-header">
+      <div class="item-name flex2">{{localize "MWDESTINY.combat.weapon"}}</div>
+      <div class="item-damage">Dmg</div>
+      <div class="item-close-range">{{localize "MWDESTINY.combat.range.close"}}</div>
+      <div class="item-near-range">{{localize "MWDESTINY.combat.range.near"}}</div>
+      <div class="item-far-range">{{localize "MWDESTINY.combat.range.far"}}</div>
+      {{!-- <div class="item-controls"> --}}
+        {{!-- <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="weapon"> --}}
+          {{!-- <i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a> --}}
+      {{!-- </div> --}}
+    </li>
+    {{#each heavyWeapon as |item|}}
+    <li class="item flexrow" data-item-id="{{item._id}}">
+      <div class="item-name flex2">
+        <div class="item-image">
+          <a class="roll-test" data-roll-label="{{item.name}} Attack" data-attr="rfl" data-skill-name="{{item.system.weaponSkill.name}}"
+            data-skill-rank="{{item.system.weaponSkill.system.rank}}" data-damage-code="{{item.system.damageCode}}">
+            <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
+          </a>
+        </div>
+        <input type="text" class="item-field" data-dtype="String" data-field-name="name" value="{{item.name}}"/>
+      </div>
+      <div class="item-damage item-prop">
+        <input type="text" data-dtype="String" value="{{system.damageCode}}" disabled/>
+      </div>
+      {{#each system.range}}
+      <div class="item-prop flex-group-center">
+        <input type="text" value="{{label}}" disabled/>
+      </div>
+      {{/each}}
+      {{!-- <div class="item-controls"> --}}
+        {{!-- <a class="item-control item-edit" title="{{localize "MWDESTINY.sheet.editItem"}}"><i class="fas fa-edit"></i></a> --}}
+        {{!-- <a class="item-control item-delete" title="{{localize "MWDESTINY.sheet.deleteItem"}}"><i class="fas fa-trash"></i></a> --}}
+      {{!-- </div> --}}
+    </li>
+    {{/each}}
+  </ol>
+</div>

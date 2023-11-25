@@ -1,0 +1,6 @@
+<div class="flexcol flex-group-center">
+  <div class="resource-label flex0">{{localize "MWDESTINY.mechanic.equipment"}}</div>
+  {{#each system.equipment}}
+  <input class="flex0" type="text" name="system.equipment.{{@index}}" data-dtype="String" value="{{this}}"/>
+  {{/each}}
+</div>

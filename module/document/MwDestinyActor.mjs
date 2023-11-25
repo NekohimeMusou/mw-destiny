@@ -6,12 +6,12 @@ export default class MwDestinyActor extends Actor {
 
   /** @inheritdoc */
   getRollData() {
-    const data = foundry.utils.deepClone(super.getRollData());
+    const rollData = foundry.utils.deepClone(super.getRollData());
 
-    for (const [k, v] of Object.entries(data.attributes)) {
-      data[k] = v;
+    if (rollData.attributes) {
+      foundry.utils.mergeObject(rollData, rollData.attributes);
     }
 
-    return data;
+    return rollData;
   }
 }

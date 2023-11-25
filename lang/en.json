@@ -86,6 +86,31 @@
             "armor": "Armor",
             "armorType": "Armor Type",
             "armorEffect": "Armor Effect"
+        },
+        "hardware": {
+            "model": "Model",
+            "weightClass": "Weight Class",
+            "weightClasses": {
+                "light": "Light",
+                "medium": "Medium",
+                "heavy": "Heavy",
+                "assault": "Assault",
+                "superheavy": "Superheavy"
+            },
+            "tonnage": "Tonnage",
+            "movement": "Movement",
+            "jumpJets": "Jump Jets",
+            "heatDissipation": "Heat Dissipation",
+            "armorLocation": {
+                "head": "Head",
+                "torso": "Torso",
+                "armLeft": "Left Arm",
+                "armRight": "Right Arm",
+                "legLeft": "Left Leg",
+                "legRight": "Right Leg"
+            },
+            "armor": "Armor",
+            "structure": "Structure"
         }
     }
 }

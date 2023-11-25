@@ -1,0 +1,21 @@
+<div class="pane vital-stats grid grid-2col">
+
+  <div class="resource-label">{{localize "MWDESTINY.hardware.model"}}</div>
+  <input type="text" name="system.model" value="{{system.model}}" data-dtype="String"/>
+
+  <div class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</div>
+  <input type="text" name="system.weightClass" value="{{system.weightClass}}" data-dtype="String" disabled/>
+
+  <div class="resource-label">{{localize "MWDESTINY.hardware.tonnage"}}</div>
+  <input type="number" name="system.tonnage" value="{{system.tonnage}}" data-dtype="Number"/>
+
+  <div class="resource-label">{{localize "MWDESTINY.hardware.movement"}}</div>
+  <input type="number" name="system.movement" value="{{system.movement}}" data-dtype="Number"/>
+
+  <div class="resource-label">{{localize "MWDESTINY.hardware.jumpJets"}}?</div>
+  <input type="checkbox" name="system.hasJumpJets" {{checked system.hasJumpJets}}/>
+
+
+  <div class="resource-label">{{localize "MWDESTINY.hardware.heatDissipation"}}</div>
+  <input type="number" name="system.heatDissipation" value="{{system.heatDissipation}}" data-dtype="Number"/>
+</div>

@@ -43,14 +43,7 @@
           <input type="text" name="system.armor.effect" value="{{system.armor.effect}}" data-dtype="String"/>
         </div>
       </div>
-      <div class="resource flexcol flex-group-center">
-        <div class="resource-label">{{localize "MWDESTINY.bio.tags"}}</div>
-        <div class="flexrow">
-          {{#each system.tags}}
-          <input type="text" name="system.tags.{{@index}}" data-dtype="String" value="{{this}}"/>
-          {{/each}}
-        </div>
-      </div>
+      {{> "systems/mw-destiny/templates/parts/shared/tags-pane.hbs"}}
     </div>
   </div>
 </header>
