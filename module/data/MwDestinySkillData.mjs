@@ -18,6 +18,7 @@ export default class MwDestinySkillData extends foundry.abstract.DataModel {
       weaponSkillType: new fields.StringField({
         choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
       }),
+      isKnowledge: new fields.BooleanField(),
     };
   }
 

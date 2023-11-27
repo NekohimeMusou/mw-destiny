@@ -6,7 +6,7 @@
       <div class="item-link">{{localize "MWDESTINY.mechanic.link"}}</div>
       <div class="item-rank">{{localize "MWDESTINY.mechanic.rank"}}</div>
       <div class="item-controls">
-        <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="skill"><i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>
+        <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="skill" data-is-knowledge=true data-link="int"><i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>
       </div>
     </li>
     {{#each skill as |item|}}
@@ -15,15 +15,13 @@
         <div class="item-image">
           <a class="roll-test" data-roll-label="{{item.name}} Roll" data-attr="{{item.system.link}}" data-skill-name="{{item.name}}" data-skill-rank="{{item.system.rank}}"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></a>
         </div>
-        <input type="text" class="item-field" data-dtype="String" data-field-name="name" value="{{item.name}}"/>
+        <input type="text" class="item-field" data-dtype="String" data-field-name="name" value="{{item.name}}" {{#unless system.isKnowledge}}disabled{{/unless}}/>
       </div>
       <div class="item-total item-prop">
         <input type="number" value="{{system.total}}" disabled/>
       </div>
       <div class="item-link item-prop">
-        <select class="item-link-select">
-          {{selectOptions ../MWDESTINY.attributes selected=item.system.link}}
-        </select>
+        <input type="text" value="{{caps system.link}}" disabled/>
       </div>
       <div class="item-rank item-prop">
         <input class="item-field" type="number" data-dtype="Number" data-field-name="system.rank" placeholder="0" value="{{item.system.rank}}"/>
