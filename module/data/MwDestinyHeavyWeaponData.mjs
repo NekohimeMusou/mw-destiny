@@ -9,6 +9,8 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       damageType: new fields.StringField({
         choices: ["ballistic", "energy", "missile"],
       }),
+      missileDice: new fields.NumberField({integer: true}),
+      missileMaxDamage: new fields.NumberField({integer: true}),
       heat: new fields.NumberField({integer: true}),
       location: new fields.ArrayField(new fields.StringField()),
       range: new fields.ObjectField({
@@ -28,5 +30,9 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     const dmgInitial = this.damageType.at(0).toUpperCase();
 
     return `${dmg} (${dmgInitial})`;
+  }
+
+  get weaponSkillType() {
+    return "gunnery";
   }
 }

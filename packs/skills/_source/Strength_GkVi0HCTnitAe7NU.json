@@ -1,0 +1,19 @@
+{
+  "name": "Strength",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "GkVi0HCTnitAe7NU",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701112401739,
+    "modifiedTime": 1701114070655,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "_key": "!folders!GkVi0HCTnitAe7NU"
+}

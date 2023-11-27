@@ -76,7 +76,9 @@
                 "melee": "Melee Combat",
                 "projectile": "Projectile Weapons",
                 "smallArms": "Small Arms",
-                "gunnery": "Gunnery"
+                "gunnery": "Gunnery",
+                "support": "Support",
+                "artillery": "Artillery"
             },
             "damage": "Damage",
             "weapon": "Weapon",

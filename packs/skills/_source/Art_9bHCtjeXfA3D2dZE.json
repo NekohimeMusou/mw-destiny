@@ -1,0 +1,28 @@
+{
+  "folder": "aRMKHIgLqxqWiDv4",
+  "name": "Art",
+  "type": "skill",
+  "_id": "9bHCtjeXfA3D2dZE",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Drawing, sculpting, and forgery.</p>",
+    "link": "int",
+    "rank": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701113018844,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!9bHCtjeXfA3D2dZE"
+}

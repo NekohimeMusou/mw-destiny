@@ -37,6 +37,13 @@
             "system": "mw-destiny",
             "type": "RollTable",
             "path": "packs/hit-locations"
+        },
+        {
+            "name": "skills",
+            "label": "Skills",
+            "system": "mw-destiny",
+            "type": "Item",
+            "path": "packs/skills"
         }
     ]
 }

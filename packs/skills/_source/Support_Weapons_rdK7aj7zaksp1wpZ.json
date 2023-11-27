@@ -1,0 +1,29 @@
+{
+  "folder": "GkVi0HCTnitAe7NU",
+  "name": "Support Weapons",
+  "type": "skill",
+  "_id": "rdK7aj7zaksp1wpZ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Heavy weapons, anti-'Mech weaponry, exoskeleton/powered-armor weaponry.</p>",
+    "link": "str",
+    "rank": 0,
+    "weaponSkillType": "support"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701112930282,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!rdK7aj7zaksp1wpZ"
+}

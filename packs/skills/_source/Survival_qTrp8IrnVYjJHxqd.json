@@ -1,0 +1,28 @@
+{
+  "folder": "HAIBWgUemmPu61k7",
+  "name": "Survival",
+  "type": "skill",
+  "_id": "qTrp8IrnVYjJHxqd",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Wilderness survival, wilderness navigation, and fasting.</p>",
+    "link": "wil",
+    "rank": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701112886265,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!qTrp8IrnVYjJHxqd"
+}

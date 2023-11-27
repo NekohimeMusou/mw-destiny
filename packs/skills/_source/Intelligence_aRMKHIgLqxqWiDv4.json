@@ -1,0 +1,19 @@
+{
+  "name": "Intelligence",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "aRMKHIgLqxqWiDv4",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701112410258,
+    "modifiedTime": 1701114070655,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "_key": "!folders!aRMKHIgLqxqWiDv4"
+}

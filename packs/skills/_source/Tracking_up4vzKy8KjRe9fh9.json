@@ -1,0 +1,28 @@
+{
+  "folder": "aRMKHIgLqxqWiDv4",
+  "name": "Tracking",
+  "type": "skill",
+  "_id": "up4vzKy8KjRe9fh9",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Physical tracking, sensor tracking, and shadowing.</p>",
+    "link": "int",
+    "rank": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701113768488,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!up4vzKy8KjRe9fh9"
+}

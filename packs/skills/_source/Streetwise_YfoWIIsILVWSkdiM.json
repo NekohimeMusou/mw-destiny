@@ -1,0 +1,28 @@
+{
+  "folder": "6yIscmpeYz50hxIW",
+  "name": "Streetwise",
+  "type": "skill",
+  "_id": "YfoWIIsILVWSkdiM",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Criminal underworld dealings and avoiding dangerous missteps.</p>",
+    "link": "cha",
+    "rank": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701112823192,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!YfoWIIsILVWSkdiM"
+}

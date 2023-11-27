@@ -1,0 +1,28 @@
+{
+  "folder": "aRMKHIgLqxqWiDv4",
+  "name": "Tactics",
+  "type": "skill",
+  "_id": "tePEbtxle6o7CegN",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+    "link": "int",
+    "rank": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701113730474,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!tePEbtxle6o7CegN"
+}

@@ -1,0 +1,28 @@
+{
+  "folder": "HAIBWgUemmPu61k7",
+  "name": "Animal Handling",
+  "type": "skill",
+  "_id": "oZL9RU6zJu4JpUCu",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>Herding, riding, and training.</p>",
+    "link": "wil",
+    "rank": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.6",
+    "coreVersion": "11.315",
+    "createdTime": 1701112871080,
+    "modifiedTime": 1701114070679,
+    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "BOQEoGKmzXOyTdu8": 3
+  },
+  "_key": "!items!oZL9RU6zJu4JpUCu"
+}

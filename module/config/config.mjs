@@ -18,7 +18,7 @@ export const MWDESTINY = {
           .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
   ),
   weaponSkillTypes: Object.fromEntries(
-      ["melee", "projectile", "smallArms", "gunnery"]
+      ["melee", "projectile", "smallArms", "gunnery", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.combat.skills.${s}`]),
   ),
 };
