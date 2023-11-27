@@ -16,6 +16,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
             (r) => [r, {usable: false, mod: null}],
         )),
       }),
+      primary: new fields.BooleanField(),
     };
   }
 
