@@ -60,22 +60,45 @@
             "total": "Total",
             "rank": "Skill Rank"
         },
-        "combat": {
-            "damageTypes": {
+        "damageType": {
+            "personal": {
                 "none": "N/A",
                 "ballistic": "Ballistic",
                 "energy": "Energy"
             },
-            "damageType": "Damage Type",
-            "range": {
+            "heavy": {
+                "none": "N/A",
+                "ballistic": "Ballistic",
+                "energy": "Energy",
+                "missile": "Missile"
+            }
+        },
+        "range": {
+            "personal": {
                 "close": "Close",
                 "near": "Near",
                 "far": "Far",
+                "abbrev": {
+                    "close": "Close",
+                    "near": "Near",
+                    "far": "Far"
+                }
+            },
+            "heavy": {
                 "pointblank": "Pointblank",
                 "short": "Short",
                 "medium": "Medium",
-                "long": "Long"
-            },
+                "long": "Long",
+                "abbrev": {
+                    "pointblank": "PB",
+                    "short": "S",
+                    "medium": "M",
+                    "long": "L"
+                }
+            }
+        },
+        "combat": {
+            "damageType": "Damage Type",
             "skills": {
                 "melee": "Melee Combat",
                 "projectile": "Projectile Weapons",

@@ -3,9 +3,9 @@
     <li class="item flexrow items-header">
       <div class="item-name flex2">{{localize "MWDESTINY.combat.weapon"}}</div>
       <div class="item-damage">Dmg</div>
-      <div class="item-close-range">{{localize "MWDESTINY.combat.range.close"}}</div>
-      <div class="item-near-range">{{localize "MWDESTINY.combat.range.near"}}</div>
-      <div class="item-far-range">{{localize "MWDESTINY.combat.range.far"}}</div>
+      {{#each MWDESTINY.weaponRange.personal}}
+      <div class="item-{{@key}}-range">{{localize (concat "MWDESTINY.range.personal.abbrev." @key)}}</div>
+      {{/each}}
       <div class="item-controls">
         <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="weapon">
           <i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>

@@ -18,7 +18,7 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
       }),
       range: new fields.ObjectField({
         required: true,
-        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.personalWeaponRanges).map(
+        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.weaponRange.personal).map(
             (r) => [r, {usable: false, mod: 0}],
         )),
       }),

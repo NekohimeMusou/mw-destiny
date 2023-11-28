@@ -14,11 +14,14 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       heat: new fields.NumberField({integer: true}),
       location: new fields.ArrayField(new fields.StringField()),
       range: new fields.ObjectField({
-        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.heavyWeaponRanges).map(
+        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.weaponRange.heavy).map(
             (r) => [r, {usable: false, mod: null}],
         )),
       }),
       primary: new fields.BooleanField(),
+      weaponSkillType: new fields.StringField({
+        choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
+      }),
     };
   }
 

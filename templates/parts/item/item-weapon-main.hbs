@@ -14,7 +14,7 @@
     <div class="flexrow">
       <label class="resource-label">{{localize "MWDESTINY.combat.damageType"}}</label>
       <select name="system.damageType">
-        {{selectOptions MWDESTINY.damageTypes localize=true blank="N/A" selected=system.damageType}}
+        {{selectOptions MWDESTINY.damageTypes.personal localize=true blank="N/A" selected=system.damageType}}
       </select>
     </div>
     <div class="flexrow">
@@ -29,7 +29,7 @@
     {{#each system.range}}
     <div class="flexcol">
       <div class="flexrow">
-        <label class="resource-label">{{localize (lookup ../MWDESTINY.personalWeaponRanges @key)}}</label>
+        <label class="resource-label">{{localize (lookup ../MWDESTINY.weaponRange.personal @key)}}</label>
         <input type="checkbox" name="system.range.{{@key}}.usable" {{checked usable}}/>
       </div>
       <div class="flexrow">

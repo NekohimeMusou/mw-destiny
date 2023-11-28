@@ -10,17 +10,24 @@ export const MWDESTINY = {
     average: "3d6",
     hard: "4d6",
   },
-  damageTypes: Object.fromEntries(
-      ["ballistic", "energy"]
-          .map((s) => [s, `MWDESTINY.combat.damageTypes.${s}`])),
-  personalWeaponRanges: Object.fromEntries(
-      ["close", "near", "far"]
-          .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
-  ),
-  heavyWeaponRanges: Object.fromEntries(
-      ["pointblank", "short", "medium", "long"]
-          .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
-  ),
+  damageTypes: {
+    personal: Object.fromEntries(
+        ["ballistic", "energy"]
+            .map((s) => [s, `MWDESTINY.damageTypes.personal.${s}`])),
+    heavy: Object.fromEntries(
+        ["ballistic", "energy", "missile"]
+            .map((s) => [s, `MWDESTINY.damageTypes.heavy.${s}`])),
+  },
+  weaponRange: {
+    personal: Object.fromEntries(
+        ["close", "near", "far"]
+            .map((r) => [r, `MWDESTINY.range.personal.${r}`]),
+    ),
+    heavy: Object.fromEntries(
+        ["pointblank", "short", "medium", "long"]
+            .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
+    ),
+  },
   weaponSkillTypes: Object.fromEntries(
       ["melee", "projectile", "smallArms", "gunnery", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.combat.skills.${s}`]),
