@@ -70,7 +70,11 @@
             "range": {
                 "close": "Close",
                 "near": "Near",
-                "far": "Far"
+                "far": "Far",
+                "pointblank": "Pointblank",
+                "short": "Short",
+                "medium": "Medium",
+                "long": "Long"
             },
             "skills": {
                 "melee": "Melee Combat",

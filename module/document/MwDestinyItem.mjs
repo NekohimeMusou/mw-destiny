@@ -11,6 +11,7 @@ export default class MwDestinyItem extends Item {
   prepareDerivedData() {
     this._prepareSkillData();
     this._prepareWeaponData();
+    this._prepareHeavyWeaponData();
   }
 
   _prepareSkillData() {
@@ -20,6 +21,16 @@ export default class MwDestinyItem extends Item {
   _prepareWeaponData() {
     if (this.type !== "weapon") return;
 
+    this._prepareRangeData();
+  }
+
+  _prepareHeavyWeaponData() {
+    if (this.type !== "heavyWeapon") return;
+
+    this._prepareRangeData();
+  }
+
+  _prepareRangeData() {
     // DataModel getters?
     for (const r of Object.values(this.system.range)) {
       if (!r.usable) {

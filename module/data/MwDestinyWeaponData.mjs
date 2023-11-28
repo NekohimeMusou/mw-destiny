@@ -18,8 +18,8 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
       }),
       range: new fields.ObjectField({
         required: true,
-        initial: Object.fromEntries(["close", "near", "far"].map(
-            (r) => [r, {usable: false, mod: null}],
+        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.personalWeaponRanges).map(
+            (r) => [r, {usable: false, mod: 0}],
         )),
       }),
       weaponSkillType: new fields.StringField({
@@ -42,7 +42,7 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
 
   get damageCode() {
     const dmg = this.damage || 0;
-    const dmgInitial = this.damageType.at(0) || "";
+    const dmgInitial = this.damageType?.[0] || "";
 
     const typeString = dmgInitial ? ` (${dmgInitial})` : "";
 

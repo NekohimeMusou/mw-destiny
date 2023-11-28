@@ -14,7 +14,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       heat: new fields.NumberField({integer: true}),
       location: new fields.ArrayField(new fields.StringField()),
       range: new fields.ObjectField({
-        initial: Object.fromEntries(["pointblank", "short", "medium", "long"].map(
+        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.heavyWeaponRanges).map(
             (r) => [r, {usable: false, mod: null}],
         )),
       }),
@@ -27,7 +27,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
     if (!this.damageType) return `${dmg}`;
 
-    const dmgInitial = this.damageType.at(0).toUpperCase();
+    const dmgInitial = this.damageType?.[0].toUpperCase() || "";
 
     return `${dmg} (${dmgInitial})`;
   }

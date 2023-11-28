@@ -13,8 +13,12 @@ export const MWDESTINY = {
   damageTypes: Object.fromEntries(
       ["ballistic", "energy"]
           .map((s) => [s, `MWDESTINY.combat.damageTypes.${s}`])),
-  weaponRanges: Object.fromEntries(
+  personalWeaponRanges: Object.fromEntries(
       ["close", "near", "far"]
+          .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
+  ),
+  heavyWeaponRanges: Object.fromEntries(
+      ["pointblank", "short", "medium", "long"]
           .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
   ),
   weaponSkillTypes: Object.fromEntries(
