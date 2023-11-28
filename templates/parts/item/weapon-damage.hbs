@@ -1,0 +1,9 @@
+<div class="flexrow">
+  <label class="resource-label">{{localize "MWDESTINY.combat.damage"}}</label>
+  <input type="Number" name="system.baseDamage" value="{{system.baseDamage}}" data-dtype="Number"/>
+
+  <label class="resource-label">{{localize "MWDESTINY.combat.damageType"}}</label>
+  <select name="system.damageType">
+    {{selectOptions (lookup MWDESTINY.damageTypes system.weaponType) localize=true blank="N/A" selected=system.damageType}}
+  </select>
+</div>

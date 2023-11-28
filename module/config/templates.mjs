@@ -22,6 +22,7 @@ export default async function preloadHandlebarsTemplates() {
     "systems/mw-destiny/templates/parts/item/header.hbs",
     "systems/mw-destiny/templates/parts/item/item-weapon-main.hbs",
     "systems/mw-destiny/templates/parts/item/item-heavy-weapon-main.hbs",
+    "systems/mw-destiny/templates/parts/item/weapon-damage.hbs",
   ];
 
   return loadTemplates(templatePaths);

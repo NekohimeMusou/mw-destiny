@@ -38,4 +38,8 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
   get weaponSkillType() {
     return "gunnery";
   }
+
+  get weaponType() {
+    return "heavy";
+  }
 }
