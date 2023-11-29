@@ -5,14 +5,14 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
     return {
       description: new fields.HTMLField(),
-      damage: new fields.NumberField({integer: true}),
+      baseDamage: new fields.NumberField({integer: true}),
       damageType: new fields.StringField({
         choices: ["ballistic", "energy", "missile"],
       }),
       missileDice: new fields.NumberField({integer: true}),
       missileMaxDamage: new fields.NumberField({integer: true}),
       heat: new fields.NumberField({integer: true}),
-      location: new fields.ArrayField(new fields.StringField()),
+      location: new fields.StringField(),
       range: new fields.ObjectField({
         initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.weaponRange.heavy).map(
             (r) => [r, {usable: false, mod: null}],
@@ -25,14 +25,24 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     };
   }
 
+  get damageTypeCode() {
+    return this.damageType?.[0].toUpperCase() || "—";
+  }
+
   // TODO: Include missile damage
   get damageCode() {
-    const dmg = this.damage || 0;
+    const dmg = this.baseDamage || 0;
 
-    const dmgInitial = this.damageType?.[0].toUpperCase() || "";
+    if (this.damageType !== "missile") return `${dmg}`;
 
-    const typeString = dmgInitial ? ` (${dmgInitial})` : "";
+    const missileDice = "M".repeat(this.missileDice);
 
-    return `${dmg}${typeString}`;
+    const maxDmg = this.missileMaxDamage;
+
+    return `${dmg} + ${missileDice} (${game.i18n.localize("MWDESTINY.hardware.missileMax")} ${maxDmg})`;
+  }
+
+  get heatCode() {
+    return "H".repeat(this.heat);
   }
 }

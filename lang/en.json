@@ -108,6 +108,7 @@
                 "artillery": "Artillery"
             },
             "damage": "Damage",
+            "dmg": "Dmg",
             "weapon": "Weapon",
             "weaponSkill": "Weapon Skill",
             "stun": "Stun",
@@ -139,7 +140,13 @@
                 "legRight": "Right Leg"
             },
             "armor": "Armor",
-            "structure": "Structure"
+            "structure": "Structure",
+            "heat": "Heat",
+            "location": "Location",
+            "loc": "Loc",
+            "missileDice": "Missile Dice",
+            "missileMaxDamage": "Max Damage",
+            "missileMax": "Max"
         }
     }
 }

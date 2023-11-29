@@ -2,12 +2,11 @@
   <ol class="items-list">
     <li class="item flexrow items-header">
       <div class="item-name flex2">{{localize "MWDESTINY.combat.weapon"}}</div>
-      <div class="item-damage">Dmg</div>
-      {{!-- Max missile damage --}}
-      {{!-- Heat --}}
-      {{!-- Loc --}}
+      <div class="item-damage">{{localize "MWDESTINY.combat.dmg"}}</div>
+      <div class="item-heat">{{localize "MWDESTINY.hardware.heat"}}</div>
+      <div class="item-location">{{localize "MWDESTINY.hardware.loc"}}</div>
       {{#each MWDESTINY.weaponRange.heavy}}
-      <div class="item-{{@key}}-range">{{localize "MWDESTINY.range.heavy.abbrev.{{@key}}"}}</div>
+      <div class="item-{{@key}}-range">{{localize (concat "MWDESTINY.range.heavy.abbrev." @key)}}</div>
       {{/each}}
       <div class="item-controls">
         <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="heavyWeapon">
@@ -24,13 +23,17 @@
             <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
           </a>
         </div>
-        <input type="text" class="item-field" data-dtype="String" data-field-name="name" value="{{item.name}}"/>
+        <input type="text" value="{{item.name}}" disabled/>
       </div>
       <div class="item-damage item-prop">
-        <input type="text" data-dtype="String" value="{{system.damageCode}}" disabled/>
+        <input type="text" value="{{system.damageCode}}" disabled/>
       </div>
-      {{!-- Heat --}}
-      {{!-- Loc --}}
+      <div class="item-heat item-prop">
+        <input type="text" value="{{system.heatCode}}" disabled/>
+      </div>
+      <div class="item-location item-prop">
+        <input type="text" value="{{system.location}}" disabled/>
+      </div>
       {{#each system.range}}
       <div class="item-prop flex-group-center">
         <input type="text" value="{{label}}" disabled/>

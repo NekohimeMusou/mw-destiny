@@ -6,10 +6,10 @@
         "hardware": {}
     },
     "Item": {
-        "types": ["skill", "weapon", "heavy-weapon"],
+        "types": ["skill", "weapon", "heavyWeapon"],
         "htmlFields": ["description"],
         "skill": {},
         "weapon": {},
-        "heavy-weapon": {}
+        "heavyWeapon": {}
     }
 }

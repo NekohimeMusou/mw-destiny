@@ -32,7 +32,11 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     // Prepare active effects
     const effects = prepareActiveEffectCategories(this.actor.effects);
 
-    return mergeObject(context, {system, flags, MWDESTINY, rollData, effects});
+    const items = Object.fromEntries(Object.keys(CONFIG.Item.dataModels).map(
+        (i) => [i, this.actor.items.filter((k) => k.type === i)],
+    ));
+
+    return mergeObject(context, {system, flags, MWDESTINY, rollData, effects, ...items});
   }
 
   /** @override */
