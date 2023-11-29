@@ -146,7 +146,8 @@
             "loc": "Loc",
             "missileDice": "Missile Dice",
             "missileMaxDamage": "Max Damage",
-            "missileMax": "Max"
+            "missileMax": "Max",
+            "pilot": "Pilot"
         }
     }
 }

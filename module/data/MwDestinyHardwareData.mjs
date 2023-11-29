@@ -33,6 +33,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       equipment: new fields.ArrayField(new fields.StringField(), {
         initial: Array(6).fill(""),
       }),
+      pilotId: new fields.StringField(),
     };
   }
 
