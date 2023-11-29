@@ -22,9 +22,11 @@ export default class MwDestinySkillData extends foundry.abstract.DataModel {
     };
   }
 
-  get total() {
-    const linkedAttribute = this.parent.actor.system.attributes[this.link] || 0;
+  get linkValue() {
+    return this.parent.actor.system.attributes[this.link] || 0;
+  }
 
-    return this.rank + linkedAttribute;
+  get total() {
+    return this.rank + this.linkValue;
   }
 }

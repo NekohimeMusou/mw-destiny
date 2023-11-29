@@ -43,7 +43,7 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   get damageCode() {
     const dmg = this.damage || 0;
 
-    const dmgInitial = this.damageType?.[0].toUpperCase() || "";
+    const dmgInitial = this.damageType?.[0]?.toUpperCase() || "";
 
     const typeString = dmgInitial ? ` (${dmgInitial})` : "";
 

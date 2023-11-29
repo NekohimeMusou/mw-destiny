@@ -44,4 +44,16 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     if (this.tonnage <= 100) return "assault";
     return "superheavy";
   }
+
+  get pilot() {
+    return game.actors.get(this.pilotId);
+  }
+
+  get weaponSkill() {
+    return this.pilot?.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+  }
+
+  get pilotingSkill() {
+    return this.pilot?.items.getName("Piloting");
+  }
 }
