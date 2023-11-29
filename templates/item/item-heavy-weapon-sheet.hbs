@@ -2,14 +2,19 @@
   {{> "systems/mw-destiny/templates/parts/item/header.hbs"}}
 
   <nav class="sheet-tabs tabs" data-group="primary">
-    {{!-- Default tab is defined in pc-sheet.mjs --}}
     <a class="item" data-tab="main">{{localize "MWDESTINY.tabs.main"}}</a>
     <a class="item" data-tab="description">{{localize "MWDESTINY.tabs.description"}}</a>
   </nav>
 
   <section class="sheet-body">
     <div class="tab main" data-group="primary" data-tab="main">
-      {{> "systems/mw-destiny/templates/parts/item/item-heavy-weapon-main.hbs"}}
+      <div class="flexcol">
+        {{> "systems/mw-destiny/templates/parts/item/weapon-damage.hbs"}}
+
+        {{> "systems/mw-destiny/templates/parts/item/weapon-range.hbs"}}
+
+        {{> "systems/mw-destiny/templates/parts/item/weapon-skill.hbs"}}
+      </div>
     </div>
 
     <div class="tab description" data-group="primary" data-tab="description">

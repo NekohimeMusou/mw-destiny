@@ -1,9 +1,16 @@
-<div class="flexrow">
-  <label class="resource-label">{{localize "MWDESTINY.combat.damage"}}</label>
-  <input type="Number" name="system.baseDamage" value="{{system.baseDamage}}" data-dtype="Number"/>
+<div class="flexcol">
+  <div class="flexrow">
+    <label class="resource-label">{{localize "MWDESTINY.combat.damage"}}</label>
+    <input type="Number" name="system.baseDamage" value="{{system.baseDamage}}" data-dtype="Number"/>
 
-  <label class="resource-label">{{localize "MWDESTINY.combat.damageType"}}</label>
-  <select name="system.damageType">
-    {{selectOptions (lookup MWDESTINY.damageTypes system.weaponType) localize=true blank="N/A" selected=system.damageType}}
-  </select>
+    <label class="resource-label">{{localize "MWDESTINY.combat.damageType"}}</label>
+    <select name="system.damageType">
+      {{selectOptions (lookup MWDESTINY.damageTypes item.type) localize=true blank="N/A" selected=system.damageType}}
+    </select>
+  </div>
+  {{#if (eq item.type "weapon")}}
+  {{> "systems/mw-destiny/templates/parts/item/personal-weapon-data.hbs"}}
+  {{else}}
+  {{> "systems/mw-destiny/templates/parts/item/heavy-weapon-data.hbs"}}
+  {{/if}}
 </div>

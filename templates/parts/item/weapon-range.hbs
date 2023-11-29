@@ -1,0 +1,14 @@
+<div class="flexrow">
+  {{#each system.range}}
+  <div class="flexcol">
+    <div class="flexrow">
+      <label class="resource-label">{{localize (lookup ../MWDESTINY.weaponRange.personal @key)}}</label>
+      <input type="checkbox" name="system.range.{{@key}}.usable" {{checked usable}}/>
+    </div>
+    <div class="flexrow">
+      <label class="resource-label">{{localize "MWDESTINY.mechanic.mod"}}</label>
+      <input type="number" name="system.range.{{@key}}.mod" value="{{mod}}" placeholder="0" {{#unless usable}}disabled{{/unless}}/>
+    </div>
+  </div>
+  {{/each}}
+</div>

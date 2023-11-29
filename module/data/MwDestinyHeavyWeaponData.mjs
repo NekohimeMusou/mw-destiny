@@ -25,21 +25,14 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     };
   }
 
+  // TODO: Include missile damage
   get damageCode() {
     const dmg = this.damage || 0;
 
-    if (!this.damageType) return `${dmg}`;
-
     const dmgInitial = this.damageType?.[0].toUpperCase() || "";
 
-    return `${dmg} (${dmgInitial})`;
-  }
+    const typeString = dmgInitial ? ` (${dmgInitial})` : "";
 
-  get weaponSkillType() {
-    return "gunnery";
-  }
-
-  get weaponType() {
-    return "heavy";
+    return `${dmg}${typeString}`;
   }
 }

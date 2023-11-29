@@ -3,14 +3,14 @@
     <li class="item flexrow items-header">
       <div class="item-name flex2">{{localize "MWDESTINY.combat.weapon"}}</div>
       <div class="item-damage">Dmg</div>
-      {{!-- Type --}}
+      {{!-- Max missile damage --}}
       {{!-- Heat --}}
       {{!-- Loc --}}
       {{#each MWDESTINY.weaponRange.heavy}}
       <div class="item-{{@key}}-range">{{localize "MWDESTINY.range.heavy.abbrev.{{@key}}"}}</div>
       {{/each}}
       <div class="item-controls">
-        <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="weapon">
+        <a class="item-control item-create" title="{{localize "MWDESTINY.sheet.createItem"}}" data-type="heavyWeapon">
           <i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>
       </div>
     </li>
@@ -29,7 +29,6 @@
       <div class="item-damage item-prop">
         <input type="text" data-dtype="String" value="{{system.damageCode}}" disabled/>
       </div>
-      {{!-- Type --}}
       {{!-- Heat --}}
       {{!-- Loc --}}
       {{#each system.range}}

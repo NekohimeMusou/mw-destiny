@@ -11,10 +11,10 @@ export const MWDESTINY = {
     hard: "4d6",
   },
   damageTypes: {
-    personal: Object.fromEntries(
+    weapon: Object.fromEntries(
         ["ballistic", "energy"]
             .map((s) => [s, `MWDESTINY.damageType.personal.${s}`])),
-    heavy: Object.fromEntries(
+    heavyWeapon: Object.fromEntries(
         ["ballistic", "energy", "missile"]
             .map((s) => [s, `MWDESTINY.damageType.heavy.${s}`])),
   },
