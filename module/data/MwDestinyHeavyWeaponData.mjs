@@ -41,8 +41,4 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
     return `${dmg} + ${missileDice} (${game.i18n.localize("MWDESTINY.hardware.missileMax")} ${maxDmg})`;
   }
-
-  get heatCode() {
-    return "H".repeat(this.heat);
-  }
 }
