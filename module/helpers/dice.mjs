@@ -1,7 +1,13 @@
 export async function sheetRoll(rollData, {skill=null, attr=null, weapon=null}={}) {
   const attr1 = attr ?? skill.system.link;
 
-  const 
+  const dialogTitle = weapon ? `${weapon.name} Attack` : `${attr ? attr1.toUpperCase() : skill.name} Test`;
+
+  const stuff = await sheetRollDialog(dialogTitle);
+}
+
+async function sheetRollDialog(rollData) {
+  const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
 }
 
 export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null}={}) {
