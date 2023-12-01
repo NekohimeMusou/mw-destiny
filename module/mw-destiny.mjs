@@ -4,7 +4,6 @@ import MwDestinySkillData from "./data/MwDestinySkillData.mjs";
 import MwDestinyWeaponData from "./data/MwDestinyWeaponData.mjs";
 import MwDestinyHardwareData from "./data/MwDestinyHardwareData.mjs";
 import MwDestinyHeavyWeaponData from "./data/MwDestinyHeavyWeaponData.mjs";
-import MwDestinyGenericItemData from "./data/MwDestinyGenericItemData.mjs";
 // Import document classes
 import MwDestinyActor from "./document/MwDestinyActor.mjs";
 import MwDestinyItem from "./document/MwDestinyItem.mjs";
@@ -45,9 +44,6 @@ function registerDataModels() {
   CONFIG.Item.dataModels.skill = MwDestinySkillData;
   CONFIG.Item.dataModels.weapon = MwDestinyWeaponData;
   CONFIG.Item.dataModels.heavyWeapon = MwDestinyHeavyWeaponData;
-  CONFIG.Item.dataModels.cue = MwDestinyGenericItemData;
-  CONFIG.Item.dataModels.disposition = MwDestinyGenericItemData;
-  CONFIG.Item.dataModels.tag = MwDestinyGenericItemData;
 }
 
 function registerSheetApplications() {
