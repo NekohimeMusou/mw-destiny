@@ -1,3 +1,9 @@
+export async function sheetRoll(rollData, {skill=null, attr=null, weapon=null}={}) {
+  const attr1 = attr ?? skill.system.link;
+
+  const 
+}
+
 export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName});
 

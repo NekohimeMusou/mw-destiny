@@ -34,7 +34,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
         (i) => [i, this.actor.items.filter((k) => k.type === i)],
     ));
 
-    foundry.utils.mergeObject(context, {
+    mergeObject(context, {
       system, flags, rollData, effects, ...items, MWDESTINY,
     });
 
@@ -68,6 +68,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     html.find(".item-link-select").change((ev) => this.#onItemLinkSelect(ev));
     html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
     html.find(".roll-test").click((ev) => this.#onSheetRoll(ev));
+    html.find(".roll-weapon").click((ev) => this.#onWeaponRoll(ev));
   }
 
   /**
@@ -146,12 +147,12 @@ export default class MwDestinyPcSheet extends ActorSheet {
   async #onSheetRoll(event) {
     event.preventDefault();
     const element = event.currentTarget;
-    const dataset = element.dataset;
-    const skillRank = parseInt(dataset.skillRank || 0);
-    const attr = dataset.attr;
-    const skillName = dataset.skillName;
-    const damageCode = dataset.damageCode;
+    const itemId = element.closest(".item")?.dataset?.itemId;
+    const skill = this.actor.items.get(itemId);
+    const attr = element.dataset.attr;
 
-    return await rollTest(this.actor.getRollData(), dataset.rollLabel, {attr, skillRank, skillName, damageCode});
+    return await rollTest(this.actor.getRollData(), element.dataset.rollLabel, {attr, skill});
   }
+
+  async #onWeaponRoll(event) {}
 }

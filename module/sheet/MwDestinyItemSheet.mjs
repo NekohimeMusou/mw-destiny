@@ -28,7 +28,7 @@ export default class MwDestinyItemSheet extends ItemSheet {
     const effects = prepareActiveEffectCategories(this.item.effects);
     const MWDESTINY = CONFIG.MWDESTINY;
 
-    foundry.utils.mergeObject(context, {
+    mergeObject(context, {
       system, flags, rollData, effects, MWDESTINY,
     });
 
