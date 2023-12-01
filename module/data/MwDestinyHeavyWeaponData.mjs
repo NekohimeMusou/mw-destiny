@@ -41,4 +41,9 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
     return `${dmg} + ${missileDice} (${game.i18n.localize("MWDESTINY.hardware.missileMax")} ${maxDmg})`;
   }
+
+  get weaponSkill() {
+    return this.parent?.actor.system.pilot?.items
+        .find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+  }
 }
