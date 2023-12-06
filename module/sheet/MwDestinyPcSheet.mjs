@@ -146,21 +146,19 @@ export default class MwDestinyPcSheet extends ActorSheet {
   async #onSheetRoll(event) {
     event.preventDefault();
     const element = event.currentTarget;
-    const itemId = element.closest(".item")?.dataset?.itemId;
-    const attr = element.dataset.attr;
 
-    const data = {};
+    const data = {attr1: element.dataset.attr};
+    const itemId = element.dataset.itemId;
 
-    if (attr) {
-      data.attr1 = attr;
-    } else {
+    if (itemId) {
       const item = this.actor.items.get(itemId);
-
       if (item.type === "weapon" || item.type === "heavyWeapon") {
         data.weapon = item;
         data.skill = item.system.weaponSkill;
-      } else {
+        data.attr1 = data.skill.system.link;
+      } else if (item.type === "skill") {
         data.skill = item;
+        data.attr1 = data.skill.system.link;
       }
     }
 

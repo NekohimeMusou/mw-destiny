@@ -2,20 +2,18 @@
   <div class="flexrow">
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}}{{#unless skillRank}} 1{{/unless}}</div>
-      <select disabled>
-        {{selectOptions MWDESTINY.attributes selected=attr}}
-      </select>
+      <input type="text" value="{{attr1}}" disabled/>
     </div>
     {{#if skillName}}
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.skills.rank"}}</div>
-      <input type="Number" name="skill-rank" value="{{skillRank}}" disabled/>
+      <input type="number" value="{{skillRank}}" disabled/>
     </div>
     {{else}}
     <div class="flexcol">
       <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}} 2</div>
       <select name="attr2">
-        {{selectOptions MWDESTINY.attributes selected=attr}}
+        {{selectOptions MWDESTINY.attributes selected=attr1}}
       </select>
     </div>
     {{/if}}
@@ -25,6 +23,6 @@
   </select>
   <div class="flexrow">
     <label>{{localize "MWDESTINY.dialog.rollModifier"}}:</label>
-    <input type="number" placeholder="0" name="mod" data-dtype="Number"/>
+    <input type="number" placeholder="0" name="mod" data-dtype="Number" autofocus/>
   </div>
 </form>

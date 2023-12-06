@@ -1,16 +1,65 @@
-export async function sheetRoll(rollData, {skill=null, attr=null, weapon=null}={}) {
-  const attr1 = attr ?? skill.system.link;
+export async function sheetRoll(rollData, {attr: attr1=null, skill=null, weapon=null}={}) {
+  if (game.user.targets.size > 1) {
+    ui.notifications.warn("Please only target one thing.");
+    return;
+  }
 
-  const dialogTitle = weapon ? `${weapon.name} Attack` : `${attr ? attr1.toUpperCase() : skill.name} Test`;
+  const target = game.user.targets.first();
 
-  const stuff = await sheetRollDialog(dialogTitle, {attr1, skill, weapon});
+  const dialogLabel = weapon?.name || skill?.name || attr1.toUpperCase();
+  const dialogTitle = `${dialogLabel} ${weapon ? "Attack" : "Test"}`;
+
+  const {difficulty, mod, term2, attr2, cancelled} = await showTestDialog(dialogTitle, {attr1, skill, target});
+
+  if (cancelled) return;
+
+  const template = "systems/mw-destiny/templates/chat/roll-result.hbs";
+
+  // If we got a 2nd attribute, use that for the card title; otherwise use the same one as the dialog
+  const cardTitle = attr2 ? `${attr1.toUpperCase()} + ${attr2.toUpperCase()} Test` : dialogTitle;
+
+  // PC Roll Name (e.g. "RFL + Melee Combat")
+  // RENDER PC ROLL
+  // Opposition Roll Name (e.g. "Difficulty" or "OpponentName: RFL + RFL")
+  // RENDER OPPOSITION ROLL (button, replace when clicked?)
+  // Success/Failure
+  // Damage
 }
 
-async function sheetRollDialog(rollData, {attr1=null, skill=null, weapon=null}={}) {
+async function showTestDialog(title, {attr1=null, skill=null, target=null}={}) {
+  async function _processRollOptions(form) {
+    const attr2 = form.attr2?.value;
+    const term2 = attr2 ? `@${attr2}` : parseInt(skillRank || 0);
+    return {
+      mod: parseInt(form.mod.value) || 0,
+      difficulty: form.difficulty.value,
+      attr2,
+      term2,
+    };
+  }
+
+  const skillName = skill?.name;
+  const skillRank = skill?.system?.rank;
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
 
-  const skillRank = skill?.system.rank;
-  const skillName = skill?.name;
+  const content = await renderTemplate(template, {attr1, skillName, skillRank, target});
+
+  return new Promise((resolve) => new Dialog({
+    title,
+    content,
+    buttons: {
+      roll: {
+        label: "Roll",
+        callback: (html) => resolve(_processRollOptions(html[0].querySelector("form"))),
+      },
+      cancel: {
+        label: "Cancel",
+        callback: () => resolve({cancelled: true}),
+      },
+    },
+    default: "roll",
+    close: () => resolve({cancelled: true}),
+  }, null).render(true));
 }
 
 export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null}={}) {
@@ -63,39 +112,3 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
   return await ChatMessage.create(chatData);
 }
 
-// Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
-async function showRollDialog(title, {attr=null, skillRank=null, skillName=null}={}) {
-  async function _processRollOptions(form) {
-    // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
-    // If skillRank > 0, it's a skill roll: return the skill ranks as an int
-    // If attr2 exists, it's an attribute roll; return "@[attr]"
-    const attr2 = form.attr2?.value;
-    const term2 = attr2 ? `@${attr2}` : `${parseInt(skillRank || 0)}`;
-    return {
-      mod: parseInt(form.mod.value || 0),
-      difficulty: form.difficulty.value,
-      term2,
-      attr2,
-    };
-  }
-
-  const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
-  const content = await renderTemplate(template, {title, attr, skillRank, skillName, MWDESTINY: CONFIG.MWDESTINY});
-
-  return new Promise((resolve) => new Dialog({
-    title,
-    content,
-    buttons: {
-      roll: {
-        label: "Roll",
-        callback: (html) => resolve(_processRollOptions(html[0].querySelector("form"))),
-      },
-      cancel: {
-        label: "Cancel",
-        callback: () => resolve({cancelled: true}),
-      },
-    },
-    default: "roll",
-    close: () => resolve({cancelled: true}),
-  }, null).render(true));
-}

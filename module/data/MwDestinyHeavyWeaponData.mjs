@@ -11,6 +11,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       }),
       missileDice: new fields.NumberField({integer: true}),
       missileMaxDamage: new fields.NumberField({integer: true}),
+      cluster: new fields.NumberField({integer: true}),
       heat: new fields.NumberField({integer: true}),
       location: new fields.StringField(),
       range: new fields.ObjectField({
@@ -25,11 +26,15 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     };
   }
 
+  get damage() {
+    return this.baseDamage;
+  }
+
   get damageTypeCode() {
     return this.damageType?.[0].toUpperCase() || "—";
   }
 
-  // TODO: Include missile damage
+  // TODO: Fix to include cluster damage
   get damageCode() {
     const dmg = this.baseDamage || 0;
 
