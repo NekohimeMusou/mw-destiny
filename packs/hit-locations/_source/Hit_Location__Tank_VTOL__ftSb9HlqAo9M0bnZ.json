@@ -14,7 +14,7 @@
       ],
       "drawn": false,
       "_id": "8wtd6C9kjs6L0V0Q",
-      "text": "Front (Crit)",
+      "text": "Front (Crit on 8+)",
       "documentId": null,
       "flags": {},
       "img": "icons/svg/d20-black.svg",
@@ -100,7 +100,7 @@
       "weight": 1,
       "range": [
         10,
-        12
+        11
       ],
       "drawn": false,
       "_id": "2QfHODKdNvvXkiDt",
@@ -109,6 +109,21 @@
       "flags": {},
       "img": "icons/svg/d20-black.svg",
       "_key": "!tables.results!ftSb9HlqAo9M0bnZ.2QfHODKdNvvXkiDt"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        12,
+        12
+      ],
+      "drawn": false,
+      "_id": "RrpElDDHpeSa4wK3",
+      "text": "Turret/Rotors (Crit on 8+)",
+      "documentId": null,
+      "flags": {},
+      "img": "icons/svg/d20-black.svg",
+      "_key": "!tables.results!ftSb9HlqAo9M0bnZ.RrpElDDHpeSa4wK3"
     }
   ],
   "replacement": true,
@@ -121,10 +136,10 @@
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
-    "systemVersion": "0.1.3",
+    "systemVersion": "0.1.9",
     "coreVersion": "11.315",
     "createdTime": 1700797686342,
-    "modifiedTime": 1700799403767,
+    "modifiedTime": 1701934182019,
     "lastModifiedBy": "BOQEoGKmzXOyTdu8"
   },
   "formula": "2d6",
