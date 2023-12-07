@@ -63,7 +63,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         initial: Array(5).fill(""),
       }),
       cues: new fields.ArrayField(new fields.StringField(), {
-        initial: Array(18).fill(""),
+        initial: Array(20).fill(""),
       }),
       dispositions: new fields.ArrayField(new fields.StringField(), {
         initial: Array(4).fill(""),
