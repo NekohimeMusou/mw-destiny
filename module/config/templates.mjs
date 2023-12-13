@@ -11,6 +11,7 @@ export default async function preloadHandlebarsTemplates() {
     "systems/mw-destiny/templates/parts/pc/cues-pane.hbs",
     "systems/mw-destiny/templates/parts/pc/dispositions-pane.hbs",
     "systems/mw-destiny/templates/parts/pc/life-modules-pane.hbs",
+    "systems/mw-destiny/templates/parts/pc/traits-pane.hbs",
     "systems/mw-destiny/templates/parts/hardware/header.hbs",
     "systems/mw-destiny/templates/parts/hardware/tab-main.hbs",
     "systems/mw-destiny/templates/parts/hardware/armor-pane.hbs",

@@ -60,16 +60,20 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       }),
       attributes,
       tags: new fields.ArrayField(new fields.StringField(), {
+        required: true,
         initial: Array(5).fill(""),
       }),
       cues: new fields.ArrayField(new fields.StringField(), {
+        required: true,
         initial: Array(20).fill(""),
       }),
       dispositions: new fields.ArrayField(new fields.StringField(), {
+        required: true,
         initial: Array(4).fill(""),
       }),
-      traits: new fields.ArrayField(new fields.ObjectField(), {
-        initial: Array(2).fill({name: "", description: ""}),
+      traits: new fields.ArrayField(new fields.StringField(), {
+        required: true,
+        initial: Array(2).fill(""),
       }),
       armor: new fields.SchemaField({
         hp: new fields.SchemaField({

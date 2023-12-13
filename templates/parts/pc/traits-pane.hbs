@@ -1,0 +1,6 @@
+<div class="traits-pane flexcol flex-group-center">
+  <div class="resource-label">{{localize "MWDESTINY.bio.traits"}}</div>
+  {{#each system.traits}}
+  <input type="text" name="system.traits.{{@index}}" data-dtype="String" value="{{this}}"/>
+  {{/each}}
+</div>

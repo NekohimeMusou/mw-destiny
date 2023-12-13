@@ -23,7 +23,8 @@
             "dispositions": "Dispositions",
             "cues": "Cues",
             "lifeModules": "Life Modules",
-            "trait": "Trait"
+            "trait": "Trait",
+            "traits": "Traits"
         },
         "lifeModules": {
             "faction": "Faction",
