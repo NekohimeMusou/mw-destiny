@@ -4,7 +4,7 @@
   <input type="text" name="system.model" value="{{system.model}}" data-dtype="String"/>
 
   <div class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</div>
-  <input type="text" name="system.weightClass" value="{{system.weightClass}}" data-dtype="String" disabled/>
+  <input type="text" name="system.weightClass" value="{{localize (concat "MWDESTINY.hardware.weightClasses." system.weightClass)}}" data-dtype="String" disabled/>
 
   <div class="resource-label">{{localize "MWDESTINY.hardware.tonnage"}}</div>
   <input type="number" name="system.tonnage" value="{{system.tonnage}}" data-dtype="Number"/>

@@ -1,6 +1,17 @@
-<div class="flexrow">
-  <label class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
-  <select name="system.pilotId">
-    {{selectOptions ownedPcs nameAttr="id" labelAttr="name" blank="———" selected=system.pilotId}}
-  </select>
+<div class="flexcol">
+  <div class="flexrow">
+    <label class="resource-label">{{localize "MWDESTINY.hardware.type"}}</label>
+    <select name="system.hardwareType">
+      {{selectOptions MWDESTINY.hardwareTypes selected=system.hardwareType localize=true}}
+    </select>
+    <label class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
+    <select name="system.pilotId">
+      {{selectOptions ownedPcs nameAttr="id" labelAttr="name" blank="———" selected=system.pilotId}}
+    </select>
+  </div>
+  <button type="button" class="roll-test" data-roll-label="{{system.pilotingSkill.name}} {{localize "MWDESTINY.mechanic.test"}}"
+    data-attr="{{system.pilotingSkill.system.link}}" data-skill-name="{{system.pilotingSkill.name}}"
+    data-skill-rank="{{system.pilotingSkill.system.rank}}">
+    {{localize "MWDESTINY.hardware.pilotingTestBtn"}}
+  </button>
 </div>

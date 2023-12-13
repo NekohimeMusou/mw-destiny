@@ -20,16 +20,24 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       }),
       primary: new fields.BooleanField(),
       weaponSkillType: new fields.StringField({
+        required: true,
         choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
+        initial: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes)[0],
       }),
     };
+  }
+
+  // TODO: roll for missile damage
+
+  get weaponSkill() {
+    const pilot = this.parent.actor.system.pilot;
+    return pilot.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
   }
 
   get damageTypeCode() {
     return this.damageType?.[0].toUpperCase() || "—";
   }
 
-  // TODO: Include missile damage
   get damageCode() {
     const dmg = this.baseDamage || 0;
 

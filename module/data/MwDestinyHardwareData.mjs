@@ -20,6 +20,10 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
 
     return {
       description: new fields.HTMLField(),
+      hardwareType: new fields.StringField({
+        choices: Object.keys(CONFIG.MWDESTINY.hardwareTypes),
+        initial: Object.keys(CONFIG.MWDESTINY.hardwareTypes)[0],
+      }),
       model: new fields.StringField(),
       tonnage: new fields.NumberField({integer: true}),
       movement: new fields.NumberField({integer: true}),
@@ -34,9 +38,6 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
         initial: Array(6).fill(""),
       }),
       pilotId: new fields.StringField(),
-      pilotingSkillType: new fields.StringField({
-        choices: Object.keys(CONFIG.MWDESTINY.pilotingSkillTypes),
-      }),
     };
   }
 
@@ -52,11 +53,12 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return game.actors.get(this.pilotId);
   }
 
-  get weaponSkill() {
-    return this.pilot?.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+  get pilotingSkillType() {
+    if (this.hardwareType === "vtol" || this.hardwareType === "vehicle") return "combatVehicle";
+    return this.hardwareType;
   }
 
   get pilotingSkill() {
-    return this.pilot?.items.getName("Piloting");
+    return this.pilot?.items.find((i) => i.type === "skill" && i.system.pilotingSkillType === this.pilotingSkillType);
   }
 }

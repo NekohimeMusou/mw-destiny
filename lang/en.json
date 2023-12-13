@@ -22,7 +22,8 @@
             "tags": "Tags",
             "dispositions": "Dispositions",
             "cues": "Cues",
-            "lifeModules": "Life Modules"
+            "lifeModules": "Life Modules",
+            "trait": "Trait"
         },
         "lifeModules": {
             "faction": "Faction",
@@ -46,7 +47,8 @@
             "link": "Link",
             "rank": "Rank",
             "mod": "Mod",
-            "equipment": "Equipment"
+            "equipment": "Equipment",
+            "test": "Test"
         },
         "sheet": {
             "locked": "Locked",
@@ -64,6 +66,9 @@
                 "projectile": "Projectile Weapons",
                 "smallArms": "Small Arms",
                 "gunnery": "Gunnery",
+                "gunneryMech": "Gunnery / 'Mech",
+                "gunneryAero": "Gunnery / Aerospace",
+                "gunneryVehicle": "Gunnery / Combat Vehicle",
                 "support": "Support",
                 "artillery": "Artillery"
             },
@@ -123,6 +128,14 @@
             "armorEffect": "Armor Effect"
         },
         "hardware": {
+            "type": "Type",
+            "types": {
+                "mech": "BattleMech",
+                "aerospace": "Aerospace Fighter",
+                "combatVehicle": "Combat Vehicle (Turreted)",
+                "vtol": "VTOL",
+                "vehicle": "Vehicle"
+            },
             "model": "Model",
             "weightClass": "Weight Class",
             "weightClasses": {
@@ -152,7 +165,8 @@
             "missileDice": "Missile Dice",
             "missileMaxDamage": "Max Damage",
             "missileMax": "Max",
-            "pilot": "Pilot"
+            "pilot": "Pilot",
+            "pilotingTestBtn": "Roll Piloting Test"
         }
     }
 }

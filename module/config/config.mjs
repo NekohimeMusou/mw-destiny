@@ -29,11 +29,15 @@ export const MWDESTINY = {
     ),
   },
   weaponSkillTypes: Object.fromEntries(
-      ["melee", "projectile", "smallArms", "gunnery", "support", "artillery"]
+      ["melee", "projectile", "smallArms", "gunnery", "gunneryMech", "gunneryAero", "gunneryVehicle", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
   ),
   pilotingSkillTypes: Object.fromEntries(
-      ["mech", "aerospace", "vehicle"]
+      ["mech", "aerospace", "combatVehicle"]
           .map((s) => [s, `MWDESTINY.skills.piloting.${s}`]),
+  ),
+  hardwareTypes: Object.fromEntries(
+      ["mech", "aerospace", "combatVehicle", "vtol", "vehicle"]
+          .map((s) => [s, `MWDESTINY.hardware.types.${s}`]),
   ),
 };

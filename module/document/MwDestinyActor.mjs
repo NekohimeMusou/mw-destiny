@@ -8,8 +8,9 @@ export default class MwDestinyActor extends Actor {
   getRollData() {
     const rollData = foundry.utils.deepClone(super.getRollData());
 
-    if (rollData.attributes) {
-      foundry.utils.mergeObject(rollData, rollData.attributes);
+    const attributes = rollData.attributes || this.system?.pilot.system.attributes;
+    if (attributes) {
+      foundry.utils.mergeObject(rollData, attributes);
     }
 
     return rollData;

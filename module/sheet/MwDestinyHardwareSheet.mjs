@@ -1,5 +1,5 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/active-effects.mjs";
-// import {rollTest} from "../helpers/dice.mjs";
+import {rollTest} from "../helpers/dice.mjs";
 
 export default class MwDestinyHardwareSheet extends ActorSheet {
   /** @override */
@@ -17,11 +17,9 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
   getData() {
     const context = super.getData();
 
-    const actorData = this.actor.toObject(false);
-
     // Add the actor's data to context.data for easier access, as well as flags
-    const system = actorData.system;
-    const flags = actorData.flags;
+    const system = this.actor.system;
+    const flags = this.actor.flags;
 
     // Add global config data
     const MWDESTINY = CONFIG.MWDESTINY;
@@ -63,6 +61,8 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     // Active Effect management
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
+
+    html.find(".roll-test").click((ev) => this.#onSheetRoll(ev));
   }
 
   /**
@@ -108,5 +108,17 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     item.delete();
     li.slideUp(200, () => this.render(false));
+  }
+
+  async #onSheetRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const dataset = element.dataset;
+    const skillRank = parseInt(dataset.skillRank || 0);
+    const attr = dataset.attr;
+    const skillName = dataset.skillName;
+    const damageCode = dataset.damageCode;
+
+    return await rollTest(this.actor.getRollData(), dataset.rollLabel, {attr, skillRank, skillName, damageCode});
   }
 }
