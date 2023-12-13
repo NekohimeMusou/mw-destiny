@@ -1,0 +1,32 @@
+{
+  "folder": "VJb81QHhBezY0rx7",
+  "name": "Gunnery / Combat Vehicle",
+  "type": "skill",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+    "link": "rfl",
+    "rank": 0,
+    "isKnowledge": false,
+    "weaponSkillType": "gunneryVehicle"
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.1.9",
+    "coreVersion": "11.315",
+    "createdTime": 1701113794329,
+    "modifiedTime": 1702439369800,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_id": "KZt7xmSbvnkUtUQ6",
+  "sort": 0,
+  "_key": "!items!KZt7xmSbvnkUtUQ6"
+}

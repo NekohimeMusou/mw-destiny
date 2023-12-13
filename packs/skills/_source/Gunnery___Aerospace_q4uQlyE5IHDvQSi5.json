@@ -1,28 +1,32 @@
 {
   "folder": "VJb81QHhBezY0rx7",
-  "name": "Escape Artist",
+  "name": "Gunnery / Aerospace",
   "type": "skill",
-  "_id": "G7kmOiECZEMF5LTF",
   "img": "icons/svg/item-bag.svg",
   "system": {
-    "description": "<p>Escaping bindings, contortionism, and shaking a tail.</p>",
+    "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
     "link": "rfl",
-    "rank": 0
+    "rank": 0,
+    "isKnowledge": false,
+    "weaponSkillType": "gunneryAero"
   },
   "effects": [],
-  "flags": {},
+  "flags": {
+    "core": {}
+  },
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.1.9",
     "coreVersion": "11.315",
     "createdTime": 1701113794329,
-    "modifiedTime": 1702438893573,
+    "modifiedTime": 1702439366900,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "sort": 200000,
   "ownership": {
     "default": 0,
-    "BOQEoGKmzXOyTdu8": 3
+    "go8IVTazJxmHGjsW": 3
   },
-  "_key": "!items!G7kmOiECZEMF5LTF"
+  "_id": "q4uQlyE5IHDvQSi5",
+  "sort": 0,
+  "_key": "!items!q4uQlyE5IHDvQSi5"
 }

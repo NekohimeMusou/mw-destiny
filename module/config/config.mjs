@@ -29,7 +29,7 @@ export const MWDESTINY = {
     ),
   },
   weaponSkillTypes: Object.fromEntries(
-      ["melee", "projectile", "smallArms", "gunnery", "gunneryMech", "gunneryAero", "gunneryVehicle", "support", "artillery"]
+      ["melee", "projectile", "smallArms", "gunneryMech", "gunneryAero", "gunneryVehicle", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
   ),
   pilotingSkillTypes: Object.fromEntries(
