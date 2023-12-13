@@ -75,12 +75,11 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
             integer: true,
           }),
           max: new fields.NumberField({
-            initial: 1,
+            initial: 0,
             integer: true,
-            positive: true,
           }),
           value: new fields.NumberField({
-            initial: 1,
+            initial: 0,
             integer: true,
           }),
         }),
