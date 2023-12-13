@@ -34,6 +34,9 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
         initial: Array(6).fill(""),
       }),
       pilotId: new fields.StringField(),
+      pilotingSkillType: new fields.StringField({
+        choices: Object.keys(CONFIG.MWDESTINY.pilotingSkillTypes),
+      }),
     };
   }
 

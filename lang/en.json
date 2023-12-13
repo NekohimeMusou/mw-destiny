@@ -58,7 +58,20 @@
         "skills": {
             "skill": "Skill",
             "total": "Total",
-            "rank": "Skill Rank"
+            "rank": "Skill Rank",
+            "weapon": {
+                "melee": "Melee Combat",
+                "projectile": "Projectile Weapons",
+                "smallArms": "Small Arms",
+                "gunnery": "Gunnery",
+                "support": "Support",
+                "artillery": "Artillery"
+            },
+            "piloting": {
+                "mech": "BattleMech",
+                "aerospace": "Aerospace",
+                "vehicle": "Combat Vehicle"
+            }
         },
         "damageType": {
             "personal": {
@@ -99,14 +112,6 @@
         },
         "combat": {
             "damageType": "Damage Type",
-            "skills": {
-                "melee": "Melee Combat",
-                "projectile": "Projectile Weapons",
-                "smallArms": "Small Arms",
-                "gunnery": "Gunnery",
-                "support": "Support",
-                "artillery": "Artillery"
-            },
             "damage": "Damage",
             "dmg": "Dmg",
             "weapon": "Weapon",
