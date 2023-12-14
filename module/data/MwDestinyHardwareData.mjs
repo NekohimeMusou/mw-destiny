@@ -7,14 +7,14 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
         ["head", "torso", "armLeft", "armRight", "legLeft", "legRight"]
             .map((p) => [p, new fields.SchemaField({
               armor: new fields.SchemaField({
-                min: new fields.NumberField({min: 0, integer: true}),
-                max: new fields.NumberField({min: 1, integer: true}),
-                value: new fields.NumberField({min: 0, integer: true}),
+                min: new fields.NumberField({integer: true, initial: 0, readonly: true}),
+                max: new fields.NumberField({positive: true, integer: true}),
+                value: new fields.NumberField({integer: true}),
               }),
               structure: new fields.SchemaField({
-                min: new fields.NumberField({min: 0, integer: true}),
-                max: new fields.NumberField({min: 1, integer: true}),
-                value: new fields.NumberField({min: 0, integer: true}),
+                min: new fields.NumberField({integer: true, initial: 0, readonly: true}),
+                max: new fields.NumberField({positive: true, integer: true}),
+                value: new fields.NumberField({integer: true}),
               }),
             })])));
 

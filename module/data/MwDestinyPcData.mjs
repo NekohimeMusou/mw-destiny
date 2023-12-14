@@ -26,35 +26,29 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       )),
       physDamage: new fields.SchemaField({
         min: new fields.NumberField({
-          required: true,
+          readonly: true,
           initial: 0,
           integer: true,
         }),
         max: new fields.NumberField({
-          required: true,
-          initial: 1,
           integer: true,
           positive: true,
         }),
         value: new fields.NumberField({
-          required: true,
-          initial: 1,
+          integer: true,
         }),
       }),
       fatigueDamage: new fields.SchemaField({
         min: new fields.NumberField({
-          required: true,
+          readonly: true,
           initial: 0,
           integer: true,
         }),
         max: new fields.NumberField({
-          required: true,
-          initial: 1,
+          positive: true,
           integer: true,
         }),
         value: new fields.NumberField({
-          required: true,
-          initial: 1,
           integer: true,
         }),
       }),

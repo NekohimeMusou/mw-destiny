@@ -180,7 +180,8 @@
             "missileMaxDamage": "Max Damage",
             "missileMax": "Max",
             "pilot": "Pilot",
-            "pilotingTestBtn": "Roll Piloting Test"
+            "pilotingTestBtn": "Roll Piloting Test",
+            "repairBtn": "Repair Hardware"
         }
     }
 }

@@ -63,6 +63,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
 
     html.find(".roll-test").click((ev) => this.#onSheetRoll(ev));
+    html.find(".repair-btn").click((ev) => this.#onRepair(ev));
   }
 
   /**
@@ -154,5 +155,28 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     return await rollTest(this.actor.getRollData(), dataset.rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName, scaleMod, speedMod, targetDefLabel, targetDefMod});
+  }
+
+  async #onRepair(event) {
+    event.preventDefault();
+
+    const confirmRepair = await Dialog.confirm({
+      title: "Delete Item",
+      content: "<p>Repair hardware armor and structure?</p>",
+      yes: () => true,
+      no: () => false,
+      defaultYes: false,
+    });
+
+    if (!confirmRepair) return;
+
+    const hp = deepClone(this.actor.system.hp);
+
+    for (const loc of Object.values(hp)) {
+      loc.armor.value = loc.armor.max;
+      loc.structure.value = loc.structure.max;
+    }
+
+    await this.actor.update({"system.hp": hp});
   }
 }
