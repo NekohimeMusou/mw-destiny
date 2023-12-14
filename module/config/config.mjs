@@ -26,7 +26,7 @@ export const MWDESTINY = {
     ),
     heavy: Object.fromEntries(
         ["pointblank", "short", "medium", "long"]
-            .map((r) => [r, `MWDESTINY.combat.range.${r}`]),
+            .map((r) => [r, `MWDESTINY.range.heavy.${r}`]),
     ),
   },
   weaponSkillTypes: Object.fromEntries(

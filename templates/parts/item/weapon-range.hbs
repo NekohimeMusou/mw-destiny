@@ -2,7 +2,13 @@
   {{#each system.range}}
   <div class="flexcol">
     <div class="flexrow">
-      <label class="resource-label">{{localize (lookup ../MWDESTINY.weaponRange.personal @key)}}</label>
+      <label class="resource-label">
+        {{#if (eq ../item.type "weapon")}}
+        {{localize (lookup ../MWDESTINY.weaponRange.personal @key)}}
+        {{else}}
+        {{localize (lookup ../MWDESTINY.weaponRange.heavy @key)}}
+        {{/if}}
+      </label>
       <input type="checkbox" name="system.range.{{@key}}.usable" {{checked usable}}/>
     </div>
     <div class="flexrow">
