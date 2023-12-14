@@ -4,6 +4,20 @@ export default class MwDestinyActor extends Actor {
     super.prepareData();
   }
 
+  /** @override */
+  prepareBaseData() {
+    this._preparePersonalHp();
+  }
+
+  _preparePersonalHp() {
+    if (!(this.type === "pc" || this.type === "npc")) return;
+
+    const str = this.system.attributes.str;
+    const wil = this.system.attributes.wil;
+    this.system.physDamage.max = Math.min(9 + str, 14);
+    this.system.fatigueDamage.max = Math.min(9 + wil, 14);
+  }
+
   /** @inheritdoc */
   getRollData() {
     const rollData = foundry.utils.deepClone(super.getRollData());
