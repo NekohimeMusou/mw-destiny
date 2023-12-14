@@ -23,14 +23,14 @@
             "dispositions": "Dispositions",
             "cues": "Cues",
             "lifeModules": "Life Modules",
+            "lifeModuleStages": {
+                "faction": "Faction",
+                "childhood": "Childhood",
+                "higherEd": "Higher Education",
+                "realLife": "Real Life"
+            },
             "trait": "Trait",
             "traits": "Traits"
-        },
-        "lifeModules": {
-            "faction": "Faction",
-            "childhood": "Childhood",
-            "higherEd": "Higher Education",
-            "realLife": "Real Life"
         },
         "attributes": {
             "str": "Strength",

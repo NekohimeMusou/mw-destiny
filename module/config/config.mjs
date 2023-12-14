@@ -2,6 +2,7 @@ export const MWDESTINY = {
   attributes: Object.fromEntries(
       ["str", "rfl", "int", "wil", "cha", "edg"]
           .map((a) => [a, a.toUpperCase()])),
+  lifeModuleStages: ["faction", "childhood", "higherEd", "realLife"],
   rollDifficulties: Object.fromEntries(
       ["easy", "average", "hard"]
           .map((d) => [d, `MWDESTINY.dialog.difficulty.${d}`])),

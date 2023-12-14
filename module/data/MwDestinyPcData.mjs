@@ -5,7 +5,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
 
     const attributes = new fields.SchemaField(
         Object.fromEntries(
-            ["str", "rfl", "int", "wil", "cha", "edg"].map(
+            Object.keys(CONFIG.MWDESTINY.attributes).map(
                 (a) => [a,
                   new fields.NumberField({
                     initial: 1,
@@ -19,8 +19,8 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
     return {
       history: new fields.HTMLField(),
       personality: new fields.HTMLField(),
-      lifeModules: new fields.SchemaField(Object.fromEntries(
-          ["faction", "childhood", "higherEd", "realLife"].map(
+      lifeModuleStages: new fields.SchemaField(Object.fromEntries(
+          CONFIG.MWDESTINY.lifeModuleStages.map(
               (m) => [m, new fields.StringField()],
           ),
       )),
@@ -96,6 +96,8 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       equipment: new fields.ArrayField(new fields.StringField(), {
         initial: Array(6).fill(""),
       }),
+      hasToughnessTrait: new fields.BooleanField(),
+      hasUnluckyTrait: new fields.BooleanField(),
     };
   }
 
@@ -103,5 +105,28 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
     if (this.attributes.str < 3) return 0;
     if (this.attributes.str < 5) return 1;
     return 2;
+  }
+
+  get woundPenalty() {
+    let total = 0;
+
+    for (const [hpPool, attr] of [["physDamage", "str"], ["fatigueDamage", "wil"]]) {
+      const current = this[hpPool].value;
+      const max = this[hpPool].max;
+
+      if (current === max || current > 11 || (current === 11 && this.attributes[attr] < 4)) {
+        continue;
+      } else if (current > 8) {
+        total -= 1;
+      } else if (current > 5) {
+        total -= 2;
+      } else if (current > 2) {
+        total -= 3;
+      } else {
+        total -= 4;
+      }
+    }
+
+    return total;
   }
 }
