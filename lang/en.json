@@ -181,7 +181,8 @@
             "missileMax": "Max",
             "pilot": "Pilot",
             "pilotingTestBtn": "Roll Piloting Test",
-            "repairBtn": "Repair Hardware"
+            "repairBtn": "Repair Hardware",
+            "cluster": "Cluster"
         }
     }
 }

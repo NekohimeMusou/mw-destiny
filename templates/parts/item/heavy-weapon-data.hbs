@@ -14,4 +14,12 @@
     <label class="resource-label">{{localize "MWDESTINY.hardware.missileMaxDamage"}}</label>
     <input type="number" name="system.missileMaxDamage" value="{{system.missileMaxDamage}}" data-dtype="Number"/>
   </div>
+
+  <div class="flexrow">
+    {{> "systems/mw-destiny/templates/parts/item/weapon-skill.hbs"}}
+    <div class="flexrow">
+      <label class="resource-label">{{localize "MWDESTINY.hardware.cluster"}}</label>
+      <input type="number" name="system.cluster" value="{{system.cluster}}" data-dtype="Number"/>
+    </div>
+  </div>
 </div>
