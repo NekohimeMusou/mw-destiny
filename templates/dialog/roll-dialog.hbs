@@ -1,28 +1,38 @@
 <form class="flexcol flex-group-center">
+  {{#if targetName}}
+  <div>
+    {{localize "MWDESTINY.mechanic.target"}}: {{targetName}}
+  </div>
+  {{/if}}
   <div class="flexrow">
     <div class="flexcol">
-      <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}}{{#unless skillRank}} 1{{/unless}}</div>
+      <div>{{localize "MWDESTINY.mechanic.attribute"}}{{#unless skillRank}} 1{{/unless}}</div>
       <select disabled>
         {{selectOptions MWDESTINY.attributes selected=attr}}
       </select>
     </div>
     {{#if skillName}}
     <div class="flexcol">
-      <div class="resource-label">{{localize "MWDESTINY.skills.rank"}}</div>
+      <div>{{localize "MWDESTINY.skills.rank"}}</div>
       <input type="Number" name="skill-rank" value="{{skillRank}}" disabled/>
     </div>
     {{else}}
     <div class="flexcol">
-      <div class="resource-label">{{localize "MWDESTINY.mechanic.attribute"}} 2</div>
+      <div>{{localize "MWDESTINY.mechanic.attribute"}} 2</div>
       <select name="attr2">
         {{selectOptions MWDESTINY.attributes selected=attr}}
       </select>
     </div>
     {{/if}}
   </div>
-  <select name="difficulty">
-    {{selectOptions MWDESTINY.rollDifficulties blank=(localize "MWDESTINY.dialog.difficulty.opposed") localize=true}}
-  </select>
+  {{#unless targetName}}
+  <div class="flexrow flex-group-center flex-between">
+    <label>{{localize "MWDESTINY.mechanic.difficulty"}}:</label>
+    <select name="difficulty">
+      {{selectOptions MWDESTINY.rollDifficulties selected="average" blank=(localize "MWDESTINY.dialog.difficulties.opposing") localize=true}}
+    </select>
+  </div>
+  {{/unless}}
   <div class="flexrow">
     <label>{{localize "MWDESTINY.dialog.rollModifier"}}:</label>
     <input type="number" placeholder="0" name="mod" data-dtype="Number"/>

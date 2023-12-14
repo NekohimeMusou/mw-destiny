@@ -152,8 +152,35 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const skillName = dataset.skillName;
     const damageCode = dataset.damageCode;
     const woundPenalty = this.actor.system.woundPenalty;
+    const actor = this.actor;
+
+    if (damageCode != null && game.user.targets.size !== 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
+    }
+
+    const target = game.user.targets.first()?.actor;
+
+    const targetName = target?.name;
+
+    const targetType = target?.type;
+
+    const scaleMod = damageCode != null && targetType === "hardware" ? 2 : 0;
+
+    let targetDefMod = 0;
+    if (targetType === "hardware") {
+      targetDefMod += target.system.pilot?.system?.attributes?.rfl || 0;
+      targetDefMod += target.system.pilotingSkill?.system?.rank || 0;
+    } else if (targetType) {
+      targetDefMod += target.system.attributes.rfl * 2;
+    }
+
+    let targetDefLabel = "";
+
+    if (target && damageCode) {
+      targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
+    }
 
     return await rollTest(this.actor.getRollData(), dataset.rollLabel,
-        {attr, skillRank, skillName, damageCode, woundPenalty});
+        {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName, scaleMod, targetDefLabel, targetDefMod});
   }
 }

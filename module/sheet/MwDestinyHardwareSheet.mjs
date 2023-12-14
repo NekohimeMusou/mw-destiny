@@ -57,7 +57,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".item-create").click(this.#onItemCreate.bind(this));
 
     // Delete Inventory Item
-    html.find(".item-delete").click(this.#onItemDelete);
+    html.find(".item-delete").click(this.#onItemDelete.bind(this));
 
     // Active Effect management
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
@@ -118,15 +118,41 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const attr = dataset.attr;
     const skillName = dataset.skillName;
     const damageCode = dataset.damageCode;
-    const woundPenalty = this.system.pilot?.system.woundPenalty;
+    const woundPenalty = this.actor.system.pilot?.system.woundPenalty;
+    const actor = this.actor;
 
-    // if (damageCode != null && game.user.targets.size !== 1) {
-    //   return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
-    // }
+    if (actor.type === "hardware" && !actor.system.pilotId) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noPilot"));
+    }
+    if (damageCode != null && game.user.targets.size !== 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
+    }
 
-    // const target = game.user.targets.first();
+    const target = game.user.targets.first().actor;
+
+    const targetName = target?.name;
+
+    const targetType = target?.type;
+
+    const scaleMod = damageCode != null && targetType !== "hardware" ? 2 : 0;
+
+    const speedMod = target.type !== "hardware" ? 0 : this.actor.system.movement - target.system.movement;
+
+    let targetDefMod = 0;
+    if (targetType === "hardware") {
+      targetDefMod += target.system.pilot?.system?.attributes?.rfl || 0;
+      targetDefMod += target.system.pilotingSkill?.system?.rank || 0;
+    } else if (targetType) {
+      targetDefMod += target.system.attributes.rfl * 2;
+    }
+
+    let targetDefLabel = "";
+
+    if (target && damageCode) {
+      targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
+    }
 
     return await rollTest(this.actor.getRollData(), dataset.rollLabel,
-        {attr, skillRank, skillName, damageCode, woundPenalty});
+        {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName, scaleMod, speedMod, targetDefLabel, targetDefMod});
   }
 }

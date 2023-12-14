@@ -11,6 +11,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       }),
       missileDice: new fields.NumberField({integer: true}),
       missileMaxDamage: new fields.NumberField({integer: true}),
+      cluster: new fields.NumberField({integer: true}),
       heat: new fields.NumberField({integer: true}),
       location: new fields.StringField(),
       range: new fields.ObjectField({
@@ -31,7 +32,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
   get weaponSkill() {
     const pilot = this.parent.actor.system.pilot;
-    return pilot.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+    return pilot?.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
   }
 
   get damageTypeCode() {
@@ -40,13 +41,10 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
   get damageCode() {
     const dmg = this.baseDamage || 0;
+    const cluster = this.cluster > 0 ? ` (C${this.cluster})`: "";
 
-    if (this.damageType !== "missile") return `${dmg}`;
+    const missileStr = this.missileDice > 0 ? ` + ${"M".repeat(this.missileDice)} (Max ${this.missileMaxDamage})` : "";
 
-    const missileDice = "M".repeat(this.missileDice);
-
-    const maxDmg = this.missileMaxDamage;
-
-    return `${dmg} + ${missileDice} (${game.i18n.localize("MWDESTINY.hardware.missileMax")} ${maxDmg})`;
+    return `${dmg}${cluster}${missileStr}`;
   }
 }

@@ -5,7 +5,7 @@ export const MWDESTINY = {
   lifeModuleStages: ["faction", "childhood", "higherEd", "realLife"],
   rollDifficulties: Object.fromEntries(
       ["easy", "average", "hard"]
-          .map((d) => [d, `MWDESTINY.dialog.difficulty.${d}`])),
+          .map((d) => [d, `MWDESTINY.dialog.difficulties.${d}`])),
   rollDifficultyDice: {
     easy: "2d6",
     average: "3d6",

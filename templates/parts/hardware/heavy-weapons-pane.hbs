@@ -17,8 +17,7 @@
     <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name flex2">
         <div class="item-image">
-          {{!-- Fix this and the event handler --}}
-          <a class="roll-test" data-roll-label="{{item.name}} Attack" data-attr="rfl" data-skill-name="{{item.system.weaponSkill.name}}"
+          <a class="roll-test" data-roll-label="{{item.name}} Attack" data-attr="rfl" data-skill-name="{{localize (concat "MWDESTINY.skills.weapon." system.weaponSkillType)}}"
             data-skill-rank="{{item.system.weaponSkill.system.rank}}" data-damage-code="{{item.system.damageCode}}">
             <img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/>
           </a>

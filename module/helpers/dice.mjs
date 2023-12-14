@@ -1,10 +1,12 @@
-export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null, woundPenalty=0, speedModifier=0}={}) {
-  const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName});
+export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
+  skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0, targetName=null, scaleMod=0, speedMod=0}={}) {
+  const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName});
 
-  // TODO: Fix this so the roll chat output shows like "INT + INT" or "INT + RFL" or w/e
   if (cancelled) return;
 
-  const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${speedModifier} + ${mod}`;
+  const isWeaponAttack = damageCode != null;
+
+  const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${scaleMod} + ${speedMod} + ${mod}`;
 
   const playerRoll = await new Roll(rollFormula, rollData).roll({async: true});
 
@@ -14,26 +16,34 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
 
   const parts = [];
 
-  const titleSuffix = damageCode == null ? "Test" : "Attack";
+  const titleSuffix = isWeaponAttack ? "Test" : "Attack";
 
   const flavor = skillName ? `${skillName} ${titleSuffix}` : `${attr2?.toUpperCase()} + ${attr2?.toUpperCase()} ${titleSuffix}`;
 
   parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
 
-  if (damageCode) {
-    parts.push(`<h3>Damage: ${damageCode}</h3>`);
+  if (targetName) {
+    parts.push(`<h3>${game.i18n.localize("MWDESTINY.mechanic.target")}: ${targetName}</h3>`);
   }
 
-  if (difficulty) {
-    const difficultyDice = `${CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || "3d6"}`;
+  if (difficulty || isWeaponAttack) {
+    const difficultyDice = CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || `2d6 + ${targetDefMod}`;
 
     const difficultyRoll = await new Roll(difficultyDice, rollData).roll({async: true});
 
-    const successMsg = `<h3>${playerRoll.total >= difficultyRoll.total ? "Success!" : "Failure!"}</h3>`;
+    const success = playerRoll.total >= difficultyRoll.total;
 
-    const totalMsg = `<h3>${playerRoll.total} vs. ${difficultyRoll.total}</h3>`;
+    const damageMsg = isWeaponAttack && success ? `<p>Damage: ${damageCode}</p>` : "";
 
-    parts.push(successMsg, totalMsg, await playerRoll.render(), await difficultyRoll.render());
+    const successStr = isWeaponAttack ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");
+    const failureStr = isWeaponAttack ? game.i18n.localize("MWDESTINY.dice.miss") : game.i18n.localize("MWDESTINY.dice.failure");
+    const successMsg = `<h3>${success ? `${successStr}!` : `${failureStr}!`}</h3>`;
+
+    const playerLabel = `<p>${actor.name}</p>`;
+    const oppositionLabel = targetName ? `<p>${targetName}${targetDefLabel}</p>` :
+    `<p>${game.i18n.localize("MWDESTINY.mechanic.difficulty")}: ${game.i18n.localize(`MWDESTINY.dialog.difficulties.${difficulty}`)}`;
+
+    parts.push(successMsg, damageMsg, playerLabel, await playerRoll.render(), oppositionLabel, await difficultyRoll.render());
   } else {
     parts.push(await playerRoll.render());
   }
@@ -42,7 +52,7 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
 
   const chatData = {
     user: game.user.id,
-    speaker: ChatMessage.getSpeaker(),
+    speaker: ChatMessage.getSpeaker({actor}),
     rolls,
     content,
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
@@ -53,7 +63,7 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
 }
 
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
-async function showRollDialog(title, {attr=null, skillRank=null, skillName=null}={}) {
+async function showRollDialog(title, {attr=null, skillRank=null, skillName=null, targetName=null}={}) {
   async function _processRollOptions(form) {
     // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
     // If skillRank > 0, it's a skill roll: return the skill ranks as an int
@@ -62,14 +72,14 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null}
     const term2 = attr2 ? `@${attr2}` : `${parseInt(skillRank || 0)}`;
     return {
       mod: parseInt(form.mod.value || 0),
-      difficulty: form.difficulty.value,
+      difficulty: form.difficulty?.value,
       term2,
       attr2,
     };
   }
 
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
-  const content = await renderTemplate(template, {title, attr, skillRank, skillName, MWDESTINY: CONFIG.MWDESTINY});
+  const content = await renderTemplate(template, {title, attr, skillRank, skillName, targetName, MWDESTINY: CONFIG.MWDESTINY});
 
   return new Promise((resolve) => new Dialog({
     title,

@@ -7,10 +7,14 @@
             "cues": "Cues",
             "description": "Description"
         },
+        "notifications": {
+            "noTarget": "Please select a target for your attack!",
+            "noPilot": "Can't do that without a pilot assigned!"
+        },
         "dialog": {
             "rollModifier": "Roll Modifier",
-            "difficulty": {
-                "opposed": "Opposed",
+            "difficulties": {
+                "opposing": "Opposing",
                 "easy": "Easy (2d6)",
                 "average": "Average (3d6)",
                 "hard": "Hard (4d6)"
@@ -49,7 +53,16 @@
             "rank": "Rank",
             "mod": "Mod",
             "equipment": "Equipment",
-            "test": "Test"
+            "test": "Test",
+            "target": "Target",
+            "roll": "Roll",
+            "difficulty": "Difficulty"
+        },
+        "dice": {
+            "success": "Success",
+            "hit": "Hit",
+            "failure": "Failure",
+            "miss": "Miss"
         },
         "sheet": {
             "locked": "Locked",
