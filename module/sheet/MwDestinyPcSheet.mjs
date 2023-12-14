@@ -151,7 +151,9 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const attr = dataset.attr;
     const skillName = dataset.skillName;
     const damageCode = dataset.damageCode;
+    const woundPenalty = this.actor.system.woundPenalty;
 
-    return await rollTest(this.actor.getRollData(), dataset.rollLabel, {attr, skillRank, skillName, damageCode});
+    return await rollTest(this.actor.getRollData(), dataset.rollLabel,
+        {attr, skillRank, skillName, damageCode, woundPenalty});
   }
 }

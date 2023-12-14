@@ -1,10 +1,10 @@
-export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null}={}) {
+export async function rollTest(rollData, title, {attr=null, skillRank=null, skillName=null, damageCode=null, woundPenalty=0, speedModifier=0}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName});
 
   // TODO: Fix this so the roll chat output shows like "INT + INT" or "INT + RFL" or w/e
   if (cancelled) return;
 
-  const rollFormula = `2d6 + @${attr} + ${term2} + ${mod}`;
+  const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${speedModifier} + ${mod}`;
 
   const playerRoll = await new Roll(rollFormula, rollData).roll({async: true});
 
@@ -13,6 +13,10 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
   const rolls = [playerRoll];
 
   const parts = [];
+
+  const titleSuffix = damageCode == null ? "Test" : "Attack";
+
+  const flavor = skillName ? `${skillName} ${titleSuffix}` : `${attr2?.toUpperCase()} + ${attr2?.toUpperCase()} ${titleSuffix}`;
 
   parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
 
@@ -42,7 +46,7 @@ export async function rollTest(rollData, title, {attr=null, skillRank=null, skil
     rolls,
     content,
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-    flavor: title,
+    flavor,
   };
 
   return await ChatMessage.create(chatData);

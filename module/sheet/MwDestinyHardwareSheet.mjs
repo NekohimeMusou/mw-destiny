@@ -118,7 +118,15 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const attr = dataset.attr;
     const skillName = dataset.skillName;
     const damageCode = dataset.damageCode;
+    const woundPenalty = this.system.pilot?.system.woundPenalty;
 
-    return await rollTest(this.actor.getRollData(), dataset.rollLabel, {attr, skillRank, skillName, damageCode});
+    // if (damageCode != null && game.user.targets.size !== 1) {
+    //   return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
+    // }
+
+    // const target = game.user.targets.first();
+
+    return await rollTest(this.actor.getRollData(), dataset.rollLabel,
+        {attr, skillRank, skillName, damageCode, woundPenalty});
   }
 }
