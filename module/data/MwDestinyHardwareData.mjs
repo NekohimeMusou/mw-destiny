@@ -3,20 +3,15 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
 
-    const hp = new fields.SchemaField(Object.fromEntries(
-        ["head", "torso", "armLeft", "armRight", "legLeft", "legRight"]
-            .map((p) => [p, new fields.SchemaField({
-              armor: new fields.SchemaField({
-                min: new fields.NumberField({integer: true, initial: 0, readonly: true}),
-                max: new fields.NumberField({positive: true, integer: true}),
-                value: new fields.NumberField({integer: true}),
-              }),
-              structure: new fields.SchemaField({
-                min: new fields.NumberField({integer: true, initial: 0, readonly: true}),
-                max: new fields.NumberField({positive: true, integer: true}),
-                value: new fields.NumberField({integer: true}),
-              }),
-            })])));
+    const hp = new fields.SchemaField(Object.fromEntries(Object.entries(CONFIG.MWDESTINY.hitLocations).map(([hwType, locArray]) => [hwType, new fields.SchemaField(Object.fromEntries(locArray.map((loc) => [loc,
+      new fields.SchemaField(Object.fromEntries(["armor", "structure"].map(
+          (hpType) => [hpType, new fields.SchemaField({
+            min: new fields.NumberField({integer: true, initial: 0, readonly: true}),
+            max: new fields.NumberField({positive: true, integer: true}),
+            value: new fields.NumberField({integer: true}),
+          })],
+      ))),
+    ])))])));
 
     return {
       description: new fields.HTMLField(),

@@ -148,7 +148,8 @@
                 "aerospace": "Aerospace Fighter",
                 "combatVehicle": "Combat Vehicle (Turreted)",
                 "vtol": "VTOL",
-                "vehicle": "Vehicle"
+                "vehicle": "Vehicle",
+                "battleArmor": "Battle Armor"
             },
             "model": "Model",
             "weightClass": "Weight Class",
@@ -163,13 +164,45 @@
             "movement": "Movement",
             "jumpJets": "Jump Jets",
             "heatDissipation": "Heat Dissipation",
-            "armorLocation": {
-                "head": "Head",
-                "torso": "Torso",
-                "armLeft": "Left Arm",
-                "armRight": "Right Arm",
-                "legLeft": "Left Leg",
-                "legRight": "Right Leg"
+            "hitLocation": {
+                "mech": {
+                    "head": "Head",
+                    "torso": "Torso",
+                    "armLeft": "Left Arm",
+                    "armRight": "Right Arm",
+                    "legLeft": "Left Leg",
+                    "legRight": "Right Leg"
+                },
+                "aerospace": {
+                    "nose": "Nose",
+                    "aft": "Aft",
+                    "wingRight": "Right Wing",
+                    "wingLeft": "Left Wing",
+                    "structuralIntegrity": "Structural Integrity"
+                },
+                "combatVehicle": {
+                    "front": "Front",
+                    "rear": "Rear",
+                    "sideRight": "Right Side",
+                    "sideLeft": "Left Side",
+                    "turret": "Turret"
+                },
+                "vtol": {
+                    "front": "Front",
+                    "rear": "Rear",
+                    "sideRight": "Right Side",
+                    "sideLeft": "Left Side",
+                    "rotor": "Rotor"
+                },
+                "vehicle": {
+                    "front": "Front",
+                    "rear": "Rear",
+                    "sideRight": "Right Side",
+                    "sideLeft": "Left Side"
+                },
+                "battleArmor": {
+                    "armor": "Armor"
+                }
             },
             "armor": "Armor",
             "structure": "Structure",
