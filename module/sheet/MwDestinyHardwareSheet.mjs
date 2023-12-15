@@ -172,9 +172,10 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const hp = deepClone(this.actor.system.hp);
 
-    for (const loc of Object.values(hp)) {
-      loc.armor.value = loc.armor.max;
-      loc.structure.value = loc.structure.max;
+    for (const hwType of Object.values(hp)) {
+      for (const loc of Object.values(hwType)) {
+        ["armor", "structure"].forEach((s) => loc[s].value = loc[s].max);
+      }
     }
 
     await this.actor.update({"system.hp": hp});
