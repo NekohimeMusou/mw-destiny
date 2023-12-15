@@ -209,7 +209,7 @@
             "heat": "Heat",
             "location": "Location",
             "loc": "Loc",
-            "missileDice": "Missile Dice",
+            "missileCount": "Missile Dice",
             "missileMaxDamage": "Max Damage",
             "missileMax": "Max",
             "pilot": "Pilot",

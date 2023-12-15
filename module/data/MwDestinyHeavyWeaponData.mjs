@@ -9,7 +9,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       damageType: new fields.StringField({
         choices: ["ballistic", "energy", "missile"],
       }),
-      missileDice: new fields.NumberField({integer: true}),
+      missileCount: new fields.NumberField({integer: true}),
       missileMaxDamage: new fields.NumberField({integer: true}),
       cluster: new fields.NumberField({integer: true}),
       heat: new fields.NumberField({integer: true}),
@@ -43,7 +43,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     const dmg = this.baseDamage || 0;
     const cluster = this.cluster > 0 ? ` (C${this.cluster})`: "";
 
-    const missileStr = this.missileDice > 0 ? ` + ${"M".repeat(this.missileDice)} (Max ${this.missileMaxDamage})` : "";
+    const missileStr = this.missileCount > 0 ? ` + ${"M".repeat(this.missileCount)} (Max ${this.missileMaxDamage})` : "";
 
     return `${dmg}${cluster}${missileStr}`;
   }
