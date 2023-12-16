@@ -16,12 +16,12 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
   const parts = [];
 
   const flavor = !(skillName || damageCode) ?
-   `${attr?.toUpperCase()} + ${attr2?.toUpperCase()} ${game.i18n.localize("MWDESTINY.mechanic.test")}` : title;
+   game.i18n.format("MWDESTINY.mechanic.test", {name: `${attr?.toUpperCase()} + ${attr2?.toUpperCase()}`}) : title;
 
   parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
 
   if (targetName) {
-    parts.push(`<h3>${game.i18n.localize("MWDESTINY.mechanic.target")}: ${targetName}</h3>`);
+    parts.push(`<h3>${game.i18n.format("MWDESTINY.mechanic.target", {name: targetName})}</h3>`);
   }
 
   const missileHtml = [];
@@ -40,8 +40,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     if (damageCode && success) {
       if (damageGroups.length > 1) {
         const dmgGroupStr = game.i18n.localize("MWDESTINY.hardware.damageGroups");
-        const totalStr = game.i18n.localize("MWDESTINY.mechanic.total");
-        damageMessages.push(`<p>${dmgGroupStr} (${totalStr}: ${totalDmg})</p>`);
+        const totalStr = game.i18n.format("MWDESTINY.combat.totalDamage", {damage: totalDmg});
+        damageMessages.push(`<p>${dmgGroupStr} (${totalStr})</p>`);
       }
 
       const groupStrings = damageGroups.map(([label, dmg]) =>
@@ -49,11 +49,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
       damageMessages.push(...groupStrings);
 
-      const missileLoc = game.i18n.localize("MWDESTINY.combat.missile");
-      const damageLoc = game.i18n.localize("MWDESTINY.combat.damage");
-
       missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) =>
-        `<p>${missileLoc} ${i+1}: ${dmg} ${damageLoc}</p><div>${await roll.render()}</div>`))));
+        `<p>${game.i18n.format("MWDESTINY.combat.missileDamage", {num: i+1, dmg})}</p><div>${await roll.render()}</div>`))));
     }
 
     const successStr = damageCode ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");

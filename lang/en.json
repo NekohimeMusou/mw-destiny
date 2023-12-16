@@ -59,8 +59,8 @@
             "rank": "Rank",
             "mod": "Mod",
             "equipment": "Equipment",
-            "test": "Test",
-            "target": "Target",
+            "test": "{name} Test",
+            "target": "Target: {name}",
             "roll": "Roll",
             "difficulty": "Difficulty",
             "total": "Total"
@@ -154,7 +154,7 @@
             "armorType": "Armor Type",
             "armorEffect": "Armor Effect",
             "missile": "Missile",
-            "attack": "Attack"
+            "attack": "{name} Attack"
         },
         "hardware": {
             "type": "Type",
@@ -236,7 +236,9 @@
                 "base": "Base",
                 "missile": "Missile",
                 "cluster": "Cluster"
-            }
+            },
+            "totalDamage": "Total: {damage}",
+            "missileDamage": "Missile {num}: {dmg} Damage"
         }
     }
 }

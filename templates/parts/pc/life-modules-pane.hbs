@@ -2,7 +2,7 @@
   <div class="resource-label">{{localize "MWDESTINY.bio.lifeModules"}}</div>
   <div class="grid grid-3col">
     {{#each system.lifeModules}}
-    <div class="resource-label">{{localize (concat "MWDESTINY.bio.lifeModuleStages" @key)}}: </div>
+    <div class="resource-label">{{localize (concat "MWDESTINY.bio.lifeModuleStages." @key)}}: </div>
     <input class="grid-span-2" type="text" name="system.lifeModules.{{@key}}" data-dtype="String" value="{{this}}"/>
     {{/each}}
   </div>

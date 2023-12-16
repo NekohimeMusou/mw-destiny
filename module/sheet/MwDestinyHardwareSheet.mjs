@@ -126,7 +126,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const skillRank = parseInt(weaponSkill?.system?.rank || 0);
     const attr = weaponSkill?.system?.link;
 
-    const rollLabel = `${weapon.name} ${game.i18n.localize("MWDESTINY.combat.attack")}`;
+    const rollLabel = game.i18n.format("MWDESTINY.combat.attack", {name: weapon.name});
 
     if (actor.type === "hardware" && !actor.system.pilotId) {
       return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noPilot"));
