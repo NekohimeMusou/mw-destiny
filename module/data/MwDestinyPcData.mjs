@@ -19,9 +19,9 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
     return {
       history: new fields.HTMLField(),
       personality: new fields.HTMLField(),
-      lifeModuleStages: new fields.SchemaField(Object.fromEntries(
+      lifeModules: new fields.SchemaField(Object.fromEntries(
           CONFIG.MWDESTINY.lifeModuleStages.map(
-              (m) => [m, new fields.StringField()],
+              (m) => [m, new fields.StringField({required: true})],
           ),
       )),
       physDamage: new fields.SchemaField({
