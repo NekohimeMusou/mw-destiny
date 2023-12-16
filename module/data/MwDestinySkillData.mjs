@@ -1,11 +1,11 @@
+import getSharedItemData from "./shared-item-data.mjs";
 export default class MwDestinySkillData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
 
     return {
-      description: new fields.HTMLField(),
-      // Skill stuff
+      ...getSharedItemData(),
       link: new fields.StringField({
         required: true,
         initial: "str",
@@ -14,9 +14,6 @@ export default class MwDestinySkillData extends foundry.abstract.DataModel {
         required: true,
         initial: 0,
         integer: true,
-      }),
-      weaponSkillType: new fields.StringField({
-        choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
       }),
       pilotingSkillType: new fields.StringField({
         choices: Object.keys(CONFIG.MWDESTINY.pilotingSkillTypes),

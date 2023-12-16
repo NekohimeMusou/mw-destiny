@@ -118,7 +118,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const itemId = element.closest(".item").dataset.itemId;
     const weapon = actor.items.get(itemId);
 
-    const woundPenalty = actor.system.pilotWoundPenalty;
+    const woundPenalty = actor.system.woundPenalty;
     const damageCode = weapon.system.damageCode;
 
     const weaponSkill = weapon.system.weaponSkill;

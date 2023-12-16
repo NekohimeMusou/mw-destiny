@@ -1,11 +1,13 @@
+import getSharedActorData from "./shared-actor-data.mjs";
 export default class MwDestinyPcData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
+    const actorType = "pc";
 
     const attributes = new fields.SchemaField(
         Object.fromEntries(
-            Object.keys(CONFIG.MWDESTINY.attributes).map(
+            Object.keys(CONFIG.MWDESTINY.attributes.pc).map(
                 (a) => [a,
                   new fields.NumberField({
                     initial: 1,
@@ -17,6 +19,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         ));
 
     return {
+      ...getSharedActorData(actorType),
       history: new fields.HTMLField(),
       personality: new fields.HTMLField(),
       lifeModules: new fields.SchemaField(Object.fromEntries(
@@ -53,10 +56,6 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         }),
       }),
       attributes,
-      tags: new fields.ArrayField(new fields.StringField(), {
-        required: true,
-        initial: Array(5).fill(""),
-      }),
       cues: new fields.ArrayField(new fields.StringField(), {
         required: true,
         initial: Array(20).fill(""),
@@ -86,9 +85,6 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         }),
         type: new fields.StringField(),
         effect: new fields.StringField(),
-      }),
-      equipment: new fields.ArrayField(new fields.StringField(), {
-        initial: Array(6).fill(""),
       }),
       hasToughnessTrait: new fields.BooleanField(),
       hasUnluckyTrait: new fields.BooleanField(),

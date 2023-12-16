@@ -1,7 +1,7 @@
 export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
   skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0,
   targetName=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0, cluster=0}={}) {
-  const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName});
+  const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName, actorType: actor.type});
 
   if (cancelled) return;
 
@@ -86,7 +86,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 }
 
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
-async function showRollDialog(title, {attr=null, skillRank=null, skillName=null, targetName=null}={}) {
+async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
+  targetName=null, actorType=null}={}) {
   async function _processRollOptions(form) {
     // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
     // If skillRank > 0, it's a skill roll: return the skill ranks as an int
@@ -103,7 +104,7 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
 
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
   const content = await renderTemplate(template, {title, attr, skillRank,
-    skillName, targetName, MWDESTINY: CONFIG.MWDESTINY});
+    skillName, targetName, actorType, MWDESTINY: CONFIG.MWDESTINY});
 
   return new Promise((resolve) => new Dialog({
     title,

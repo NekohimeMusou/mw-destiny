@@ -1,7 +1,9 @@
+import getSharedActorData from "./shared-actor-data.mjs";
 export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
+    const actorType = "hardware";
 
     const hp = new fields.SchemaField(Object.fromEntries(Object.entries(CONFIG.MWDESTINY.hitLocations)
         .map(([hwType, locArray]) => [hwType, new fields.SchemaField(Object.fromEntries(locArray
@@ -15,7 +17,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
             ])))])));
 
     return {
-      description: new fields.HTMLField(),
+      ...getSharedActorData(actorType),
       hardwareType: new fields.StringField({
         choices: Object.keys(CONFIG.MWDESTINY.hardwareTypes),
         initial: Object.keys(CONFIG.MWDESTINY.hardwareTypes)[0],
@@ -25,14 +27,8 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       movement: new fields.NumberField({integer: true}),
       hasJumpJets: new fields.BooleanField(),
       heatDissipation: new fields.NumberField({integer: true}),
-      tags: new fields.ArrayField(new fields.StringField(), {
-        initial: Array(5).fill(""),
-      }),
       hp,
       heat: new fields.NumberField({min: 0, integer: true}),
-      equipment: new fields.ArrayField(new fields.StringField(), {
-        initial: Array(6).fill(""),
-      }),
       pilotId: new fields.StringField(),
     };
   }
@@ -49,7 +45,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return game.actors.get(this.pilotId);
   }
 
-  get pilotWoundPenalty() {
+  get woundPenalty() {
     return this.pilot?.system?.woundPenalty || 0;
   }
 

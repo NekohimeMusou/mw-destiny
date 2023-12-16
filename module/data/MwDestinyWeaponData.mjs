@@ -1,29 +1,17 @@
+import getSharedWeaponData from "./shared-weapon-data.mjs";
 export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
+    const weaponType = "personal";
 
     return {
-      description: new fields.HTMLField(),
-      baseDamage: new fields.NumberField({
-        required: true,
-        initial: 0,
-      }),
-      damageType: new fields.StringField(),
+      ...getSharedWeaponData(weaponType),
       isStunWeapon: new fields.BooleanField({
         initial: false,
       }),
       isStrPowered: new fields.BooleanField({
         initial: false,
-      }),
-      range: new fields.ObjectField({
-        required: true,
-        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.weaponRange.personal).map(
-            (r) => [r, {usable: false, mod: 0}],
-        )),
-      }),
-      weaponSkillType: new fields.StringField({
-        choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
       }),
     };
   }

@@ -1,32 +1,24 @@
+import getSharedWeaponData from "./shared-weapon-data.mjs";
 export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
+    const weaponType = "heavy";
 
     return {
-      description: new fields.HTMLField(),
-      baseDamage: new fields.NumberField({integer: true}),
-      damageType: new fields.StringField(),
+      ...getSharedWeaponData(weaponType),
       missileCount: new fields.NumberField({integer: true}),
       missileMax: new fields.NumberField({integer: true}),
       cluster: new fields.NumberField({integer: true}),
       heat: new fields.NumberField({integer: true}),
       location: new fields.StringField(),
-      range: new fields.ObjectField({
-        initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.weaponRange.heavy).map(
-            (r) => [r, {usable: false, mod: null}],
-        )),
-      }),
       primary: new fields.BooleanField(),
-      weaponSkillType: new fields.StringField({
-        required: true,
-        choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
-        initial: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes)[0],
-      }),
     };
   }
 
-  // TODO: roll for missile damage
+  get damage() {
+    return this.baseDamage;
+  }
 
   get weaponSkill() {
     const pilot = this.parent.actor.system.pilot;
@@ -35,7 +27,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
   }
 
   get damageTypeCode() {
-    return this.damageType?.[0].toUpperCase() || "—";
+    return this.damageType?.[0]?.toUpperCase() || "—";
   }
 
   get damageCode() {

@@ -1,7 +1,15 @@
 export const MWDESTINY = {
-  attributes: Object.fromEntries(
-      ["str", "rfl", "int", "wil", "cha", "edg"]
-          .map((a) => [a, a.toUpperCase()])),
+  attributes: {
+    pc: Object.fromEntries(
+        ["str", "rfl", "int", "wil", "cha", "edg"]
+            .map((a) => [a, a.toUpperCase()])),
+    npc: Object.fromEntries(
+        ["str", "rfl", "int", "wil", "cha", "edg"]
+            .map((a) => [a, a.toUpperCase()])),
+    animal: Object.fromEntries(
+        ["str", "rfl", "int", "wil", "cha", "edg"]
+            .map((a) => [a, a.toUpperCase()])),
+  },
   lifeModuleStages: ["faction", "childhood", "higherEd", "realLife"],
   rollDifficulties: Object.fromEntries(
       ["easy", "average", "hard"]

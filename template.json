@@ -1,7 +1,7 @@
 {
     "Actor": {
-        "types": ["pc", "hardware"],
-        "htmlFields": ["history", "personality"],
+        "types": ["pc", "npc", "hardware", "animal"],
+        "htmlFields": ["history", "personality", "description"],
         "pc": {},
         "hardware": {}
     },
