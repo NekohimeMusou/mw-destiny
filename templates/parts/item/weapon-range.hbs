@@ -10,10 +10,7 @@
         {{/if}}
       </label>
       <input type="checkbox" name="system.range.{{@key}}.usable" {{checked usable}}/>
-    </div>
-    <div class="flexrow">
-      <label class="resource-label">{{localize "MWDESTINY.mechanic.mod"}}</label>
-      <input type="number" name="system.range.{{@key}}.mod" value="{{mod}}" placeholder="0" {{#unless usable}}disabled{{/unless}}/>
+      <input type="number" name="system.range.{{@key}}.mod" value="{{mod}}" placeholder="{{#if usable}}OK{{else}}—{{/if}}" {{#unless usable}}disabled{{/unless}}/>
     </div>
   </div>
   {{/each}}

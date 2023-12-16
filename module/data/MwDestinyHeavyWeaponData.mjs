@@ -6,9 +6,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     return {
       description: new fields.HTMLField(),
       baseDamage: new fields.NumberField({integer: true}),
-      damageType: new fields.StringField({
-        choices: ["ballistic", "energy", "missile"],
-      }),
+      damageType: new fields.StringField(),
       missileCount: new fields.NumberField({integer: true}),
       missileMax: new fields.NumberField({integer: true}),
       cluster: new fields.NumberField({integer: true}),
@@ -16,7 +14,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       location: new fields.StringField(),
       range: new fields.ObjectField({
         initial: Object.fromEntries(Object.keys(CONFIG.MWDESTINY.weaponRange.heavy).map(
-            (r) => [r, {usable: false, mod: 0}],
+            (r) => [r, {usable: false, mod: null}],
         )),
       }),
       primary: new fields.BooleanField(),

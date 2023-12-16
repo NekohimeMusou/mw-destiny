@@ -57,7 +57,6 @@
             "attribute": "Attribute",
             "link": "Link",
             "rank": "Rank",
-            "mod": "Mod",
             "equipment": "Equipment",
             "test": "{name} Test",
             "target": "Target: {name}",
