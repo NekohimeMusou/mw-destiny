@@ -18,7 +18,9 @@
                 "easy": "Easy (2d6)",
                 "average": "Average (3d6)",
                 "hard": "Hard (4d6)"
-            }
+            },
+            "hardwareRepairDialogTitle": "Repair Hardware",
+            "hardwareRepairPrompt": "Repair hardware armor and structure?"
         },
         "bio": {
             "history": "History",
@@ -140,7 +142,8 @@
             "armor": "Armor",
             "armorType": "Armor Type",
             "armorEffect": "Armor Effect",
-            "missile": "Missile"
+            "missile": "Missile",
+            "attack": "Attack"
         },
         "hardware": {
             "type": "Type",

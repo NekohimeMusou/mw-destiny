@@ -126,7 +126,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const skillRank = parseInt(weaponSkill?.system?.rank || 0);
     const attr = weaponSkill?.system?.link;
 
-    const rollLabel = `${weapon.name} Attack`;
+    const rollLabel = `${weapon.name} ${game.i18n.localize("MWDESTINY.combat.attack")}`;
 
     if (actor.type === "hardware" && !actor.system.pilotId) {
       return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noPilot"));
@@ -174,8 +174,8 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     event.preventDefault();
 
     const confirmRepair = await Dialog.confirm({
-      title: "Delete Item",
-      content: "<p>Repair hardware armor and structure?</p>",
+      title: game.i18n.localize("MWDESTINY.dialog.hardwareRepairDialogTitle"),
+      content: `<p>${game.i18n.localize("MWDESTINY.dialog.hardwareRepairPrompt")}</p>`,
       yes: () => true,
       no: () => false,
       defaultYes: false,

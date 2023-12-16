@@ -5,8 +5,6 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   if (cancelled) return;
 
-  const isWeaponAttack = damageCode != null;
-
   const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${scaleMod} + ${speedMod} + ${mod}`;
 
   const playerRoll = await new Roll(rollFormula, rollData).roll({async: true});
@@ -17,9 +15,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   const parts = [];
 
-  const titleSuffix = isWeaponAttack ? "Test" : "Attack";
-
-  const flavor = skillName ? `${skillName} ${titleSuffix}` : `${attr2?.toUpperCase()} + ${attr2?.toUpperCase()} ${titleSuffix}`;
+  const flavor = !(skillName || damageCode) ? `${attr?.toUpperCase()} + ${attr2?.toUpperCase()} ${game.i18n.localize("MWDESTINY.mechanic.test")}` : title;
 
   parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
 
@@ -29,7 +25,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   const missileHtml = [];
 
-  if (difficulty || isWeaponAttack) {
+  if (difficulty || damageCode) {
     const difficultyDice = CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || `2d6 + ${targetDefMod}`;
 
     const difficultyRoll = await new Roll(difficultyDice, rollData).roll({async: true});
@@ -40,7 +36,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     const damageMessages = [];
 
     // Rework to use item type instead
-    if (isWeaponAttack && success) {
+    if (damageCode && success) {
       if (damageGroups.length > 1) {
         const dmgGroupStr = game.i18n.localize("MWDESTINY.hardware.damageGroups");
         const totalStr = game.i18n.localize("MWDESTINY.mechanic.total");
@@ -57,8 +53,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
       missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) => `<p>${missileLoc} ${i+1}: ${dmg} ${damageLoc}</p><div>${await roll.render()}</div>`))));
     }
 
-    const successStr = isWeaponAttack ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");
-    const failureStr = isWeaponAttack ? game.i18n.localize("MWDESTINY.dice.miss") : game.i18n.localize("MWDESTINY.dice.failure");
+    const successStr = damageCode ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");
+    const failureStr = damageCode ? game.i18n.localize("MWDESTINY.dice.miss") : game.i18n.localize("MWDESTINY.dice.failure");
     const successMsg = `<h3>${success ? `${successStr}!` : `${failureStr}!`}</h3>`;
 
     const playerLabel = `<p>${actor.name}</p>`;
