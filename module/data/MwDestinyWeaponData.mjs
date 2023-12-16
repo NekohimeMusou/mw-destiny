@@ -37,7 +37,8 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   }
 
   get weaponSkill() {
-    return this.parent.actor.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+    return this.parent.actor.items.find((i) => i.type === "skill" &&
+      i.system.weaponSkillType === this.weaponSkillType);
   }
 
   get damageCode() {

@@ -19,8 +19,12 @@
                 "average": "Average (3d6)",
                 "hard": "Hard (4d6)"
             },
+            "rollButton": "Roll",
+            "cancelButton": "Cancel",
             "hardwareRepairDialogTitle": "Repair Hardware",
-            "hardwareRepairPrompt": "Repair hardware armor and structure?"
+            "hardwareRepairPrompt": "Repair hardware armor and structure?",
+            "confirmDeleteDialogTitle": "Delete Item",
+            "confirmDeletePrompt": "Really delete {name}?"
         },
         "bio": {
             "history": "History",
@@ -72,7 +76,14 @@
             "createItem": "Create Item",
             "addItem": "Add Item",
             "editItem": "Edit Item",
-            "deleteItem": "Delete Item"
+            "deleteItem": "Delete Item",
+            "newItem": "New {name}"
+        },
+        "effects": {
+            "newEffect": "New Effect",
+            "temporary": "Temporary Effects",
+            "passive": "Passive Effects",
+            "inactive": "Inactive Effects"
         },
         "skills": {
             "skill": "Skill",

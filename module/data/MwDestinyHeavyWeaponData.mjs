@@ -32,7 +32,8 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
   get weaponSkill() {
     const pilot = this.parent.actor.system.pilot;
-    return pilot?.items.find((i) => i.type === "skill" && i.system.weaponSkillType === this.weaponSkillType);
+    return pilot?.items.find((i) => i.type === "skill" &&
+      i.system.weaponSkillType === this.weaponSkillType);
   }
 
   get damageTypeCode() {

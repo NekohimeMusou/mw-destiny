@@ -12,7 +12,7 @@ export async function onManageActiveEffect(event, owner) {
   switch ( a.dataset.action ) {
     case "create":
       return await owner.createEmbeddedDocuments("ActiveEffect", [{
-        name: "New Effect",
+        name: game.i18n.localize("MWDESTINY.effects.newEffect"),
         icon: "icons/svg/aura.svg",
         origin: owner.uuid,
         duration: {rounds: li.dataset.effectType === "temporary" ? 1 : undefined},
@@ -41,17 +41,17 @@ export function prepareActiveEffectCategories(effects) {
   const categories = {
     temporary: {
       type: "temporary",
-      label: "Temporary Effects",
+      label: game.i18n.localize("MWDESTINY.effects.temporary"),
       effects: [],
     },
     passive: {
       type: "passive",
-      label: "Passive Effects",
+      label: game.i18n.localize("MWDESTINY.effects.passive"),
       effects: [],
     },
     inactive: {
       type: "inactive",
-      label: "Inactive Effects",
+      label: game.i18n.localize("MWDESTINY.effects.inactive"),
       effects: [],
     },
   };

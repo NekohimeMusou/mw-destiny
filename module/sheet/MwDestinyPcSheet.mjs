@@ -83,7 +83,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     // Grab any data associated with this control.
     const system = duplicate(element.dataset);
     // Initialize a default name.
-    const itemName = `New ${type.capitalize()}`;
+    const itemName = `${game.i18n.format("MWDESTINY.sheet.new", {name: type.capitalize()})}`;
     // Prepare the item object.
     const itemData = {
       name: itemName,
@@ -102,8 +102,8 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const item = this.actor.items.get(li.data("itemId"));
 
     const confirmDelete = await Dialog.confirm({
-      title: "Delete Item",
-      content: `<p>Really delete ${item.name}?</p>`,
+      title: game.i18n.localize("MWDESTINY.dialog.confirmDeleteDialogTitle"),
+      content: `<p>${game.i18n.format("MWDESTINY.dialog.confirmDeletePrompt", {name: item.name})}</p>`,
       yes: () => true,
       no: () => false,
       defaultYes: false,

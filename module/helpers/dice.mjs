@@ -15,7 +15,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   const parts = [];
 
-  const flavor = !(skillName || damageCode) ? `${attr?.toUpperCase()} + ${attr2?.toUpperCase()} ${game.i18n.localize("MWDESTINY.mechanic.test")}` : title;
+  const flavor = !(skillName || damageCode) ?
+   `${attr?.toUpperCase()} + ${attr2?.toUpperCase()} ${game.i18n.localize("MWDESTINY.mechanic.test")}` : title;
 
   parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
 
@@ -43,14 +44,16 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
         damageMessages.push(`<p>${dmgGroupStr} (${totalStr}: ${totalDmg})</p>`);
       }
 
-      const groupStrings = damageGroups.map(([label, dmg]) => `<p>${dmg} (${game.i18n.localize(`MWDESTINY.hardware.damageGroup.${label}`)})</p>`);
+      const groupStrings = damageGroups.map(([label, dmg]) =>
+        `<p>${dmg} (${game.i18n.localize(`MWDESTINY.hardware.damageGroup.${label}`)})</p>`);
 
       damageMessages.push(...groupStrings);
 
       const missileLoc = game.i18n.localize("MWDESTINY.combat.missile");
       const damageLoc = game.i18n.localize("MWDESTINY.combat.damage");
 
-      missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) => `<p>${missileLoc} ${i+1}: ${dmg} ${damageLoc}</p><div>${await roll.render()}</div>`))));
+      missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) =>
+        `<p>${missileLoc} ${i+1}: ${dmg} ${damageLoc}</p><div>${await roll.render()}</div>`))));
     }
 
     const successStr = damageCode ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");
@@ -58,10 +61,15 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     const successMsg = `<h3>${success ? `${successStr}!` : `${failureStr}!`}</h3>`;
 
     const playerLabel = `<p>${actor.name}</p>`;
-    const oppositionLabel = targetName ? `<p>${targetName}${targetDefLabel}</p>` :
-    `<p>${game.i18n.localize("MWDESTINY.mechanic.difficulty")}: ${game.i18n.localize(`MWDESTINY.dialog.difficulties.${difficulty}`)}`;
 
-    parts.push(successMsg, ...damageMessages, playerLabel, await playerRoll.render(), oppositionLabel, await difficultyRoll.render(), ...missileHtml);
+    const difficultyStr = game.i18n.localize("MWDESTINY.mechanic.difficulty");
+    const difficultyLabel = game.i18n.localize(`MWDESTINY.dialog.difficulties.${difficulty}`);
+
+    const oppositionLabel = targetName ? `<p>${targetName}${targetDefLabel}</p>` :
+    `<p>${difficultyStr}: ${difficultyLabel}`;
+
+    parts.push(successMsg, ...damageMessages, playerLabel,
+        await playerRoll.render(), oppositionLabel, await difficultyRoll.render(), ...missileHtml);
   } else {
     parts.push(await playerRoll.render());
   }
@@ -97,18 +105,19 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
   }
 
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
-  const content = await renderTemplate(template, {title, attr, skillRank, skillName, targetName, MWDESTINY: CONFIG.MWDESTINY});
+  const content = await renderTemplate(template, {title, attr, skillRank,
+    skillName, targetName, MWDESTINY: CONFIG.MWDESTINY});
 
   return new Promise((resolve) => new Dialog({
     title,
     content,
     buttons: {
       roll: {
-        label: "Roll",
+        label: game.i18n.localize("MWDESTINY.dialog.rollButton"),
         callback: (html) => resolve(_processRollOptions(html[0].querySelector("form"))),
       },
       cancel: {
-        label: "Cancel",
+        label: game.i18n.localize("MWDESTINY.dialog.cancelButton"),
         callback: () => resolve({cancelled: true}),
       },
     },
