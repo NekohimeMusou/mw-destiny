@@ -114,13 +114,19 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
   async #onSheetRoll(event) {
     event.preventDefault();
     const element = event.currentTarget;
-    const dataset = element.dataset;
-    const skillRank = parseInt(dataset.skillRank || 0);
-    const attr = dataset.attr;
-    const skillName = dataset.skillName;
-    const damageCode = dataset.damageCode;
-    const woundPenalty = this.actor.system.pilot?.system.woundPenalty;
     const actor = this.actor;
+    const itemId = element.closest(".item").dataset.itemId;
+    const weapon = actor.items.get(itemId);
+
+    const woundPenalty = actor.system.pilotWoundPenalty;
+    const damageCode = weapon.system.damageCode;
+
+    const weaponSkill = weapon.system.weaponSkill;
+    const skillName = weaponSkill?.name;
+    const skillRank = parseInt(weaponSkill?.system?.rank || 0);
+    const attr = weaponSkill?.system?.link;
+
+    const rollLabel = `${weapon.name} Attack`;
 
     if (actor.type === "hardware" && !actor.system.pilotId) {
       return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noPilot"));
@@ -137,7 +143,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const scaleMod = damageCode != null && targetType !== "hardware" ? 2 : 0;
 
-    const speedMod = target.type !== "hardware" ? 0 : this.actor.system.movement - target.system.movement;
+    const speedMod = target.type !== "hardware" ? 0 : actor.system.movement - target.system.movement;
 
     let targetDefMod = 0;
     if (targetType === "hardware") {
@@ -153,8 +159,15 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
       targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
     }
 
-    return await rollTest(this.actor.getRollData(), dataset.rollLabel,
-        {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName, scaleMod, speedMod, targetDefLabel, targetDefMod});
+    const baseDamage = weapon.system.baseDamage || 0;
+    const missileCount = weapon.system.missileCount || 0;
+    const missileMax = weapon.system.missileMax || 0;
+    const cluster = weapon.system.cluster || 0;
+
+    return await rollTest(actor.getRollData(), rollLabel,
+        {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
+          scaleMod, speedMod, targetDefLabel, targetDefMod,
+          baseDamage, missileCount, missileMax, cluster});
   }
 
   async #onRepair(event) {
@@ -172,11 +185,10 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const hp = deepClone(this.actor.system.hp);
 
-    for (const hwType of Object.values(hp)) {
-      for (const loc of Object.values(hwType)) {
-        ["armor", "structure"].forEach((s) => loc[s].value = loc[s].max);
-      }
-    }
+    Object.values(hp)
+        .forEach((hwType) => Object.values(hwType)
+            .forEach((loc) => ["armor", "structure"]
+                .forEach((s) => loc[s].value = loc[s].max)));
 
     await this.actor.update({"system.hp": hp});
   }

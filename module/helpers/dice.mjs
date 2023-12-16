@@ -1,5 +1,6 @@
 export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
-  skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0, targetName=null, scaleMod=0, speedMod=0}={}) {
+  skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0,
+  targetName=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0, cluster=0}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName});
 
   if (cancelled) return;
@@ -26,6 +27,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     parts.push(`<h3>${game.i18n.localize("MWDESTINY.mechanic.target")}: ${targetName}</h3>`);
   }
 
+  const missileHtml = [];
+
   if (difficulty || isWeaponAttack) {
     const difficultyDice = CONFIG.MWDESTINY.rollDifficultyDice?.[difficulty] || `2d6 + ${targetDefMod}`;
 
@@ -33,7 +36,26 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
     const success = playerRoll.total >= difficultyRoll.total;
 
-    const damageMsg = isWeaponAttack && success ? `<p>Damage: ${damageCode}</p>` : "";
+    const [damageGroups, missileRolls, totalDmg] = await getDamageGroups(baseDamage, {missileCount, missileMax, cluster});
+    const damageMessages = [];
+
+    // Rework to use item type instead
+    if (isWeaponAttack && success) {
+      if (damageGroups.length > 1) {
+        const dmgGroupStr = game.i18n.localize("MWDESTINY.hardware.damageGroups");
+        const totalStr = game.i18n.localize("MWDESTINY.mechanic.total");
+        damageMessages.push(`<p>${dmgGroupStr} (${totalStr}: ${totalDmg})</p>`);
+      }
+
+      const groupStrings = damageGroups.map(([label, dmg]) => `<p>${dmg} (${game.i18n.localize(`MWDESTINY.hardware.damageGroup.${label}`)})</p>`);
+
+      damageMessages.push(...groupStrings);
+
+      const missileLoc = game.i18n.localize("MWDESTINY.combat.missile");
+      const damageLoc = game.i18n.localize("MWDESTINY.combat.damage");
+
+      missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) => `<p>${missileLoc} ${i+1}: ${dmg} ${damageLoc}</p><div>${await roll.render()}</div>`))));
+    }
 
     const successStr = isWeaponAttack ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");
     const failureStr = isWeaponAttack ? game.i18n.localize("MWDESTINY.dice.miss") : game.i18n.localize("MWDESTINY.dice.failure");
@@ -43,7 +65,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     const oppositionLabel = targetName ? `<p>${targetName}${targetDefLabel}</p>` :
     `<p>${game.i18n.localize("MWDESTINY.mechanic.difficulty")}: ${game.i18n.localize(`MWDESTINY.dialog.difficulties.${difficulty}`)}`;
 
-    parts.push(successMsg, damageMsg, playerLabel, await playerRoll.render(), oppositionLabel, await difficultyRoll.render());
+    parts.push(successMsg, ...damageMessages, playerLabel, await playerRoll.render(), oppositionLabel, await difficultyRoll.render(), ...missileHtml);
   } else {
     parts.push(await playerRoll.render());
   }
@@ -97,4 +119,51 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
     default: "roll",
     close: () => resolve({cancelled: true}),
   }, null).render(true));
+}
+
+// MISSILE
+// Roll hit loc for base damage (i.e. one dmg group)
+// Roll specified # of missile dice
+// 1-3 = that much damage, 4-6 = 0 damage
+// Add total missile die dmg to base dmg
+// If total > max, reduce largest missile die by 1 until total = max
+
+// CLUSTER
+// Subtract X from standard damage value and assign hit loc as normal
+// For groups with only 1 cluster weapon this will be 0 (i.e. "4 (C4)" for an LB-10X AC)
+// e.g. a group with an ER Large Laser and an LB-10X AC is 8 (C4)
+// So you'd roll (8 - 4) = 4 as a single damage group, then 4 groups of 1
+async function getDamageGroups(baseDmg, {missileCount=0, missileMax=0, cluster=0}={}) {
+  const damageGroups = [["base", baseDmg - cluster]];
+
+  if (cluster > 0) {
+    damageGroups.push(["cluster", `1 x ${cluster}`]);
+  }
+
+  const missileRolls = [];
+  for (let i = 0; i < missileCount; i++) {
+    const roll = await new Roll("1d6").roll({async: true});
+    missileRolls.push([roll, roll.total > 3 ? 0 : roll.total]);
+  }
+
+  if (missileCount > 0 && missileMax > baseDmg) {
+    // Extract the raw damage numbers and filter out missiles that missed (did 0 damage)
+    const missileGroupDamage = missileRolls.map(([, total]) => total).filter((m) => m > 0);
+
+    // Subtract total from max dmg; e.g. total 5 - max 4 = delta 1
+    const overkill = missileGroupDamage.reduce((total, m) => total + m, 0) - missileMax;
+
+    for (let i = 0; i < overkill; i++) {
+      const maxGroup = Math.max(...missileGroupDamage);
+      const index = missileGroupDamage.indexOf(maxGroup);
+      if (index >= 0) missileGroupDamage[index]--;
+    }
+
+    const missileGroups = missileGroupDamage.map((d) => ["missile", d]);
+    damageGroups.push(...missileGroups);
+  }
+
+  const totalDmg = damageGroups.filter(([type, _]) => type !== "cluster").reduce((total, [_, dmg]) => total + dmg, 0) + cluster;
+
+  return [damageGroups, missileRolls, totalDmg];
 }

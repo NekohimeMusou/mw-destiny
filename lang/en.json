@@ -56,7 +56,8 @@
             "test": "Test",
             "target": "Target",
             "roll": "Roll",
-            "difficulty": "Difficulty"
+            "difficulty": "Difficulty",
+            "total": "Total"
         },
         "dice": {
             "success": "Success",
@@ -73,7 +74,6 @@
         },
         "skills": {
             "skill": "Skill",
-            "total": "Total",
             "rank": "Skill Rank",
             "weapon": {
                 "melee": "Melee Combat",
@@ -139,7 +139,8 @@
             "strPowered": "Strength Powered",
             "armor": "Armor",
             "armorType": "Armor Type",
-            "armorEffect": "Armor Effect"
+            "armorEffect": "Armor Effect",
+            "missile": "Missile"
         },
         "hardware": {
             "type": "Type",
@@ -215,7 +216,13 @@
             "pilot": "Pilot",
             "pilotingTestBtn": "Roll Piloting Test",
             "repairBtn": "Repair Hardware",
-            "cluster": "Cluster"
+            "cluster": "Cluster",
+            "damageGroups": "Damage Groups",
+            "damageGroup": {
+                "base": "Base",
+                "missile": "Missile",
+                "cluster": "Cluster"
+            }
         }
     }
 }

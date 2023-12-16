@@ -2,7 +2,6 @@
 
 ## Stuff to do
 
-- Roll and calculate missile and cluster damage groups automatically
 - Weapon compendium
 - Hardware compendium
   - Just the ones in the book!

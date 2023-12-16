@@ -48,6 +48,10 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return game.actors.get(this.pilotId);
   }
 
+  get pilotWoundPenalty() {
+    return this.pilot?.system?.woundPenalty || 0;
+  }
+
   get pilotingSkillType() {
     if (this.hardwareType === "vtol" || this.hardwareType === "vehicle") return "combatVehicle";
     return this.hardwareType;
