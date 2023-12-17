@@ -44,6 +44,20 @@
             "system": "mw-destiny",
             "type": "Item",
             "path": "packs/skills"
+        },
+        {
+            "name": "npcs",
+            "label": "NPCs",
+            "system": "mw-destiny",
+            "type": "Actor",
+            "path": "packs/npcs"
+        },
+        {
+            "name": "weapons",
+            "label": "Weapons",
+            "system": "mw-destiny",
+            "type": "Item",
+            "path": "packs/weapons"
         }
     ]
 }

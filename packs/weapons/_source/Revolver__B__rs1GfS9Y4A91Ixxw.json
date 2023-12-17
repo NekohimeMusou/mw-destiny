@@ -1,0 +1,48 @@
+{
+  "folder": "Y0ZOKe5YqprWoGQ1",
+  "name": "Revolver (B)",
+  "type": "weapon",
+  "_id": "rs1GfS9Y4A91Ixxw",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 4,
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": 0
+      },
+      "near": {
+        "usable": true,
+        "mod": -2
+      },
+      "far": {
+        "usable": false,
+        "mod": 0
+      }
+    },
+    "damageType": "ballistic",
+    "weaponSkillType": "smallArms",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702062117581,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!rs1GfS9Y4A91Ixxw"
+}

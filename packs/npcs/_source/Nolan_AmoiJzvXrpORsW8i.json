@@ -1,0 +1,333 @@
+{
+  "folder": "L60GAechuhfcDzU7",
+  "name": "Nolan",
+  "type": "animal",
+  "_id": "AmoiJzvXrpORsW8i",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Intelligent Pack Predator",
+      "Engadine (Lyran C.)",
+      "The Rooting: Annual Nolan-Hunt Expedition",
+      "Large, Four-Armed Physique",
+      "Demon-like"
+    ],
+    "equipment": [
+      "Nolan-Hunting Trophy",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 14
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 14
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 3,
+        "value": 3
+      },
+      "type": "Natural Armor",
+      "effect": "-1 damage from Ballistic weapons"
+    },
+    "attributes": {
+      "str": 8,
+      "rfl": 5,
+      "int": 7,
+      "wil": 7
+    }
+  },
+  "prototypeToken": {
+    "name": "Nolan",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "4t4RcJTx7wt6mJEs",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1702842989353,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!AmoiJzvXrpORsW8i.4t4RcJTx7wt6mJEs"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "LRNoykFvdusIlukO",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1702842990398,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!AmoiJzvXrpORsW8i.LRNoykFvdusIlukO"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tracking",
+      "type": "skill",
+      "_id": "JcOJt9fSodn89XK1",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Physical tracking, sensor tracking, and shadowing.</p>",
+        "link": "int",
+        "rank": 5,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.up4vzKy8KjRe9fh9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113768488,
+        "modifiedTime": 1702842991665,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!AmoiJzvXrpORsW8i.JcOJt9fSodn89XK1"
+    },
+    {
+      "name": "Claws",
+      "type": "weapon",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "_id": "lToReir7106o8XMH",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702846702379,
+        "modifiedTime": 1702846712398,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!AmoiJzvXrpORsW8i.lToReir7106o8XMH"
+    },
+    {
+      "name": "Bite",
+      "type": "weapon",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": "On successful attack, deals 3 damage for the next two rounds."
+      },
+      "_id": "wY4Kig1jAR0o23MN",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702846703911,
+        "modifiedTime": 1702846736778,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!AmoiJzvXrpORsW8i.wY4Kig1jAR0o23MN"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702841728131,
+    "modifiedTime": 1702847448465,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 300000,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!AmoiJzvXrpORsW8i"
+}

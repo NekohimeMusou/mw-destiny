@@ -1,0 +1,48 @@
+{
+  "folder": "pGD4MSd4dY2TrA5P",
+  "name": "Staff",
+  "type": "weapon",
+  "_id": "ndt02O0fzeI4mnym",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 2,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": false,
+        "mod": null
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": true,
+    "weaponSkillType": "melee",
+    "damageType": "",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702844439369,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!ndt02O0fzeI4mnym"
+}

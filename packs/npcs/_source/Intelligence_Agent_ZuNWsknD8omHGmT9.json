@@ -1,0 +1,455 @@
+{
+  "folder": null,
+  "name": "Intelligence Agent",
+  "type": "npc",
+  "_id": "ZuNWsknD8omHGmT9",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Spy",
+      "Information Gatherer",
+      "Deep Cover",
+      "Concealed Weapons",
+      "False Identity"
+    ],
+    "equipment": [
+      "Civilian Clothing",
+      "Encrypted Comm",
+      "Micro Recorder",
+      "Laser Microphone",
+      "",
+      ""
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 8,
+        "value": 8
+      },
+      "type": "Concealed Flak Armor",
+      "effect": "-1 damage from Ballistic weapons"
+    },
+    "attributes": {
+      "str": 2,
+      "rfl": 3,
+      "int": 3,
+      "wil": 2,
+      "cha": 2
+    }
+  },
+  "prototypeToken": {
+    "name": "Intelligence Agent",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "q0urvaeoTa3WILDo",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1702842905717,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.q0urvaeoTa3WILDo"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tracking",
+      "type": "skill",
+      "_id": "InMn7mNFoHqOMeBt",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Physical tracking, sensor tracking, and shadowing.</p>",
+        "link": "int",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.up4vzKy8KjRe9fh9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113768488,
+        "modifiedTime": 1702842908905,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.InMn7mNFoHqOMeBt"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Acting",
+      "type": "skill",
+      "_id": "RtyBqkHEwd77hmKg",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Con artistry and performance.</p>",
+        "link": "cha",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xIU0KLjUcfXtUxW9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112427104,
+        "modifiedTime": 1702842909864,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.RtyBqkHEwd77hmKg"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Disguise",
+      "type": "skill",
+      "_id": "4nzBWekUdgJoFfvK",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Camouflage, cosmetics, costuming, and mimicry.</p>",
+        "link": "cha",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.SPFZnCrrpfSswUNT"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112452450,
+        "modifiedTime": 1702842910700,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.4nzBWekUdgJoFfvK"
+    },
+    {
+      "name": "Local Culture",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 2
+      },
+      "_id": "0PbuBogMpSCATPBl",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702842897339,
+        "modifiedTime": 1702842911565,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.0PbuBogMpSCATPBl"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1702846606408,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "OaiS2VRaWJUaUWPB",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.OaiS2VRaWJUaUWPB"
+    },
+    {
+      "folder": "JfK427k7jHsf1eie",
+      "name": "Compound Bow",
+      "type": "weapon",
+      "_id": "tHkURcehrbSb7qwr",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "projectile",
+        "special": ""
+      },
+      "effects": [],
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.weapons.Item.cjvIqwjwraa3KrUh"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702078235422,
+        "modifiedTime": 1702846609989,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.tHkURcehrbSb7qwr"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (E)",
+      "type": "weapon",
+      "_id": "gyqQJ4Jjwxi3dAJd",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.weapons.Item.BydrT5Y7rYkIHtET"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063490729,
+        "modifiedTime": 1702846613072,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!ZuNWsknD8omHGmT9.gyqQJ4Jjwxi3dAJd"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702839564426,
+    "modifiedTime": 1702846781691,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!ZuNWsknD8omHGmT9"
+}

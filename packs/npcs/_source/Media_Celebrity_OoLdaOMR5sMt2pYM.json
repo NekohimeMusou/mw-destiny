@@ -1,0 +1,404 @@
+{
+  "folder": null,
+  "name": "Media Celebrity",
+  "type": "npc",
+  "_id": "OoLdaOMR5sMt2pYM",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Fame",
+      "Media Events",
+      "Holovids",
+      "Big City",
+      "Crowds"
+    ],
+    "equipment": [
+      "Autograph Pen",
+      "Headshots",
+      "Personal Communicator",
+      "",
+      "",
+      ""
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": null,
+        "value": null
+      },
+      "type": "None",
+      "effect": "N/A"
+    },
+    "attributes": {
+      "str": 1,
+      "rfl": 2,
+      "int": 1,
+      "wil": 2,
+      "cha": 4
+    }
+  },
+  "prototypeToken": {
+    "name": "Media Celebrity",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Athletics",
+      "type": "skill",
+      "_id": "YpDsN95FNX0HeblR",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Running, jumping, swimming, climbing, and acrobatics.</p>",
+        "link": "str",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.k4J4ZEayEfmlzuOr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112913669,
+        "modifiedTime": 1702842580340,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.YpDsN95FNX0HeblR"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "m9EeQiAkFQMg2O4R",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1702842581332,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.m9EeQiAkFQMg2O4R"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Acting",
+      "type": "skill",
+      "_id": "rGliG6I6780cV7rQ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Con artistry and performance.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xIU0KLjUcfXtUxW9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112427104,
+        "modifiedTime": 1702842582223,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.rGliG6I6780cV7rQ"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Disguise",
+      "type": "skill",
+      "_id": "bnU2j3rHnrmpDjy8",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Camouflage, cosmetics, costuming, and mimicry.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.SPFZnCrrpfSswUNT"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112452450,
+        "modifiedTime": 1702842583183,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.bnU2j3rHnrmpDjy8"
+    },
+    {
+      "name": "Celebrity Gossip",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 2
+      },
+      "_id": "UvAp3pIlJJgJnJSS",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702842571890,
+        "modifiedTime": 1702842584156,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.UvAp3pIlJJgJnJSS"
+    },
+    {
+      "name": "Unarmed",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.weapons.Item.P15YjOEooxKLBxdJ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1702846321586,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "jfmQpcTZB19AFrR6",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.jfmQpcTZB19AFrR6"
+    },
+    {
+      "folder": "AToMbweWjuz2LGb5",
+      "name": "Needler Pistol (Holdout)",
+      "type": "weapon",
+      "_id": "V1fzcFyrRB2jTgM0",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "",
+        "special": "Every 2 damage reduces target's Armor by 1 pip. Condition Monitor pips are damaged as normal."
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.world.weapons.Item.fuznqxZN4MdybHN2"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.4.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845113689,
+        "modifiedTime": 1702846391416,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!OoLdaOMR5sMt2pYM.V1fzcFyrRB2jTgM0"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702840921770,
+    "modifiedTime": 1702846781691,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!OoLdaOMR5sMt2pYM"
+}

@@ -1,0 +1,48 @@
+{
+  "folder": "pGD4MSd4dY2TrA5P",
+  "name": "Medusa Whip",
+  "type": "weapon",
+  "_id": "g4aQH9u6VURyooRt",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 1,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": -2
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": true,
+    "isStrPowered": false,
+    "weaponSkillType": "melee",
+    "damageType": "",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702844270740,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!g4aQH9u6VURyooRt"
+}

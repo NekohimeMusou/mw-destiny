@@ -1,0 +1,48 @@
+{
+  "folder": "vQrzuDz6xqGy3REt",
+  "name": "Laser Pistol (Holdout) (E)",
+  "type": "weapon",
+  "_id": "uP8Uz0u5pcX9sSuU",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 2,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": null
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "weaponSkillType": "smallArms",
+    "damageType": "energy",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702844797352,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!uP8Uz0u5pcX9sSuU"
+}

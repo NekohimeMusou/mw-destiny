@@ -1,19 +1,19 @@
 {
-  "name": "Reflexes",
+  "name": "Flechette",
   "sorting": "a",
-  "folder": null,
+  "folder": "jwByOnUKASnsCUA6",
   "type": "Item",
-  "_id": "VJb81QHhBezY0rx7",
-  "sort": -50000,
+  "_id": "AToMbweWjuz2LGb5",
+  "sort": 0,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.4.1",
     "coreVersion": "11.315",
-    "createdTime": 1701112405740,
-    "modifiedTime": 1702841938262,
+    "createdTime": 1702431326728,
+    "modifiedTime": 1702847688424,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!VJb81QHhBezY0rx7"
+  "_key": "!folders!AToMbweWjuz2LGb5"
 }

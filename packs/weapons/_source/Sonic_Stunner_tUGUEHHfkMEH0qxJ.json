@@ -1,0 +1,48 @@
+{
+  "folder": "Lo7CVhEked6fW3GA",
+  "name": "Sonic Stunner",
+  "type": "weapon",
+  "_id": "tUGUEHHfkMEH0qxJ",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 4,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": -2
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": true,
+    "isStrPowered": false,
+    "weaponSkillType": "smallArms",
+    "damageType": "",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702845361957,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!tUGUEHHfkMEH0qxJ"
+}

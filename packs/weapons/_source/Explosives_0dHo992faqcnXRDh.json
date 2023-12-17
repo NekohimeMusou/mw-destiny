@@ -1,19 +1,19 @@
 {
-  "name": "Reflexes",
+  "name": "Explosives",
   "sorting": "a",
   "folder": null,
   "type": "Item",
-  "_id": "VJb81QHhBezY0rx7",
-  "sort": -50000,
+  "_id": "0dHo992faqcnXRDh",
+  "sort": 400000,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.4.1",
     "coreVersion": "11.315",
-    "createdTime": 1701112405740,
-    "modifiedTime": 1702841938262,
+    "createdTime": 1702847688424,
+    "modifiedTime": 1702847688424,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!VJb81QHhBezY0rx7"
+  "_key": "!folders!0dHo992faqcnXRDh"
 }

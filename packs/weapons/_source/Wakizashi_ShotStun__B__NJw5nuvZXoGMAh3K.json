@@ -1,0 +1,48 @@
+{
+  "folder": "Lo7CVhEked6fW3GA",
+  "name": "Wakizashi ShotStun (B)",
+  "type": "weapon",
+  "_id": "NJw5nuvZXoGMAh3K",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 5,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": -2
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "weaponSkillType": "smallArms",
+    "damageType": "ballistic",
+    "special": "Includes extendable Sunstick (4F, OK/-/-). May split damage across two eligible targets within range."
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702845412710,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!NJw5nuvZXoGMAh3K"
+}

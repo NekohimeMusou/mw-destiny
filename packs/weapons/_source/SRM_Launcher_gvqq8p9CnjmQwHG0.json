@@ -1,0 +1,48 @@
+{
+  "folder": "4pGXDdsSLC7AUA5v",
+  "name": "SRM Launcher",
+  "type": "weapon",
+  "_id": "gvqq8p9CnjmQwHG0",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 0,
+    "range": {
+      "close": {
+        "usable": false,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": null
+      },
+      "far": {
+        "usable": true,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "weaponSkillType": "support",
+    "damageType": "",
+    "special": "May attack up to three different targets per Narration. Standard Warheads: 12 (Personal Combat), 1+M (Max 2) ('Mech-Scale Combat). Inferno Warheads: H on d6 roll of 1-3."
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702845728972,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!gvqq8p9CnjmQwHG0"
+}

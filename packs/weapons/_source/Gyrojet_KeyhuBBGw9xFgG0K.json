@@ -1,19 +1,19 @@
 {
-  "name": "Reflexes",
+  "name": "Gyrojet",
   "sorting": "a",
-  "folder": null,
+  "folder": "jwByOnUKASnsCUA6",
   "type": "Item",
-  "_id": "VJb81QHhBezY0rx7",
-  "sort": -50000,
+  "_id": "KeyhuBBGw9xFgG0K",
+  "sort": 0,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.4.1",
     "coreVersion": "11.315",
-    "createdTime": 1701112405740,
-    "modifiedTime": 1702841938262,
+    "createdTime": 1702847688424,
+    "modifiedTime": 1702847688424,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!VJb81QHhBezY0rx7"
+  "_key": "!folders!KeyhuBBGw9xFgG0K"
 }

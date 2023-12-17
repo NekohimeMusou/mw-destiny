@@ -1,19 +1,19 @@
 {
-  "name": "Reflexes",
+  "name": "Projectile/Thrown",
   "sorting": "a",
   "folder": null,
   "type": "Item",
-  "_id": "VJb81QHhBezY0rx7",
-  "sort": -50000,
+  "_id": "JfK427k7jHsf1eie",
+  "sort": 100000,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.4.1",
     "coreVersion": "11.315",
-    "createdTime": 1701112405740,
-    "modifiedTime": 1702841938262,
+    "createdTime": 1702431346420,
+    "modifiedTime": 1702847688424,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!VJb81QHhBezY0rx7"
+  "_key": "!folders!JfK427k7jHsf1eie"
 }

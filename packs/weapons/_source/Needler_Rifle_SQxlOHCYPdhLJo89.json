@@ -1,0 +1,48 @@
+{
+  "folder": "AToMbweWjuz2LGb5",
+  "name": "Needler Rifle",
+  "type": "weapon",
+  "_id": "SQxlOHCYPdhLJo89",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 5,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": null
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "weaponSkillType": "smallArms",
+    "damageType": "",
+    "special": "Every 2 damage reduces target's Armor by 1 pip. Condition Monitor pips are damaged as normal."
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702845082504,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!SQxlOHCYPdhLJo89"
+}

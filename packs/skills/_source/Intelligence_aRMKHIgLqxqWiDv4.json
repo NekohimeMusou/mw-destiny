@@ -4,16 +4,16 @@
   "folder": null,
   "type": "Item",
   "_id": "aRMKHIgLqxqWiDv4",
-  "sort": 0,
+  "sort": -25000,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
-    "systemVersion": "0.1.6",
+    "systemVersion": "0.4.1",
     "coreVersion": "11.315",
     "createdTime": 1701112410258,
-    "modifiedTime": 1701114070655,
-    "lastModifiedBy": "BOQEoGKmzXOyTdu8"
+    "modifiedTime": 1702841942695,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
   "_key": "!folders!aRMKHIgLqxqWiDv4"
 }

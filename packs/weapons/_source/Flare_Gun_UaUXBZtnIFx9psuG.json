@@ -1,0 +1,48 @@
+{
+  "folder": "Lo7CVhEked6fW3GA",
+  "name": "Flare Gun",
+  "type": "weapon",
+  "_id": "UaUXBZtnIFx9psuG",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 3,
+    "range": {
+      "close": {
+        "usable": true,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": -2
+      },
+      "far": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "weaponSkillType": "smallArms",
+    "damageType": "",
+    "special": "The fire from the flare damages the target for two rounds unless extinguished."
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702845270702,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!UaUXBZtnIFx9psuG"
+}

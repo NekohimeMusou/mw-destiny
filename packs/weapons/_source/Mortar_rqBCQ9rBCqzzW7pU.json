@@ -1,0 +1,48 @@
+{
+  "folder": "4pGXDdsSLC7AUA5v",
+  "name": "Mortar",
+  "type": "weapon",
+  "_id": "rqBCQ9rBCqzzW7pU",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 0,
+    "range": {
+      "close": {
+        "usable": false,
+        "mod": null
+      },
+      "near": {
+        "usable": true,
+        "mod": -2
+      },
+      "far": {
+        "usable": true,
+        "mod": null
+      }
+    },
+    "isStunWeapon": false,
+    "isStrPowered": false,
+    "weaponSkillType": "artillery",
+    "damageType": "",
+    "special": "May attack up to three different targets per Narration. High-Explosive Mortar: 11. Anti-Personnel Mortar: 13."
+  },
+  "effects": [],
+  "flags": {
+    "core": {}
+  },
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.4.1",
+    "coreVersion": "11.315",
+    "createdTime": 1702845631603,
+    "modifiedTime": 1702847688451,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!rqBCQ9rBCqzzW7pU"
+}

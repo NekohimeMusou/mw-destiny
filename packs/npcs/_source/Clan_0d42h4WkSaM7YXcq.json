@@ -1,19 +1,19 @@
 {
-  "name": "Reflexes",
+  "name": "Clan",
   "sorting": "a",
   "folder": null,
-  "type": "Item",
-  "_id": "VJb81QHhBezY0rx7",
-  "sort": -50000,
+  "type": "Actor",
+  "_id": "0d42h4WkSaM7YXcq",
+  "sort": 0,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.4.1",
     "coreVersion": "11.315",
-    "createdTime": 1701112405740,
-    "modifiedTime": 1702841938262,
+    "createdTime": 1702847473352,
+    "modifiedTime": 1702847473352,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!VJb81QHhBezY0rx7"
+  "_key": "!folders!0d42h4WkSaM7YXcq"
 }
