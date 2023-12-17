@@ -41,6 +41,16 @@ export const MWDESTINY = {
       ["melee", "projectile", "smallArms", "gunneryMech", "gunneryAero", "gunneryVehicle", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
   ),
+  weaponSkillLinks: {
+    support: "str",
+    artillery: "int",
+    melee: "rfl",
+    projectile: "rfl",
+    smallArms: "rfl",
+    gunneryMech: "rfl",
+    gunneryAero: "rfl",
+    gunneryVehicle: "rfl",
+  },
   pilotingSkillTypes: Object.fromEntries(
       ["mech", "aerospace", "combatVehicle"]
           .map((s) => [s, `MWDESTINY.skills.piloting.${s}`]),

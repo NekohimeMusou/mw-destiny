@@ -13,6 +13,11 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
       heat: new fields.NumberField({integer: true}),
       location: new fields.StringField(),
       primary: new fields.BooleanField(),
+      weaponSkillType: new fields.StringField({
+        required: true,
+        choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
+        initial: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes)[0],
+      }),
     };
   }
 

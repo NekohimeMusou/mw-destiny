@@ -13,6 +13,11 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
       isStrPowered: new fields.BooleanField({
         initial: false,
       }),
+      weaponSkillType: new fields.StringField({
+        required: true,
+        choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
+        initial: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes)[0],
+      }),
     };
   }
 

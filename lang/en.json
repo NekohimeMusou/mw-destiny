@@ -59,10 +59,13 @@
             "rank": "Rank",
             "equipment": "Equipment",
             "test": "{name} Test",
+            "attack": "{name} Attack",
             "target": "Target: {name}",
             "roll": "Roll",
             "difficulty": "Difficulty",
-            "total": "Total"
+            "total": "Total",
+            "piloting": "Piloting",
+            "psr": "Piloting Skill Test"
         },
         "dice": {
             "success": "Success",
@@ -152,8 +155,7 @@
             "armor": "Armor",
             "armorType": "Armor Type",
             "armorEffect": "Armor Effect",
-            "missile": "Missile",
-            "attack": "{name} Attack"
+            "missile": "Missile"
         },
         "hardware": {
             "type": "Type",

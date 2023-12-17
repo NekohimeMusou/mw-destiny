@@ -68,6 +68,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     html.find(".item-link-select").change((ev) => this.#onItemLinkSelect(ev));
     html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
     html.find(".roll-test").click((ev) => this.#onSheetRoll(ev));
+    html.find(".roll-attack").click((ev) => this.#onAttackRoll(ev));
   }
 
   /**
@@ -150,39 +151,59 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const skillRank = parseInt(dataset.skillRank || 0);
     const attr = dataset.attr;
     const skillName = dataset.skillName;
-    const damageCode = dataset.damageCode;
-    const baseDamage = dataset.baseDamage;
     const woundPenalty = this.actor.system.woundPenalty;
     const actor = this.actor;
 
-    if (damageCode != null && game.user.targets.size !== 1) {
+    const target = game.user.targets.first()?.actor;
+    const targetName = target?.name;
+
+    return await rollTest(this.actor.getRollData(), dataset.rollLabel,
+        {actor, attr, skillRank, skillName, woundPenalty, targetName});
+  }
+
+  async #onAttackRoll(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const itemId = element.closest(".item").dataset.itemId;
+    const actor = this.actor;
+    const actorData = actor.system;
+    const weapon = actor.items.get(itemId);
+
+    if (!weapon) return;
+
+    if (game.user.targets.size !== 1) {
       return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
     }
 
-    const target = game.user.targets.first()?.actor;
+    const weaponData = weapon.system;
 
+    const skill = weaponData.weaponSkill;
+    const skillName = skill?.name || game.i18n.localize(`MWDESTINY.skills.weapon.${weaponData.weaponSkillType}`);
+    const skillData = skill?.system;
+    const skillRank = skillData?.rank || 0;
+    const attr = skillData?.link || CONFIG.MWDESTINY.weaponSkillLinks[weaponData.weaponSkillType];
+
+    const damageCode = weaponData.damageCode;
+    const baseDamage = weaponData.damage;
+
+    const woundPenalty = actorData.woundPenalty;
+
+    const target = game.user.targets.first().actor;
     const targetName = target?.name;
-
     const targetType = target?.type;
 
-    const scaleMod = damageCode != null && targetType === "hardware" ? 2 : 0;
+    const scaleMod = targetType === "hardware" ? 2 : 0;
 
-    let targetDefMod = 0;
-    if (targetType === "hardware") {
-      targetDefMod += target.system.pilot?.system?.attributes?.rfl || 0;
-      targetDefMod += target.system.pilotingSkill?.system?.rank || 0;
-    } else if (targetType) {
-      targetDefMod += target.system.attributes.rfl * 2;
-    }
+    const targetDefMod = targetType === "hardware" ?
+      (target.system.pilot?.system?.attributes?.rfl || 0) + (target.system.pilotingSkill?.system?.rank || 0) :
+      target.system.attributes.rfl * 2;
 
-    let targetDefLabel = "";
+    const targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
 
-    if (target && damageCode) {
-      targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
-    }
+    const rollLabel = game.i18n.format("MWDESTINY.mechanic.attack", {name: weapon.name});
 
-    return await rollTest(this.actor.getRollData(), dataset.rollLabel,
+    return await rollTest(this.actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty,
-          targetName, scaleMod, targetDefLabel, targetDefMod, baseDamage});
+          targetDefLabel, targetDefMod, targetName, scaleMod, baseDamage});
   }
 }

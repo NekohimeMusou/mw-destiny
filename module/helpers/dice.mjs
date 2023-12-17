@@ -40,7 +40,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     if (damageCode && success) {
       if (damageGroups.length > 1) {
         const dmgGroupStr = game.i18n.localize("MWDESTINY.hardware.damageGroups");
-        const totalStr = game.i18n.format("MWDESTINY.combat.totalDamage", {damage: totalDmg});
+        const totalStr = game.i18n.format("MWDESTINY.hardware.totalDamage", {damage: totalDmg});
         damageMessages.push(`<p>${dmgGroupStr} (${totalStr})</p>`);
       }
 
@@ -50,7 +50,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
       damageMessages.push(...groupStrings);
 
       missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) =>
-        `<p>${game.i18n.format("MWDESTINY.combat.missileDamage", {num: i+1, dmg})}</p><div>${await roll.render()}</div>`))));
+        `<p>${game.i18n.format("MWDESTINY.hardware.missileDamage", {num: `${i+1}`, dmg: `${dmg}`})}</p><div>${await roll.render()}</div>`))));
     }
 
     const successStr = damageCode ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");

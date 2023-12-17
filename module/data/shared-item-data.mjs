@@ -3,10 +3,5 @@ export default function getSharedItemData() {
 
   return {
     description: new fields.HTMLField(),
-    weaponSkillType: new fields.StringField({
-      required: true,
-      choices: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes),
-      initial: Object.keys(CONFIG.MWDESTINY.weaponSkillTypes)[0],
-    }),
   };
 }
