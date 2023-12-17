@@ -80,7 +80,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     // Grab any data associated with this control.
     const system = duplicate(element.dataset);
     // Initialize a default name.
-    const itemName = `${game.i18n.format("MWDESTINY.sheet.new", {name: type.capitalize()})}`;
+    const itemName = `${game.i18n.format("MWDESTINY.sheet.newItem", {name: type.capitalize()})}`;
     // Prepare the item object.
     const itemData = {
       name: itemName,
