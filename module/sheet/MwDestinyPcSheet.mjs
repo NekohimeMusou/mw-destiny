@@ -185,6 +185,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
 
     const damageCode = weaponData.damageCode;
     const baseDamage = weaponData.damage;
+    const special = weaponData.special;
 
     const woundPenalty = actorData.woundPenalty;
 
@@ -204,6 +205,6 @@ export default class MwDestinyPcSheet extends ActorSheet {
 
     return await rollTest(this.actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty,
-          targetDefLabel, targetDefMod, targetName, scaleMod, baseDamage});
+          targetDefLabel, targetDefMod, targetName, scaleMod, baseDamage, special});
   }
 }

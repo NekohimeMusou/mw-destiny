@@ -2,6 +2,7 @@
 
 ## Stuff to do
 
+- Physical 'mech attacks
 - Weapon compendium
 - Hardware compendium
   - Just the ones in the book!

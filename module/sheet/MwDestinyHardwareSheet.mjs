@@ -171,6 +171,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const missileCount = weaponData.missileCount;
     const missileMax = weaponData.missileMax;
     const cluster = weaponData.cluster;
+    const special = weaponData.special;
 
     const target = game.user.targets.first().actor;
     const targetName = target.name;
@@ -187,7 +188,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod,
-          baseDamage, missileCount, missileMax, cluster});
+          baseDamage, missileCount, missileMax, cluster, special});
   }
 
   async #onRepair(event) {

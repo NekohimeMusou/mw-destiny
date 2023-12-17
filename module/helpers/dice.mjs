@@ -1,6 +1,7 @@
 export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
   skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0,
-  targetName=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0, cluster=0}={}) {
+  targetName=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0,
+  cluster=0, special=""}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName, actorType: actor.type});
 
   if (cancelled) return;
@@ -53,6 +54,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
         `<p>${game.i18n.format("MWDESTINY.hardware.missileDamage", {num: `${i+1}`, dmg: `${dmg}`})}</p><div>${await roll.render()}</div>`))));
     }
 
+    const specialMsg = special ? `<p>${game.i18n.localize("MWDESTINY.combat.special")}: ${special}</p>` : "";
+
     const successStr = damageCode ? game.i18n.localize("MWDESTINY.dice.hit") : game.i18n.localize("MWDESTINY.dice.success");
     const failureStr = damageCode ? game.i18n.localize("MWDESTINY.dice.miss") : game.i18n.localize("MWDESTINY.dice.failure");
     const successMsg = `<h3>${success ? `${successStr}!` : `${failureStr}!`}</h3>`;
@@ -65,7 +68,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     const oppositionLabel = targetName ? `<p>${targetName}${targetDefLabel}</p>` :
     `<p>${difficultyStr}: ${difficultyLabel}`;
 
-    parts.push(successMsg, ...damageMessages, playerLabel,
+    parts.push(specialMsg, successMsg, ...damageMessages, playerLabel,
         await playerRoll.render(), oppositionLabel, await difficultyRoll.render(), ...missileHtml);
   } else {
     parts.push(await playerRoll.render());

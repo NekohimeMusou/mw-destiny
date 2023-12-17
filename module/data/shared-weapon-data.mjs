@@ -11,5 +11,6 @@ export default function getSharedWeaponData(weaponType) {
           (r) => [r, {usable: false, mod: null}],
       )),
     }),
+    special: new fields.StringField(),
   };
 }
