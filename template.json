@@ -1,6 +1,6 @@
 {
     "Actor": {
-        "types": ["pc", "npc", "hardware", "animal"],
+        "types": ["pc", "npc", "animal", "hardware"],
         "htmlFields": ["history", "personality", "description"],
         "pc": {},
         "hardware": {}

@@ -3,7 +3,6 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
-    const actorType = "hardware";
 
     const hp = new fields.SchemaField(Object.fromEntries(Object.entries(CONFIG.MWDESTINY.hitLocations)
         .map(([hwType, locArray]) => [hwType, new fields.SchemaField(Object.fromEntries(locArray
@@ -17,7 +16,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
             ])))])));
 
     return {
-      ...getSharedActorData(actorType),
+      ...getSharedActorData(),
       hardwareType: new fields.StringField({
         choices: Object.keys(CONFIG.MWDESTINY.hardwareTypes),
         initial: Object.keys(CONFIG.MWDESTINY.hardwareTypes)[0],

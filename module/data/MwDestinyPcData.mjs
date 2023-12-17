@@ -1,9 +1,8 @@
-import getSharedActorData from "./shared-actor-data.mjs";
+import getSharedCharacterData from "./shared-person-data.mjs";
 export default class MwDestinyPcData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
-    const actorType = "pc";
 
     const attributes = new fields.SchemaField(
         Object.fromEntries(
@@ -19,7 +18,8 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
         ));
 
     return {
-      ...getSharedActorData(actorType),
+      ...getSharedCharacterData(),
+      attributes,
       history: new fields.HTMLField(),
       personality: new fields.HTMLField(),
       lifeModules: new fields.SchemaField(Object.fromEntries(
@@ -27,35 +27,6 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
               (m) => [m, new fields.StringField({required: true})],
           ),
       )),
-      physDamage: new fields.SchemaField({
-        min: new fields.NumberField({
-          readonly: true,
-          initial: 0,
-          integer: true,
-        }),
-        max: new fields.NumberField({
-          integer: true,
-          positive: true,
-        }),
-        value: new fields.NumberField({
-          integer: true,
-        }),
-      }),
-      fatigueDamage: new fields.SchemaField({
-        min: new fields.NumberField({
-          readonly: true,
-          initial: 0,
-          integer: true,
-        }),
-        max: new fields.NumberField({
-          positive: true,
-          integer: true,
-        }),
-        value: new fields.NumberField({
-          integer: true,
-        }),
-      }),
-      attributes,
       cues: new fields.ArrayField(new fields.StringField(), {
         required: true,
         initial: Array(20).fill(""),
@@ -67,24 +38,6 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       traits: new fields.ArrayField(new fields.StringField(), {
         required: true,
         initial: Array(2).fill(""),
-      }),
-      armor: new fields.SchemaField({
-        hp: new fields.SchemaField({
-          min: new fields.NumberField({
-            initial: 0,
-            integer: true,
-          }),
-          max: new fields.NumberField({
-            initial: 0,
-            integer: true,
-          }),
-          value: new fields.NumberField({
-            initial: 0,
-            integer: true,
-          }),
-        }),
-        type: new fields.StringField(),
-        effect: new fields.StringField(),
       }),
       hasToughnessTrait: new fields.BooleanField(),
       hasUnluckyTrait: new fields.BooleanField(),

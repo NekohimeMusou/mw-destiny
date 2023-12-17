@@ -1,5 +1,7 @@
 // Import data model classes
 import MwDestinyPcData from "./data/MwDestinyPcData.mjs";
+import MwDestinyNpcData from "./data/MwDestinyNpcData.mjs";
+import MwDestinyAnimalData from "./data/MwDestinyAnimalData.mjs";
 import MwDestinySkillData from "./data/MwDestinySkillData.mjs";
 import MwDestinyWeaponData from "./data/MwDestinyWeaponData.mjs";
 import MwDestinyHardwareData from "./data/MwDestinyHardwareData.mjs";
@@ -40,6 +42,8 @@ function registerDocumentClasses() {
 
 function registerDataModels() {
   CONFIG.Actor.dataModels.pc = MwDestinyPcData;
+  CONFIG.Actor.dataModels.npc = MwDestinyNpcData;
+  CONFIG.Actor.dataModels.animal = MwDestinyAnimalData;
   CONFIG.Actor.dataModels.hardware = MwDestinyHardwareData;
   CONFIG.Item.dataModels.skill = MwDestinySkillData;
   CONFIG.Item.dataModels.weapon = MwDestinyWeaponData;
@@ -48,7 +52,7 @@ function registerDataModels() {
 
 function registerSheetApplications() {
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("mw-destiny", MwDestinyPcSheet, {types: ["pc"], makeDefault: true});
+  Actors.registerSheet("mw-destiny", MwDestinyPcSheet, {types: ["pc", "npc", "animal"], makeDefault: true});
   Actors.registerSheet("mw-destiny", MwDestinyHardwareSheet, {types: ["hardware"], makeDefault: true});
   Items.unregisterSheet("core", ItemSheet);
   Items.registerSheet("mw-destiny", MwDestinyItemSheet, {makeDefault: true});

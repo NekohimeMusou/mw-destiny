@@ -4,10 +4,10 @@ export const MWDESTINY = {
         ["str", "rfl", "int", "wil", "cha", "edg"]
             .map((a) => [a, a.toUpperCase()])),
     npc: Object.fromEntries(
-        ["str", "rfl", "int", "wil", "cha", "edg"]
+        ["str", "rfl", "int", "wil", "cha"]
             .map((a) => [a, a.toUpperCase()])),
     animal: Object.fromEntries(
-        ["str", "rfl", "int", "wil", "cha", "edg"]
+        ["str", "rfl", "int", "wil"]
             .map((a) => [a, a.toUpperCase()])),
   },
   lifeModuleStages: ["faction", "childhood", "higherEd", "realLife"],

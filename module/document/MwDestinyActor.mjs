@@ -10,7 +10,7 @@ export default class MwDestinyActor extends Actor {
   }
 
   _preparePersonalHp() {
-    if (!(this.type === "pc" || this.type === "npc")) return;
+    if (this.type === "hardware") return;
 
     const str = this.system.attributes.str;
     const wil = this.system.attributes.wil;

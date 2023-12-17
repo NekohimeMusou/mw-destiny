@@ -1,4 +1,4 @@
-export default function getSharedActorData(actorType) {
+export default function getSharedActorData() {
   const fields = foundry.data.fields;
 
 
