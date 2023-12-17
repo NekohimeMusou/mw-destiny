@@ -39,11 +39,9 @@ export default function getSharedCharacterData() {
           integer: true,
         }),
         max: new fields.NumberField({
-          initial: 0,
           integer: true,
         }),
         value: new fields.NumberField({
-          initial: 0,
           integer: true,
         }),
       }),

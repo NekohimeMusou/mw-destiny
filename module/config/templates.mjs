@@ -23,6 +23,7 @@ export default async function preloadHandlebarsTemplates() {
     "systems/mw-destiny/templates/parts/shared/weapons-pane.hbs",
     "systems/mw-destiny/templates/parts/item/header.hbs",
     "systems/mw-destiny/templates/parts/item/weapon-damage.hbs",
+    "systems/mw-destiny/templates/parts/item/weapon-special.hbs",
     "systems/mw-destiny/templates/parts/item/weapon-range.hbs",
     "systems/mw-destiny/templates/parts/item/personal-weapon-data.hbs",
     "systems/mw-destiny/templates/parts/item/heavy-weapon-data.hbs",
