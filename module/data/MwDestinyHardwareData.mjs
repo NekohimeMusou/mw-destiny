@@ -23,6 +23,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
         choices: Object.keys(CONFIG.MWDESTINY.hardwareTypes),
         initial: Object.keys(CONFIG.MWDESTINY.hardwareTypes)[0],
       }),
+      hardwarePoints: new fields.NumberField({integer: true}),
       tonnage: new fields.NumberField({integer: true}),
       movement: new fields.NumberField({integer: true}),
       hasJumpJets: new fields.BooleanField(),
