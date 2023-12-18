@@ -164,7 +164,7 @@
             "types": {
                 "mech": "BattleMech",
                 "aerospace": "Aerospace Fighter",
-                "combatVehicle": "Combat Vehicle (Turreted)",
+                "combatVehicle": "Combat Vehicle",
                 "vtol": "VTOL",
                 "vehicle": "Vehicle",
                 "battleArmor": "Battle Armor"
