@@ -4,6 +4,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   static defineSchema() {
     const fields = foundry.data.fields;
 
+    // Generate armor and structure fields
     const hp = new fields.SchemaField(Object.fromEntries(Object.entries(CONFIG.MWDESTINY.hitLocations)
         .map(([hwType, locArray]) => [hwType, new fields.SchemaField(Object.fromEntries(locArray
             .map((loc) => [loc, new fields.SchemaField(Object.fromEntries(["armor", "structure"]
@@ -17,11 +18,11 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
 
     return {
       ...getSharedActorData(),
+      // The type of hardware ('Mech, combat vehicle, etc.)
       hardwareType: new fields.StringField({
         choices: Object.keys(CONFIG.MWDESTINY.hardwareTypes),
         initial: Object.keys(CONFIG.MWDESTINY.hardwareTypes)[0],
       }),
-      model: new fields.StringField(),
       tonnage: new fields.NumberField({integer: true}),
       movement: new fields.NumberField({integer: true}),
       hasJumpJets: new fields.BooleanField(),
@@ -40,19 +41,24 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return "superheavy";
   }
 
+
   get pilot() {
     return game.actors.get(this.pilotId);
   }
 
+  // Convenience reference to the pilot's wound penalty
   get woundPenalty() {
     return this.pilot?.system?.woundPenalty || 0;
   }
 
+  // The type of piloting skill required. VTOLs count as "combat vehicles".
   get pilotingSkillType() {
     if (this.hardwareType === "vtol" || this.hardwareType === "vehicle") return "combatVehicle";
     return this.hardwareType;
   }
 
+  // Convenience reference to the pilot's relevant Piloting skill.
+  // Undefined if there's no skill.
   get pilotingSkill() {
     return this.pilot?.items.find((i) => i.type === "skill" &&
       i.system.pilotingSkillType === this.pilotingSkillType);
