@@ -65,7 +65,8 @@
             "difficulty": "Difficulty",
             "total": "Total",
             "piloting": "Piloting",
-            "psr": "Piloting Skill Test"
+            "psr": "Piloting Skill Test",
+            "woundPenalty": "Wound Penalty"
         },
         "dice": {
             "success": "Success",
