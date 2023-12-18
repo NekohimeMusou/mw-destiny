@@ -34,6 +34,10 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   }
 
   get weightClass() {
+    if (this.hardwareType === "vehicle") {
+      if (this.tonnage < 5) return "small";
+      return "large";
+    }
     if (this.tonnage < 40) return "light";
     if (this.tonnage < 60) return "medium";
     if (this.tonnage < 80) return "heavy";

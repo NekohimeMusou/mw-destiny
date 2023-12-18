@@ -64,7 +64,7 @@ export const MWDESTINY = {
     aerospace: ["nose", "aft", "wingRight", "wingLeft", "structuralIntegrity"],
     combatVehicle: ["front", "rear", "sideRight", "sideLeft", "turret"],
     vtol: ["front", "rear", "sideRight", "sideLeft", "rotor"],
-    vehicle: ["front", "rear", "sideRight", "sideLeft"],
+    vehicle: ["durability", "front", "rear", "sideRight", "sideLeft"],
     battleArmor: ["armor"],
   },
 };
