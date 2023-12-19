@@ -30,6 +30,8 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       heatDissipation: new fields.NumberField({integer: true}),
       hp,
       heat: new fields.NumberField({min: 0, integer: true}),
+      canPunch: new fields.BooleanField({initial: true}),
+      canKick: new fields.BooleanField({initial: true}),
       pilotId: new fields.StringField(),
     };
   }

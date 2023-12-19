@@ -15,6 +15,7 @@ export default async function preloadHandlebarsTemplates() {
     "systems/mw-destiny/templates/parts/hardware/vital-stats-pane.hbs",
     "systems/mw-destiny/templates/parts/hardware/heavy-weapons-pane.hbs",
     "systems/mw-destiny/templates/parts/hardware/pilot-pane.hbs",
+    "systems/mw-destiny/templates/parts/hardware/settings-pane.hbs",
     "systems/mw-destiny/templates/parts/shared/equipment-pane.hbs",
     "systems/mw-destiny/templates/parts/shared/tags-pane.hbs",
     "systems/mw-destiny/templates/parts/shared/tab-description.hbs",

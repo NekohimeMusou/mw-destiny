@@ -68,7 +68,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     html.find(".item-link-select").change((ev) => this.#onItemLinkSelect(ev));
     html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
     html.find(".roll-test").click((ev) => this.#onSheetRoll(ev));
-    html.find(".roll-attack").click((ev) => this.#onAttackRoll(ev));
+    html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
   }
 
   /**
@@ -161,7 +161,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
         {actor, attr, skillRank, skillName, woundPenalty, targetName});
   }
 
-  async #onAttackRoll(event) {
+  async #onWeaponAttack(event) {
     event.preventDefault();
     const element = event.currentTarget;
     const itemId = element.closest(".item").dataset.itemId;

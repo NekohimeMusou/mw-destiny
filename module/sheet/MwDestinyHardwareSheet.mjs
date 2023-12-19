@@ -64,7 +64,8 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     html.find(".piloting-test").click((ev) => this.#onPilotingTest(ev));
     html.find(".repair-btn").click((ev) => this.#onRepair(ev));
-    html.find(".roll-attack").click((ev) => this.#onAttackRoll(ev));
+    html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
+    html.find(".phys-attack").click((ev) => this.#onPhysicalAttack(ev));
   }
 
   /**
@@ -139,7 +140,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
         {actor, attr, skillRank, skillName, woundPenalty, targetName});
   }
 
-  async #onAttackRoll(event) {
+  async #onWeaponAttack(event) {
     event.preventDefault();
     const element = event.currentTarget;
     const itemId = element.closest(".item").dataset.itemId;
@@ -212,5 +213,52 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
                 .forEach((s) => loc[s].value = loc[s].max)));
 
     await this.actor.update({"system.hp": hp});
+  }
+
+  async #onPhysicalAttack(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const attackType = element.dataset.attackType;
+    const actor = this.actor;
+    const actorData = actor.system;
+
+    if (game.user.targets.size !== 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
+    }
+
+    const woundPenalty = actorData.woundPenalty;
+
+    const attackName = game.i18n.localize(`MWDESTINY.combat.physAttack.${attackType}`);
+    const rollLabel = game.i18n.format("MWDESTINY.mechanic.attack", {name: attackName});
+
+    const skill = actorData.pilotingSkill;
+    const skillName = skill?.name || game.i18n.localize(`MWDESTINY.skills.piloting.${actorData.pilotingSkillType}`);
+    const skillData = skill?.system;
+    const skillRank = skillData?.rank || 0;
+    const attr = skillData?.link || CONFIG.MWDESTINY.weaponSkillLinks[actorData.pilotingSkillType];
+
+    const damageDivisor = attackType === "kick" || attackType === "hatchet" ? 15 : 30;
+
+    const baseDamage = Math.ceil(actorData.tonnage / damageDivisor);
+    const damageCode = `${baseDamage}`;
+
+    const special = CONFIG.MWDESTINY.physAttackInfo[attackType];
+
+    const target = game.user.targets.first().actor;
+    const targetName = target.name;
+    const targetType = target.type;
+    const targetData = target.system;
+
+    const scaleMod = targetType === "hardware" ? 0 : -2;
+    const targetDefMod = targetType === "hardware" ?
+      (targetData.pilot?.system?.attributes?.rfl || 0) + (targetData.pilotingSkill?.system?.rank || 0) :
+      targetData.attributes.rfl * 2;
+    const targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
+    const speedMod = target.type === "hardware" ? actorData.movement - targetData.movement : 0;
+
+    return await rollTest(actor.getRollData(), rollLabel,
+        {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
+          scaleMod, speedMod, targetDefLabel, targetDefMod,
+          baseDamage, special});
   }
 }

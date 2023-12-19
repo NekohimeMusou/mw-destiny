@@ -157,7 +157,11 @@
             "armorType": "Armor Type",
             "armorEffect": "Armor Effect",
             "missile": "Missile",
-            "special": "Special"
+            "special": "Special",
+            "physAttack": {
+                "punch": "Punch",
+                "kick": "Kick"
+            }
         },
         "hardware": {
             "type": "Type",
