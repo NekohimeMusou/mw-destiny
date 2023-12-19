@@ -9,7 +9,7 @@ export default function getSharedActorData() {
       initial: Array(5).fill(""),
     }),
     equipment: new fields.ArrayField(new fields.StringField(), {
-      initial: Array(6).fill(""),
+      initial: Array(8).fill(""),
     }),
   };
 }
