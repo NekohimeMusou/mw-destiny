@@ -56,15 +56,16 @@ export const MWDESTINY = {
           .map((s) => [s, `MWDESTINY.skills.piloting.${s}`]),
   ),
   hardwareTypes: Object.fromEntries(
-      ["mech", "aerospace", "combatVehicle", "vtol", "vehicle", "battleArmor"]
+      ["mech", "aerospace", "combatVehicle", "turretVehicle", "vtol", "vehicle", "battleArmor"]
           .map((s) => [s, `MWDESTINY.hardware.types.${s}`]),
   ),
   hitLocations: {
     mech: ["head", "torso", "armLeft", "armRight", "legLeft", "legRight"],
-    aerospace: ["nose", "aft", "wingRight", "wingLeft", "structuralIntegrity"],
-    combatVehicle: ["front", "rear", "sideRight", "sideLeft", "turret"],
-    vtol: ["front", "rear", "sideRight", "sideLeft", "rotor"],
-    vehicle: ["durability", "front", "rear", "sideRight", "sideLeft"],
+    aerospace: ["nose", "wingRight", "wingLeft", "aft", "structuralIntegrity"],
+    turretVehicle: ["front", "turret", "sideRight", "sideLeft", "rear"],
+    combatVehicle: ["front", "sideRight", "sideLeft", "rear"],
+    vtol: ["front", "rotor", "sideRight", "sideLeft", "rear"],
+    vehicle: ["durability", "front", "sideRight", "sideLeft", "rear"],
     battleArmor: ["armor"],
   },
   physAttackInfo: {

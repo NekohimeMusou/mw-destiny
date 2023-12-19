@@ -1,4 +1,5 @@
-import getSharedCharacterData from "./shared-person-data.mjs";
+import getSharedActorData from "./shared-actor-data.mjs";
+import getSharedCharacterData from "./shared-character-data.mjs";
 export default class MwDestinyNpcData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static defineSchema() {
@@ -18,6 +19,7 @@ export default class MwDestinyNpcData extends foundry.abstract.DataModel {
         ));
 
     return {
+      ...getSharedActorData(),
       ...getSharedCharacterData(),
       attributes,
     };

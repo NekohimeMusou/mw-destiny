@@ -1,3 +1,4 @@
+import getSharedItemData from "./shared-item-data.mjs";
 import getSharedWeaponData from "./shared-weapon-data.mjs";
 export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel {
   /** @inheritdoc */
@@ -6,6 +7,7 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     const weaponType = "heavy";
 
     return {
+      ...getSharedItemData(),
       ...getSharedWeaponData(weaponType),
       missileCount: new fields.NumberField({integer: true}),
       missileMax: new fields.NumberField({integer: true}),

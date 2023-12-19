@@ -22,8 +22,8 @@
   <button type="button" class="repair-btn grid-span-2">{{localize "MWDESTINY.hardware.repairBtn"}}</button>
 
   {{!-- Row 4 --}}
-  <button type="button" class="phys-attack grid-span-2" data-attack-type="punch"{{#unless (and (eq system.hardwareType "mech") system.canPunch)}} disabled{{/unless}}>{{localize "MWDESTINY.mechanic.attack" name=(localize "MWDESTINY.combat.physAttack.punch")}}</button>
-  <button type="button" class="phys-attack grid-span-2" data-attack-type="kick"{{#unless (and (eq system.hardwareType "mech") system.canKick)}} disabled{{/unless}}>{{localize "MWDESTINY.mechanic.attack" name=(localize "MWDESTINY.combat.physAttack.kick")}}</button>
+  {{#if (eq system.hardwareType "mech")}}
+  <button type="button" class="phys-attack grid-span-2" data-attack-type="punch"{{#unless system.canPunch}} disabled{{/unless}}>{{localize "MWDESTINY.mechanic.attack" name=(localize "MWDESTINY.combat.physAttack.punch")}}</button>
+  <button type="button" class="phys-attack grid-span-2" data-attack-type="kick"{{#unless system.canKick}} disabled{{/unless}}>{{localize "MWDESTINY.mechanic.attack" name=(localize "MWDESTINY.combat.physAttack.kick")}}</button>
+  {{/if}}
 </div>
-
-{{#if (eq system.hardwareType "mech")}}{{> "systems/mw-destiny/templates/parts/hardware/settings-pane.hbs"}}{{/if}}

@@ -169,8 +169,9 @@
                 "mech": "BattleMech",
                 "aerospace": "Aerospace Fighter",
                 "combatVehicle": "Combat Vehicle",
+                "turretVehicle": "Combat Vehicle (Turret)",
                 "vtol": "VTOL",
-                "vehicle": "Vehicle",
+                "vehicle": "Personal Vehicle",
                 "battleArmor": "Battle Armor"
             },
             "model": "Model",
@@ -202,14 +203,20 @@
                     "aft": "Aft",
                     "wingRight": "Right Wing",
                     "wingLeft": "Left Wing",
-                    "structuralIntegrity": "Structural Integrity"
+                    "structuralIntegrity": "Structure"
                 },
-                "combatVehicle": {
+                "turretVehicle": {
                     "front": "Front",
                     "rear": "Rear",
                     "sideRight": "Right Side",
                     "sideLeft": "Left Side",
                     "turret": "Turret"
+                },
+                "combatVehicle": {
+                    "front": "Front",
+                    "rear": "Rear",
+                    "sideRight": "Right Side",
+                    "sideLeft": "Left Side"
                 },
                 "vtol": {
                     "front": "Front",

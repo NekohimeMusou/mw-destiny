@@ -1,9 +1,7 @@
-import getSharedActorData from "./shared-actor-data.mjs";
 export default function getSharedCharacterData() {
   const fields = foundry.data.fields;
 
   return {
-    ...getSharedActorData(),
     physDamage: new fields.SchemaField({
       min: new fields.NumberField({
         readonly: true,

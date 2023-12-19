@@ -1,7 +1,7 @@
 <div class="pane armor flexcol flex-group-center">
   {{#each (lookup system.hp system.hardwareType)}}
   <div class="resource-label">{{localize (concat "MWDESTINY.hardware.hitLocation." ../system.hardwareType "." @key)}}</div>
-  {{#unless (eq @key "structuralIntegrity")}}
+  {{#unless (or (eq @key "structuralIntegrity") (eq @key "durability"))}}
   <div class="flexrow">
     <div class="resource-label">{{localize "MWDESTINY.hardware.armor"}}:</div>
     <input type="number" name="system.hp.{{../system.hardwareType}}.{{@key}}.armor.value" value="{{this.armor.value}}" data-dtype="Number"/>

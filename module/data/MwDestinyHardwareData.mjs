@@ -24,7 +24,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
         initial: Object.keys(CONFIG.MWDESTINY.hardwareTypes)[0],
       }),
       hardwarePoints: new fields.NumberField({integer: true}),
-      tonnage: new fields.NumberField({integer: true}),
+      tonnage: new fields.NumberField(),
       movement: new fields.NumberField({integer: true}),
       hasJumpJets: new fields.BooleanField(),
       heatDissipation: new fields.NumberField({integer: true}),
@@ -41,6 +41,13 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       if (this.tonnage < 5) return "small";
       return "large";
     }
+
+    if (this.hardwareType === "aerospace") {
+      if (this.tonnage < 50) return "light";
+      if (this.tonnage < 75) return "medium";
+      return "heavy";
+    }
+
     if (this.tonnage < 40) return "light";
     if (this.tonnage < 60) return "medium";
     if (this.tonnage < 80) return "heavy";

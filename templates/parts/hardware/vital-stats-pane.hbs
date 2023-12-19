@@ -8,10 +8,13 @@
   <div class="resource-label">{{localize "MWDESTINY.hardware.movement"}}</div>
   <input type="number" name="system.movement" value="{{system.movement}}" data-dtype="Number"/>
 
+  {{#if (eq system.hardwareType "mech")}}
   <div class="resource-label">{{localize "MWDESTINY.hardware.jumpJets"}}?</div>
   <input type="checkbox" name="system.hasJumpJets" {{checked system.hasJumpJets}}/>
+  {{/if}}
 
-
+  {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}}
   <div class="resource-label">{{localize "MWDESTINY.hardware.heatDissipation"}}</div>
   <input type="number" name="system.heatDissipation" value="{{system.heatDissipation}}" data-dtype="Number"/>
+  {{/if}}
 </div>

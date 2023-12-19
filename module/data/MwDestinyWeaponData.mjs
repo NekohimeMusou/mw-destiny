@@ -1,3 +1,4 @@
+import getSharedItemData from "./shared-item-data.mjs";
 import getSharedWeaponData from "./shared-weapon-data.mjs";
 export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   /** @inheritdoc */
@@ -6,6 +7,7 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
     const weaponType = "personal";
 
     return {
+      ...getSharedItemData(),
       ...getSharedWeaponData(weaponType),
       isStunWeapon: new fields.BooleanField({
         initial: false,
