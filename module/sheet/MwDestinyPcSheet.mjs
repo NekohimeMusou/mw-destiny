@@ -192,14 +192,20 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const target = game.user.targets.first().actor;
     const targetName = target?.name;
     const targetType = target?.type;
+    const targetData = target?.system;
 
-    const scaleMod = targetType === "hardware" ? 2 : 0;
+    const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 
-    const targetDefMod = targetType === "hardware" ?
-      (target.system.pilot?.system?.attributes?.rfl || 0) + (target.system.pilotingSkill?.system?.rank || 0) :
-      target.system.attributes.rfl * 2;
+    const scaleMod = usePiloting ? 2 : 0;
 
-    const targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
+    const targetPilotData = targetData?.pilot?.system;
+
+    const targetRfl = (targetPilotData?.attributes?.rfl ?? targetData?.attributes?.rfl ?? 0);
+    const pilotingOrRfl = usePiloting ? targetData?.pilotingSkill?.system?.rank || 0 : targetRfl;
+
+    const targetDefMod = targetRfl + pilotingOrRfl;
+
+    const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
 
     const rollLabel = game.i18n.format("MWDESTINY.mechanic.attack", {name: weapon.name});
 

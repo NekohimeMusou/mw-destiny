@@ -93,6 +93,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return {
       punch: (this.hardwareType === "mech" && this.canPunch) ? Math.ceil(this.tonnage / 30) : 0,
       kick: (this.hardwareType === "mech" && this.canPunch) ? Math.ceil(this.tonnage / 15) : 0,
+      ram: (this.hardwareType === "combatVehicle" || this.hardwareType === "turretVehicle" || this.hardwareType === "vtol") ? Math.ceil((this.tonnage / 30) * this.movement) : 0,
     };
   }
 }

@@ -43,16 +43,8 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     const dmg = this.baseDamage || 0;
     const cluster = this.cluster > 0 ? ` (C${this.cluster})`: "";
 
-    const missileStr = this.missileCount > 0 ? `+${"M".repeat(this.missileCount)} (Max ${this.missileMax})` : "";
+    const missileStr = this.missileCount > 0 ? `+${"M".repeat(this.missileCount)} (${this.missileMax})` : "";
 
     return `${dmg}${cluster}${missileStr}`;
-  }
-
-  static migrateData(source) {
-    if (source.weaponSkillType.startsWith("gunnery")) {
-      source.weaponSkillType = "gunnery";
-    }
-
-    return super.migrateData(source);
   }
 }

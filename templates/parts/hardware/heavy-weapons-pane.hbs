@@ -3,7 +3,9 @@
     <li class="item flexrow items-header">
       <div class="item-name flex2">{{localize "MWDESTINY.combat.weapon"}}</div>
       <div class="item-damage">{{localize "MWDESTINY.combat.dmg"}}</div>
+      {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}}
       <div class="item-heat">{{localize "MWDESTINY.hardware.heat"}}</div>
+      {{/if}}
       <div class="item-location">{{localize "MWDESTINY.hardware.loc"}}</div>
       {{#each MWDESTINY.weaponRange.heavy}}
       <div class="item-{{@key}}-range">{{localize (concat "MWDESTINY.range.heavy.abbrev." @key)}}</div>
@@ -13,6 +15,7 @@
           <i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>
       </div>
     </li>
+    {{#if (eq system.hardwareType "mech")}}
     {{#if system.canPunch}}
     <li class="item flexrow">
       <div class="item-name flex2">
@@ -26,9 +29,11 @@
       <div class="item-damage item-prop">
         <input type="text" value="{{system.physDamage.punch}}" disabled/>
       </div>
+      {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}}
       <div class="item-heat item-prop">
         <input type="text" value="—" disabled/>
       </div>
+      {{/if}}
       <div class="item-location item-prop">
         <input type="text" value="—" disabled/>
       </div>
@@ -61,9 +66,49 @@
       <div class="item-damage item-prop">
         <input type="text" value="{{system.physDamage.kick}}" disabled/>
       </div>
+      {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}}
       <div class="item-heat item-prop">
         <input type="text" value="—" disabled/>
       </div>
+      {{/if}}
+      <div class="item-location item-prop">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="OK" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-controls">
+      </div>
+    </li>
+    {{/if}}
+    {{/if}}
+    {{#if (or (eq system.hardwareType "combatVehicle") (eq system.hardwareType "turretVehicle") (eq system.hardwareType "vtol"))}}
+    <li class="item flexrow">
+      <div class="item-name flex2">
+        <div class="item-image">
+          <a class="phys-attack" data-attack-type="ram">
+            <img src="icons/svg/item-bag.svg" title="{{localize "MWDESTINY.combat.physAttack.ram"}}" width="24" height="24"/>
+          </a>
+        </div>
+        <input type="text" value="{{localize "MWDESTINY.combat.physAttack.ram"}}" disabled/>
+      </div>
+      <div class="item-damage item-prop">
+        <input type="text" value="{{system.physDamage.ram}}" disabled/>
+      </div>
+      {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}}
+      <div class="item-heat item-prop">
+        <input type="text" value="—" disabled/>
+      </div>
+      {{/if}}
       <div class="item-location item-prop">
         <input type="text" value="—" disabled/>
       </div>
@@ -96,11 +141,13 @@
       <div class="item-damage item-prop">
         <input type="text" value="{{system.damageCode}}" disabled/>
       </div>
+      {{#if (or (eq ../system.hardwareType "mech") (eq ../system.hardwareType "aerospace"))}}
       <div class="item-heat item-prop">
         <input type="text" value="{{system.heat}}" disabled/>
       </div>
+      {{/if}}
       <div class="item-location item-prop">
-        <input type="text" class="item-field" data-field-name="system.location" placeholder="T" data-dtype="String" value="{{system.location}}"/>
+        <input type="text" class="item-field" data-field-name="system.location" placeholder="—" data-dtype="String" value="{{system.location}}"/>
       </div>
       {{#each system.range}}
       <div class="item-prop flex-group-center">

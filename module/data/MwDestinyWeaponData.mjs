@@ -32,7 +32,9 @@ export default class MwDestinyWeaponData extends foundry.abstract.DataModel {
   }
 
   get weaponSkill() {
-    return this.parent.actor.items.find((i) => i.type === "skill" &&
+    const items = this.parent.actor.type === "hardware" ? this.parent.actor.system.pilot.items :
+      this.parent.actor.items;
+    return items.find((i) => i.type === "skill" &&
       i.system.weaponSkillType === this.weaponSkillType);
   }
 

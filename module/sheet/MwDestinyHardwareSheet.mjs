@@ -199,12 +199,18 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const targetType = target.type;
     const targetData = target.system;
 
-    const scaleMod = targetType === "hardware" ? 0 : -2;
-    const targetDefMod = targetType === "hardware" ?
-    (targetData.pilot?.system?.attributes?.rfl || 0) + (targetData.pilotingSkill?.system?.rank || 0) :
-    targetData.attributes.rfl * 2;
-    const targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
-    const speedMod = target.type !== "hardware" ? 0 : actorData.movement - targetData.movement;
+    const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
+
+    const scaleMod = usePiloting || actorData.hardwareType === "battleArmor" ? 0 : -2;
+
+    const targetPilotData = targetData.pilot?.system;
+    const targetRfl = (targetPilotData?.attributes?.rfl ?? targetData?.attributes?.rfl ?? 0);
+    const pilotingOrRfl = usePiloting ? targetData?.pilotingSkill?.system?.rank || 0 : targetRfl;
+
+    const targetDefMod = targetRfl + pilotingOrRfl;
+
+    const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
+    const speedMod = usePiloting ? actorData.movement - targetData.movement : 0;
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
@@ -267,11 +273,16 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const targetType = target.type;
     const targetData = target.system;
 
-    const scaleMod = targetType === "hardware" ? 0 : -2;
-    const targetDefMod = targetType === "hardware" ?
-      (targetData.pilot?.system?.attributes?.rfl || 0) + (targetData.pilotingSkill?.system?.rank || 0) :
-      targetData.attributes.rfl * 2;
-    const targetDefLabel = targetType === "hardware" ? ": Piloting" : ": RFL+RFL";
+    const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
+
+    const scaleMod = usePiloting || actorData.hardwareType === "battleArmor" ? 0 : -2;
+
+    const targetPilotData = targetData.pilot?.system;
+    const targetRfl = (targetPilotData?.attributes?.rfl ?? targetData?.attributes?.rfl ?? 0);
+    const pilotingOrRfl = usePiloting ? targetData?.pilotingSkill?.system?.rank || 0 : targetRfl;
+
+    const targetDefMod = targetRfl + pilotingOrRfl;
+    const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
     const speedMod = target.type === "hardware" ? actorData.movement - targetData.movement : 0;
 
     return await rollTest(actor.getRollData(), rollLabel,
