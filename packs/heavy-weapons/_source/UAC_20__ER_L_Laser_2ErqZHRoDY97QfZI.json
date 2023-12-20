@@ -1,0 +1,53 @@
+{
+  "folder": "mOQWApGvjIl0Bvym",
+  "name": "UAC/20, ER L Laser",
+  "type": "heavyWeapon",
+  "_id": "2ErqZHRoDY97QfZI",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 11,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": null
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": true,
+        "mod": -2
+      },
+      "long": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "missileCount": 3,
+    "missileMax": 18,
+    "cluster": null,
+    "heat": 5,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "B, E",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703040456375,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!2ErqZHRoDY97QfZI"
+}

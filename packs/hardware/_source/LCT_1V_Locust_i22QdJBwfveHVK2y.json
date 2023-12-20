@@ -1,0 +1,526 @@
+{
+  "folder": "bA1yKfXR6Tn4FHrG",
+  "name": "LCT-1V Locust",
+  "type": "hardware",
+  "_id": "i22QdJBwfveHVK2y",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Scout",
+      "\"Bug 'Mech\"",
+      "Lightning Fast",
+      "No/Minimal Arms",
+      "Ubiquitous"
+    ],
+    "equipment": [
+      "Ammo: Machine Gun (Torso)",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hardwareType": "mech",
+    "tonnage": 20,
+    "movement": 4,
+    "hasJumpJets": false,
+    "heatDissipation": 2,
+    "hp": {
+      "mech": {
+        "head": {
+          "armor": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          },
+          "structure": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          }
+        },
+        "torso": {
+          "armor": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          },
+          "structure": {
+            "min": 0,
+            "max": 2,
+            "value": 2
+          }
+        },
+        "armLeft": {
+          "armor": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          },
+          "structure": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          }
+        },
+        "armRight": {
+          "armor": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          },
+          "structure": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          }
+        },
+        "legLeft": {
+          "armor": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          },
+          "structure": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          }
+        },
+        "legRight": {
+          "armor": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          },
+          "structure": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          }
+        }
+      },
+      "aerospace": {
+        "nose": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "aft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "wingRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "wingLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "structuralIntegrity": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "combatVehicle": {
+        "front": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rear": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "turret": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "vtol": {
+        "front": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rear": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rotor": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "vehicle": {
+        "durability": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "battleArmor": {
+        "armor": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      }
+    },
+    "heat": null,
+    "pilotId": "",
+    "hardwarePoints": 1,
+    "canPunch": false
+  },
+  "prototypeToken": {
+    "name": "LCT-1V Locust",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "K3bvXEhQpOgegJyK",
+      "name": "Medium Laser",
+      "type": "heavyWeapon",
+      "_id": "ikrVqmieT6FyEN25",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": true,
+            "mod": -2
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": 1,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "E",
+        "location": "T"
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.lnluFV5OqEMVa2Lo"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.5.0",
+        "coreVersion": "11.315",
+        "createdTime": 1703027132348,
+        "modifiedTime": 1703031553577,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!i22QdJBwfveHVK2y.ikrVqmieT6FyEN25"
+    },
+    {
+      "folder": "K3bvXEhQpOgegJyK",
+      "name": "2 Machine Guns",
+      "type": "heavyWeapon",
+      "_id": "xJJHdI9vPc4uPpcM",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": false,
+            "mod": null
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": null,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "B",
+        "location": "RA, LA"
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.qWNdedT8WGCf79mR"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.5.0",
+        "coreVersion": "11.315",
+        "createdTime": 1703031326723,
+        "modifiedTime": 1703031558198,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!i22QdJBwfveHVK2y.xJJHdI9vPc4uPpcM"
+    }
+  ],
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1702943025524,
+    "modifiedTime": 1703031558198,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!actors!i22QdJBwfveHVK2y"
+}

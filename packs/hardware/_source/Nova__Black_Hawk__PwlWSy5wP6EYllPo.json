@@ -1,0 +1,743 @@
+{
+  "folder": "nY42XJxehMwmxHge",
+  "name": "Nova (Black Hawk)",
+  "type": "hardware",
+  "_id": "PwlWSy5wP6EYllPo",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Second Fiddle",
+      "Uncommon",
+      "Over-Armed",
+      "Heat Monster",
+      "Jack of All Trades"
+    ],
+    "equipment": [
+      "Jump Jets",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "hardwareType": "mech",
+    "hardwarePoints": 4,
+    "tonnage": 50,
+    "movement": 3,
+    "hasJumpJets": true,
+    "heatDissipation": 7,
+    "hp": {
+      "mech": {
+        "head": {
+          "armor": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          },
+          "structure": {
+            "min": 0,
+            "max": 1,
+            "value": 1
+          }
+        },
+        "torso": {
+          "armor": {
+            "min": 0,
+            "max": 8,
+            "value": 8
+          },
+          "structure": {
+            "min": 0,
+            "max": 5,
+            "value": 5
+          }
+        },
+        "armLeft": {
+          "armor": {
+            "min": 0,
+            "max": 5,
+            "value": 5
+          },
+          "structure": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          }
+        },
+        "armRight": {
+          "armor": {
+            "min": 0,
+            "max": 5,
+            "value": 5
+          },
+          "structure": {
+            "min": 0,
+            "max": 3,
+            "value": 3
+          }
+        },
+        "legLeft": {
+          "armor": {
+            "min": 0,
+            "max": 7,
+            "value": 7
+          },
+          "structure": {
+            "min": 0,
+            "max": 4,
+            "value": 4
+          }
+        },
+        "legRight": {
+          "armor": {
+            "min": 0,
+            "max": 7,
+            "value": 7
+          },
+          "structure": {
+            "min": 0,
+            "max": 4,
+            "value": 4
+          }
+        }
+      },
+      "aerospace": {
+        "nose": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "wingRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "wingLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "aft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "structuralIntegrity": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "turretVehicle": {
+        "front": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "turret": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rear": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "combatVehicle": {
+        "front": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rear": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "vtol": {
+        "front": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rotor": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rear": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "vehicle": {
+        "durability": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "front": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideRight": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "sideLeft": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        },
+        "rear": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      },
+      "battleArmor": {
+        "armor": {
+          "armor": {
+            "min": 0,
+            "max": null,
+            "value": null
+          },
+          "structure": {
+            "min": 0,
+            "max": null,
+            "value": null
+          }
+        }
+      }
+    },
+    "heat": null,
+    "canPunch": true,
+    "canKick": true,
+    "pilotId": ""
+  },
+  "prototypeToken": {
+    "name": "Nova (Black Hawk)",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "5MGB3TdK6Rd2xrlo",
+      "name": "3 ER M Lasers",
+      "type": "heavyWeapon",
+      "_id": "sd80dy7sLoSwqMLf",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 7,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": true,
+            "mod": -2
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": 3,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "E",
+        "special": "",
+        "location": "RA"
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.XbSj0yxB0tJJaCvP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.5.0",
+        "coreVersion": "11.315",
+        "createdTime": 1703039083840,
+        "modifiedTime": 1703039125898,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!PwlWSy5wP6EYllPo.sd80dy7sLoSwqMLf"
+    },
+    {
+      "folder": "5MGB3TdK6Rd2xrlo",
+      "name": "3 ER M Lasers",
+      "type": "heavyWeapon",
+      "_id": "VxfWi8CM15Irxoo3",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 7,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": true,
+            "mod": -2
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": 3,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "E",
+        "special": "",
+        "location": "RA"
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.XbSj0yxB0tJJaCvP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.5.0",
+        "coreVersion": "11.315",
+        "createdTime": 1703039083840,
+        "modifiedTime": 1703039126878,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!PwlWSy5wP6EYllPo.VxfWi8CM15Irxoo3"
+    },
+    {
+      "folder": "5MGB3TdK6Rd2xrlo",
+      "name": "3 ER M Lasers",
+      "type": "heavyWeapon",
+      "_id": "XguaSGYpwTjBjQse",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 7,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": true,
+            "mod": -2
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": 3,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "E",
+        "special": "",
+        "location": "LA"
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.XbSj0yxB0tJJaCvP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.5.0",
+        "coreVersion": "11.315",
+        "createdTime": 1703039083840,
+        "modifiedTime": 1703039123099,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!PwlWSy5wP6EYllPo.XguaSGYpwTjBjQse"
+    },
+    {
+      "folder": "5MGB3TdK6Rd2xrlo",
+      "name": "3 ER M Lasers",
+      "type": "heavyWeapon",
+      "_id": "eZHDiOtQR6Jz094e",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 7,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": true,
+            "mod": -2
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": 3,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "E",
+        "special": "",
+        "location": "LA"
+      },
+      "effects": [],
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Item.XbSj0yxB0tJJaCvP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.5.0",
+        "coreVersion": "11.315",
+        "createdTime": 1703039083840,
+        "modifiedTime": 1703039124624,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!PwlWSy5wP6EYllPo.eZHDiOtQR6Jz094e"
+    }
+  ],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1702954201142,
+    "modifiedTime": 1703039126878,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!actors!PwlWSy5wP6EYllPo"
+}

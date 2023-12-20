@@ -1,0 +1,52 @@
+{
+  "folder": "VNMeL90XpiYRbpOr",
+  "name": "LRM 10",
+  "type": "heavyWeapon",
+  "_id": "CvViRYyQ3BLauSx4",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 1,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": -2
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": true,
+        "mod": null
+      },
+      "long": {
+        "usable": true,
+        "mod": -2
+      }
+    },
+    "missileCount": 1,
+    "missileMax": 4,
+    "cluster": null,
+    "heat": 1,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "M"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703033620158,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!CvViRYyQ3BLauSx4"
+}

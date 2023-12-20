@@ -1,0 +1,19 @@
+{
+  "name": "Assault",
+  "sorting": "a",
+  "folder": "jpCbayypQofwiNAS",
+  "type": "Actor",
+  "_id": "q8ydFsjXxKMM0663",
+  "sort": -25000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1702950728434,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!q8ydFsjXxKMM0663"
+}

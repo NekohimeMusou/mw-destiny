@@ -1,0 +1,53 @@
+{
+  "folder": "g23Kcz876dOg6SRl",
+  "name": "Leg Attack",
+  "type": "heavyWeapon",
+  "_id": "2hRJ5TCG522zjCE0",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 1,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": null
+      },
+      "short": {
+        "usable": false,
+        "mod": null
+      },
+      "medium": {
+        "usable": false,
+        "mod": null
+      },
+      "long": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "missileCount": null,
+    "missileMax": null,
+    "cluster": null,
+    "heat": null,
+    "primary": false,
+    "weaponSkillType": "support",
+    "damageType": "",
+    "special": "Roll kick location. Check for critical hit."
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703040591240,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!2hRJ5TCG522zjCE0"
+}

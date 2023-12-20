@@ -1,0 +1,19 @@
+{
+  "name": "Groups",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "5MGB3TdK6Rd2xrlo",
+  "sort": 200000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703031634340,
+    "modifiedTime": 1703045117754,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!5MGB3TdK6Rd2xrlo"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Small",
+  "sorting": "a",
+  "folder": "PYL9KHBbkSz4vhBI",
+  "type": "Actor",
+  "_id": "bdCgIt5AYS9tshNm",
+  "sort": -100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1702952054096,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!bdCgIt5AYS9tshNm"
+}

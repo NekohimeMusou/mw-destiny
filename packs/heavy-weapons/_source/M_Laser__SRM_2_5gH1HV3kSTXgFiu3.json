@@ -1,0 +1,52 @@
+{
+  "folder": "mOQWApGvjIl0Bvym",
+  "name": "M Laser, SRM 2",
+  "type": "heavyWeapon",
+  "_id": "5gH1HV3kSTXgFiu3",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 3,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": null
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": true,
+        "mod": -2
+      },
+      "long": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "missileCount": 1,
+    "missileMax": 4,
+    "cluster": null,
+    "heat": 1,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "E, M"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703034806386,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!5gH1HV3kSTXgFiu3"
+}

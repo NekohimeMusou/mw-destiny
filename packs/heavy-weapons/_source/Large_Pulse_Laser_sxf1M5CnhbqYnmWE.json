@@ -1,0 +1,53 @@
+{
+  "folder": "0cGJ6TYkaVLdieIz",
+  "name": "Large Pulse Laser",
+  "type": "heavyWeapon",
+  "_id": "sxf1M5CnhbqYnmWE",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 4,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": 2
+      },
+      "short": {
+        "usable": true,
+        "mod": 2
+      },
+      "medium": {
+        "usable": true,
+        "mod": 2
+      },
+      "long": {
+        "usable": true,
+        "mod": null
+      }
+    },
+    "missileCount": null,
+    "missileMax": null,
+    "cluster": null,
+    "heat": 2,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "E",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703038279580,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!sxf1M5CnhbqYnmWE"
+}

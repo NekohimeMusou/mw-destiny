@@ -1,0 +1,19 @@
+{
+  "name": "Energy",
+  "sorting": "m",
+  "folder": null,
+  "type": "Item",
+  "_id": "aDzP2qHte4owPIJJ",
+  "sort": 500000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703044487573,
+    "modifiedTime": 1703045117754,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!aDzP2qHte4owPIJJ"
+}

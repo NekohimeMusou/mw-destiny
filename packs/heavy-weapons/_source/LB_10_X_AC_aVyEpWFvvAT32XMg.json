@@ -1,0 +1,53 @@
+{
+  "folder": "di5zHlZVqWJAiItd",
+  "name": "LB 10-X AC",
+  "type": "heavyWeapon",
+  "_id": "aVyEpWFvvAT32XMg",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 4,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": null
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": true,
+        "mod": -2
+      },
+      "long": {
+        "usable": true,
+        "mod": -4
+      }
+    },
+    "missileCount": null,
+    "missileMax": null,
+    "cluster": 4,
+    "heat": null,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "B",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703037762698,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!aVyEpWFvvAT32XMg"
+}

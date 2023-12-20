@@ -1,0 +1,52 @@
+{
+  "folder": "OfGiycsSXBu8fI05",
+  "name": "2 AC/5s",
+  "type": "heavyWeapon",
+  "_id": "LbgBGo668phHLbIo",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 4,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": -2
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": true,
+        "mod": -2
+      },
+      "long": {
+        "usable": true,
+        "mod": -4
+      }
+    },
+    "missileCount": null,
+    "missileMax": null,
+    "cluster": null,
+    "heat": null,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "B"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703035013396,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!LbgBGo668phHLbIo"
+}

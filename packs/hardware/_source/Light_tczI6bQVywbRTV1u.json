@@ -1,0 +1,19 @@
+{
+  "name": "Light",
+  "sorting": "a",
+  "folder": "bg1RDsDRVizGf0kg",
+  "type": "Actor",
+  "_id": "tczI6bQVywbRTV1u",
+  "sort": -100000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1702953745691,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!tczI6bQVywbRTV1u"
+}

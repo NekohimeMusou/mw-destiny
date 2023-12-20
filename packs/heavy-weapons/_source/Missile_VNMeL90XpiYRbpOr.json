@@ -1,0 +1,19 @@
+{
+  "name": "Missile",
+  "sorting": "m",
+  "folder": null,
+  "type": "Item",
+  "_id": "VNMeL90XpiYRbpOr",
+  "sort": 400000,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703044509023,
+    "modifiedTime": 1703045117754,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!VNMeL90XpiYRbpOr"
+}

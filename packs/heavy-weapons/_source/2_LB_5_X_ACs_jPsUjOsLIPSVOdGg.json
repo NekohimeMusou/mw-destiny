@@ -1,0 +1,53 @@
+{
+  "folder": "OfGiycsSXBu8fI05",
+  "name": "2 LB 5-X ACs",
+  "type": "heavyWeapon",
+  "_id": "jPsUjOsLIPSVOdGg",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 4,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": -2
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": true,
+        "mod": null
+      },
+      "long": {
+        "usable": true,
+        "mod": -2
+      }
+    },
+    "missileCount": null,
+    "missileMax": null,
+    "cluster": 4,
+    "heat": 1,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "B",
+    "special": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703039728515,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!jPsUjOsLIPSVOdGg"
+}

@@ -46,6 +46,20 @@
             "path": "packs/skills"
         },
         {
+            "name": "weapons",
+            "label": "Weapons",
+            "system": "mw-destiny",
+            "type": "Item",
+            "path": "packs/weapons"
+        },
+        {
+            "name": "heavy-weapons",
+            "label": "Heavy Weapons",
+            "system": "mw-destiny",
+            "type": "Item",
+            "path": "packs/heavy-weapons"
+        },
+        {
             "name": "npcs",
             "label": "NPCs",
             "system": "mw-destiny",
@@ -53,11 +67,11 @@
             "path": "packs/npcs"
         },
         {
-            "name": "weapons",
-            "label": "Weapons",
+            "name": "hardware",
+            "label": "Hardware",
             "system": "mw-destiny",
-            "type": "Item",
-            "path": "packs/weapons"
+            "type": "Actor",
+            "path": "packs/hardware"
         }
     ]
 }

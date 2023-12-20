@@ -1,0 +1,53 @@
+{
+  "folder": "aDzP2qHte4owPIJJ",
+  "name": "Flamer",
+  "type": "heavyWeapon",
+  "_id": "YgNcNT1mTxal2qg5",
+  "img": "icons/svg/item-bag.svg",
+  "system": {
+    "description": "",
+    "baseDamage": 1,
+    "range": {
+      "pointblank": {
+        "usable": true,
+        "mod": null
+      },
+      "short": {
+        "usable": true,
+        "mod": null
+      },
+      "medium": {
+        "usable": false,
+        "mod": null
+      },
+      "long": {
+        "usable": false,
+        "mod": null
+      }
+    },
+    "missileCount": null,
+    "missileMax": null,
+    "cluster": null,
+    "heat": 1,
+    "primary": false,
+    "weaponSkillType": "gunnery",
+    "damageType": "E",
+    "special": "May deal 1 heat token instead of damage."
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": 1703036275446,
+    "modifiedTime": 1703045117806,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!items!YgNcNT1mTxal2qg5"
+}

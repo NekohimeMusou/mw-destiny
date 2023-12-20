@@ -1,0 +1,19 @@
+{
+  "name": "Heavy",
+  "sorting": "a",
+  "folder": "jpCbayypQofwiNAS",
+  "type": "Actor",
+  "_id": "5JZlGzM59EBOPiOa",
+  "sort": -37500,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.5.0",
+    "coreVersion": "11.315",
+    "createdTime": null,
+    "modifiedTime": 1702950733198,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "_key": "!folders!5JZlGzM59EBOPiOa"
+}
