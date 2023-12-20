@@ -29,8 +29,10 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
 
   get weaponSkill() {
     const pilot = this.parent.actor.system.pilot;
+    const weaponSkillType = this.weaponSkillType === "gunnery" ?
+      this.parent.actor.system.gunnerySkillType : this.weaponSkillType;
     return pilot?.items.find((i) => i.type === "skill" &&
-      i.system.weaponSkillType === this.weaponSkillType);
+      i.system.weaponSkillType === weaponSkillType);
   }
 
   get damageTypeCode() {
@@ -44,5 +46,13 @@ export default class MwDestinyHeavyWeaponData extends foundry.abstract.DataModel
     const missileStr = this.missileCount > 0 ? ` + ${"M".repeat(this.missileCount)} (Max ${this.missileMax})` : "";
 
     return `${dmg}${cluster}${missileStr}`;
+  }
+
+  static migrateData(source) {
+    if (source.weaponSkillType.startsWith("gunnery")) {
+      source.weaponSkillType = "gunnery";
+    }
+
+    return super.migrateData(source);
   }
 }

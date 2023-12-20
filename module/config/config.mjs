@@ -37,8 +37,12 @@ export const MWDESTINY = {
             .map((r) => [r, `MWDESTINY.range.heavy.${r}`]),
     ),
   },
+  playerWeaponSkillTypes: Object.fromEntries(
+      ["melee", "projectile", "smallArms", "gunneryMech", "gunneryAerospace", "gunneryVehicle", "support", "artillery"]
+          .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
+  ),
   weaponSkillTypes: Object.fromEntries(
-      ["melee", "projectile", "smallArms", "gunneryMech", "gunneryAero", "gunneryVehicle", "support", "artillery"]
+      ["melee", "projectile", "smallArms", "gunnery", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
   ),
   weaponSkillLinks: {
@@ -48,7 +52,7 @@ export const MWDESTINY = {
     projectile: "rfl",
     smallArms: "rfl",
     gunneryMech: "rfl",
-    gunneryAero: "rfl",
+    gunneryAerospace: "rfl",
     gunneryVehicle: "rfl",
   },
   pilotingSkillTypes: Object.fromEntries(

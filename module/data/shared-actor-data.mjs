@@ -1,7 +1,6 @@
 export default function getSharedActorData() {
   const fields = foundry.data.fields;
 
-
   return {
     description: new fields.HTMLField(),
     tags: new fields.ArrayField(new fields.StringField(), {

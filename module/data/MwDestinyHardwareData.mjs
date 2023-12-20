@@ -71,10 +71,21 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return this.hardwareType;
   }
 
+  get gunnerySkillType() {
+    if (this.hardwareType === "mech") return "gunneryMech";
+    if (this.hardwareType === "aerospace") return "gunneryAerospace";
+    return "gunneryVehicle";
+  }
+
   // Convenience reference to the pilot's relevant Piloting skill.
   // Undefined if there's no skill.
   get pilotingSkill() {
     return this.pilot?.items.find((i) => i.type === "skill" &&
       i.system.pilotingSkillType === this.pilotingSkillType);
+  }
+
+  get gunnerySkill() {
+    return this.pilot?.items.find((i) => i.type === "skill" &&
+    i.system.weaponSkillType === this.gunnerySkillType);
   }
 }

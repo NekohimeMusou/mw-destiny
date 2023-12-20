@@ -97,7 +97,7 @@
                 "smallArms": "Small Arms",
                 "gunnery": "Gunnery",
                 "gunneryMech": "Gunnery / 'Mech",
-                "gunneryAero": "Gunnery / Aerospace",
+                "gunneryAerospace": "Gunnery / Aerospace",
                 "gunneryVehicle": "Gunnery / Combat Vehicle",
                 "support": "Support",
                 "artillery": "Artillery"
