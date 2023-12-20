@@ -20,10 +20,4 @@
   {{!-- Row 3 --}}
   <button type="button" class="piloting-test grid-span-2">{{localize "MWDESTINY.hardware.pilotingTestBtn"}}</button>
   <button type="button" class="repair-btn grid-span-2">{{localize "MWDESTINY.hardware.repairBtn"}}</button>
-
-  {{!-- Row 4 --}}
-  {{#if (eq system.hardwareType "mech")}}
-  <button type="button" class="phys-attack grid-span-2" data-attack-type="punch"{{#unless system.canPunch}} disabled{{/unless}}>{{localize "MWDESTINY.mechanic.attack" name=(localize "MWDESTINY.combat.physAttack.punch")}}</button>
-  <button type="button" class="phys-attack grid-span-2" data-attack-type="kick"{{#unless system.canKick}} disabled{{/unless}}>{{localize "MWDESTINY.mechanic.attack" name=(localize "MWDESTINY.combat.physAttack.kick")}}</button>
-  {{/if}}
 </div>

@@ -62,6 +62,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     // Active Effect management
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
 
+    html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
     html.find(".piloting-test").click((ev) => this.#onPilotingTest(ev));
     html.find(".repair-btn").click((ev) => this.#onRepair(ev));
     html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
@@ -111,6 +112,25 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     item.delete();
     li.slideUp(200, () => this.render(false));
+  }
+
+  async #onItemFieldUpdate(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const itemId = element.closest(".item").dataset.itemId;
+    const item = this.actor.items.get(itemId);
+
+    const fieldName = element.dataset.fieldName;
+    const newValue = element.value;
+
+    if (fieldName === "name" && !newValue) {
+      element.value = item.name;
+      return;
+    }
+
+    const updates = Object.fromEntries([[fieldName, newValue]]);
+
+    await item.update(updates);
   }
 
   async #onPilotingTest(event) {
@@ -237,9 +257,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const skillRank = skillData?.rank || 0;
     const attr = skillData?.link || CONFIG.MWDESTINY.weaponSkillLinks[actorData.pilotingSkillType];
 
-    const damageDivisor = attackType === "kick" || attackType === "hatchet" ? 15 : 30;
-
-    const baseDamage = Math.ceil(actorData.tonnage / damageDivisor);
+    const baseDamage = actorData.physDamage[attackType];
     const damageCode = `${baseDamage}`;
 
     const special = CONFIG.MWDESTINY.physAttackInfo[attackType];

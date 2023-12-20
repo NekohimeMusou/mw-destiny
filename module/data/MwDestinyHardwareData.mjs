@@ -88,4 +88,11 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return this.pilot?.items.find((i) => i.type === "skill" &&
     i.system.weaponSkillType === this.gunnerySkillType);
   }
+
+  get physDamage() {
+    return {
+      punch: (this.hardwareType === "mech" && this.canPunch) ? Math.ceil(this.tonnage / 30) : 0,
+      kick: (this.hardwareType === "mech" && this.canPunch) ? Math.ceil(this.tonnage / 15) : 0,
+    };
+  }
 }

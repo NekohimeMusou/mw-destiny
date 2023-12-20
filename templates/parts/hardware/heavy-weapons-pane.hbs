@@ -13,6 +13,76 @@
           <i class="fas fa-plus"></i> {{localize "MWDESTINY.sheet.addItem"}}</a>
       </div>
     </li>
+    {{#if system.canPunch}}
+    <li class="item flexrow">
+      <div class="item-name flex2">
+        <div class="item-image">
+          <a class="phys-attack" data-attack-type="punch">
+            <img src="icons/svg/item-bag.svg" title="{{localize "MWDESTINY.combat.physAttack.punch"}}" width="24" height="24"/>
+          </a>
+        </div>
+        <input type="text" value="{{localize "MWDESTINY.combat.physAttack.punch"}}" disabled/>
+      </div>
+      <div class="item-damage item-prop">
+        <input type="text" value="{{system.physDamage.punch}}" disabled/>
+      </div>
+      <div class="item-heat item-prop">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-location item-prop">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="OK" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-controls">
+      </div>
+    </li>
+    {{/if}}
+    {{#if system.canKick}}
+    <li class="item flexrow">
+      <div class="item-name flex2">
+        <div class="item-image">
+          <a class="phys-attack" data-attack-type="kick">
+            <img src="icons/svg/item-bag.svg" title="{{localize "MWDESTINY.combat.physAttack.kick"}}" width="24" height="24"/>
+          </a>
+        </div>
+        <input type="text" value="{{localize "MWDESTINY.combat.physAttack.kick"}}" disabled/>
+      </div>
+      <div class="item-damage item-prop">
+        <input type="text" value="{{system.physDamage.kick}}" disabled/>
+      </div>
+      <div class="item-heat item-prop">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-location item-prop">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="OK" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-prop flex-group-center">
+        <input type="text" value="—" disabled/>
+      </div>
+      <div class="item-controls">
+      </div>
+    </li>
+    {{/if}}
     {{#each heavyWeapon as |item|}}
     <li class="item flexrow" data-item-id="{{item._id}}">
       <div class="item-name flex2">
@@ -30,7 +100,7 @@
         <input type="text" value="{{system.heat}}" disabled/>
       </div>
       <div class="item-location item-prop">
-        <input type="text" value="{{system.location}}" disabled/>
+        <input type="text" class="item-field" data-field-name="system.location" placeholder="T" data-dtype="String" value="{{system.location}}"/>
       </div>
       {{#each system.range}}
       <div class="item-prop flex-group-center">
