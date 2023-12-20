@@ -53,6 +53,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
   }
 
   get woundPenalty() {
+    if (this.ignoreWoundPenalty) return 0;
     let total = 0;
 
     for (const [hpPool, attr] of [["physDamage", "str"], ["fatigueDamage", "wil"]]) {

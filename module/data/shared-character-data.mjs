@@ -46,5 +46,6 @@ export default function getSharedCharacterData() {
       type: new fields.StringField(),
       effect: new fields.StringField(),
     }),
+    ignoreWoundPenalty: new fields.BooleanField(),
   };
 }

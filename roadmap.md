@@ -2,12 +2,6 @@
 
 ## Stuff to do
 
-- Physical 'mech attacks
-- Weapon compendium
-- Hardware compendium
-  - Just the ones in the book!
-- Separate NPC actor type
-- NPC compendium
 - Automatically roll on hit location table on weapon hit
 - Leverage initiative tracker
   - Auto heat tracking
