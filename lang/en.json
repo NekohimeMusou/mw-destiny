@@ -40,7 +40,10 @@
                 "realLife": "Real Life"
             },
             "trait": "Trait",
-            "traits": "Traits"
+            "traits": "Traits",
+            "age": "Age",
+            "rank": "Rank",
+            "heightWeight": "Height/Weight"
         },
         "attributes": {
             "str": "Strength",
@@ -49,6 +52,12 @@
             "wil": "Willpower",
             "cha": "Charisma",
             "edg": "Edge"
+        },
+        "xpLevels": {
+            "green": "Green",
+            "regular": "Regular",
+            "veteran": "Veteran",
+            "elite": "Elite"
         },
         "mechanic": {
             "physDamage": "Physical Damage",
@@ -66,7 +75,9 @@
             "total": "Total",
             "piloting": "Piloting",
             "psr": "Piloting Skill Test",
-            "woundPenalty": "Wound Penalty"
+            "woundPenalty": "Wound Penalty",
+            "xp": "XP",
+            "xpLevel": "Experience Level"
         },
         "dice": {
             "success": "Success",
@@ -164,6 +175,53 @@
                 "ram": "Ram"
             }
         },
+        "hitLocation": {
+            "mech": {
+                "head": "Head",
+                "torso": "Torso",
+                "armLeft": "Left Arm",
+                "armRight": "Right Arm",
+                "legLeft": "Left Leg",
+                "legRight": "Right Leg"
+            },
+            "aerospace": {
+                "nose": "Nose",
+                "aft": "Aft",
+                "wingRight": "Right Wing",
+                "wingLeft": "Left Wing",
+                "structuralIntegrity": "Structure"
+            },
+            "turretVehicle": {
+                "front": "Front",
+                "rear": "Rear",
+                "sideRight": "Right Side",
+                "sideLeft": "Left Side",
+                "turret": "Turret"
+            },
+            "combatVehicle": {
+                "front": "Front",
+                "rear": "Rear",
+                "sideRight": "Right Side",
+                "sideLeft": "Left Side"
+            },
+            "vtol": {
+                "front": "Front",
+                "rear": "Rear",
+                "sideRight": "Right Side",
+                "sideLeft": "Left Side",
+                "rotor": "Rotor"
+            },
+            "vehicle": {
+                "durability": "Durability",
+                "front": "Front",
+                "rear": "Rear",
+                "sideRight": "Right Side",
+                "sideLeft": "Left Side"
+            },
+            "battleArmor": {
+                "armor": "Armor"
+            }
+        },
         "hardware": {
             "type": "Type",
             "types": {
@@ -190,53 +248,6 @@
             "movement": "Movement",
             "jumpJets": "Jump Jets",
             "heatDissipation": "Heat Dissipation",
-            "hitLocation": {
-                "mech": {
-                    "head": "Head",
-                    "torso": "Torso",
-                    "armLeft": "Left Arm",
-                    "armRight": "Right Arm",
-                    "legLeft": "Left Leg",
-                    "legRight": "Right Leg"
-                },
-                "aerospace": {
-                    "nose": "Nose",
-                    "aft": "Aft",
-                    "wingRight": "Right Wing",
-                    "wingLeft": "Left Wing",
-                    "structuralIntegrity": "Structure"
-                },
-                "turretVehicle": {
-                    "front": "Front",
-                    "rear": "Rear",
-                    "sideRight": "Right Side",
-                    "sideLeft": "Left Side",
-                    "turret": "Turret"
-                },
-                "combatVehicle": {
-                    "front": "Front",
-                    "rear": "Rear",
-                    "sideRight": "Right Side",
-                    "sideLeft": "Left Side"
-                },
-                "vtol": {
-                    "front": "Front",
-                    "rear": "Rear",
-                    "sideRight": "Right Side",
-                    "sideLeft": "Left Side",
-                    "rotor": "Rotor"
-                },
-                "vehicle": {
-                    "durability": "Durability",
-                    "front": "Front",
-                    "rear": "Rear",
-                    "sideRight": "Right Side",
-                    "sideLeft": "Left Side"
-                },
-                "battleArmor": {
-                    "armor": "Armor"
-                }
-            },
             "armor": "Armor",
             "structure": "Structure",
             "heat": "Heat",

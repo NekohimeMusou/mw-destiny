@@ -6,6 +6,38 @@
     </h1>
     <div class="resources flexcol">
       <div class="flexrow flex-group-center">
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.bio.age"}}</label>
+          <input type="number" name="system.age" value="{{system.age}}" data-dtype="Number"/>
+        </div>
+
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.bio.rank"}}</label>
+          <input type="text" name="system.rank" value="{{system.rank}}" data-dtype="String"/>
+        </div>
+
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.bio.heightWeight"}}</label>
+          <input type="text" name="system.heightWeight" value="{{system.heightWeight}}" data-dtype="String"/>
+        </div>
+
+        {{!-- XP level, XP --}}
+        {{#if (eq actor.type "pc")}}
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.mechanic.xpLevel"}}</label>
+          <select name="system.xpLevel">
+            {{selectOptions MWDESTINY.xpLevels localize=true selected=system.xpLevel}}
+          </select>
+        </div>
+
+        <div class="flexcol">
+          <label class="resource-label">{{localize "MWDESTINY.mechanic.xp"}}</label>
+          <input type="number" name="system.xp" value="{{system.xp}}" data-dtype="Number"/>
+        </div>
+        {{/if}}
+      </div>
+
+      <div class="flexrow flex-group-center">
         <div class="resource flex-group-center">
           <label for="system.physDamage.value" class="resource-label">{{localize "MWDESTINY.mechanic.physDamage"}}</label>
           <div class="resource-content flexrow flex-center">
@@ -47,6 +79,7 @@
           <label class="resource-label">{{localize "MWDESTINY.combat.armorType"}}</label>
           <input type="text" name="system.armor.type" value="{{system.armor.type}}" data-dtype="String"/>
         </div>
+
         <div class="flexcol">
           <label class="resource-label">{{localize "MWDESTINY.combat.armorEffect"}}</label>
           <input type="text" name="system.armor.effect" value="{{system.armor.effect}}" data-dtype="String"/>

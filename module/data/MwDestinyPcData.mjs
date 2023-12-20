@@ -29,6 +29,14 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
               (m) => [m, new fields.StringField({required: true})],
           ),
       )),
+      age: new fields.NumberField({integer: true}),
+      rank: new fields.StringField(),
+      xpLevel: new fields.StringField({
+        initial: "regular",
+        choices: CONFIG.MWDESTINY.xpLevels,
+      }),
+      heightWeight: new fields.StringField(),
+      xp: new fields.NumberField({integer: true}),
       cues: new fields.ArrayField(new fields.StringField(), {
         required: true,
         initial: Array(20).fill(""),

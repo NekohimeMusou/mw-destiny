@@ -76,4 +76,6 @@ export const MWDESTINY = {
     punch: "Req: No arm Weapon Groups fired.\nLoc: 2d6: Treat any leg hit as a hit to the corresponding arm instead.",
     kick: "Req: Attacker must be standing.\n1d6: 1-3, Right Leg; 4-6, Left Leg ('Mech); 2d6 (other ground units)",
   },
+  xpLevels: Object.fromEntries(["green", "regular", "veteran", "elite"]
+      .map((lv) => [lv, `MWDESTINY.xpLevels.${lv}`])),
 };
