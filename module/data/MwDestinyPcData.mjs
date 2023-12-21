@@ -39,7 +39,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       xp: new fields.NumberField({integer: true}),
       cues: new fields.ArrayField(new fields.StringField(), {
         required: true,
-        initial: Array(20).fill(""),
+        initial: Array(18).fill(""),
       }),
       dispositions: new fields.ArrayField(new fields.StringField(), {
         required: true,
@@ -47,7 +47,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       }),
       traits: new fields.ArrayField(new fields.StringField(), {
         required: true,
-        initial: Array(2).fill(""),
+        initial: Array(4).fill(""),
       }),
       hasToughnessTrait: new fields.BooleanField(),
       hasUnluckyTrait: new fields.BooleanField(),

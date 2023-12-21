@@ -8,7 +8,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
       classes: ["mw-destiny", "sheet", "actor"],
       template: "systems/mw-destiny/templates/actor/pc-sheet.hbs",
       width: 800,
-      height: 600,
+      height: 800,
       tabs: [{navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "main"}],
     });
   }
