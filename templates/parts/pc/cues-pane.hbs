@@ -1,8 +1,9 @@
-<div class="cues-pane flexcol flex-group-center">
+<div class="cues-pane flex-group-center">
   <div class="resource-label">{{localize "MWDESTINY.bio.cues"}}</div>
-  <div class="grid grid-4col">
+  <div class="grid grid-3col">
     {{#each system.cues}}
-    <input type="text" name="system.cues.{{@index}}" data-dtype="String" value="{{this}}"/>
+    <textarea name="system.cues.{{@index}}" rows="2" data-dtype="String">{{this}}</textarea>
+    {{!-- <input type="text" name="system.cues.{{@index}}" data-dtype="String" value="{{this}}"/> --}}
     {{/each}}
   </div>
 </div>

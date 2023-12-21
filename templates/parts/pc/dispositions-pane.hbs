@@ -1,6 +1,6 @@
 <div class="dispositions-pane flexcol flex-group-center">
   <div class="resource-label">{{localize "MWDESTINY.bio.dispositions"}}</div>
   {{#each system.dispositions}}
-  <input type="text" name="system.dispositions.{{@index}}" data-dtype="String" value="{{this}}"/>
+  <textarea name="system.dispositions.{{@index}}" rows="2" data-dtype="String">{{this}}</textarea>
   {{/each}}
 </div>
