@@ -1,5 +1,7 @@
 <div class="flexcol">
+  {{#if (eq system.hardwareType "battleArmor")}}
   {{> "systems/mw-destiny/templates/parts/shared/weapons-pane.hbs"}}
+  {{/if}}
   {{> "systems/mw-destiny/templates/parts/hardware/heavy-weapons-pane.hbs"}}
   <div class="flexrow">
     {{> "systems/mw-destiny/templates/parts/hardware/armor-pane.hbs"}}
