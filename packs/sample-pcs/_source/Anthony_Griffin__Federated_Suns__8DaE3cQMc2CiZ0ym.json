@@ -1,0 +1,697 @@
+{
+  "folder": null,
+  "name": "Anthony Griffin (Federated Suns)",
+  "type": "pc",
+  "_id": "8DaE3cQMc2CiZ0ym",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Skilled",
+      "Haunted",
+      "Career Soldier",
+      "Jaded",
+      "Blooded",
+      ""
+    ],
+    "equipment": [
+      "Formal Dress Uniform with Impressive Medals",
+      "Photograph of a Long-Dead Family (Not His Own)",
+      "Deluxe Field Kit",
+      "Environment Bubble Tent",
+      "",
+      "",
+      "",
+      "BATTLEMECH: WHM-6R Warhammer"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 2,
+      "int": 2,
+      "wil": 2,
+      "cha": 2,
+      "edg": 2
+    },
+    "history": "<p><span class=\"fontstyle0\">The Griffin family manage a fertile region on the planet Redfield. They have served the Federated Suns military for generations, passing a handful of irreplaceable BattleMechs down from parent to child as the centuries pass. Arthur’s mother Chloe rose to the rank of captain before a PPC bored a hole through her cockpit and abruptly ended his childhood. Arthur was shipped off to his first military academy at age twelve, just days after his mother’s funeral. While most of his family was deployed, Arthur found that he thrived in the academy environment. The rigid structure helped make sense of a chaotic world, and the unending barrage of difficult challenges gave him something to focus on other than his grief. Once he graduated he inherited his mother’s ‘Mech, which his father had painstakingly restored as a graduation present. That was over a decade ago. Arthur has since risen to the same rank his mother achieved—the highest any member of the Griffin family has ever achieved. He has the skill, experience, and his heirloom heavy BattleMech to rely on, but he knows that any day, a single unlucky hit could make it all for nothing.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Captain Griffin knows his days are numbered, but he was born to be a MechWarrior. Where others might despair or panic, his cold and calculating resolve helps him keep his people together. His private thoughts hold a bleaker outlook than his surface shows. He enters every battle expecting death.</span> </p>",
+    "lifeModules": {
+      "faction": "Federated Suns (House Davion)",
+      "childhood": "War Orphan",
+      "higherEd": "Military Academy",
+      "realLife": "Tour of Duty"
+    },
+    "age": 35,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "Looks like it's our turn again.",
+      "Sound off if you're still with us!",
+      "Nothing to do now but call in the salvage team.",
+      "Never go into battle without a plan.",
+      "I took a bad hit. I think this is the one.",
+      "Time to make our mothers proud!",
+      "Plans always fall apart.",
+      "I'm not ready to die. I'm already dead.",
+      "Keep it tight! We only live through this if we do it together!",
+      "Holy hell. We actually made it.",
+      "It's the only way I know how to live.",
+      "That plan is going to get us all killed.",
+      "Ammo and armor are expendable. People and fusion engines are not.",
+      "I know it looks bad, but this is our mission. Who's ready to go into battle with me?",
+      "It's nothing I haven't seen before.",
+      "Form up! We're in the suck, so let's get shoveling!",
+      "Watch your facing!",
+      "Cut the chatter.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Seems absolutely confident in himself and the abilities of those under his command.",
+      "Doesn’t back down from a hard situation, but doesn’t lean on false hope to get through it.",
+      "Spends long hours overanalyzing his mistakes.",
+      "Expects his orders to place a low priority on his survival, and is rarely disappointed."
+    ],
+    "traits": [
+      "(Positive) Rank: Captain",
+      "(Negative) Dark Secret: War is hell, and people make mistakes. Captain Griffin once made the wrong call, and it cost some people their lives. He believes he is responsible for their deaths. He fears to face judgment for his mistake more than he fears death in combat. Is he truly guilty of something heinous, or does he mistakenly hold himself responsible for bad things that were not truly his fault?",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Captain",
+    "heightWeight": "1.7m/64kg"
+  },
+  "prototypeToken": {
+    "name": "Anthony Griffin",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703129195595,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "XAGWlYKcISzakkS9",
+      "sort": 0,
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.XAGWlYKcISzakkS9"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703129201255,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "BYcbONOpt88DREuw",
+      "sort": 400000,
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.BYcbONOpt88DREuw"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "7OCCcI8C5p3AgOQW",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703129203315,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.7OCCcI8C5p3AgOQW"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "CCby3ugdFIBVXjpw",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703129204554,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.CCby3ugdFIBVXjpw"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "2McRpsuKVmxFFVFI",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703129207000,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.2McRpsuKVmxFFVFI"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "4v6cZtDEVkCNfMCr",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703129211358,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.4v6cZtDEVkCNfMCr"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "65lS0Zsu2HWEOvOY",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703129212897,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.65lS0Zsu2HWEOvOY"
+    },
+    {
+      "folder": "HAIBWgUemmPu61k7",
+      "name": "Survival",
+      "type": "skill",
+      "_id": "i6tuAh1MYxociQQs",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Wilderness survival, wilderness navigation, and fasting.</p>",
+        "link": "wil",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.qTrp8IrnVYjJHxqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112886265,
+        "modifiedTime": 1703129213919,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.i6tuAh1MYxociQQs"
+    },
+    {
+      "name": "Military Force ID",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "LXQRIjsbLDDjEG8V",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703129184166,
+        "modifiedTime": 1703129216507,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.LXQRIjsbLDDjEG8V"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703129231283,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "lWJDCLQxDPwSrj7H",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.lWJDCLQxDPwSrj7H"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Academy Vibrosaber",
+      "type": "weapon",
+      "_id": "aubHJwkA8CK9Nqfa",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.aDvqTBPedNyIlTvt"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844514441,
+        "modifiedTime": 1703129280661,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.aubHJwkA8CK9Nqfa"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "annMDHxVxCQUF2Mx",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703129290887,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.annMDHxVxCQUF2Mx"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Rifle (E)",
+      "type": "weapon",
+      "_id": "eAogswEWOWSn02uu",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.6Fl8mG2lfLwDdgmy"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702092704820,
+        "modifiedTime": 1703129296103,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8DaE3cQMc2CiZ0ym.eAogswEWOWSn02uu"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115250123,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!8DaE3cQMc2CiZ0ym"
+}

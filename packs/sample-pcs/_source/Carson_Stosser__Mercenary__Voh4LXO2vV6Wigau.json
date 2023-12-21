@@ -1,0 +1,509 @@
+{
+  "folder": null,
+  "name": "Carson Stosser (Mercenary)",
+  "type": "pc",
+  "_id": "Voh4LXO2vV6Wigau",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Uncertain",
+      "Stiff",
+      "Quick",
+      "Wide-Eyed",
+      "Social",
+      ""
+    ],
+    "equipment": [
+      "Kell Hounds Uniforms",
+      "Advanced Field Kit",
+      "Notebook of Contacts",
+      "Star League-Era Neurohelmet",
+      "",
+      "",
+      "",
+      "BATTLEMECH: ARC-2R Archer"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 2,
+      "int": 2,
+      "wil": 2,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Carson never expected to be part of the Kell Hounds’ command company. The third son of a duke, all he wanted to do was serve the Commonwealth. After graduating from the Nagelring, he served two tours of duty in the Second Royal Guards but found that his superiors were too much “social” and not enough “general.” A chance encounter with Patrick Kell led to Carson retiring from the LCAF and joining the Kell Hounds. As a member of Kell’s command company, Carson acts as a liaison between the Hounds and the LCAF.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Carson still doesn’t know how he managed to get accepted into the Kell Hounds, especially at such a position of importance as the command company. As such, he walks as if on eggshells and acts uneasy at staff meetings. He’s more comfortable leading his lance on the battlefield or handing relations between the unit and the LCAF. His nervousness has led to occasional gaffes, but he is quick to recover. He does, however, like the way he looks in the Kell Hounds’ dress uniform.</span></p>",
+    "lifeModules": {
+      "faction": "Mercenary (Kell Hounds)",
+      "childhood": "Nobility",
+      "higherEd": "Military Academy",
+      "realLife": "Tour of Duty"
+    },
+    "age": 35,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "I have nothing more to add, sir.",
+      "I’m proud to be a Kell Hound.",
+      "Don’t feed me that bureaucratic bull. I know all the excuses.",
+      "Now, what is the problem with those supply forms?",
+      "If you can’t resolve it, I’ll talk to your supervisor.",
+      "Do you know who my father is?",
+      "What did I do to deserve this?",
+      "I will make sure we get every single gram of supplies we requested.",
+      "Oh, _hell_.",
+      "I’ll talk to the colonel.",
+      "Is there a problem?",
+      "I know someone I can call…",
+      "Tighten up the formation!",
+      "Why did that have to happen now?",
+      "I don’t gamble unless I have to.",
+      "My father used to say…",
+      "The colonel wanted it done yesterday!",
+      "See that ’Mech? Make it go away.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Comfortable on the battlefield and in the Commonwealth’s bureaucracy",
+      "Tends to stay silent in staff meetings unless asked a direct question.",
+      "Proud to be a Kell Hound, but still uncertain how he was that lucky.",
+      "Point man when there’s a problem between the Hounds and the LCAF."
+    ],
+    "traits": [
+      "(Positive) Wealthy: +1 Hardware Points.",
+      "(Negative) Unlucky: Whenever you spend a point of EDG to reroll, add a Crit Die to your roll; if the Crit Die rolls a 6, something bad happened, even if the roll otherwise succeeds.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Lieutenant",
+    "heightWeight": "1.7m/85kg"
+  },
+  "prototypeToken": {
+    "name": "Carson Stosser",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703130556113,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "oZq56k4VFigFoA7Y",
+      "sort": 0,
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.oZq56k4VFigFoA7Y"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703130561359,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "WY56Pq6BXZBZGg34",
+      "sort": 400000,
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.WY56Pq6BXZBZGg34"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Protocol",
+      "type": "skill",
+      "_id": "is07p02pExoOLHqb",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Proper etiquette and decorum.</p>",
+        "link": "cha",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.THC61fcZRf5FQWlW"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112786030,
+        "modifiedTime": 1703130568198,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.is07p02pExoOLHqb"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "8dSMUePa3wiOkOWm",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703130573989,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.8dSMUePa3wiOkOWm"
+    },
+    {
+      "name": "Bureaucracy",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 3
+      },
+      "_id": "I3IJMupJMk5JdpXs",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703130574556,
+        "modifiedTime": 1703130581887,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.I3IJMupJMk5JdpXs"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703130586190,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "GekvG0jrgJtK6ICw",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.GekvG0jrgJtK6ICw"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (E)",
+      "type": "weapon",
+      "_id": "EKNZBxZXD0q0BYWa",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.BydrT5Y7rYkIHtET"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063490729,
+        "modifiedTime": 1703130589603,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.EKNZBxZXD0q0BYWa"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Knife",
+      "type": "weapon",
+      "_id": "oKDlvxCMn8vv5tdv",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5e6RV7oGx1zEPtyr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063516121,
+        "modifiedTime": 1703130598896,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!Voh4LXO2vV6Wigau.oKDlvxCMn8vv5tdv"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115453166,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!Voh4LXO2vV6Wigau"
+}

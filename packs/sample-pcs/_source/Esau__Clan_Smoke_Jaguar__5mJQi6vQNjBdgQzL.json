@@ -1,0 +1,630 @@
+{
+  "folder": "sPQF8sG6yM5y1XgP",
+  "name": "Esau (Clan Smoke Jaguar)",
+  "type": "pc",
+  "_id": "5mJQi6vQNjBdgQzL",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Mountainous",
+      "Fearsome",
+      "Aggressive",
+      "Commanding",
+      "Infantry",
+      ""
+    ],
+    "equipment": [
+      "Smoke Jaguar _Remembrance_ (Hardcopy)",
+      "Battle Armor Maintenance Kit",
+      "Bondcords",
+      "Field Kit",
+      "",
+      "",
+      "",
+      "BATTLE ARMOR: Elemental Battle Armor (Toad)"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 13
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 12,
+        "value": 12
+      },
+      "type": "Ballistic Plate Armor",
+      "effect": "12 pips, -1 RFL, -3 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 4,
+      "rfl": 3,
+      "int": 2,
+      "wil": 2,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Nearly from the moment he was decanted, Esau was raised with the understanding that his generation of warriors would be the ones to return to the Inner Sphere, cast down the Successor States, and reclaim the lost glory of the Star League. His road to that lofty goal turned out to be far grimmer. Esau’s sibko experienced a high number of fatalities, some through accidents but many through duels and combat trials, and he alone among his sibkin succeeded in his Trial of Position to become a warrior. The horrors and loss he grew up with made Esau both highly protective of his Pointmates and extremely intolerant of any perceived weakness among them. He will not allow a weak link to threaten his squad’s lives but is fiercely loyal and supportive once a warrior has proven themselves. Esau hopes to show his fellow warriors that the BattleMech is far from the king of the battlefield.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Point Commander Esau does not believe there is such a thing as an excess of force, only victory and defeat. He respects strength alone, as is the Way of the Clans. He will acquit himself with honor, offering his opponents no quarter and expecting none in return.</span></p>",
+    "lifeModules": {
+      "faction": "Clan Smoke Jaguar",
+      "childhood": "Trueborn Sibko",
+      "higherEd": "Elemental Training",
+      "realLife": "Warrior Caste: Tour of Duty"
+    },
+    "age": 23,
+    "xpLevel": "elite",
+    "xp": null,
+    "cues": [
+      "A weak Jaguar threatens us all.",
+      "We will swat these barbarians like flies.",
+      "Our history is written in the blood of our enemies.",
+      "Prove yourself to me.",
+      "I will never yield.",
+      "_Neg_! Fall back!",
+      "MechWarriors are far from the kings of the battlefield.",
+      "What will you do to claim victory?",
+      "The Inner Sphere _surats_ cannot stand against us.",
+      "Nothing will happen to you under my command.",
+      "Strength is all that matters.",
+      "Work together!",
+      "I know what loss is.",
+      "Delta Point, on me!",
+      "I will earn a place in the _Remembrance_.",
+      "For the glory of the Jaguar!",
+      "The size of a warrior’s heart cannot be measured.",
+      "Hah! Barely even a flesh wound!",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Unintimidated by BattleMechs—or MechWarriors.",
+      "Dedicated to the troopers under his command.",
+      "Abides by his own definition of honor.",
+      "Trains relentlessly and hopes to achieve perfection on the battlefields of the Inner Sphere."
+    ],
+    "traits": [
+      "(Positive) Pain Resistance: Ignore the first wound modifier on both Damage Tracks.",
+      "(Negative) Unattractive: –1 penalty for CHA-based Tests where physical appearance matters.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Point Commander",
+    "heightWeight": "2.3m/139kg"
+  },
+  "prototypeToken": {
+    "name": "Esau",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Athletics",
+      "type": "skill",
+      "_id": "0XKK2f4GwNDNSbaC",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Running, jumping, swimming, climbing, and acrobatics.</p>",
+        "link": "str",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.k4J4ZEayEfmlzuOr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112913669,
+        "modifiedTime": 1703132508653,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.0XKK2f4GwNDNSbaC"
+    },
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Support Weapons",
+      "type": "skill",
+      "_id": "QuVAKDnml5iCSS7k",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Heavy weapons, anti-'Mech weaponry, exoskeleton/powered-armor weaponry.</p>",
+        "link": "str",
+        "rank": 6,
+        "weaponSkillType": "support",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.rdK7aj7zaksp1wpZ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112930282,
+        "modifiedTime": 1703132514465,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.QuVAKDnml5iCSS7k"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "sorYHPO47FsOB3ik",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703132520508,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.sorYHPO47FsOB3ik"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "gPUOCkWKbnOX3euh",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703132527712,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.gPUOCkWKbnOX3euh"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "8bT1rrKISUQJcCE3",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703132532918,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.8bT1rrKISUQJcCE3"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "xkVI6RRs014RnSCl",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703132536384,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.xkVI6RRs014RnSCl"
+    },
+    {
+      "name": "Smoke Jaguar Remembrance",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 2
+      },
+      "_id": "LrA40upBAOvBNfMk",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132537685,
+        "modifiedTime": 1703132547571,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.LrA40upBAOvBNfMk"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132582399,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "M63YwsDpmNtzxoiy",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.M63YwsDpmNtzxoiy"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Sonic Stunner",
+      "type": "weapon",
+      "_id": "OwnjaOV3B5dpLF29",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": -2
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": true,
+        "isStrPowered": false,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.g4aQH9u6VURyooRt"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844270740,
+        "modifiedTime": 1703132641683,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.OwnjaOV3B5dpLF29"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (E)",
+      "type": "weapon",
+      "_id": "acl3VlGbwwgTGxrp",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.BydrT5Y7rYkIHtET"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063490729,
+        "modifiedTime": 1703132654733,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.acl3VlGbwwgTGxrp"
+    },
+    {
+      "folder": "AToMbweWjuz2LGb5",
+      "name": "Combat Shotgun (B)",
+      "type": "weapon",
+      "_id": "4dasLJm00sIwupRs",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": -2
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "ballistic",
+        "special": "May split damage across 2 eligible targets within range"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.LAM2DyriJCB8kHi4"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845140439,
+        "modifiedTime": 1703132658909,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5mJQi6vQNjBdgQzL.4dasLJm00sIwupRs"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115968040,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!5mJQi6vQNjBdgQzL"
+}

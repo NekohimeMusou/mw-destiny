@@ -1,0 +1,680 @@
+{
+  "folder": null,
+  "name": "Regan Galdo (Independent)",
+  "type": "pc",
+  "_id": "7pAezMpV2Nbl0kTJ",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "MechWarrior",
+      "Gladiator",
+      "Champion",
+      "Solaris VII",
+      "Aggressive",
+      "Determined"
+    ],
+    "equipment": [
+      "Personal Communicator",
+      "HypeBot! Social Media Drone",
+      "Autographed Photo Prints",
+      "Personal Stash of Illicit Drugs",
+      "",
+      "",
+      "",
+      "BATTLEMECH: RFL-3N Rifleman"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 1,
+      "rfl": 3,
+      "int": 2,
+      "wil": 1,
+      "cha": 3,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Regan Galdo grew up on the game world of Solaris VII. All the kids aspired to pilot the great BattleMechs of the arena from a young age, but none of them showed the determination she did. Her parents were wealthy but often absent, and were more than happy to provide her with private tutoring and access to a simulator pod. She spent her youth learning about ’Mechs and their capabilities, and her teenage years led to an internship with a prominent Solaris VII sponsor. There she learned much more about the business side of entertainment, as well as the gambling activities that transform arena matches into piles of C-bills. She took the underbelly in stride as just part of the game and learned to play it with the same determination with which she mastered BattleMech piloting. A few savvy deals and close calls was all it took to turn her family wealth and connections into a recently restored BattleMech. Now all she needs is a chance to prove herself against the top contenders in her division.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Regan is bold, clever, and determined. She is a winner and won’t stand for anything short of getting her way. She’s used to the privilege her wealth provides but works very hard to get what she wants. She expects excellence from everyone she works with and won’t back down when things get rough.</span></p>",
+    "lifeModules": {
+      "faction": "Unaffiliated",
+      "childhood": "White Collar",
+      "higherEd": "Solaris Internship",
+      "realLife": "Solaris VII Games"
+    },
+    "age": 27,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "Let’s do this!",
+      "What do you mean, “no”?",
+      "Watch and learn.",
+      "The only things standing between me and the championship are time and scrap metal.",
+      "Good thing you brought me along.",
+      "This is going to be the best match you’ve ever seen...until my next bout.",
+      "Stay out of my way.",
+      "One way or another, we aren’t leaving until we get what we’re here for.",
+      "What were you thinking?!",
+      "I’m not here to hold your hand.",
+      "Eject buttons are for cowards.",
+      "I thought you were supposed to be professionals.",
+      "Keep up or stay home.",
+      "The “odds” don’t apply to me.",
+      "Time to level the playing field.",
+      "No guts, no galaxy!",
+      "There’s more than one way to win a match.",
+      "Oh, it’s _on!_",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Knows she is the best of the best.",
+      "Never passes up a chance to prove herself.",
+      "No retreat, no surrender.",
+      "Expects others to keep up and won’t wait to see if they can."
+    ],
+    "traits": [
+      "(Positive) Wealthy: +1 Hardware Points.",
+      "(Negative) Compulsion: Can’t stand the thought of losing.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "None",
+    "heightWeight": "1.7m/68kg"
+  },
+  "prototypeToken": {
+    "name": "Regan Galdo",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703131993576,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "zXRwN4WA7Nr6nNye",
+      "sort": 0,
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.zXRwN4WA7Nr6nNye"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703131997647,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "BHnL60NPtP56lxoB",
+      "sort": 400000,
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.BHnL60NPtP56lxoB"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "6EuiNROqPhyHMrFd",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703132001530,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.6EuiNROqPhyHMrFd"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "bKRHX80rSBEjkoLR",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703132007546,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.bKRHX80rSBEjkoLR"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "SPw5fwWIIm8oD5za",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703132013471,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.SPw5fwWIIm8oD5za"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Acting",
+      "type": "skill",
+      "_id": "DuQ1u71BBiVSit2A",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Con artistry and performance.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xIU0KLjUcfXtUxW9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112427104,
+        "modifiedTime": 1703132019291,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.DuQ1u71BBiVSit2A"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "dW4ZryspFW5Ik1HU",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703132022766,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.dW4ZryspFW5Ik1HU"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Protocol",
+      "type": "skill",
+      "_id": "OBii5kdXlPqvk8UQ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Proper etiquette and decorum.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.THC61fcZRf5FQWlW"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112786030,
+        "modifiedTime": 1703132026391,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.OBii5kdXlPqvk8UQ"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Streetwise",
+      "type": "skill",
+      "_id": "aByUg1HqZw3vtFtJ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Criminal underworld dealings and avoiding dangerous missteps.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.YfoWIIsILVWSkdiM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112823192,
+        "modifiedTime": 1703132029825,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.aByUg1HqZw3vtFtJ"
+    },
+    {
+      "name": "Solaris VII Games",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "vl5xopi8NuShVPgs",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132030784,
+        "modifiedTime": 1703132036968,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.vl5xopi8NuShVPgs"
+    },
+    {
+      "name": "Unarmed",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.P15YjOEooxKLBxdJ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132040597,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "X5spBVqLiUsMDWao",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.X5spBVqLiUsMDWao"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (E)",
+      "type": "weapon",
+      "_id": "SRGHW2LMwCGqhI80",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.BydrT5Y7rYkIHtET"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063490729,
+        "modifiedTime": 1703132042284,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.SRGHW2LMwCGqhI80"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Submachine Gun (B)",
+      "type": "weapon",
+      "_id": "DdAkSnZH0CSpVkGl",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "ballistic",
+        "special": "May attack up to two different targets per Narration."
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5r23lxbgznvNbbvE"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844672449,
+        "modifiedTime": 1703132047922,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!7pAezMpV2Nbl0kTJ.DdAkSnZH0CSpVkGl"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115473236,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!7pAezMpV2Nbl0kTJ"
+}

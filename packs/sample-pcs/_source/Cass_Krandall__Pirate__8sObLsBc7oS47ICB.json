@@ -1,0 +1,715 @@
+{
+  "folder": null,
+  "name": "Cass Krandall (Pirate)",
+  "type": "pc",
+  "_id": "8sObLsBc7oS47ICB",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Survivor",
+      "Scalawag",
+      "Intimidating",
+      "Resourceful",
+      "Tank",
+      "Big Guns"
+    ],
+    "equipment": [
+      "Personal Communicator",
+      "Jolly Roger Holo-Banner",
+      "Authentic Bleached Human Skull",
+      "Erhu (Spike Fiddle) and Bow",
+      "",
+      "",
+      "",
+      "COMBAT VEHICLE: Condor Heavy Hover Tank"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 3,
+      "rfl": 3,
+      "int": 1,
+      "wil": 1,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Cass Krandall doesn’t remember her parents or much of her traumatic childhood. She grew up on the streets of Nasul in the Taurian Concordat. Her wit and tenacity kept her alive through those hard years, and she learned how to survive. One of the most important skills she learned at a young age is to know which fights she could win and which she needed to avoid. As soon as she was big enough to lie about her age, she signed on with the planetary militia garrison. This is where she met her first love: a Demolisher heavy tank that carried two of the biggest guns she had ever seen. When it was destroyed in combat along with most of her fellow crew, she was left for dead and captured by pirates. They never knew what hit them. Within a month she was a promising rookie. Within six months she was planning assaults and leading raids. Within a year she became the most feared and respected pirate in the system.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">“Crass” Krandall is a pirate queen, and she lets everyone know it. She believes the galaxy is her oyster—it’s what the universe owes her for a torturous childhood, after all. Arrogant to the nines, she’ll fight anyone who tries to question her, and her unbridled fierceness often makes her opponents back down before they can even take a swing or a shot at her.</span></p>",
+    "lifeModules": {
+      "faction": "Pirate (Independent)",
+      "childhood": "Street",
+      "higherEd": "Military Enlistment",
+      "realLife": "Organized Crime"
+    },
+    "age": 28,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "Who you lookin’ at?",
+      "Don’t say “over my dead body” unless you’re ready to fulfill that condition.",
+      "Why don’t things ever go smoothly?!",
+      "If you’ve got the C-bills, I lack the scruples.",
+      "This little ol’ thing? It’s practically a sidearm!",
+      "I’m just a businesswoman.",
+      "We either make a deal, or I deal out the pain. Either way is a win for me.",
+      "Aw, does the poor wittle boy need a ’Mech to carry his guns for him? How cute.",
+      "Pain is my business.",
+      "You don’t always have to pull a trigger to win.",
+      "Turn on the lead, fellas! Let’s pour it on!",
+      "They’ll be stacking their scrap... We’ll be stacking C-bills.",
+      "Just let me get in position, and I’ll take ’em out at the knees.",
+      "Get some!",
+      "You better make it rain C-bills, or I’m gonna make it rain lead.",
+      "That’s the ticket!",
+      "You sure you want to try that against me?",
+      "I can’t believe that worked!",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Takes flak from no one.",
+      "Constantly establishing dominance, often taking up more space than she needs.",
+      "Refuses to show any sign of weakness or vulnerability to anyone.",
+      "Parties hard and fights harder."
+    ],
+    "traits": [
+      "(Positive) Toughness: Subtract 1 to all Physical and Fatigue Damage you receive. (Damage to Armor pips is not reduced.)",
+      "(Negative) Bad Reputation: –1 penalty to CHA-based tests involving someone who knows her pirate reputation.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Queen Bee",
+    "heightWeight": "1.8m/105kg"
+  },
+  "prototypeToken": {
+    "name": "Cass Krandall",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / Combat Vehicle",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryVehicle"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.KZt7xmSbvnkUtUQ6"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703131554196,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "rS2uAeVOp0SSVaLQ",
+      "sort": 0,
+      "_key": "!actors.items!8sObLsBc7oS47ICB.rS2uAeVOp0SSVaLQ"
+    },
+    {
+      "name": "Piloting / Combat Vehicle",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false,
+        "pilotingSkillType": "combatVehicle"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.mxrLIfzTPL4QMbBA"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703131559188,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "3Pwn75ULLCKOyT5L",
+      "sort": 0,
+      "_key": "!actors.items!8sObLsBc7oS47ICB.3Pwn75ULLCKOyT5L"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Escape Artist",
+      "type": "skill",
+      "_id": "CNA2upXV9I5N6y1m",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Escaping bindings, contortionism, and shaking a tail.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.G7kmOiECZEMF5LTF"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703131564559,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.CNA2upXV9I5N6y1m"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "o8e3ctRm5cqZ3oVd",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703131568424,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.o8e3ctRm5cqZ3oVd"
+    },
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Support Weapons",
+      "type": "skill",
+      "_id": "5GbaWd5vWyn2DPuu",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Heavy weapons, anti-'Mech weaponry, exoskeleton/powered-armor weaponry.</p>",
+        "link": "str",
+        "rank": 2,
+        "weaponSkillType": "support",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.rdK7aj7zaksp1wpZ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112930282,
+        "modifiedTime": 1703131573402,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.5GbaWd5vWyn2DPuu"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Stealth",
+      "type": "skill",
+      "_id": "1pO78ghO49k63BWD",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Sneaking, palming, and pickpocketing.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.atZOnxFB1hIGBinO"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113942140,
+        "modifiedTime": 1703131578766,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.1pO78ghO49k63BWD"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "9QqDQQ6m8A8cM0LP",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703131585083,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.9QqDQQ6m8A8cM0LP"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Acting",
+      "type": "skill",
+      "_id": "d866CDFJ5OARIQ9d",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Con artistry and performance.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xIU0KLjUcfXtUxW9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112427104,
+        "modifiedTime": 1703131591129,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.d866CDFJ5OARIQ9d"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "E7Bkwhcyz3sQMtl4",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703131595372,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.E7Bkwhcyz3sQMtl4"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Streetwise",
+      "type": "skill",
+      "_id": "gpstJACBh9AX9IRK",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Criminal underworld dealings and avoiding dangerous missteps.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.YfoWIIsILVWSkdiM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112823192,
+        "modifiedTime": 1703131597419,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.gpstJACBh9AX9IRK"
+    },
+    {
+      "name": "Black Markets",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "2xzD2ZTZq1FvPGPe",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703131598088,
+        "modifiedTime": 1703131603504,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.2xzD2ZTZq1FvPGPe"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703131609070,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "Y9K3tSZGtI559l5v",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.Y9K3tSZGtI559l5v"
+    },
+    {
+      "folder": "4pGXDdsSLC7AUA5v",
+      "name": "Machine Gun (B)",
+      "type": "weapon",
+      "_id": "DouTdBzy3SZmozqs",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": true,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "support",
+        "damageType": "ballistic",
+        "special": "May attack up to two different targets per Narration."
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.WfnyKsnMQw7IJXx6"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845512833,
+        "modifiedTime": 1703131618762,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.DouTdBzy3SZmozqs"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Stunstick",
+      "type": "weapon",
+      "_id": "Squ3K6Xi2nSVP3sM",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": true,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.TM7nr1VXZD9PdA2f"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076575145,
+        "modifiedTime": 1703131625186,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!8sObLsBc7oS47ICB.Squ3K6Xi2nSVP3sM"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115462464,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!8sObLsBc7oS47ICB"
+}

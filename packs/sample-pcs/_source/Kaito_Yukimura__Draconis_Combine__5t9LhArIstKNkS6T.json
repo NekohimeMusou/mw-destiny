@@ -1,0 +1,544 @@
+{
+  "folder": null,
+  "name": "Kaito Yukimura (Draconis Combine)",
+  "type": "pc",
+  "_id": "5t9LhArIstKNkS6T",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Honorable",
+      "Idealistic",
+      "Confident",
+      "Eager",
+      "Disciplined",
+      ""
+    ],
+    "equipment": [
+      "Dress Uniform",
+      "Field Uniform",
+      "Noteputer",
+      "Medical Kit",
+      "Advanced Field Kit",
+      "Military Communicator",
+      "",
+      "BATTLEMECH: GRF-1N Griffin"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 2,
+      "int": 2,
+      "wil": 3,
+      "cha": 1,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Yukimura’s family is minor nobility on Pesht, and he grew up on stories of warriors and combat. When he turned ten, he decided to be a soldier. Several of his family retainers, retired DCMS soldiers, helped train the young man. He entered Sun Zhang MechWarrior Academy, graduated in the top 10 percent of his class, and was the school’s kendo champion. Now with the Fifth Sun Zhang Cadre, he has been promoted to </span><span class=\"fontstyle2\">chu-i </span><span class=\"fontstyle0\">and assigned to lance command. He expects to be transferred to a DCMS line regiment within six months.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Kaito is a cheerful and eager soldier. A few of his superiors think he’s a little too cheerful and eager, but they cannot deny he is a leader who gets things done. Behind the cheerful disposition are an iron core and a disciplined mind. As far as he is concerned, he is serving the Dragon the best way he can.</span> </p>",
+    "lifeModules": {
+      "faction": "Draconis Combine (House Kurita)",
+      "childhood": "Nobility",
+      "higherEd": "Military Academy",
+      "realLife": "Tour of Duty"
+    },
+    "age": 21,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "Good morning, Tai-i! What are we doing today?",
+      "We fight for the Combine, for the Coordinator, for the Dragon!",
+      "My honor is central to me.",
+      "I'll lead the way.",
+      "We must show the Inner Sphere that we are the true heirs of the Star League.",
+      "I remember a story one of my father's retainers once told me...",
+      "Yes sir! I'll get on that right away!",
+      "A warrior fights for honor.",
+      "So, it's you... Shall we end it now?",
+      "Musashi's _The Book of Five Rings_ should be required reading for everyone.",
+      "Let's show the enemy how true warriors fight!",
+      "You have no honor.",
+      "A true warrior unites the heart, mind, and soul.",
+      "Know oneself before trying to know the enemy.",
+      "We attack!",
+      "I am a humble servant of the Dragon",
+      "If I draw steel, there will be blood.",
+      "The sword is the soul of the warrior.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Has a smile on his face most of the time.",
+      "Practices with his katana every morning, rain or shine.",
+      "Will never ask his subordinates to do anything he refuses to do.",
+      "Is a loyal soldier of the Combine."
+    ],
+    "traits": [
+      "(Positive) Toughness: Subtract 1 to all Physical and Fatigue Damage you receive. (Damage to Armor pips is not reduced.)",
+      "(Negative) Enemy: The GM may make your nemesis appear at any time to complicate your life.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Chu-i",
+    "heightWeight": "1.8m/80kg"
+  },
+  "prototypeToken": {
+    "name": "Kaito Yukimura",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 5,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703129557261,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "qjrqeB8ulX7i7Myk",
+      "sort": 0,
+      "_key": "!actors.items!5t9LhArIstKNkS6T.qjrqeB8ulX7i7Myk"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703129560087,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "FMrMmLUMX19tSjmw",
+      "sort": 400000,
+      "_key": "!actors.items!5t9LhArIstKNkS6T.FMrMmLUMX19tSjmw"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "S9CYioHiX8tgKEVw",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703129434755,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.S9CYioHiX8tgKEVw"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "WAzaIMCuyzLU9a6Z",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703129437099,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.WAzaIMCuyzLU9a6Z"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Protocol",
+      "type": "skill",
+      "_id": "udjxqztgbcTaRsbc",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Proper etiquette and decorum.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.THC61fcZRf5FQWlW"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112786030,
+        "modifiedTime": 1703129438884,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.udjxqztgbcTaRsbc"
+    },
+    {
+      "name": "Bonsai Trees",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "qP9Uw0Mwql2YQDF7",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703129418783,
+        "modifiedTime": 1703129439985,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.qP9Uw0Mwql2YQDF7"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703129444936,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "iPf3xp0zjLqF97oZ",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.iPf3xp0zjLqF97oZ"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "IFLKWqruuPa9LmtX",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703129450869,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.IFLKWqruuPa9LmtX"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Katana",
+      "type": "weapon",
+      "_id": "KbwNLO4XJnRiBNdi",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.7mwlOp5C0hedlFCL"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844455255,
+        "modifiedTime": 1703129461518,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!5t9LhArIstKNkS6T.KbwNLO4XJnRiBNdi"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115263507,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!5t9LhArIstKNkS6T"
+}

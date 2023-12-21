@@ -1,0 +1,596 @@
+{
+  "folder": null,
+  "name": "Pellean \"Ironhead\" Taliaferro (Mercenary)",
+  "type": "pc",
+  "_id": "6BeVkogev4dmrN8t",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Confident",
+      "Brawler",
+      "Rowdy",
+      "Steady",
+      "Reflective",
+      ""
+    ],
+    "equipment": [
+      "Field Uniform",
+      "Military Communicator",
+      "Medical Kit",
+      "Bottle of Whiskey",
+      "",
+      "",
+      "",
+      "BATTLEMECH: MAD-3R Marauder"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 13
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 4,
+      "rfl": 3,
+      "int": 2,
+      "wil": 2,
+      "cha": 1,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Both of Pel’s parents were members of Hansen’s Roughriders, and the rowdy mercenaries are Pel’s extended family. He became a ’Mech pilot and worked his way into the second slot of his current lance. His nickname “Ironhead” came from a barroom brawl in which he head-butted three Waco Rangers, knocking the trio unconscious. On the battlefield, he is all business and cool under fire. Hansen cycles new lieutenants through Pel’s lance, relying on the sergeant’s steadiness and knowledge to keep the lance on an even keel while the new lieutenants find their footing.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">On the surface, Pel is a typical Roughrider: loud, boisterous, and ready to drink or fight at the drop of a hat. But other times, he withdraws into himself to remember the friends he has lost along the way. When he’s in this mood, those who know him leave him alone. The moods don’t last long before he’s back to his normal rowdy self.</span></p>",
+    "lifeModules": {
+      "faction": "Mercenary (Hansen's Roughriders)",
+      "childhood": "Mercenary Brat",
+      "higherEd": "Military Enlistment",
+      "realLife": "Tour of Duty"
+    },
+    "age": 30,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "You call that a punch? My mother hit me harder than that!",
+      "Here’s to the ones who’ve left us. May they find peace.",
+      "You want to know what they call me Ironhead? Here’s why!",
+      "Friend, you shouldn’ta done that.",
+      "I’m here to drink, but if you want a fight, that’s fine by me.",
+      "I hate jumps and JumpShips. They ain’t natural.",
+      "Eat particles, you ugly slug!",
+      "All right, you heard the lieutenant!",
+      "As a prison cell, this one isn’t too bad.",
+      "A good beer and good company is all I need.",
+      "Business is business, and pleasure is pleasure. Never mix the two.",
+      "We follow orders, understood?",
+      "The LTs are getting younger every day.",
+      "Follow my lead.",
+      "Lieutenant? May I suggest that…",
+      "The Roughriders are my family, and you do not mess with family—ever!",
+      "First round’s on me!",
+      "I miss my friends.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Loves a good drink, a good fight, or both.",
+      "Will stand with his fellow Roughriders, come hell or high water.",
+      "Feels a little guilty about surviving when friends didn’t.",
+      "All business on the battlefield."
+    ],
+    "traits": [
+      "(Positive) Pain Resistance: Ignore the first wound modifier on both Damage Tracks.",
+      "(Negative) TDS—Transit Disorientation Syndrome: –2 penalty to all Tests taken within 20 minutes after a hyperspace jump (GM’s discretion).",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Sergeant",
+    "heightWeight": "1.95m/105kg"
+  },
+  "prototypeToken": {
+    "name": "Pellean \"Ironhead\" Taliaferro",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703130269116,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "NMDVsPPj2vFhxlMp",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.NMDVsPPj2vFhxlMp"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "v7zVmcGfeRXS8JIh",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703130279392,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.v7zVmcGfeRXS8JIh"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Knife",
+      "type": "weapon",
+      "_id": "gW1PaUtSnDhBaIog",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5e6RV7oGx1zEPtyr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063516121,
+        "modifiedTime": 1703130291659,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.gW1PaUtSnDhBaIog"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Brass Knuckles",
+      "type": "weapon",
+      "_id": "FxlJaBKL288roAc1",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.gPTfX12Sqhe3ln8p"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844160193,
+        "modifiedTime": 1703130332105,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.FxlJaBKL288roAc1"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703130353297,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "naHdWN87EKylDW2K",
+      "sort": 0,
+      "_key": "!actors.items!6BeVkogev4dmrN8t.naHdWN87EKylDW2K"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703130355987,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "te0tCLlPXgGrntIO",
+      "sort": 400000,
+      "_key": "!actors.items!6BeVkogev4dmrN8t.te0tCLlPXgGrntIO"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "hVs0VbyGP0EgyGE7",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703130365820,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.hVs0VbyGP0EgyGE7"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Artillery",
+      "type": "skill",
+      "_id": "f8T7w4ggymaUL0hT",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Spotting, targeting, and firing artillery weapons.</p>",
+        "link": "int",
+        "rank": 3,
+        "weaponSkillType": "artillery",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.2T92f1jA9rG9Rvon"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113034723,
+        "modifiedTime": 1703130375136,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.f8T7w4ggymaUL0hT"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "CNdJSqRPOnajGZVM",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703130380468,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.CNdJSqRPOnajGZVM"
+    },
+    {
+      "name": "Drinking Games",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "4pg0c3rwiFwWrNvf",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703130381850,
+        "modifiedTime": 1703130387924,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!6BeVkogev4dmrN8t.4pg0c3rwiFwWrNvf"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115448491,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!6BeVkogev4dmrN8t"
+}

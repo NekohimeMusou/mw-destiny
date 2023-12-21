@@ -1,0 +1,593 @@
+{
+  "folder": "sPQF8sG6yM5y1XgP",
+  "name": "Lachlan (Clan Jade Falcon)",
+  "type": "pc",
+  "_id": "HuoPWN6wnBoln4R6",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Jury-Rigger",
+      "Gifted",
+      "Washout",
+      "Restless",
+      "Subservient",
+      ""
+    ],
+    "equipment": [
+      "Toolkit with Diagnostic Computer",
+      "Noteputer",
+      "Lucky Wrench",
+      "Box of Spare Bits",
+      "",
+      "",
+      "",
+      "COMBAT VEHICLE: Salvage Vehicle (Clan)"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Ablative Armor",
+      "effect": "10 pips, -2 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 1,
+      "int": 4,
+      "wil": 3,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Lachlan’s Falconers were surprised that such a small and undersized warrior survived her sibko experience at all, let alone made it to her Trial of Position. Lachlan’s swift failure in that combat trial came as no surprise to them, however. Long commended for the pristine condition and careful maintenance of her assigned equipment, Lachlan was assigned to the technician caste, where her smaller size and keen problem-solving mind became valuable assets.</span></p>\n<p><span class=\"fontstyle0\">Lachlan’s reputation for effective, fast repairs of frontline OmniMechs earned her a promotion to the Third Falcon Talon Cluster, which took a central role in the trials that determined which Clans would participate in Operation REVIVAL. During a routine final check of a Star Captain’s </span><span class=\"fontstyle2\">Thor </span><span class=\"fontstyle0\">before one of those trials, she noticed a fault which could have triggered his ejection seat without opening the ’Mech’s cockpit hatch. Her sharp eye and speedy repair of the potentially fatal malfunction ensured her a place among the Falcons’ invading forces.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Though dedicated to her work and ensuring the machines under her care are in the best possible working order, Lachlan quietly chafes at the demeaning treatment she and her fellow technicians suffer at the hands of the Falcon warriors. She feels the warriors do not realize that their lives are often in her hands.</span></p>",
+    "lifeModules": {
+      "faction": "Clan Jade Falcon",
+      "childhood": "Trueborn Sibko",
+      "higherEd": "MechWarrior Training",
+      "realLife": "Technician Caste: Service"
+    },
+    "age": 33,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "I can fix this.",
+      "The warriors do not even know which end is up.",
+      "I think this should hold.",
+      "Your ’Mech will be ready before the end of the day.",
+      "I serve the Clan in the best way I can.",
+      "We need to move faster.",
+      "There may be a workaround for this.",
+      "I was better at fixing ’Mechs than shooting them.",
+      "Inner Sphere technicians enjoy a place of honor.",
+      "Let me show you how this works.",
+      "If you work for me, you must listen to me.",
+      "Move fast, but think slow.",
+      "You have not worked on this type of ’Mech before, _quineg_?",
+      "As you wish, Star Captain.",
+      "I cannot wait to see the worlds of the Inner Sphere.",
+      "This is not working.",
+      "Try it my way.",
+      "An accident… could be arranged.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Loves having a problem to solve.",
+      "Has an eye for detail that others often miss.",
+      "Dislikes the warrior caste but sees little opportunity for change or escape.",
+      "Asks much of those assigned to work under her."
+    ],
+    "traits": [
+      "(Positive) Tech Empathy: +1 bonus for any Tests directly involving technology.",
+      "(Negative) Thin-Skinned: Double any modifiers related to performing actions in extreme heat or extreme cold.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Senior Technician",
+    "heightWeight": "1.4m/49kg"
+  },
+  "prototypeToken": {
+    "name": "Lachlan",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Technician",
+      "type": "skill",
+      "_id": "3O8bvV9S6Id26gfe",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Diagnosing, repairing, and engineering mechanical/electrical systems.</p>",
+        "link": "int",
+        "rank": 6,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.7V3Xmkef4w2sLtr7"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113749620,
+        "modifiedTime": 1703132410905,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.3O8bvV9S6Id26gfe"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Computers",
+      "type": "skill",
+      "_id": "wQRdYmB1AjkemkyU",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Hacking, programming, security systems, and cryptography.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.bvVKQMiAtTc5vmnL"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113098451,
+        "modifiedTime": 1703132415613,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.wQRdYmB1AjkemkyU"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703132423852,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "xkceieqhW0tA2hHM",
+      "sort": 400000,
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.xkceieqhW0tA2hHM"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Communications",
+      "type": "skill",
+      "_id": "LduJjZur4xBZbKFI",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Creating, boosting, or jamming communications networks.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.cTXEQo5KEFFaH78p"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113081857,
+        "modifiedTime": 1703132429530,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.LduJjZur4xBZbKFI"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "6EhtTI5zmpG78sMl",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703132433799,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.6EhtTI5zmpG78sMl"
+    },
+    {
+      "name": "'Mech Trivia",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "qKep91tm4Tfx4GbJ",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132435123,
+        "modifiedTime": 1703132441159,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.qKep91tm4Tfx4GbJ"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132446243,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "bjKh81WJilBroQvG",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.bjKh81WJilBroQvG"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Shiv",
+      "type": "weapon",
+      "_id": "bdF62IU97Ae1KxDz",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5e6RV7oGx1zEPtyr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063516121,
+        "modifiedTime": 1703132456921,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.bdF62IU97Ae1KxDz"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Holdout Pistol (B)",
+      "type": "weapon",
+      "_id": "I4zKke1uTnYxQv1f",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": -2
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.HTOtDsGybowxgAGM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062342200,
+        "modifiedTime": 1703132462770,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.I4zKke1uTnYxQv1f"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Wrench",
+      "type": "weapon",
+      "_id": "9rVj54m1ww7CVUN7",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.ndt02O0fzeI4mnym"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844439369,
+        "modifiedTime": 1703132477512,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HuoPWN6wnBoln4R6.9rVj54m1ww7CVUN7"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115955307,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!HuoPWN6wnBoln4R6"
+}

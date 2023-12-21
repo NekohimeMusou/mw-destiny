@@ -1,0 +1,613 @@
+{
+  "folder": null,
+  "name": "Yasamin Turan (Capellan Confederation)",
+  "type": "pc",
+  "_id": "6VrLIpIdAuSTDKfs",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "MechWarrior",
+      "Warrior House Dai Da Chi",
+      "Patriotic",
+      "Deceptive",
+      "Fierce",
+      ""
+    ],
+    "equipment": [
+      "Personal Comm",
+      "Formal Dress Uniform",
+      "Leatherbound Copy of the Quran",
+      "Sunglasses with Optical Enhancements",
+      "",
+      "",
+      "",
+      "BATTLEMECH: PXH-1 Phoenix Hawk"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": null
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": null
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Ablative Armor",
+      "effect": "10 pips, -2 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 3,
+      "int": 1,
+      "wil": 1,
+      "cha": 3,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Lance Leader Yasamin Turan traces her family lineage to the days of the Star League, and the Turan family has served House Liao faithfully through every major conflict since the League’s fall. Yasamin grew up with stories of the achievements of her ancestors, who became her childhood heroes. Of all her siblings, she showed the most determination and martial prowess, and she anticipated a career in the regular CCAF. However, upon reaching the age of twelve, she was instead given the honor of selection as a student for Warrior House Dai Da Chi. Since her graduation, she has seen several combat actions. She thwarted one mercenary raid when her battered and nearly disabled ’Mech struck a killing blow with a Death from Above maneuver.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Lance Leader Turan is fierce and intense, and blindly loyal to the Capellan Confederation. She was raised from a very young age to be a great warrior, and she has seized every opportunity to become the hero that her ancestry demands. Her tactics tend to be straightforward, but since the teachings of Sun Tzu have instilled the virtue of deception as a natural part of warfare, she delights in every opportunity to trick and surprise her foes. More concerned with victory than violence, she is always eager to press her enemy to surrender rather than fight to the bitter end.</span></p>",
+    "lifeModules": {
+      "faction": "Capellan Confederation (House Liao)",
+      "childhood": "Noble",
+      "higherEd": "Family Training",
+      "realLife": "Tour of Duty"
+    },
+    "age": 20,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "For the Capellan Confederation!",
+      "If you can’t solve a problem with a large laser, you need more time in the simulator pod.",
+      "There goes the plan. Time to look for those opportunities!",
+      "Now you will see what a true MechWarrior is capable of!",
+      "I think we can turn this to our advantage.",
+      "I think I wore out my shutdown-override button.",
+      "I was born for this!",
+      "Sun Tzu said, “In the midst of chaos, there is also opportunity.”",
+      "I know what to do, but it’s not going to be easy.",
+      "Don’t worry. I’ve got jump jets.",
+      "To paraphrase the wisdom of Sun Tzu: “A wise general never passes up good salvage.”",
+      "Today we stand against those who would bring chaos and destruction to the good and loyal citizens of this planet.",
+      "Do you want me to be the anvil or the hammer?",
+      "OK, this is what we planned for.",
+      "They won’t get past me.",
+      "Cold cockpits are for cowards.",
+      "Why do the astechs always glare at me like that?",
+      "Mercs and pirates are all the same to me.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Usually seems to be on the edge of bursting into action.",
+      "Expresses zealous loyalty to House Liao at every opportunity.",
+      "Masks an impish sense of humor behind proper etiquette and protocol.",
+      "Has trouble letting go and having fun when not on duty."
+    ],
+    "traits": [
+      "(Positive) Citizenship: +1 to CHA tests when dealing with loyal citizens of the Capellan Confederation.",
+      "(Negative) Enemy: Rival Mercenary MechWarrior",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Lance Leader",
+    "heightWeight": "1.6m/52kg"
+  },
+  "prototypeToken": {
+    "name": "Yasamin Turan",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703129914229,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "gzQ0lhqmXN1T1Nla",
+      "sort": 0,
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.gzQ0lhqmXN1T1Nla"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703129916325,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "tTgLnzRlc0zTYUto",
+      "sort": 400000,
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.tTgLnzRlc0zTYUto"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "av9jGTJ9cdNirOCQ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703129918475,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.av9jGTJ9cdNirOCQ"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "tjMaXME9KqeF5gKq",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703129920376,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.tjMaXME9KqeF5gKq"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "QeUZmQ1LVXVAimsq",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703129922317,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.QeUZmQ1LVXVAimsq"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "EPy49LHK2pmT05NE",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703129923615,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.EPy49LHK2pmT05NE"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Protocol",
+      "type": "skill",
+      "_id": "ziWazxJauNPrvtKy",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Proper etiquette and decorum.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.THC61fcZRf5FQWlW"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112786030,
+        "modifiedTime": 1703129924668,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.ziWazxJauNPrvtKy"
+    },
+    {
+      "name": "House Liao History",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "xWD4R3WOyy7RJeZS",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703129905996,
+        "modifiedTime": 1703129925754,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.xWD4R3WOyy7RJeZS"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703129931098,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "6baaClGQ0oxNt6Tn",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.6baaClGQ0oxNt6Tn"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Telescoping Staff",
+      "type": "weapon",
+      "_id": "MIKYM5ilwLGyeap1",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.ndt02O0fzeI4mnym"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844439369,
+        "modifiedTime": 1703129963073,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.MIKYM5ilwLGyeap1"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Submachine Gun (B)",
+      "type": "weapon",
+      "_id": "5A0fnpcqrBK2GTq1",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "ballistic",
+        "special": "May attack up to two different targets per Narration."
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5r23lxbgznvNbbvE"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844672449,
+        "modifiedTime": 1703129970506,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!6VrLIpIdAuSTDKfs.5A0fnpcqrBK2GTq1"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115198309,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!6VrLIpIdAuSTDKfs"
+}

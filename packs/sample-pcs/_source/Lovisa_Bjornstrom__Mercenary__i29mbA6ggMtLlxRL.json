@@ -1,0 +1,543 @@
+{
+  "folder": null,
+  "name": "Lovisa Bjornstrom (Mercenary)",
+  "type": "pc",
+  "_id": "i29mbA6ggMtLlxRL",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Quick",
+      "Observant",
+      "Alert",
+      "Scout",
+      "Runner",
+      ""
+    ],
+    "equipment": [
+      "Motorcycle Keys",
+      "Family Heirloom from Draconis Combine",
+      "Military Communicator",
+      "Deluxe Toolkit",
+      "",
+      "",
+      "",
+      "BATTLEMECH: LCT-1V Locust"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 8,
+        "value": 8
+      },
+      "type": "Concealed Ablative Armor",
+      "effect": "8 pips, -1 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 1,
+      "rfl": 3,
+      "int": 2,
+      "wil": 2,
+      "cha": 2,
+      "edg": 2
+    },
+    "history": "<p><span class=\"fontstyle0\">Lovisa’s parents escaped the Draconis Combine and fled into the Lyran Commonwealth half a step ahead of the ISF. Lovisa developed a love of speed from a young age. Seeing her neurohelmet test results, the LCAF offered her an officer candidate school slot, with a transfer to the Nagelring for advanced training after OCS graduation. Despite her excellent grades, the Lyran Intelligence Corps blocked her transfer to the Nagelring, citing irregularities in her family’s background. Crushed, she fell into a deep despair and was dishonorably discharged from the LCAF for acting out. A fellow OCS cadet who sympathized with her plight put her in contact with Davis McCall of the Gray Death Legion. McCall, impressed by her grades and abilities, hired her.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Lovisa is always moving. She takes no performance-enhancing drugs and rarely drinks coffee, but she is wired from the time she gets up until she goes to sleep. Speed is her obsession— the faster, the better—to the point that she goes everywhere at top speed. She disdains both the LCAF and the LIC.</span></p>",
+    "lifeModules": {
+      "faction": "Mercenary (Gray Death Legion)",
+      "childhood": "Blue Collar",
+      "higherEd": "Officer Candidate School",
+      "realLife": "Tour of Duty"
+    },
+    "age": 24,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "I always know what’s going on around me.",
+      "What’s the use of having all that firepower if it takes you forever to get anywhere?",
+      "I think I can get another couple of kph if I tweak this…",
+      "Did I mention I hate the Combine?",
+      "Give me twenty minutes, and I’ll have it all back together! I promise!",
+      "Well, well, well, if it isn’t the LCAF: slow of mind and movement.",
+      "There’s something wrong up ahead.",
+      "LIC, ISF—I don’t trust any intel organizations as far as I can throw them.",
+      "Wanna race?",
+      "About time you guys showed up.",
+      "Without the Legion, I don’t know what I’d be.",
+      "I’m paid to _find_ things, not shoot things!",
+      "Moving targets are harder to hit, and I’m always moving.",
+      "The LIC? You mean the “Lost, Incompetent Cretins”? Not a big fan of them.",
+      "Give me enough time, and I’ll tell you what they had for breakfast!",
+      "I don’t like relying on someone else’s intelligence for anything.",
+      "I don’t have to outfight anyone, just outrun them.",
+      "We have to do _something_…",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Can’t sit still.",
+      "Dislikes heavy and assault ’Mechs.",
+      "Aware of everything going on around her.",
+      "Always tinkering with her machines to make them go faster."
+    ],
+    "traits": [
+      "(Positive) Sixth Sense: +1 bonus for Perception Tests to avoid being surprised or ambushed.",
+      "(Negative) Compulsion: –1 penalty on Tests to resist your compulsion (speed).",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Lieutenant",
+    "heightWeight": "1.6m/46kg"
+  },
+  "prototypeToken": {
+    "name": "Lovisa Bjornstrom",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703130616892,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "pfEC2vVgtW8BigAq",
+      "sort": 0,
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.pfEC2vVgtW8BigAq"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703130622897,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "VlkXSYM8UcJV3zVn",
+      "sort": 400000,
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.VlkXSYM8UcJV3zVn"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Technician",
+      "type": "skill",
+      "_id": "2xNH8zhpwwy79hHR",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Diagnosing, repairing, and engineering mechanical/electrical systems.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.7V3Xmkef4w2sLtr7"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113749620,
+        "modifiedTime": 1703130632086,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.2xNH8zhpwwy79hHR"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "jdzzJQx9JXEq1dOu",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703130636936,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.jdzzJQx9JXEq1dOu"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "XD9DmvBWDV7eGETA",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703130639921,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.XD9DmvBWDV7eGETA"
+    },
+    {
+      "name": "Star League History",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "eL9kwIbPC3Wkayx3",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703130640574,
+        "modifiedTime": 1703130647266,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.eL9kwIbPC3Wkayx3"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703130650640,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "TuK13ikFQQ8APugd",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.TuK13ikFQQ8APugd"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "Gb0m7vqV5n4jjMhx",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703130654301,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.Gb0m7vqV5n4jjMhx"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Kukri Knife",
+      "type": "weapon",
+      "_id": "O68JbYZvVp9xNz6Y",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.bOJgrhvR1O8bBaMj"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844424494,
+        "modifiedTime": 1703130690527,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!i29mbA6ggMtLlxRL.O68JbYZvVp9xNz6Y"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115223818,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!i29mbA6ggMtLlxRL"
+}

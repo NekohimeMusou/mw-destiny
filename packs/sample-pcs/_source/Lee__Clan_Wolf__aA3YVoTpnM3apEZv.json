@@ -1,0 +1,662 @@
+{
+  "folder": "sPQF8sG6yM5y1XgP",
+  "name": "Lee (Clan Wolf)",
+  "type": "pc",
+  "_id": "aA3YVoTpnM3apEZv",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Dreamer",
+      "Stubborn",
+      "Driven",
+      "Freebirth",
+      "Quiet",
+      ""
+    ],
+    "equipment": [
+      "Digital Copy of _The Phantom Tollbooth_",
+      "Photo of Parents",
+      "Journal",
+      "Sketchbook and Pencils",
+      "",
+      "",
+      "",
+      "OMNIMECH: Nova (Black Hawk)"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 8,
+        "value": 8
+      },
+      "type": "Concealed Ablative Armor",
+      "effect": "8 pips, -1 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 3,
+      "rfl": 2,
+      "int": 2,
+      "wil": 3,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">MechWarrior Lee was raised on tales of the heroic exploits of his great-uncles Jaime and Joshua, freebirths like him, in the wilds of the Inner Sphere. As he got older, he understood that his mother probably fabricated most of those stories, but they nonetheless fueled young Lee’s dream to one day become a MechWarrior and seek out his kin among the faraway stars. His first few brutal years in a freeborn sibko taught Lee to keep these dreams to himself and hide them away deep inside. But he never allowed the physical and verbal abuse rained down on him by his trueborn tormentors to discourage him, thus developing a reputation as a taciturn but effective warrior. One of the rare freebirths to earn a place in Clan Wolf’s frontline forces and in an OmniMech, Lee is ready to make his long-held dream a reality and prove his worth to his Clan.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Lee has learned through hard experience that few of his fellow warriors are interested in his opinion, so he keeps to himself outside the cockpit. In battle, however, he is unafraid to take charge and direct his comrades—even trueborns. Lee has managed to avoid Trials of Grievance for these actions only because he is usually right.</span></p>",
+    "lifeModules": {
+      "faction": "Clan Wolf",
+      "childhood": "Freeborn Sibko",
+      "higherEd": "MechWarrior Training",
+      "realLife": "Warrior Caste: Tour of Duty"
+    },
+    "age": 26,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "I have a lot to live up to.",
+      "Follow me, I know what to do.",
+      "I serve the Wolf.",
+      "Don’t underestimate me.",
+      "Is this simulator open?",
+      "That wasn’t my best effort.",
+      "I would rather not talk about it.",
+      "Just give me that chance.",
+      "Practice makes perfect.",
+      "Yeah. Hilarious.",
+      "A vat does not make you better.",
+      "Watch that flank!",
+      "I am ready to go.",
+      "Something does not seem right here.",
+      "The wonders of the Inner Sphere await.",
+      "What makes you think you will win?",
+      "The blood of Kerensky runs through me too.",
+      "Those who cannot do, talk.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Keeps his cards close to his vest.",
+      "Slow to anger, but a fierce opponent.",
+      "Desperate to live up to his legendary family members.",
+      "Never satisfied with his own performance."
+    ],
+    "traits": [
+      "(Positive) Toughness: Subtract 1 from all Physical and Fatigue Damage you receive. (Damage to Armor pips is not reduced.)",
+      "(Negative) Introvert: –1 to CHA-related tests.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "MechWarrior",
+    "heightWeight": "1.8m/84kg"
+  },
+  "prototypeToken": {
+    "name": "Lee",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703132210073,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "2BQgegLLH1kzC4UO",
+      "sort": 0,
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.2BQgegLLH1kzC4UO"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703132214711,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "z6LmyB4iqaAGk2TD",
+      "sort": 400000,
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.z6LmyB4iqaAGk2TD"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "698rBJJwOIyzeBWV",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703132220115,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.698rBJJwOIyzeBWV"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "5SmnVBrR09SKjEBk",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703132228648,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.5SmnVBrR09SKjEBk"
+    },
+    {
+      "folder": "HAIBWgUemmPu61k7",
+      "name": "Survival",
+      "type": "skill",
+      "_id": "eHJ0Kip4v9NrzTxV",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Wilderness survival, wilderness navigation, and fasting.</p>",
+        "link": "wil",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.qTrp8IrnVYjJHxqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112886265,
+        "modifiedTime": 1703132239544,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.eHJ0Kip4v9NrzTxV"
+    },
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Athletics",
+      "type": "skill",
+      "_id": "DbCL9JHvoJcIIVXk",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Running, jumping, swimming, climbing, and acrobatics.</p>",
+        "link": "str",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.k4J4ZEayEfmlzuOr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112913669,
+        "modifiedTime": 1703132255508,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.DbCL9JHvoJcIIVXk"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "cEg348Lh2xyc1K6A",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703132258759,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.cEg348Lh2xyc1K6A"
+    },
+    {
+      "name": "Star League History",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "aEqoLuR6bgKUqbG8",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132259811,
+        "modifiedTime": 1703132267437,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.aEqoLuR6bgKUqbG8"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132271352,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "TOLEFMb08UGR2y4F",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.TOLEFMb08UGR2y4F"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Knife",
+      "type": "weapon",
+      "_id": "bHgE9fe9TPMbtbfg",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5e6RV7oGx1zEPtyr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063516121,
+        "modifiedTime": 1703132281093,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.bHgE9fe9TPMbtbfg"
+    },
+    {
+      "folder": "AToMbweWjuz2LGb5",
+      "name": "Needler Pistol (Holdout)",
+      "type": "weapon",
+      "_id": "GA4vPpsX5OUOCZH0",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "",
+        "special": "Every 2 damage reduces target's Armor by 1 pip. Condition Monitor pips are damaged as normal."
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.fuznqxZN4MdybHN2"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845113689,
+        "modifiedTime": 1703132289876,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.GA4vPpsX5OUOCZH0"
+    },
+    {
+      "folder": "KeyhuBBGw9xFgG0K",
+      "name": "Gyrojet Pistol",
+      "type": "weapon",
+      "_id": "HJE7260H6iftEyBL",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": true,
+            "mod": -2
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.7y8Wlm8CMAOUhZ0t"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845189451,
+        "modifiedTime": 1703132295038,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!aA3YVoTpnM3apEZv.HJE7260H6iftEyBL"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115942470,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!aA3YVoTpnM3apEZv"
+}

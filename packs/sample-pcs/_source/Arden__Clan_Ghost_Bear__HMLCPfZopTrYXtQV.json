@@ -1,0 +1,628 @@
+{
+  "folder": "sPQF8sG6yM5y1XgP",
+  "name": "Arden (Clan Ghost Bear)",
+  "type": "pc",
+  "_id": "HMLCPfZopTrYXtQV",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Somber",
+      "Patient",
+      "Assured",
+      "Serene",
+      "Confident",
+      ""
+    ],
+    "equipment": [
+      "Pilot’s Logbook",
+      "Navigational instruments",
+      "Handwritten Passages from the Ghost Bear _Remembrance_",
+      "Emergency Rations",
+      "",
+      "",
+      "",
+      "OMNIFIGHTER: Visigoth"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 3,
+      "int": 2,
+      "wil": 3,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Arden’s youth was particularly rough, even by Clan standards. A bit undersized among her aerospace sibkin, she was quickly singled out for bullying and abuse. As the physical and mental stress placed on her grew through her early teen years, Arden took solace in the simulator and in developing her abilities in the cockpit. One by one, her tormentors washed out of their sibko or failed their Trial of Position, and Arden’s confidence grew as each washout was assigned to a lower caste. When she shot her greatest antagonizer out of the sky during her own Trial of Position, Arden cemented her belief in her skills as a warrior, and in the value of patience and stoicism. She is eager to share these traits of the Ghost Bear with the Inner Sphere pilots she will face, and greatly anticipates the new challenges they will present.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Arden is completely assured of her skills as a pilot and a warrior but is not boastful or prideful of them. She is quick to support other pilots who may be struggling, especially those she perceives as not getting a fair shake, and often acts as a mentor and coach despite her own young age.</span></p>",
+    "lifeModules": {
+      "faction": "Clan Ghost Bear",
+      "childhood": "Trueborn Sibko",
+      "higherEd": "Aerospace Pilot Training",
+      "realLife": "Warrior Caste: Tour of Duty"
+    },
+    "age": 23,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "When you are long gone, I will still be here.",
+      "I wonder what challenges the Inner Sphere holds.",
+      "Weapons lock—firing!",
+      "I will not give you the satisfaction.",
+      "You think you can anger me?",
+      "Our Clan is a family.",
+      "You can fly with me.",
+      "I have watched my enemies fall by the wayside.",
+      "Close tight on my wing.",
+      "Here, let me show you a better way.",
+      "None can stand against us if we stand together.",
+      "Let me show you what I can do.",
+      "No one can take this away from me.",
+      "Patience is the key virtue of the hunter.",
+      "None have trained as hard as I.",
+      "Contacts, closing fast.",
+      "I believe in you.",
+      "True warriors do not need to boast.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Does not doubt her own abilities—or allow others to doubt theirs.",
+      "Believes in running the slow, consistent race.",
+      "Looks out for those in need or who are targeted by others.",
+      "Implicitly trusts those who fly with her."
+    ],
+    "traits": [
+      "(Positive) Good Reputation: +1 bonus to CHA-based Tests involving someone who knows your character.",
+      "(Negative) Glass Jaw: Add 1 to all Physical and Fatigue Damage you receive.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Point Commander",
+    "heightWeight": "1.62m/55kg"
+  },
+  "prototypeToken": {
+    "name": "Arden",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / Aerospace",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 6,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryAerospace"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.q4uQlyE5IHDvQSi5"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703132866406,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "Zi1poA39Cah7bBXz",
+      "sort": 0,
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.Zi1poA39Cah7bBXz"
+    },
+    {
+      "name": "Piloting / Aerospace",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 5,
+        "isKnowledge": false,
+        "pilotingSkillType": "aerospace"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.LhzHBIIZG5WWf62I"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703132874946,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "2IbwD8qRZseZIcWJ",
+      "sort": 0,
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.2IbwD8qRZseZIcWJ"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "jpp7PTHk5BT8u3QG",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703132881581,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.jpp7PTHk5BT8u3QG"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "Ecn49DrrX3hnUsfs",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703132887056,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.Ecn49DrrX3hnUsfs"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Navigation",
+      "type": "skill",
+      "_id": "nG2hXqjGpbBD1jQJ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Map, compass, and GPS usage; air, ground, sea, space.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.joyXMogi3R1FpfPP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113672434,
+        "modifiedTime": 1703132890789,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.nG2hXqjGpbBD1jQJ"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "CmKjGhcc47W3WOm2",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703132893824,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.CmKjGhcc47W3WOm2"
+    },
+    {
+      "name": "Ghost Bear Rituals",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "RROlEGKUQasXaPaQ",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132894877,
+        "modifiedTime": 1703132901674,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.RROlEGKUQasXaPaQ"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132905114,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "1eftbTzYa3Wk770p",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.1eftbTzYa3Wk770p"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Stunstick",
+      "type": "weapon",
+      "_id": "qPEIn8TJX1tmqswR",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": true,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.TM7nr1VXZD9PdA2f"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076575145,
+        "modifiedTime": 1703132908473,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.qPEIn8TJX1tmqswR"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "73V1NPSu8DAFBNRT",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703132913892,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.73V1NPSu8DAFBNRT"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (Holdout) (E)",
+      "type": "weapon",
+      "_id": "oGikmppbYUQZoIEZ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "energy",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.uP8Uz0u5pcX9sSuU"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844797352,
+        "modifiedTime": 1703132918862,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!HMLCPfZopTrYXtQV.oGikmppbYUQZoIEZ"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115991288,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!HMLCPfZopTrYXtQV"
+}

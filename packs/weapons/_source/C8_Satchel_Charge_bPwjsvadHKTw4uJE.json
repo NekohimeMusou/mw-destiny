@@ -6,7 +6,7 @@
   "img": "icons/svg/item-bag.svg",
   "system": {
     "description": "",
-    "baseDamage": 0,
+    "baseDamage": 12,
     "range": {
       "close": {
         "usable": true,
@@ -25,7 +25,7 @@
     "isStrPowered": false,
     "weaponSkillType": "projectile",
     "damageType": "",
-    "special": "12 (Personal Combat, may attack up to three targets), 1 ('Mech-scale Combat)."
+    "special": "May attack up to three targets in personal combat. Deals 1 damage in 'Mech-scale Combat."
   },
   "effects": [],
   "flags": {
@@ -33,10 +33,10 @@
   },
   "_stats": {
     "systemId": "mw-destiny",
-    "systemVersion": "0.4.1",
+    "systemVersion": "0.6.1",
     "coreVersion": "11.315",
     "createdTime": 1702845896328,
-    "modifiedTime": 1702847688451,
+    "modifiedTime": 1703129674157,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
   "sort": 0,

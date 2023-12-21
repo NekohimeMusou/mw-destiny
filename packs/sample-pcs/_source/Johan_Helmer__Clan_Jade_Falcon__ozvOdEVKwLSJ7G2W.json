@@ -1,0 +1,678 @@
+{
+  "folder": "sPQF8sG6yM5y1XgP",
+  "name": "Johan Helmer (Clan Jade Falcon)",
+  "type": "pc",
+  "_id": "ozvOdEVKwLSJ7G2W",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Conqueror",
+      "Cruel",
+      "Focused",
+      "Fearless",
+      "Haughty",
+      ""
+    ],
+    "equipment": [
+      "Communications Kit",
+      "Medical Kit",
+      "Emergency Rations",
+      "Noteputer",
+      "",
+      "",
+      "",
+      "OMNIMECH: Hellbringer (Loki)"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 3,
+      "rfl": 4,
+      "int": 2,
+      "wil": 3,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Decanted into a sibko noted for its competitive and fierce nature, Johan learned from an early age that his best bet was on himself. He made no close associations with any of his sibkin, beyond the bare minimum required to function as an effective unit. During his Trial of Position, Johan maneuvered his opponents to surround his partner, and then fired on one of her targets, initiating general melee. His sibkin was crippled in the ensuing onslaught, but Johan succeeded in downing two ’Mechs and achieving command.</span></p>\n<p><span class=\"fontstyle0\">Faced with the opportunity to compete for the Helmer Bloodname, Johan’s independent nature again came to the fore. Rather than accept an offered sponsorship slot for the Trial of Bloodright, Johan chose to enter the Grand Melee. He believed that the sponsorship would make him politically beholden to his sponsor and preferred to trust his own abilities instead. The aftermath of the Grand Melee and several brutal rounds of competition that followed proved that Johan Helmer’s trust was well placed.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Johan believes the Founder’s brilliance came from understanding that humanity has always needed a strong hand to guide it, and that warriors must be the rulers of their society. He views the Inner Sphere’s warring nations with equal parts contempt and pity—what they view as violence, he sees as claiming his rightful place.</span></p>",
+    "lifeModules": {
+      "faction": "Clan Jade Falcon",
+      "childhood": "Trueborn Sibko",
+      "higherEd": "MechWarrior Training",
+      "realLife": "Warrior Caste: Tour of Duty"
+    },
+    "age": 29,
+    "xpLevel": "elite",
+    "xp": null,
+    "cues": [
+      "Why would I need your assistance?",
+      "You knew this challenge would fail, _quiaff_?",
+      "I am Bloodnamed—I hold no fear of death.",
+      "The Way of the Clans guides me.",
+      "Honor is an individual privilege.",
+      "I do not play politics.",
+      "I will see to it on my own.",
+      "The invasion must succeed.",
+      "We were born to rule.",
+      "Your legacy will be forgotten.",
+      "The opinion of lesser warriors holds no weight.",
+      "I know who I am.",
+      "Come forth and die!",
+      "You are not worthy of a Trial of Grievance.",
+      "You have no hope of defeating me.",
+      "Strength comes from standing on your own.",
+      "Only the weak detest violence.",
+      "The Jade Falcons will soar over the skies of the Inner Sphere.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Trusts himself and his abilities before all others.",
+      "Sees little use for allies, politics, or personal attachments.",
+      "Employs violence to make a point.",
+      "Truly believes in the Way of the Clans and the supremacy of the Jade Falcons."
+    ],
+    "traits": [
+      "(Positive) Combat Sense: Choose when you take your Narration in the turn order without needing to spend a plot point.",
+      "(Negative) Enemy: The GM may make your nemesis appear at any time to complicate your life.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Star Commander",
+    "heightWeight": "1.9m/125kg"
+  },
+  "prototypeToken": {
+    "name": "Johan Helmer",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 5,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703132314734,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "iLLvtako3tyk3OAm",
+      "sort": 0,
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.iLLvtako3tyk3OAm"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 5,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703132322021,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "NEax2KLi6FClIThG",
+      "sort": 400000,
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.NEax2KLi6FClIThG"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "VeFWlsUOOfU61lWQ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703132327719,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.VeFWlsUOOfU61lWQ"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "4DYnlC3ePuUgfk7F",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703132334480,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.4DYnlC3ePuUgfk7F"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Communications",
+      "type": "skill",
+      "_id": "Rc90NYOGtJgvxfRD",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Creating, boosting, or jamming communications networks.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.cTXEQo5KEFFaH78p"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113081857,
+        "modifiedTime": 1703132341219,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.Rc90NYOGtJgvxfRD"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Melee Combat",
+      "type": "skill",
+      "_id": "2RtnBJncYJYCJiuY",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Armed melee combat, unarmed melee combat, and martial arts.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "melee",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.lOEfnusc5j3zd6yK"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113842293,
+        "modifiedTime": 1703132346526,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 600000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.2RtnBJncYJYCJiuY"
+    },
+    {
+      "name": "Jade Falcon Remembrance",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "VLHC7O8NABOPpA9P",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132347752,
+        "modifiedTime": 1703132568333,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.VLHC7O8NABOPpA9P"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132359766,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "jsAAEEJu3iBdlpce",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.jsAAEEJu3iBdlpce"
+    },
+    {
+      "folder": "AToMbweWjuz2LGb5",
+      "name": "Needler Pistol",
+      "type": "weapon",
+      "_id": "Uc92vCntqlo2plIK",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": -2
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "",
+        "special": "Every 2 damage reduces target's Armor by 1 pip. Condition Monitor pips are damaged as normal."
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.mlfYLp3OvaIaJ8mG"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844819249,
+        "modifiedTime": 1703132367888,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.Uc92vCntqlo2plIK"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Vibrodagger",
+      "type": "weapon",
+      "_id": "pNqNUTTGCw8vqKAm",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.07XEAlJguKL5AGno"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844482993,
+        "modifiedTime": 1703132373981,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.pNqNUTTGCw8vqKAm"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Holdout Pistol (B)",
+      "type": "weapon",
+      "_id": "9NrnXckqxbIwMuCO",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": -2
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.HTOtDsGybowxgAGM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062342200,
+        "modifiedTime": 1703132381133,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.9NrnXckqxbIwMuCO"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Neural Whip",
+      "type": "weapon",
+      "_id": "Uz13Cb3JlNa4vJ4P",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": true,
+        "isStrPowered": false,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.jMRPi0VzElDbYUXe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844296208,
+        "modifiedTime": 1703132388047,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ozvOdEVKwLSJ7G2W.Uz13Cb3JlNa4vJ4P"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115949861,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!ozvOdEVKwLSJ7G2W"
+}

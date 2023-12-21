@@ -1,0 +1,607 @@
+{
+  "folder": null,
+  "name": "Miles van Ogden (Lyran Commonwealth)",
+  "type": "pc",
+  "_id": "eYPaK4FEAwqJdSNK",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "MechWarrior",
+      "Officer",
+      "Diplomatic",
+      "Socialite",
+      "Noble",
+      "Connected"
+    ],
+    "equipment": [
+      "Boutique Personal Communicator",
+      "Formal Dress Uniform",
+      "Compact Camera",
+      "Seemingly Endless Supply of Fine Spirits",
+      "",
+      "",
+      "",
+      "BATTLEMECH: WVR-6R Wolverine"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 1,
+      "rfl": 2,
+      "int": 1,
+      "wil": 2,
+      "cha": 2,
+      "edg": 2
+    },
+    "history": "<p><span class=\"fontstyle0\">Miles was born with a silver spoon in his mouth as the eldest son of the van Ogdens of the planet Ford in the Lyran Commonwealth. His family has long numbered among the wealthy and powerful of House Steiner and owns many of the lucrative factory operations in the system. He grew up pampered and entitled, approaching military service as a combination of social obligations and opportunities. He found a natural talent for piloting BattleMechs but spent most of his time carousing and networking. Since receiving his commission, he has bounced from one easy garrison duty to another in well-defended, highly populated regions. He has spent the vast majority of his time in the military in his formal dress uniform and is much more comfortable solving conflicts through diplomatic means. The lone time Miles was called on to lead a lance against a pirate raid, he struck a deal with the pirate leader who then formed their pirate force into a legitimate mercenary company and was shipped off to augment Ford’s planetary garrison.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Bold, brash, and beautiful! Miles has dashing good looks and inherited wealth, privilege, and elevated lineage as a significant vassal of House Steiner. He is always outspoken and friendly, constantly seeking people to converse with. He possesses a rare blend of self-obsessiveness and thoughtful attentiveness that attracts many and repels others, but he always seems to know how to smooth things over with the latter.</span></p>",
+    "lifeModules": {
+      "faction": "Lyran Commonwealth (House Steiner)",
+      "childhood": "Nobility",
+      "higherEd": "Military Academy",
+      "realLife": "Travel"
+    },
+    "age": 25,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "I’d like to propose a toast...",
+      "Where has everyone gone off to now?",
+      "I have the enemy in my crosshairs!",
+      "Have you met my cousin?",
+      "Fortune favors the bold.",
+      "They’re shooting at me!",
+      "Charmed, I’m sure.",
+      "Onward to victory and glory!",
+      "Now that was absolutely uncalled for.",
+      "I do believe we can make an accommodation, for propriety’s sake.",
+      "I believe I know someone who can help us with that little problem.",
+      "Hold your fire! I call for parley!",
+      "Just who do you believe you are dealing with?",
+      "I’m afraid we’ll end up owing a few favors after this…",
+      "Well, I’m feeling quite undignified at the present moment.",
+      "I’ve prepared a rousing speech to bolster our resolve for the coming battle.",
+      "Well, I never!",
+      "Don’t you dare tell a soul about this!",
+      "Who wants to get in on this photo?",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Always seems to be relaxing.",
+      "Seems incapable of taking life-and-death matters seriously.",
+      "Gregarious toward others at all times, even in the face of hostility.",
+      "Pays close attention to conversation, but often tries to appear casual and inattentive."
+    ],
+    "traits": [
+      "(Positive) Rank: Hauptmann.",
+      "(Negative) Glass Jaw: Add 1 to all Physical and Fatigue Damage you receive.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Hauptmann",
+    "heightWeight": "1.8m/77kg"
+  },
+  "prototypeToken": {
+    "name": "Miles van Ogden",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703129750147,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "q8AVgZtw9PcDC3oZ",
+      "sort": 0,
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.q8AVgZtw9PcDC3oZ"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703129751133,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "p0GQG62tuyuPngRD",
+      "sort": 400000,
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.p0GQG62tuyuPngRD"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "MM5GrlBcZyqcgKO1",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703129753503,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.MM5GrlBcZyqcgKO1"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "EsIQUNg6fayCoaOS",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703129754663,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.EsIQUNg6fayCoaOS"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Negotiation",
+      "type": "skill",
+      "_id": "b2TkZOwnApJ58IWS",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Bargaining, contracts, and diplomacy.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.TpxwBUPUfnVpSeUR"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112778375,
+        "modifiedTime": 1703129757589,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.b2TkZOwnApJ58IWS"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Protocol",
+      "type": "skill",
+      "_id": "SZULRs0X7AZglCBh",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Proper etiquette and decorum.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.THC61fcZRf5FQWlW"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112786030,
+        "modifiedTime": 1703129760446,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.SZULRs0X7AZglCBh"
+    },
+    {
+      "name": "Planetary Trade Exports",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "vyvUQgGOo1qBsWiK",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703129733775,
+        "modifiedTime": 1703129763007,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.vyvUQgGOo1qBsWiK"
+    },
+    {
+      "name": "The Rich and Famous",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "mbjtIDnqhL6dVNPp",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703129735241,
+        "modifiedTime": 1703129764075,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.mbjtIDnqhL6dVNPp"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703129767814,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "pZPNyrBgguPbodEo",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.pZPNyrBgguPbodEo"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Academy Dress Sword",
+      "type": "weapon",
+      "_id": "CNI3acWt7QUxDANq",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.7mwlOp5C0hedlFCL"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844455255,
+        "modifiedTime": 1703129779776,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.CNI3acWt7QUxDANq"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (E)",
+      "type": "weapon",
+      "_id": "7zAV2cNdXES5A8hz",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.BydrT5Y7rYkIHtET"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063490729,
+        "modifiedTime": 1703129790350,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eYPaK4FEAwqJdSNK.7zAV2cNdXES5A8hz"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115270502,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!eYPaK4FEAwqJdSNK"
+}

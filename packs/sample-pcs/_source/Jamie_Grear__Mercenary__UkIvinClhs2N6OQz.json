@@ -1,0 +1,675 @@
+{
+  "folder": null,
+  "name": "Jamie Grear (Mercenary)",
+  "type": "pc",
+  "_id": "UkIvinClhs2N6OQz",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "MechWarrior",
+      "Former Slave",
+      "Passionate",
+      "Parent",
+      "Gamer",
+      ""
+    ],
+    "equipment": [
+      "Personal Comm",
+      "Portable VR Game Console",
+      "Chemistry Field Kit",
+      "High Quality Holovid Camera",
+      "",
+      "",
+      "",
+      "BATTLEMECH: SHD-2H Shadow Hawk"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 8,
+        "value": 8
+      },
+      "type": "Concealed Ablative Armor",
+      "effect": "8 pips, -1 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 1,
+      "rfl": 3,
+      "int": 2,
+      "wil": 3,
+      "cha": 1,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Jamie Grear was born into slavery, and her life would have been brief and unpleasant if not for the Northwind Highlanders being hired to disrupt the slavers’ operation. At a crucial moment, she attacked one of the slavers as he was getting dressed combat, and then she fired one of the slavers’ support guns into an ammunition storage bay to throw the enemy into disarray. When the Highlanders liberated her along with the other slaves, the officer who led the operation arranged for her to receive a scholarship to a private military academy. She took this chance and worked hard to become a capable MechWarrior, eventually signing with the Northwind Highlanders upon graduation. She is currently raising two orphan children who travel with her, and she donates most of her pay to organizations that help victims of slavers.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Grear is confident and passionate and readily shares her thoughts and feelings with those around her. Many mistake this for naiveté, but she is careful and intelligent. She takes both life and leisure very seriously, and never forgets her childhood spent as a slave. She feels incredibly lucky to have escaped that fate and takes every chance she gets to pay that good fortune forward. Grear looks younger than her years due to malnutrition in her childhood, and she is used to having people underestimate her.</span></p>",
+    "lifeModules": {
+      "faction": "Mercenary (Northwind Highlanders)",
+      "childhood": "Slave",
+      "higherEd": "Military Academy",
+      "realLife": "Tour of Duty"
+    },
+    "age": 23,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "Stay sharp everyone. We’ll be on them soon.",
+      "Let’s pull back and cool off a bit.",
+      "There’s no way we’re leaving those people behind.",
+      "When I want your opinion, I’ll ask for it via HPG.",
+      "Don’t you dare!",
+      "That’s a problem we can solve with the direct application of high-velocity depleted uranium.",
+      "Nice one!",
+      "I’ve got kids to feed.",
+      "Can we do that again? I forgot to hit the record button.",
+      "Watch your ranges and stay in formation.",
+      "I can’t wait to get a sample of that!",
+      "Nobody messes with my family.",
+      "Let’s do this by the numbers.",
+      "No mercy for slavers.",
+      "I only look young because I _am_ young.",
+      "Everyone focus fire on my target.",
+      "Come look at this!",
+      "Don’t let them get behind you.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Tries to make everyone in her command feel important and valued.",
+      "Secretly enjoys having people underestimate her, and seeing their surprise at learning their mistake.",
+      "Values human life over hardware.",
+      "Has no mercy for slavers or pirates."
+    ],
+    "traits": [
+      "(Positive) Combat Sense: Choose when to take your Narration in the turn order without needing to spend a Plot Point.",
+      "(Negative) Dependents: The GM may use this negative Trait in the story at any time.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Lieutenant",
+    "heightWeight": "1.7m/72kg"
+  },
+  "prototypeToken": {
+    "name": "Jamie Grear",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703131386549,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "9glfxUg7SVnP4CVW",
+      "sort": 0,
+      "_key": "!actors.items!UkIvinClhs2N6OQz.9glfxUg7SVnP4CVW"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703131390496,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "teGCbicZEPZQl2Uk",
+      "sort": 400000,
+      "_key": "!actors.items!UkIvinClhs2N6OQz.teGCbicZEPZQl2Uk"
+    },
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Athletics",
+      "type": "skill",
+      "_id": "8xJqEYfzMT2rcgjJ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Running, jumping, swimming, climbing, and acrobatics.</p>",
+        "link": "str",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.k4J4ZEayEfmlzuOr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112913669,
+        "modifiedTime": 1703131396360,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.8xJqEYfzMT2rcgjJ"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "7Gh905YEZj0DFgvm",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703131400928,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.7Gh905YEZj0DFgvm"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Zero-G Operations",
+      "type": "skill",
+      "_id": "Fldiw89oFCFH7Nxf",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Extravehicular activity (EVA), zero-g acrobatics, zero-g freefall.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.w1HEtkKYPAITMVyJ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113960329,
+        "modifiedTime": 1703131405180,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.Fldiw89oFCFH7Nxf"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Science",
+      "type": "skill",
+      "_id": "eaypDbOs6tcoGgMB",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Biology, chemistry, mathematics, physics, etc.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.bOuzZw24R71R2sMG"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113711933,
+        "modifiedTime": 1703131411722,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.eaypDbOs6tcoGgMB"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "CViEMGnnqZergr4n",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703131415941,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.CViEMGnnqZergr4n"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "XIXxPTLTieSeusXe",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703131418669,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.XIXxPTLTieSeusXe"
+    },
+    {
+      "name": "Human Trafficking",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "iDdENiYvDzKLV2Ps",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703131419246,
+        "modifiedTime": 1703131426732,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.iDdENiYvDzKLV2Ps"
+    },
+    {
+      "name": "Photography",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "xAsUuyHARrfvqEIm",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703131427539,
+        "modifiedTime": 1703131433094,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.xAsUuyHARrfvqEIm"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703131438829,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "T3ii3MIz7klMRoPC",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.T3ii3MIz7klMRoPC"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (Holdout) (E)",
+      "type": "weapon",
+      "_id": "455libojKyMnCPD8",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "energy",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.uP8Uz0u5pcX9sSuU"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844797352,
+        "modifiedTime": 1703131444306,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.455libojKyMnCPD8"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Vibrodagger",
+      "type": "weapon",
+      "_id": "INz1h5gP35mrZ07O",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.07XEAlJguKL5AGno"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844482993,
+        "modifiedTime": 1703131449352,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!UkIvinClhs2N6OQz.INz1h5gP35mrZ07O"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115228518,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!UkIvinClhs2N6OQz"
+}

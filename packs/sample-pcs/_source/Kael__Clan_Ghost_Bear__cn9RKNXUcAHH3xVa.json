@@ -1,0 +1,593 @@
+{
+  "folder": "sPQF8sG6yM5y1XgP",
+  "name": "Kael (Clan Ghost Bear)",
+  "type": "pc",
+  "_id": "cn9RKNXUcAHH3xVa",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Risk-Taker",
+      "Fatalist",
+      "Speedster",
+      "Daredevil",
+      "Unreliable",
+      ""
+    ],
+    "equipment": [
+      "Wood carving of a Sulla OmniFighter",
+      "Storage Chip of Crash Recording and Investigation",
+      "Personal Communicator",
+      "Basic Toolkit",
+      "",
+      "",
+      "",
+      "OMNIMECH: Fire Moth (Dasher)"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 14
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 8,
+        "value": 8
+      },
+      "type": "Concealed Ablative Armor",
+      "effect": "8 pips, -1 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 22,
+      "rfl": 2,
+      "int": 2,
+      "wil": 3,
+      "cha": 1,
+      "edg": 2
+    },
+    "history": "<p><span class=\"fontstyle0\">Kael’s first solo flight in an OmniFighter proved to be his last. Late into his sibko years, the headstrong young warrior chose a </span><span class=\"fontstyle2\">Sulla </span><span class=\"fontstyle0\">for his flight but pushed the fighter too hard and too fast, causing a mechanical breakdown. The resulting crash nearly killed Kael, costing him a leg and any chance to fly again. Instead, Kael’s sibko trainers noted his relatively competent BattleMech simulator scores and paved the way for him to test into MechWarrior training. Kael has found a new home at the controls of his </span><span class=\"fontstyle2\">Fire Moth</span><span class=\"fontstyle0\">, a perfect match for the damaged warrior’s fragile physical nature, obsession with speed, and expectation for a short life. Though he has personally excelled in his new role, warriors under Kael’s command frequently request transfers to other units, not wishing to serve with someone who does not appear to value his own life.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Kael believes his career in the skies was cut short by a random mechanical failure, despite reports showing his own recklessness possibly caused, or at least exacerbated, the breakdown. The bitterness he harbors toward the hand fate dealt him shows through in a dangerous lack of regard for his own safety.</span></p>",
+    "lifeModules": {
+      "faction": "Clan Ghost Bear",
+      "childhood": "Trueborn Sibko",
+      "higherEd": "MechWarrior Training",
+      "realLife": "Warrior Caste: Tour of Duty"
+    },
+    "age": 26,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "All warriors must die.",
+      "Waste is not the Way of the Clans.",
+      "Hah! Another miss!",
+      "I know what was taken from me.",
+      "I will give my life to the Clan—will you?",
+      "No one will ever slow me down again.",
+      "Advance and seize that checkpoint.",
+      "Speed is my armor.",
+      "Fall in behind me and try to keep up.",
+      "The skies have been denied to me, but not the chance to serve.",
+      "If I must die, I will choose the manner.",
+      "It seems the Ghost Bear is not done with me yet.",
+      "I do not care what you think the odds are.",
+      "If you will not follow me, get out of my way.",
+      "The only thing that matters now is the ending.",
+      "The crash was not my fault.",
+      "Push forward and turn their flank.",
+      "This ’Mech and I are one.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Does not expect—or want—to grow old.",
+      "Believes he was robbed of his rightful destiny in the skies.",
+      "Holds a grudge against most members of the technician caste.",
+      "Hopes his death will achieve more meaning than his life."
+    ],
+    "traits": [
+      "(Positive) Prosthetic: When the prosthetic is worn, it cancels the effect of Lost Limb",
+      "(Negative) Lost Limb: –4 penalty for tests involving the affected appendage.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Star Captain",
+    "heightWeight": "1.67m/77kg"
+  },
+  "prototypeToken": {
+    "name": "Kael",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 4,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703132785456,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "JB5uILoByz06KYxt",
+      "sort": 0,
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.JB5uILoByz06KYxt"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 6,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703132793479,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "yuzbYfqwDEK5CYGE",
+      "sort": 400000,
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.yuzbYfqwDEK5CYGE"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "47RTIoO4YhJTrlVi",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703132800231,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.47RTIoO4YhJTrlVi"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Navigation",
+      "type": "skill",
+      "_id": "zCGNBhmbFV2wz907",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Map, compass, and GPS usage; air, ground, sea, space.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.joyXMogi3R1FpfPP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113672434,
+        "modifiedTime": 1703132805364,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.zCGNBhmbFV2wz907"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tracking",
+      "type": "skill",
+      "_id": "5ZR0LbYLxJ297Epc",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Physical tracking, sensor tracking, and shadowing.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.up4vzKy8KjRe9fh9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113768488,
+        "modifiedTime": 1703132808243,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.5ZR0LbYLxJ297Epc"
+    },
+    {
+      "name": "Aerofighter Piloting",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "RRkxa86JaCWebAjq",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703132809404,
+        "modifiedTime": 1703132816113,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.RRkxa86JaCWebAjq"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703132822134,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "IAxP4lFpENLMjazo",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.IAxP4lFpENLMjazo"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Vibrodagger",
+      "type": "weapon",
+      "_id": "VruGARH5t573xlhB",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.07XEAlJguKL5AGno"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844482993,
+        "modifiedTime": 1703132825944,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.VruGARH5t573xlhB"
+    },
+    {
+      "folder": "KeyhuBBGw9xFgG0K",
+      "name": "Gyrojet Rifle",
+      "type": "weapon",
+      "_id": "emuprIi452JhDItV",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": null
+          },
+          "far": {
+            "usable": true,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.xpDdxud8h89OqEiz"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845205762,
+        "modifiedTime": 1703132831676,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.emuprIi452JhDItV"
+    },
+    {
+      "folder": "AToMbweWjuz2LGb5",
+      "name": "Combat Shotgun (B)",
+      "type": "weapon",
+      "_id": "FjwFyFZDvh7bKeeF",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 5,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": true,
+            "mod": -2
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "smallArms",
+        "damageType": "ballistic",
+        "special": "May split damage across 2 eligible targets within range"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.LAM2DyriJCB8kHi4"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845140439,
+        "modifiedTime": 1703132836639,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!cn9RKNXUcAHH3xVa.FjwFyFZDvh7bKeeF"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115976801,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!cn9RKNXUcAHH3xVa"
+}

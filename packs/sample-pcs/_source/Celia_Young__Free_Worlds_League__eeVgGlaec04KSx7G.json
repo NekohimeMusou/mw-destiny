@@ -1,0 +1,764 @@
+{
+  "folder": null,
+  "name": "Celia Young (Free Worlds League)",
+  "type": "pc",
+  "_id": "eeVgGlaec04KSx7G",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Rebel",
+      "Guerrilla",
+      "Perceptive",
+      "Stealthy",
+      "Clever",
+      ""
+    ],
+    "equipment": [
+      "Comm Unit Hacking Tool",
+      "Balaclava",
+      "Stash of Contraband",
+      "Propaganda Pamphlets",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 10
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 8,
+        "value": 8
+      },
+      "type": "Concealed Ablative Armor",
+      "effect": "8 pips, -1 damage from energy (E) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 1,
+      "rfl": 2,
+      "int": 2,
+      "wil": 2,
+      "cha": 3,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Celia Young grew up on the planet Ford in the Lyran Commonwealth, after her grandparents emigrated from Marik space on a business venture that fell apart while the family was in transit. They fell on hard times, and Celia’s parents both died tragic deaths in poverty. After several bad foster homes, she ran away and survived on her own. Her life seemed to change for the better when she met a young operative serving the Free Worlds League. He saw some potential in her and used his connections to set her up in a local technical college. He kept in touch over the years</span></p>\n<p> </p>\n<p><span class=\"fontstyle0\">and began using her to place listening devices in communications equipment. He disappeared several months ago, leaving Celia to carry on the task of fomenting rebellion against the corrupt government.</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">Celia appears friendly and relaxed at first glance, but her eyes are always scanning every corner for signs of danger or betrayal. She has lived almost her entire life in danger of one form or another and is never completely relaxed. She is passionate about the incredible income inequality she has seen on Ford.</span></p>\n<p><span class=\"fontstyle0\">Cautious and clever, she tends to avoid fights as much as possible–but won’t back down from any chance to strike back at the powerful who oppress the weak.</span></p>",
+    "lifeModules": {
+      "faction": "Free Worlds League (House Marik)",
+      "childhood": "Street",
+      "higherEd": "Technical College",
+      "realLife": "Guerrilla Insurgent"
+    },
+    "age": 24,
+    "xpLevel": "regular",
+    "xp": null,
+    "cues": [
+      "Something doesn’t feel right about this.",
+      "Let’s see them try to suppress this!",
+      "I’m not the only one ready to put her life on the line for a better world.",
+      "We’ve got to do something.",
+      "There are other ways. Other governments who value freedom instead of just profits.",
+      "The Free Worlds League is different.",
+      "I don’t think we’re alone anymore.",
+      "I’m only one person, and I’m not the beginning or the end of this movement.",
+      "I suppose you don’t want this little bag of party favors then, do you?",
+      "I think I know a shortcut or two.",
+      "If only more people stood up for each other, we would never have such poverty.",
+      "I knew you’d find your conscience in there somewhere.",
+      "We could always arrange a distraction.",
+      "I won’t let you do this on your own.",
+      "Time for drastic measures.",
+      "Just because they own the factories doesn’t give them the right to own our lives!",
+      "I know the perfect place where we can hide out.",
+      "Hand me those charges...carefully.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Outwardly friendly and laid back, seemingly at ease at most times.",
+      "Always watching for signs of subtext and hidden meaning in conversation.",
+      "Quick to stand up for anyone unjustly treated by the wealthy or powerful.",
+      "Prefers less direct and more convoluted approaches to overcoming obstacles."
+    ],
+    "traits": [
+      "(Positive) Equipped: Choose 1 additional weapon during character creation",
+      "(Negative) In for Life: Celia is being hunted by counterintelligence forces, who have been tracking her ever since they captured her mentor.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Resistance Leader",
+    "heightWeight": "1.7m/59kg"
+  },
+  "prototypeToken": {
+    "name": "Celia Young",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Escape Artist",
+      "type": "skill",
+      "_id": "oiSQcP8N2HuGS75N",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Escaping bindings, contortionism, and shaking a tail.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.G7kmOiECZEMF5LTF"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703130200214,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.oiSQcP8N2HuGS75N"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "ZVacmUc8kst4OUlv",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703130201920,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.ZVacmUc8kst4OUlv"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Stealth",
+      "type": "skill",
+      "_id": "HkQ28o4Pl8m0EnDb",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Sneaking, palming, and pickpocketing.</p>",
+        "link": "rfl",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.atZOnxFB1hIGBinO"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113942140,
+        "modifiedTime": 1703130203859,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.HkQ28o4Pl8m0EnDb"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Communications",
+      "type": "skill",
+      "_id": "ZGmHdIOgPAwRRrgO",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Creating, boosting, or jamming communications networks.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.cTXEQo5KEFFaH78p"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113081857,
+        "modifiedTime": 1703130205988,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.ZGmHdIOgPAwRRrgO"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Demolitions",
+      "type": "skill",
+      "_id": "ZXiKy9PGlIsC7vwN",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Rigging, placing, and disarming explosives.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.7oCTsw5OLTrvZFzH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113135798,
+        "modifiedTime": 1703130208251,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.ZXiKy9PGlIsC7vwN"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "zjzDhxlirQdurc8q",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703130209440,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.zjzDhxlirQdurc8q"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Intimidation",
+      "type": "skill",
+      "_id": "cUwFowZDhaDShDPn",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Influence, interrogation, and torture.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.henMi6M8auLDydfD"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112843972,
+        "modifiedTime": 1703130212249,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.cUwFowZDhaDShDPn"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "Ziit3NHedE9McSCP",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703130213885,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.Ziit3NHedE9McSCP"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Negotiation",
+      "type": "skill",
+      "_id": "WpeSSbhQeGVZafqO",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Bargaining, contracts, and diplomacy.</p>",
+        "link": "cha",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.TpxwBUPUfnVpSeUR"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112778375,
+        "modifiedTime": 1703130215762,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.WpeSSbhQeGVZafqO"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Streetwise",
+      "type": "skill",
+      "_id": "bgAWjlmrCvRdyPg4",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Criminal underworld dealings and avoiding dangerous missteps.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.YfoWIIsILVWSkdiM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112823192,
+        "modifiedTime": 1703130217723,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.bgAWjlmrCvRdyPg4"
+    },
+    {
+      "name": "Political Science",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "HOJ51iBNfJKaVUvH",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703130193464,
+        "modifiedTime": 1703130219308,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.HOJ51iBNfJKaVUvH"
+    },
+    {
+      "name": "Unarmed",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.P15YjOEooxKLBxdJ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703130224356,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "2yjSl3rFVuxn6PiS",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.2yjSl3rFVuxn6PiS"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Pistol (E)",
+      "type": "weapon",
+      "_id": "X3CLWcSS9OFlJlbQ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 3,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.BydrT5Y7rYkIHtET"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063490729,
+        "modifiedTime": 1703130232012,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.X3CLWcSS9OFlJlbQ"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Rifle (B)",
+      "type": "weapon",
+      "_id": "t4aIEsrwGiDhWkxK",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": -2
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.KFObBzrYmSGsgLYI"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062633762,
+        "modifiedTime": 1703130235936,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.t4aIEsrwGiDhWkxK"
+    },
+    {
+      "folder": "0dHo992faqcnXRDh",
+      "name": "Explosive Charges",
+      "type": "weapon",
+      "_id": "3qyjUkTIEEcpiSeB",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 12,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": null
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "weaponSkillType": "projectile",
+        "damageType": "",
+        "special": "May attack up to three targets in personal combat. Deals 1 damage in 'Mech-scale Combat."
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.bPwjsvadHKTw4uJE"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702845896328,
+        "modifiedTime": 1703130255834,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!eeVgGlaec04KSx7G.3qyjUkTIEEcpiSeB"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115217853,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!eeVgGlaec04KSx7G"
+}

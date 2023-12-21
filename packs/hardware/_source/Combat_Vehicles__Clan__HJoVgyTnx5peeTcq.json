@@ -1,19 +1,19 @@
 {
-  "name": "Battle Armor (Clan)",
-  "sorting": "a",
+  "name": "Combat Vehicles (Clan)",
+  "sorting": "m",
   "folder": null,
   "type": "Actor",
-  "_id": "KSa9expsVTZG9mea",
-  "sort": 462500,
+  "_id": "HJoVgyTnx5peeTcq",
+  "sort": 425000,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.6.1",
     "coreVersion": "11.315",
-    "createdTime": 1702960852676,
-    "modifiedTime": 1703132978563,
+    "createdTime": 1703132974333,
+    "modifiedTime": 1703132986141,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!KSa9expsVTZG9mea"
+  "_key": "!folders!HJoVgyTnx5peeTcq"
 }

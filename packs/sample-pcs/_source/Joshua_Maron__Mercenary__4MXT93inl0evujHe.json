@@ -1,0 +1,765 @@
+{
+  "folder": null,
+  "name": "Joshua Maron (Mercenary)",
+  "type": "pc",
+  "_id": "4MXT93inl0evujHe",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "MechWarrior",
+      "Adventurous",
+      "Survivor",
+      "Force Recon",
+      "Unexpected",
+      ""
+    ],
+    "equipment": [
+      "Personal Comm",
+      "Formal Dress Uniform",
+      "Tooth from a Massive Predator",
+      "Portable Jamming Device",
+      "",
+      "",
+      "",
+      "BATTLEMECH: VLK-QA Valkyrie"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 11
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 2,
+      "rfl": 3,
+      "int": 3,
+      "wil": 2,
+      "cha": 2,
+      "edg": 3
+    },
+    "history": "<p><span class=\"fontstyle0\">Joshua Maron grew up on a sparsely populated planet with exceptionally dangerous flora and fauna and a known pirate presence operating outside the reach of civilization. While most of his fellow citizens stayed within the high walls and protective fields that deterred the many predators, human and otherwise, Joshua often went exploring. When the Eridani Light Horse was hired to find and rescue people captured for enslavement by one of the pirate warlords, they found Maron to be an indispensable guide and offered him ongoing employment. He agreed only after they offered to train him as a MechWarrior. Over the years he has proved himself a capable and wily scout who knows exactly when to strike with speed and surprise and when to evade action.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Maron always seems to be enjoying a joke that only he gets. The galaxy is a strange place, full of interesting things to observe and try not to get killed by, and he takes every day as a new adventure. He rarely does what people expect and relishes every opportunity to surprise his friends as well as his foes. The scarier and more chaotic things get, the more his sense of humor comes to the surface.</span></p>",
+    "lifeModules": {
+      "faction": "Mercenary (Eridani Light Horse)",
+      "childhood": "Backwoods",
+      "higherEd": "Military Enlistment",
+      "realLife": "Tour of Duty"
+    },
+    "age": 36,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "Now we ride.",
+      "They’re going to feel that in the morning.",
+      "Marking targets for artillery strike now…",
+      "Let’s see if they can keep up.",
+      "Don’t worry, I brought enough missiles for you too!",
+      "On my mark, unload everything into their rear and engage jump jets.",
+      "I don’t think they know we’re here.",
+      "Time to make some noise!",
+      "I’ve got visual confirmation of the entire enemy formation.",
+      "Tonnage isn’t everything.",
+      "What?",
+      "Hit ’em hard and run for your lives!",
+      "I love a good flank attack!",
+      "Let’s go find the path to victory.",
+      "So that’s how the ejection system works…",
+      "Here, have a ten-rack in the back!",
+      "I don’t think they want us up there. Let’s see what my jump jets have to say about that.",
+      "Look out below!",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Always seems to be cooking up a scheme.",
+      "Comes off as an adrenaline junkie, seeming to relish extreme danger.",
+      "Rarely passes up an opportunity to make a pun.",
+      "Doesn’t like to sit still."
+    ],
+    "traits": [
+      "(Positive) Rank: Captain.",
+      "(Negative) Poor Hearing: –1 to Hearing-based Perception Tests.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Captain",
+    "heightWeight": "1.8m/59kg"
+  },
+  "prototypeToken": {
+    "name": "Joshua Maron",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Gunnery / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>BattleMech, combat vehicle, and aerofighter weaponry.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "weaponSkillType": "gunneryMech"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.1tk2VY1DgPgXCCa3"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113794329,
+        "modifiedTime": 1703131252791,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_id": "WQ67tOe4aVdxQ0kW",
+      "sort": 0,
+      "_key": "!actors.items!4MXT93inl0evujHe.WQ67tOe4aVdxQ0kW"
+    },
+    {
+      "name": "Piloting / BattleMech",
+      "type": "skill",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>'Mech and aerofighter piloting; vehicle driving.</p>",
+        "link": "rfl",
+        "rank": 3,
+        "isKnowledge": false,
+        "pilotingSkillType": "mech"
+      },
+      "effects": [],
+      "folder": "VJb81QHhBezY0rx7",
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.wma3Qna8MZZVqUOe"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702432329235,
+        "modifiedTime": 1703131257624,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "pQRIXZ7px65sZUrO",
+      "sort": 400000,
+      "_key": "!actors.items!4MXT93inl0evujHe.pQRIXZ7px65sZUrO"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "hj848PpaLChIFyt8",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703131263119,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.hj848PpaLChIFyt8"
+    },
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Stealth",
+      "type": "skill",
+      "_id": "XmisrCoXPp5dIZrg",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Sneaking, palming, and pickpocketing.</p>",
+        "link": "rfl",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.atZOnxFB1hIGBinO"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113942140,
+        "modifiedTime": 1703131268773,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.XmisrCoXPp5dIZrg"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Artillery",
+      "type": "skill",
+      "_id": "I4GZQLPRcWM8UwmX",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Spotting, targeting, and firing artillery weapons.</p>",
+        "link": "int",
+        "rank": 2,
+        "weaponSkillType": "artillery",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.2T92f1jA9rG9Rvon"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113034723,
+        "modifiedTime": 1703131275333,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.I4GZQLPRcWM8UwmX"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Communications",
+      "type": "skill",
+      "_id": "vqjKXI9V6CKwSXwv",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Creating, boosting, or jamming communications networks.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.cTXEQo5KEFFaH78p"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113081857,
+        "modifiedTime": 1703131280729,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.vqjKXI9V6CKwSXwv"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Navigation",
+      "type": "skill",
+      "_id": "5onE1she5MPdPmMp",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Map, compass, and GPS usage; air, ground, sea, space.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.joyXMogi3R1FpfPP"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113672434,
+        "modifiedTime": 1703131299322,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.5onE1she5MPdPmMp"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "oGAuqlug4qgqKF1m",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 1,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703131303962,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.oGAuqlug4qgqKF1m"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "r3NC1D0O5GulJjRU",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703131307770,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.r3NC1D0O5GulJjRU"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tracking",
+      "type": "skill",
+      "_id": "jr0aTZF7umCWJhSW",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Physical tracking, sensor tracking, and shadowing.</p>",
+        "link": "int",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.up4vzKy8KjRe9fh9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113768488,
+        "modifiedTime": 1703131311362,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.jr0aTZF7umCWJhSW"
+    },
+    {
+      "name": "Carnivorous Wildlife",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "YEDuD406WqPFWz1Q",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703131312091,
+        "modifiedTime": 1703131321287,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.YEDuD406WqPFWz1Q"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703131326662,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "fZlu2Ld3Xmv9XIX7",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.fZlu2Ld3Xmv9XIX7"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "aS0Q2VphCKpg9FbT",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703131331781,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.aS0Q2VphCKpg9FbT"
+    },
+    {
+      "folder": "vQrzuDz6xqGy3REt",
+      "name": "Laser Rifle (E)",
+      "type": "weapon",
+      "_id": "LTDnqWJKFPQ9mA3s",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": 0
+          }
+        },
+        "damageType": "energy",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.6Fl8mG2lfLwDdgmy"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702092704820,
+        "modifiedTime": 1703131354068,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.LTDnqWJKFPQ9mA3s"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Vibrodagger",
+      "type": "weapon",
+      "_id": "j1OeC5bFqjsVhCNr",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 2,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": null
+          },
+          "far": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "weaponSkillType": "melee",
+        "damageType": "",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.07XEAlJguKL5AGno"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702844482993,
+        "modifiedTime": 1703131359103,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!4MXT93inl0evujHe.j1OeC5bFqjsVhCNr"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115458277,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!4MXT93inl0evujHe"
+}

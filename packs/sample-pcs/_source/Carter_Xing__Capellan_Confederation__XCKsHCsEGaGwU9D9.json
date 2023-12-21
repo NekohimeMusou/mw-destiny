@@ -1,0 +1,595 @@
+{
+  "folder": null,
+  "name": "Carter Xing (Capellan Confederation)",
+  "type": "pc",
+  "_id": "XCKsHCsEGaGwU9D9",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Tough",
+      "Fearless",
+      "Infantry",
+      "Committed",
+      "Drillmaster",
+      ""
+    ],
+    "equipment": [
+      "Field Communicator",
+      "Medical Kit",
+      "Binoculars",
+      "Flashbang Grenades",
+      "PERSONAL VEHICLE: Bayamo Hoverbike",
+      "",
+      "",
+      ""
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 3,
+      "rfl": 2,
+      "int": 2,
+      "wil": 3,
+      "cha": 2,
+      "edg": 1
+    },
+    "history": "<p><span class=\"fontstyle0\">Carter was a street punk who was picked up on a burglary charge. At trial, he was given a choice: jail or military service. He chose the military and quickly realized he had found a home. He graduated as a top recruit and was promoted to lance corporal in his Home Guard regiment. During his first three years of service, he was promoted to lance sergeant, got married, and was made the training NCO for his company. He is well aware of the eyes on him and he has accomplished everything asked of him and more. More than a few suspect he will be soon promoted to assistant force leader</span> </p>",
+    "personality": "<p><span class=\"fontstyle0\">In the field, Carter is the NCO held up as an example of the ideal Home Guard soldier. He drills the soldiers in his company relentlessly, is quick to correct mistakes and is grudging with his praise. Nothing escapes his attention, and he has seen all the scams, despite his relatively young age. Off duty, he is wholly devoted to his wife and child.</span></p>",
+    "lifeModules": {
+      "faction": "Capellan Confederation (House Liao)",
+      "childhood": "Street",
+      "higherEd": "Military Enlistment",
+      "realLife": "Tour of Duty"
+    },
+    "age": 24,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "Come on, you _Kuòyú_! We only have another ten kilometers to run!",
+      "If the Celestial Wisdom demands you sacrifice your life, you will do so without hesitation!",
+      "Good. Now go back and do it again, only faster!",
+      "My job is to make sure your death is not a waste.",
+      "Follow me!",
+      "Better to bleed in training than in battle!",
+      "Listen up, worms!",
+      "I am a Capellan soldier first, a husband second.",
+      "The Celestial Wisdom is infallible. You are not.",
+      "I pulled that that stunt years ago. Didn’t work then, not going to work now.",
+      "This is Capellan soil, and we will defend it to our last breath!",
+      "Attention!",
+      "Drop and give me fifty!",
+      "What do you need done, sir?",
+      "Never expect the enemy to be stupider than you.",
+      "No, no, _this_ is how you shoot.",
+      "My family is why I do this.",
+      "Everyone would do well to memorize Sun Tzu’s The Art of War. I have.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "When on duty: focused and driven. When off duty: quiet and relaxed.",
+      "Wants to make his company the best in the regiment.",
+      "Always teaching and quick to correct mistakes.",
+      "Eager to do anything asked of him."
+    ],
+    "traits": [
+      "(Positive) Toughness: Subtract 1 to all Physical and Fatigue Damage you receive (Damage to Armor pips is not reduced.)",
+      "(Negative) Dependents: The GM may use this negative Trait in the story at any time.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "Lance Sergeant",
+    "heightWeight": "1.8m/84kg"
+  },
+  "prototypeToken": {
+    "name": "Carter Xing",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "tEn5H9vtMml6zK0o",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 5,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703130026594,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.tEn5H9vtMml6zK0o"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Leadership",
+      "type": "skill",
+      "_id": "cmaFMVPf1o9qFw9z",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Inspiration, motivation, administration, and training.</p>",
+        "link": "cha",
+        "rank": 2,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.xhRMEjtnEyv8Y0Up"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112472227,
+        "modifiedTime": 1703130028087,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.cmaFMVPf1o9qFw9z"
+    },
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Support Weapons",
+      "type": "skill",
+      "_id": "xx7O899VXZcedHc8",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Heavy weapons, anti-'Mech weaponry, exoskeleton/powered-armor weaponry.</p>",
+        "link": "str",
+        "rank": 4,
+        "weaponSkillType": "support",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.rdK7aj7zaksp1wpZ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112930282,
+        "modifiedTime": 1703130031630,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.xx7O899VXZcedHc8"
+    },
+    {
+      "folder": "6yIscmpeYz50hxIW",
+      "name": "Streetwise",
+      "type": "skill",
+      "_id": "U52oBbO2E5q5XoHX",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Criminal underworld dealings and avoiding dangerous missteps.</p>",
+        "link": "cha",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.YfoWIIsILVWSkdiM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112823192,
+        "modifiedTime": 1703130034217,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.U52oBbO2E5q5XoHX"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tactics",
+      "type": "skill",
+      "_id": "ajRNPUXyiHWmgDbS",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Infantry, land, sea, air, and space tactics.</p>",
+        "link": "int",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.tePEbtxle6o7CegN"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113730474,
+        "modifiedTime": 1703130037002,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.ajRNPUXyiHWmgDbS"
+    },
+    {
+      "name": "Capellan Military History",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "63YmUOIOXqqMLtdH",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703130016958,
+        "modifiedTime": 1703130038991,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.63YmUOIOXqqMLtdH"
+    },
+    {
+      "name": "Martial Arts",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.XzIOLRUJrbAwCKqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703130043548,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "xdAMwD5mL048heRc",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.xdAMwD5mL048heRc"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Knife",
+      "type": "weapon",
+      "_id": "cjtsMykb6joteZrq",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5e6RV7oGx1zEPtyr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063516121,
+        "modifiedTime": 1703130053336,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.cjtsMykb6joteZrq"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Rifle (B)",
+      "type": "weapon",
+      "_id": "1oL5Mk8ACOHEyGqV",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": -2
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.KFObBzrYmSGsgLYI"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062633762,
+        "modifiedTime": 1703130059834,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.1oL5Mk8ACOHEyGqV"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "1H3aRcj1S1UJHXWK",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703130063177,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!XCKsHCsEGaGwU9D9.1H3aRcj1S1UJHXWK"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115439221,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!XCKsHCsEGaGwU9D9"
+}

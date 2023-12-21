@@ -1,0 +1,595 @@
+{
+  "folder": null,
+  "name": "Turi Walsh (Taurian Concordat)",
+  "type": "pc",
+  "_id": "ZCpBv9WTnuXRU7ar",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "description": "",
+    "tags": [
+      "Loner",
+      "Hunter",
+      "Haunted",
+      "Outdoorsman",
+      "Survivalist",
+      ""
+    ],
+    "equipment": [
+      "Medical Kit",
+      "Binoculars",
+      "Winter Clothing",
+      "Jerked Meat",
+      "",
+      "",
+      "",
+      "PERSONAL VEHICLE: Bulldog Medium Truck"
+    ],
+    "physDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "fatigueDamage": {
+      "min": 0,
+      "max": null,
+      "value": 12
+    },
+    "armor": {
+      "hp": {
+        "min": 0,
+        "max": 10,
+        "value": 10
+      },
+      "type": "Flak Armor",
+      "effect": "10 pips, -2 damage from ballistic (B) weapons"
+    },
+    "ignoreWoundPenalty": false,
+    "attributes": {
+      "str": 3,
+      "rfl": 2,
+      "int": 2,
+      "wil": 3,
+      "cha": 1,
+      "edg": 2
+    },
+    "history": "<p><span class=\"fontstyle0\">Turi grew up in the backwoods of his home planet, learning to hunt and be self-sufficient. He was drafted into the Taurian Defense Force and became an infantryman, rising to the rank of lance sergeant and serving as senior NCO of a company. However, during a Federated Suns raid, conflicting orders resulted in the entire company being slaughtered except for Turi. Overwhelmed with guilt and emotion, he resigned and disappeared before the TDF could fully investigate. Now he’s back on his homeworld, up in the mountains, living off the grid and avoiding all human contact. The TDF have twice sent teams in to find him, but he’s avoided them both times.</span></p>",
+    "personality": "<p><span class=\"fontstyle0\">Turi wants to be left alone. He brings pelts to a small settlement for food and supplies, but otherwise avoids human contact. He relives the tragic events that ended his military service every time he closes his eyes, and blames himself for the company’s destruction. He is a skilled hunter and tracker and is used to being alone. A morose man, he avoids people as much as possible, but will fight if he’s cornered.</span></p>",
+    "lifeModules": {
+      "faction": "Taurian Concordat",
+      "childhood": "Backwoods",
+      "higherEd": "Military Enlistment",
+      "realLife": "Tour of Duty"
+    },
+    "age": 36,
+    "xpLevel": "veteran",
+    "xp": null,
+    "cues": [
+      "Leave me alone.",
+      "War isn’t glory. Its horror.",
+      "Better get to shelter. Weather’s getting bad.",
+      "I don’t miss civilization.",
+      "I don’t care about causes anymore.",
+      "Regrets are all I’ve got left.",
+      "I know these lands better than anyone.",
+      "Don’t pretend you understand me.",
+      "Do you hear that?",
+      "I’m not alone. My ghosts keep me company.",
+      "I will be seen only if I want to.",
+      "I’ve seen too much death and destruction to be normal again.",
+      "I’m not staying long. Neither are you.",
+      "_Quiet._",
+      "I kill only to eat or protect myself.",
+      "It’s my fault.",
+      "Why are you here?",
+      "We’ve talked enough.",
+      "",
+      "",
+      ""
+    ],
+    "dispositions": [
+      "Holds himself responsible for his company’s annihilation.",
+      "Rarely speaks and doesn’t say much when he does.",
+      "Lives with survivor’s guilt every day.",
+      "Always alert."
+    ],
+    "traits": [
+      "(Positive) Thick-Skinned: Ignore any modifiers related to performing actions in extreme heat or extreme cold.",
+      "(Negative) Introvert: –1 penalty for CHA-related Tests.",
+      "",
+      ""
+    ],
+    "hasToughnessTrait": false,
+    "hasUnluckyTrait": false,
+    "rank": "N/A",
+    "heightWeight": "1.8m/96kg"
+  },
+  "prototypeToken": {
+    "name": "Turi Walsh",
+    "displayName": 30,
+    "actorLink": false,
+    "appendNumber": true,
+    "prependAdjective": false,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 50,
+    "bar1": {
+      "attribute": "physDamage"
+    },
+    "bar2": {
+      "attribute": "fatigueDamage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [
+      {
+        "id": "basicSight",
+        "range": 0,
+        "enabled": true
+      }
+    ],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "folder": "VJb81QHhBezY0rx7",
+      "name": "Small Arms",
+      "type": "skill",
+      "_id": "OXYMXbFJOtLphW98",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Pistols, rifles, shotguns, etc.</p>",
+        "link": "rfl",
+        "rank": 5,
+        "weaponSkillType": "smallArms",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.yZalNMyHn2pjV1jH"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113913768,
+        "modifiedTime": 1703131779181,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 800000,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.OXYMXbFJOtLphW98"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Tracking",
+      "type": "skill",
+      "_id": "7yQyyEhzgNVk6k4T",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Physical tracking, sensor tracking, and shadowing.</p>",
+        "link": "int",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.up4vzKy8KjRe9fh9"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113768488,
+        "modifiedTime": 1703131783680,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.7yQyyEhzgNVk6k4T"
+    },
+    {
+      "folder": "HAIBWgUemmPu61k7",
+      "name": "Survival",
+      "type": "skill",
+      "_id": "dHb7YLn1bE2D3lyQ",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Wilderness survival, wilderness navigation, and fasting.</p>",
+        "link": "wil",
+        "rank": 4,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.qTrp8IrnVYjJHxqd"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112886265,
+        "modifiedTime": 1703131795322,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.dHb7YLn1bE2D3lyQ"
+    },
+    {
+      "folder": "aRMKHIgLqxqWiDv4",
+      "name": "Perception",
+      "type": "skill",
+      "_id": "fl7ynxFc3Vez9AdB",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Situational awareness, noticing detail, and determining authenticity.</p>",
+        "link": "int",
+        "rank": 3,
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.ID8lOSM7Qlah3jgv"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701113691144,
+        "modifiedTime": 1703131802991,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.fl7ynxFc3Vez9AdB"
+    },
+    {
+      "folder": "GkVi0HCTnitAe7NU",
+      "name": "Support Weapons",
+      "type": "skill",
+      "_id": "E5JPzwLO563JnY6F",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Heavy weapons, anti-'Mech weaponry, exoskeleton/powered-armor weaponry.</p>",
+        "link": "str",
+        "rank": 2,
+        "weaponSkillType": "support",
+        "isKnowledge": false
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.skills.Item.rdK7aj7zaksp1wpZ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1701112930282,
+        "modifiedTime": 1703131807854,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "BOQEoGKmzXOyTdu8": 3,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.E5JPzwLO563JnY6F"
+    },
+    {
+      "name": "Bushcraft",
+      "type": "skill",
+      "system": {
+        "isKnowledge": true,
+        "link": "int",
+        "description": "",
+        "rank": 1
+      },
+      "_id": "HGtlaQS9CabIaNuW",
+      "img": "icons/svg/item-bag.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703131808842,
+        "modifiedTime": 1703131814242,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.HGtlaQS9CabIaNuW"
+    },
+    {
+      "name": "Unarmed",
+      "type": "weapon",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "<p>Does not count against weapon total.</p>",
+        "baseDamage": 2,
+        "isStunWeapon": true,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "folder": null,
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.P15YjOEooxKLBxdJ"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062087594,
+        "modifiedTime": 1703131820225,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "_id": "5HR7MiymXIbs3g5I",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.5HR7MiymXIbs3g5I"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Hunting Rifle (B)",
+      "type": "weapon",
+      "_id": "vNRwUdXUNA1tdshq",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": true,
+            "mod": -2
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.KFObBzrYmSGsgLYI"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702062633762,
+        "modifiedTime": 1703131833327,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.vNRwUdXUNA1tdshq"
+    },
+    {
+      "folder": "Y0ZOKe5YqprWoGQ1",
+      "name": "Auto-Pistol (B)",
+      "type": "weapon",
+      "_id": "IrqUK6ng2Gnk3poi",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "isStunWeapon": false,
+        "isStrPowered": false,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": 0
+          },
+          "near": {
+            "usable": true,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "ballistic",
+        "weaponSkillType": "smallArms",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.x3jnQ947SzCveVgY"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702076602990,
+        "modifiedTime": 1703131836693,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.IrqUK6ng2Gnk3poi"
+    },
+    {
+      "folder": "pGD4MSd4dY2TrA5P",
+      "name": "Hunting Knife",
+      "type": "weapon",
+      "_id": "PeG4OuPnBlx0OUfx",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 1,
+        "isStunWeapon": false,
+        "isStrPowered": true,
+        "range": {
+          "close": {
+            "usable": true,
+            "mod": -2
+          },
+          "near": {
+            "usable": false,
+            "mod": 0
+          },
+          "far": {
+            "usable": false,
+            "mod": 0
+          }
+        },
+        "damageType": "",
+        "weaponSkillType": "melee",
+        "special": ""
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.weapons.Item.5e6RV7oGx1zEPtyr"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.6.1",
+        "coreVersion": "11.315",
+        "createdTime": 1702063516121,
+        "modifiedTime": 1703131848097,
+        "lastModifiedBy": "go8IVTazJxmHGjsW"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3
+      },
+      "_key": "!actors.items!ZCpBv9WTnuXRU7ar.PeG4OuPnBlx0OUfx"
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "mw-destiny",
+    "systemVersion": "0.6.1",
+    "coreVersion": "11.315",
+    "createdTime": 1703115467674,
+    "modifiedTime": 1703133567550,
+    "lastModifiedBy": "go8IVTazJxmHGjsW"
+  },
+  "sort": 0,
+  "ownership": {
+    "default": 0,
+    "go8IVTazJxmHGjsW": 3
+  },
+  "_key": "!actors!ZCpBv9WTnuXRU7ar"
+}

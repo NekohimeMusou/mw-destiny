@@ -1,19 +1,19 @@
 {
-  "name": "Battle Armor (Clan)",
-  "sorting": "a",
+  "name": "Clan",
+  "sorting": "m",
   "folder": null,
   "type": "Actor",
-  "_id": "KSa9expsVTZG9mea",
-  "sort": 462500,
+  "_id": "sPQF8sG6yM5y1XgP",
+  "sort": 0,
   "color": null,
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
     "systemVersion": "0.6.1",
     "coreVersion": "11.315",
-    "createdTime": 1702960852676,
-    "modifiedTime": 1703132978563,
+    "createdTime": 1703115906094,
+    "modifiedTime": 1703133567393,
     "lastModifiedBy": "go8IVTazJxmHGjsW"
   },
-  "_key": "!folders!KSa9expsVTZG9mea"
+  "_key": "!folders!sPQF8sG6yM5y1XgP"
 }
