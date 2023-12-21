@@ -39,7 +39,7 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
       xp: new fields.NumberField({integer: true}),
       cues: new fields.ArrayField(new fields.StringField(), {
         required: true,
-        initial: Array(18).fill(""),
+        initial: Array(21).fill(""),
       }),
       dispositions: new fields.ArrayField(new fields.StringField(), {
         required: true,
