@@ -20,7 +20,7 @@
     <div class="flexcol">
       <div>{{localize "MWDESTINY.mechanic.attribute"}} 2</div>
       <select name="attr2">
-        {{selectOptions MWDESTINY.attributes.pc selected=attr}}
+        {{selectOptions MWDESTINY.attributes.pc selected=attr blank=(localize "MWDESTINY.skills.unskilled")}}
       </select>
     </div>
     {{/if}}

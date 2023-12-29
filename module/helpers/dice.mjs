@@ -16,10 +16,10 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   const parts = [];
 
-  const flavor = !(skillName || damageCode) ?
-   game.i18n.format("MWDESTINY.mechanic.test", {name: `${attr?.toUpperCase()} + ${attr2?.toUpperCase()}`}) : title;
+  const flavor = (skillName || damageCode) ? title :
+   game.i18n.format("MWDESTINY.mechanic.test", {name: `${attr?.toUpperCase()} + ${attr2?.toUpperCase() || game.i18n.localize("MWDESTINY.skills.unskilled")}`});
 
-  parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase()}</p>`);
+  parts.push(`<p>${attr.toUpperCase()} + ${skillName || attr2?.toUpperCase() || game.i18n.localize("MWDESTINY.skills.unskilled")}</p>`);
 
   if (targetName) {
     parts.push(`<h3>${game.i18n.format("MWDESTINY.mechanic.target", {name: targetName})}</h3>`);

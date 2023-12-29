@@ -117,7 +117,8 @@
                 "mech": "BattleMech",
                 "aerospace": "Aerospace",
                 "vehicle": "Combat Vehicle"
-            }
+            },
+            "unskilled": "Unskilled"
         },
         "damageType": {
             "personal": {
