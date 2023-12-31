@@ -1,4 +1,4 @@
-<form class="flexcol flex-group-center">
+<form class="flexcol">
   {{#if targetName}}
   <div>
     {{localize "MWDESTINY.mechanic.target" name=targetName}}
@@ -26,11 +26,9 @@
     {{/if}}
   </div>
   {{#unless targetName}}
-  <div class="flexrow flex-group-center flex-between">
+  <div class="flexcol flex-group-left flex-between">
     <label>{{localize "MWDESTINY.mechanic.difficulty"}}:</label>
-    <select name="difficulty">
-      {{selectOptions MWDESTINY.rollDifficulties selected="average" blank=(localize "MWDESTINY.dialog.difficulties.opposing") localize=true}}
-    </select>
+    {{radioBoxes "difficulty" MWDESTINY.rollDifficulties checked="average" localize=true}}
   </div>
   {{/unless}}
   <div class="flexrow">
