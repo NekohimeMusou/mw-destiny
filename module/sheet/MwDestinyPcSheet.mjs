@@ -154,7 +154,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const woundPenalty = this.actor.system.woundPenalty;
     const actor = this.actor;
 
-    const target = game.user.targets.first()?.actor;
+    const target = game.user.targets.first();
     const targetName = target?.name;
 
     return await rollTest(this.actor.getRollData(), dataset.rollLabel,
@@ -189,10 +189,10 @@ export default class MwDestinyPcSheet extends ActorSheet {
 
     const woundPenalty = actorData.woundPenalty;
 
-    const target = game.user.targets.first().actor;
-    const targetName = target?.name;
-    const targetType = target?.type;
-    const targetData = target?.system;
+    const target = game.user.targets.first();
+    const targetName = target.name;
+    const targetType = target.actor.type;
+    const targetData = target.actor.system;
 
     const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 

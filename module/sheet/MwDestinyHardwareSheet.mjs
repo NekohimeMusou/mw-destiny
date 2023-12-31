@@ -152,9 +152,8 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const rollLabel = game.i18n.localize("MWDESTINY.mechanic.psr");
 
-    const target = game.user.targets.first()?.actor;
-
-    const targetName = target?.name;
+    const target = game.user.targets.first();
+    const targetName = target.name;
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, woundPenalty, targetName});
@@ -194,10 +193,10 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const cluster = weaponData.cluster;
     const special = weaponData.special;
 
-    const target = game.user.targets.first().actor;
+    const target = game.user.targets.first();
     const targetName = target.name;
-    const targetType = target.type;
-    const targetData = target.system;
+    const targetType = target.actor.type;
+    const targetData = target.actor.system;
 
     const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 
@@ -268,10 +267,10 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const special = CONFIG.MWDESTINY.physAttackInfo[attackType];
 
-    const target = game.user.targets.first().actor;
+    const target = game.user.targets.first();
     const targetName = target.name;
-    const targetType = target.type;
-    const targetData = target.system;
+    const targetType = target.actor.type;
+    const targetData = target.actor.system;
 
     const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 
