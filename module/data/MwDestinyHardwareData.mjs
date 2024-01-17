@@ -97,4 +97,10 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       ram: (this.hardwareType === "combatVehicle" || this.hardwareType === "turretVehicle" || this.hardwareType === "vtol") ? Math.ceil((this.tonnage / 30) * this.movement) : 0,
     };
   }
+
+  get heatEffect() {
+    const index = Math.min(this.heat, 5);
+
+    return game.i18n.localize(`MWDESTINY.heatEffects.${index}`);
+  }
 }

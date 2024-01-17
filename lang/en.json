@@ -253,6 +253,7 @@
             "armor": "Armor",
             "structure": "Structure",
             "heat": "Heat",
+            "dissipateHeat": "Dissipate Heat",
             "location": "Location",
             "loc": "Loc",
             "missileCount": "Missile Dice",
@@ -271,6 +272,14 @@
             "totalDamage": "Total: {damage}",
             "missileDamage": "Missile {num}: {dmg} Damage",
             "hardwarePoints": "Hardware Points"
+        },
+        "heatEffects": {
+            "0": "BLUE: No effects",
+            "1": "GREEN: -1 Max Movement",
+            "2": "YELLOW: -1 Max Movement, -1 Ranged Attack Mod",
+            "3": "ORANGE: -1 Max Movement, -1 Ranged Attack Mod, Shutdown (avoid on 8+)",
+            "4": "RED: -1 Max Movement, -1 Ranged Attack Mod, Ammo Explosion (avoid on 8+)",
+            "5": "CRITICAL: Automatic Shutdown"
         }
     }
 }
