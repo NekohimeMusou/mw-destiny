@@ -111,7 +111,8 @@
                 "gunneryAerospace": "Gunnery / Aerospace",
                 "gunneryVehicle": "Gunnery / Combat Vehicle",
                 "support": "Support",
-                "artillery": "Artillery"
+                "artillery": "Artillery",
+                "piloting": "Piloting"
             },
             "piloting": {
                 "mech": "BattleMech",

@@ -38,11 +38,11 @@ export const MWDESTINY = {
     ),
   },
   playerWeaponSkillTypes: Object.fromEntries(
-      ["melee", "projectile", "smallArms", "gunneryMech", "gunneryAerospace", "gunneryVehicle", "support", "artillery"]
+      ["melee", "projectile", "smallArms", "piloting", "gunneryMech", "gunneryAerospace", "gunneryVehicle", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
   ),
   weaponSkillTypes: Object.fromEntries(
-      ["melee", "projectile", "smallArms", "gunnery", "support", "artillery"]
+      ["melee", "projectile", "smallArms", "piloting", "gunnery", "support", "artillery"]
           .map((s) => [s, `MWDESTINY.skills.weapon.${s}`]),
   ),
   weaponSkillLinks: {
