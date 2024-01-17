@@ -7,7 +7,7 @@
 
   <label for="system.pilotId" class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
   <select class="flex2" name="system.pilotId">
-    {{selectOptions ownedPcs nameAttr="id" labelAttr="name" blank="———" selected=system.pilotId}}
+    {{selectOptions pilots nameAttr="id" labelAttr="name" blank="———" selected=system.pilotId}}
   </select>
 
   {{!-- Row 2 --}}

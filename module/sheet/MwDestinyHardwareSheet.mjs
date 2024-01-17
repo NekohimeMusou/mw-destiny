@@ -30,13 +30,21 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     // Prepare active effects
     const effects = prepareActiveEffectCategories(this.actor.effects);
 
-    const ownedPcs = game.user.isGM ? game.actors.filter((a) => a.type === "pc" || a.type === "npc") : game.actors.filter((a) => a.type === "pc" && a.isOwner);
+    const tokens = game?.scenes?.current?.tokens;
+
+    if (tokens) {
+      const pilots = tokens
+          .filter((t) => t.isOwner && (t.actor.type === "pc" || t.actor.type === "npc"))
+          .map((t) => ({name: t.name, id: t.actorId}));
+
+      context.pilots = pilots;
+    }
 
     const items = Object.fromEntries(Object.keys(CONFIG.Item.dataModels).map(
         (i) => [i, this.actor.items.filter((k) => k.type === i)],
     ));
 
-    return mergeObject(context, {system, flags, MWDESTINY, rollData, effects, ownedPcs, ...items});
+    return mergeObject(context, {system, flags, MWDESTINY, rollData, effects, ...items});
   }
 
   /** @override */
