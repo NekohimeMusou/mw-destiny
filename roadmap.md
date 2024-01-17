@@ -1,8 +1,13 @@
 # Roadmap
 
+## Fixed in 0.7.4
+
+- Can now select tokens as hardware pilots
+
 ## Stuff to do
 
 - Auto heat movement/accuracy penalties
+- Piloting as weapon skill (for hatchets etc)
 - Automatically roll on hit location table on weapon hit
 - Leverage initiative tracker
   - Auto heat tracking
@@ -14,4 +19,7 @@
 - MASC
   - Would like to automate this with the combat tracker
   - For now, maybe just add a toggle you can check while it's your narration and uncheck afterward
-- Designate tokens as pilots instead of actors
+
+## QoL/Low Priority
+
+- More elegant way to designate tokens as pilots instead of actors
