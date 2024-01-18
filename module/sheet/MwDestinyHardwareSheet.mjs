@@ -75,6 +75,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".repair-btn").click((ev) => this.#onRepair(ev));
     html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
     html.find(".phys-attack").click((ev) => this.#onPhysicalAttack(ev));
+    html.find(".dissipate-btn").click((ev) => this.#onHeatDissipate(ev));
   }
 
   /**
@@ -298,5 +299,16 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod,
           baseDamage, special});
+  }
+
+  async #onHeatDissipate(event) {
+    event.preventDefault();
+
+    const currentHeat = this.actor.system.heat || 0;
+    const dissipation = this.actor.system.heatDissipation || 0;
+
+    const newHeat = Math.max(currentHeat - dissipation, 0);
+
+    await this.actor.update({"system.heat": newHeat});
   }
 }

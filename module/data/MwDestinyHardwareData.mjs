@@ -2,8 +2,9 @@ import getSharedActorData from "./shared-actor-data.mjs";
 export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static migrateData(source) {
-    if (!("baseMovement" in source)) {
+    if (!("baseMovement" in source) && source?.movement > 0) {
       source.baseMovement = source.movement;
+      delete source.movement;
     }
 
     return super.migrateData(source);
