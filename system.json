@@ -2,14 +2,14 @@
     "id": "mw-destiny",
     "title": "MechWarrior: Destiny Unofficial",
     "description": "Unofficial FVTT implementation of the MechWarrior: Destiny RPG.",
-    "version": "0.7.3",
+    "version": "0.8.0",
     "compatibility": {
         "minimum": 11,
         "verified": 11
     },
     "url": "https://github.com/NekohimeMusou/mw-destiny",
     "manifest": "https://raw.githubusercontent.com/NekohimeMusou/mw-destiny/main/system.json",
-    "download": "https://github.com/NekohimeMusou/mw-destiny/releases/download/v0.7.3/mw-destiny-v0.7.3.zip",
+    "download": "https://github.com/NekohimeMusou/mw-destiny/releases/download/v0.8.0/mw-destiny-v0.8.0.zip",
     "authors": [
         {
             "name": "Nekohime Musou",
