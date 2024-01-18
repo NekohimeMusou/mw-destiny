@@ -5,11 +5,10 @@
 - Can now select tokens as hardware pilots
 - Added Piloting as a weapon skill type similar to Gunnery
 - Auto heat movement/accuracy penalties
+- Allow untargeted weapon rolls (hack fix for attacking buildings)
 
 ## Stuff to do
 
-- Buildings
-  - Potential quick fix: Allow normal (vs. 2d6, 3d6, etc) rolls with weapons
 - Automatically roll on hit location table on weapon hit
 - Leverage initiative tracker
   - Enhanced heat tracking
