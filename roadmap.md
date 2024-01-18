@@ -6,10 +6,10 @@
 - Added Piloting as a weapon skill type similar to Gunnery
 - Auto heat movement/accuracy penalties
 - Allow untargeted weapon rolls (hack fix for attacking buildings)
+- Automatically roll on hit location table on weapon hit
 
 ## Stuff to do
 
-- Automatically roll on hit location table on weapon hit
 - Leverage initiative tracker
   - Enhanced heat tracking
   - Jump jet effects (status + active effect?)

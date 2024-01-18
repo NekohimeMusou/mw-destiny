@@ -34,7 +34,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
     const success = playerRoll.total >= difficultyRoll.total;
 
-    const [damageGroups, missileRolls, totalDmg] = await getDamageGroups(baseDamage, {missileCount, missileMax, cluster});
+    const [damageGroups, totalDmg] = await getDamageGroups(baseDamage, {missileCount, missileMax, cluster});
     const damageMessages = [];
 
     if (damageCode && success) {
@@ -62,9 +62,6 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
       }
 
       damageMessages.push(...groupStrings);
-
-      missileHtml.push(...(await Promise.all(missileRolls.map(async ([roll, dmg], i) =>
-        `<p>${game.i18n.format("MWDESTINY.hardware.missileDamage", {num: `${i+1}`, dmg: `${dmg}`})}</p><div>${await roll.render()}</div>`))));
     }
 
     const specialMsg = special ? `<p>${game.i18n.localize("MWDESTINY.combat.special")}: ${special}</p>` : "";
@@ -167,29 +164,26 @@ async function getDamageGroups(baseDmg, {missileCount=0, missileMax=0, cluster=0
   const missileRolls = [];
   for (let i = 0; i < missileCount; i++) {
     const roll = await new Roll("1d6").roll({async: true});
-    missileRolls.push([roll, roll.total > 3 ? 0 : roll.total]);
+    missileRolls.push(roll.total > 3 ? 0 : roll.total);
   }
 
   if (missileCount > 0 && missileMax > baseDmg) {
-    // Extract the raw damage numbers and filter out missiles that missed (did 0 damage)
-    const missileGroupDamage = missileRolls.map(([, total]) => total);
-
     // Subtract total from max dmg; e.g. total 5 - max 4 = delta 1
-    const overkill = missileGroupDamage.reduce((total, m) => total + m, 0) - missileMax;
+    const overkill = missileRolls.reduce((total, m) => total + m, 0) - missileMax;
 
     for (let i = 0; i < overkill; i++) {
-      const maxGroup = Math.max(...missileGroupDamage);
-      const index = missileGroupDamage.indexOf(maxGroup);
-      if (index >= 0) missileGroupDamage[index]--;
+      const maxGroup = Math.max(...missileRolls);
+      const index = missileRolls.indexOf(maxGroup);
+      if (index >= 0) missileRolls[index]--;
     }
 
-    const missileGroups = missileGroupDamage.map((d) => ["missile", d]);
+    const missileGroups = missileRolls.map((d) => ["missile", d]);
     damageGroups.push(...missileGroups);
   }
 
   const totalDmg = damageGroups.filter(([type, _]) => type !== "cluster").reduce((total, [_, dmg]) => total + dmg, 0) + cluster;
 
-  return [damageGroups, missileRolls, totalDmg];
+  return [damageGroups, totalDmg];
 }
 
 async function _getHitLocation(hwType, roll) {
