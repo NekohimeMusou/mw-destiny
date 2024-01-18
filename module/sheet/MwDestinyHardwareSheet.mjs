@@ -182,7 +182,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
       return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
     }
 
-    const woundPenalty = pilot.system.woundPenalty;
+    const woundPenalty = pilot?.system?.woundPenalty || 0;
 
     const weaponData = weapon.system;
 
@@ -210,6 +210,8 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const scaleMod = usePiloting || actorData.hardwareType === "battleArmor" ? 0 : -2;
 
+    const heatMod = (actorData.hardwareType === "mech" || actorData.hardwareType === "aerospace" ) && actorData.heat > 1 ? -1 : 0;
+
     const targetPilotData = targetData.pilot?.system;
     const targetRfl = (targetPilotData?.attributes?.rfl ?? targetData?.attributes?.rfl ?? 0);
     const pilotingOrRfl = usePiloting ? targetData?.pilotingSkill?.system?.rank || 0 : targetRfl;
@@ -221,7 +223,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
-          scaleMod, speedMod, targetDefLabel, targetDefMod,
+          scaleMod, speedMod, targetDefLabel, targetDefMod, heatMod,
           baseDamage, missileCount, missileMax, cluster, special});
   }
 

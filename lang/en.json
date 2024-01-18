@@ -272,7 +272,8 @@
             },
             "totalDamage": "Total: {damage}",
             "missileDamage": "Missile {num}: {dmg} Damage",
-            "hardwarePoints": "Hardware Points"
+            "hardwarePoints": "Hardware Points",
+            "mascActive": "MASC Active"
         },
         "heatEffects": {
             "0": "BLUE: No effects",
