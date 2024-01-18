@@ -179,10 +179,6 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     if (!weapon) return;
 
-    if (game.user.targets.size !== 1) {
-      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
-    }
-
     const woundPenalty = pilot?.system?.woundPenalty || 0;
 
     const weaponData = weapon.system;
@@ -203,9 +199,9 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const special = weaponData.special;
 
     const target = game.user.targets.first();
-    const targetName = target.name;
-    const targetType = target.actor.type;
-    const targetData = target.actor.system;
+    const targetName = target?.name;
+    const targetType = target?.actor.type;
+    const targetData = target?.actor.system;
 
     const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 
@@ -213,7 +209,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const heatMod = (actorData.hardwareType === "mech" || actorData.hardwareType === "aerospace" ) && actorData.heat > 1 ? -1 : 0;
 
-    const targetPilotData = targetData.pilot?.system;
+    const targetPilotData = targetData?.pilot?.system;
     const targetRfl = (targetPilotData?.attributes?.rfl ?? targetData?.attributes?.rfl ?? 0);
     const pilotingOrRfl = usePiloting ? targetData?.pilotingSkill?.system?.rank || 0 : targetRfl;
 
