@@ -7,7 +7,8 @@
     "link": "rfl",
     "rank": 0,
     "isKnowledge": false,
-    "pilotingSkillType": "mech"
+    "pilotingSkillType": "mech",
+    "weaponSkillType": "piloting"
   },
   "effects": [],
   "folder": "VJb81QHhBezY0rx7",
@@ -20,11 +21,11 @@
   },
   "_stats": {
     "systemId": "mw-destiny",
-    "systemVersion": "0.1.9",
+    "systemVersion": "0.7.3",
     "coreVersion": "11.315",
     "createdTime": 1702432329235,
-    "modifiedTime": 1702442035292,
-    "lastModifiedBy": "go8IVTazJxmHGjsW"
+    "modifiedTime": 1705455597218,
+    "lastModifiedBy": "41fHwUXZV7abkWOD"
   },
   "_id": "wma3Qna8MZZVqUOe",
   "sort": 400000,
