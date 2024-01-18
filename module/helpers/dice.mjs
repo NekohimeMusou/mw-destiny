@@ -169,7 +169,7 @@ async function getDamageGroups(baseDmg, {missileCount=0, missileMax=0, cluster=0
 
   if (missileCount > 0 && missileMax > baseDmg) {
     // Subtract total from max dmg; e.g. total 5 - max 4 = delta 1
-    const overkill = missileRolls.reduce((total, m) => total + m, 0) - missileMax;
+    const overkill = missileRolls.reduce((total, m) => total + m, 0) - missileMax + baseDmg;
 
     for (let i = 0; i < overkill; i++) {
       const maxGroup = Math.max(...missileRolls);
