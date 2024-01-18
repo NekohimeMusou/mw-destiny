@@ -1,7 +1,7 @@
 export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
   skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0,
-  targetName=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0,
-  heatMod=0, cluster=0, special=""}={}) {
+  targetName=null, targetHwType=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0,
+  missileMax=0, heatMod=0, cluster=0, special=""}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName});
 
   if (cancelled) return;
@@ -44,8 +44,22 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
         damageMessages.push(`<p>${dmgGroupStr} (${totalStr})</p>`);
       }
 
-      const groupStrings = damageGroups.map(([label, dmg]) =>
-        `<p>${dmg} (${game.i18n.localize(`MWDESTINY.hardware.damageGroup.${label}`)})</p>`);
+      const groupStrings = [];
+
+      for (const [label, dmg] of damageGroups) {
+        let damageStr = `<p>${dmg} (${game.i18n.localize(`MWDESTINY.hardware.damageGroup.${label}`)})</p>`;
+
+        if ((dmg > 0 || label === "missile") && ["mech", "aerospace", "combatVehicle", "turretVehicle", "vtol", "vehicle"].includes(targetHwType)) {
+          const hitLocRoll = (await new Roll("2d6").roll({async: true})).total;
+          const hitLocString = await _getHitLocation(targetHwType, hitLocRoll);
+
+          if (dmg > 0) {
+            damageStr += `<p>${game.i18n.format("MWDESTINY.hardware.hitLocation", {loc: hitLocString, roll: hitLocRoll})}</p>`;
+          }
+        }
+
+        groupStrings.push(damageStr);
+      }
 
       damageMessages.push(...groupStrings);
 
@@ -139,10 +153,15 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
 // e.g. a group with an ER Large Laser and an LB-10X AC is 8 (C4)
 // So you'd roll (8 - 4) = 4 as a single damage group, then 4 groups of 1
 async function getDamageGroups(baseDmg, {missileCount=0, missileMax=0, cluster=0}={}) {
-  const damageGroups = [["base", baseDmg - cluster]];
+  const damageGroups = [];
+  const baseGroupDmg = baseDmg - cluster;
+  if (baseGroupDmg > 0) {
+    damageGroups.push(["base", baseGroupDmg]);
+  }
 
   if (cluster > 0) {
-    damageGroups.push(["cluster", `1 x ${cluster}`]);
+    const clusterGroups = Array(cluster).fill(["cluster", 1]);
+    damageGroups.push(...clusterGroups);
   }
 
   const missileRolls = [];
@@ -153,7 +172,7 @@ async function getDamageGroups(baseDmg, {missileCount=0, missileMax=0, cluster=0
 
   if (missileCount > 0 && missileMax > baseDmg) {
     // Extract the raw damage numbers and filter out missiles that missed (did 0 damage)
-    const missileGroupDamage = missileRolls.map(([, total]) => total).filter((m) => m > 0);
+    const missileGroupDamage = missileRolls.map(([, total]) => total);
 
     // Subtract total from max dmg; e.g. total 5 - max 4 = delta 1
     const overkill = missileGroupDamage.reduce((total, m) => total + m, 0) - missileMax;
@@ -171,4 +190,217 @@ async function getDamageGroups(baseDmg, {missileCount=0, missileMax=0, cluster=0
   const totalDmg = damageGroups.filter(([type, _]) => type !== "cluster").reduce((total, [_, dmg]) => total + dmg, 0) + cluster;
 
   return [damageGroups, missileRolls, totalDmg];
+}
+
+async function _getHitLocation(hwType, roll) {
+  switch (hwType) {
+    case "mech":
+      return await _mechHitLoc(roll);
+    case "aerospace":
+      return await _aerospaceHitLoc(roll);
+    case "turretVehicle":
+      return await _turretVehicleHitLoc(roll);
+    case "combatVehicle":
+      return await _combatVehicleHitLoc(roll);
+    case "vtol":
+      return await _vtolHitLoc(roll);
+    case "vehicle":
+      return await _vehicleHitLoc(roll);
+    default:
+      return "";
+  }
+}
+
+async function _mechHitLoc(roll) {
+  let hitLocation;
+
+  switch (roll) {
+    case 2:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.mech.torso")} (Crit on 8+)`;
+    case 3:
+    case 4:
+      hitLocation = "armRight";
+      break;
+    case 5:
+      hitLocation = "legRight";
+      break;
+    case 6:
+    case 7:
+    case 8:
+      hitLocation = "torso";
+      break;
+    case 9:
+      hitLocation = "legLeft";
+      break;
+    case 10:
+    case 11:
+      hitLocation = "armLeft";
+      break;
+    case 12:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.mech.head")} (Spend Plot Point for full damage)`;
+    default:
+      return "";
+  }
+
+  return game.i18n.localize(`MWDESTINY.hitLocation.mech.${hitLocation}`);
+}
+
+async function _aerospaceHitLoc(roll) {
+  let hitLocation;
+
+  switch (roll) {
+    case 2:
+    case 7:
+    case 12:
+      hitLocation = "nose";
+      break;
+    case 3:
+    case 11:
+      hitLocation = "aft";
+      break;
+    case 4:
+    case 5:
+    case 6:
+      hitLocation = "wingRight";
+      break;
+    case 8:
+    case 9:
+    case 10:
+      hitLocation = "wingLeft";
+      break;
+    default:
+      return "";
+  }
+
+  return game.i18n.localize(`MWDESTINY.hitLocation.aerospace.${hitLocation}`);
+}
+
+async function _turretVehicleHitLoc(roll) {
+  let hitLocation;
+
+  switch (roll) {
+    case 2:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.turretVehicle.front")} Crit on 8+`;
+    case 3:
+      hitLocation = "rear";
+      break;
+    case 4:
+    case 7:
+      hitLocation = "front";
+      break;
+    case 5:
+    case 6:
+      hitLocation = "sideRight";
+      break;
+    case 8:
+    case 9:
+      hitLocation = "sideLeft";
+      break;
+    case 10:
+    case 11:
+      hitLocation = "turret";
+      break;
+    case 12:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.turretVehicle.turret")} (Crit on 8+)`;
+    default:
+      return "";
+  }
+
+  return game.i18n.localize(`MWDESTINY.hitLocation.turretVehicle.${hitLocation}`);
+}
+
+async function _combatVehicleHitLoc(roll) {
+  let hitLocation;
+
+  switch (roll) {
+    case 2:
+    case 12:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.combatVehicle.front")} (Crit on 8+)`;
+    case 3:
+      hitLocation = "rear";
+      break;
+    case 4:
+    case 7:
+    case 10:
+    case 11:
+      hitLocation = "front";
+      break;
+    case 5:
+    case 6:
+      hitLocation = "sideRight";
+      break;
+    case 8:
+    case 9:
+      hitLocation = "sideLeft";
+      break;
+    default:
+      return "";
+  }
+
+  return game.i18n.localize(`MWDESTINY.hitLocation.combatVehicle.${hitLocation}`);
+}
+
+async function _vtolHitLoc(roll) {
+  let hitLocation;
+
+  switch (roll) {
+    case 2:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.vtol.front")} (Crit on 8+)`;
+    case 3:
+      hitLocation = "rear";
+      break;
+    case 4:
+    case 7:
+      hitLocation = "front";
+      break;
+    case 5:
+    case 6:
+      hitLocation = "sideRight";
+      break;
+    case 8:
+    case 9:
+      hitLocation = "sideLeft";
+      break;
+    case 10:
+    case 11:
+      hitLocation = "rotor";
+      break;
+    case 12:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.vtol.rotor")} (Crit on 8+)`;
+    default:
+      return "";
+  }
+
+  return game.i18n.localize(`MWDESTINY.hitLocation.vtol.${hitLocation}`);
+}
+
+async function _vehicleHitLoc(roll) {
+  let hitLocation;
+
+  switch (roll) {
+    case 2:
+    case 12:
+      return `${game.i18n.localize("MWDESTINY.hitLocation.vehicle.front")} (Crit on 8+)`;
+    case 3:
+      hitLocation = "rear";
+      break;
+    case 4:
+    case 7:
+    case 10:
+    case 11:
+      hitLocation = "front";
+      break;
+    case 5:
+    case 6:
+      hitLocation = "sideRight";
+      break;
+    case 8:
+    case 9:
+      hitLocation = "sideLeft";
+      break;
+    default:
+      return "";
+  }
+
+  return game.i18n.localize(`MWDESTINY.hitLocation.vehicle.${hitLocation}`);
 }

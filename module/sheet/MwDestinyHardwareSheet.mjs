@@ -202,6 +202,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const targetName = target?.name;
     const targetType = target?.actor.type;
     const targetData = target?.actor.system;
+    const targetHwType = targetData?.hardwareType;
 
     const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 
@@ -220,7 +221,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
-          scaleMod, speedMod, targetDefLabel, targetDefMod, heatMod,
+          scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType, heatMod,
           baseDamage, missileCount, missileMax, cluster, special});
   }
 
@@ -278,6 +279,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const targetName = target.name;
     const targetType = target.actor.type;
     const targetData = target.actor.system;
+    const targetHwType = targetData?.hardwareType;
 
     const usePiloting = targetType === "hardware" && targetData.hardwareType !== "battleArmor";
 
@@ -293,7 +295,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
-          scaleMod, speedMod, targetDefLabel, targetDefMod,
+          scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType,
           baseDamage, special});
   }
 
