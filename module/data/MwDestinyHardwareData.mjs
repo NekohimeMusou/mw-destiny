@@ -1,6 +1,15 @@
 import getSharedActorData from "./shared-actor-data.mjs";
 export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   /** @inheritdoc */
+  static migrateData(source) {
+    if (!("baseMovement" in source)) {
+      source.baseMovement = source.movement;
+    }
+
+    return super.migrateData(source);
+  }
+
+  /** @inheritdoc */
   static defineSchema() {
     const fields = foundry.data.fields;
 
@@ -25,7 +34,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       }),
       hardwarePoints: new fields.NumberField({integer: true}),
       tonnage: new fields.NumberField(),
-      movement: new fields.NumberField({integer: true}),
+      baseMovement: new fields.NumberField({integer: true}),
       hasJumpJets: new fields.BooleanField(),
       heatDissipation: new fields.NumberField({integer: true}),
       hp,
@@ -35,6 +44,13 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       mascActive: new fields.BooleanField({initial: false}),
       pilotId: new fields.StringField(),
     };
+  }
+
+  get movement() {
+    const mascBonus = Number(this.mascActive);
+    const heatMod = this.heat > 0 ? -1 : 0;
+
+    return this.baseMovement + mascBonus + heatMod;
   }
 
   get weightClass() {
