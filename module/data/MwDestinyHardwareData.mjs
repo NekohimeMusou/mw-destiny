@@ -101,6 +101,6 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   get heatEffect() {
     const index = Math.min(this.heat, 5);
 
-    return game.i18n.localize(`MWDESTINY.heatEffects.${index}`);
+    return `MWDESTINY.heatEffects.${index}`;
   }
 }

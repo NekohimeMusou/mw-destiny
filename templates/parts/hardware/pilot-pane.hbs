@@ -11,22 +11,13 @@
   </select>
 
   {{!-- Row 2 --}}
-  <label for="system.heat" class="resource-label">{{localize "MWDESTINY.hardware.heat"}}</label>
-  <input type="number" class="heat-field" name="system.heat" value="{{system.heat}}" data-dtype="Number"/>
-
-  <button type="button" class="dissipate-heat-btn grid-span-2">{{localize "MWDESTINY.hardware.dissipateHeat"}}</button>
-
-  {{!-- Row 3 --}}
-  <input type="text" class="grid-span-4" value="{{system.heatEffect}}" disabled/>
-
-  {{!-- Row 4 --}}
   <label for="system.weightClass" class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</label>
   <input class="flex2" type="text" name="system.weightClass" value="{{localize (concat "MWDESTINY.hardware.weightClasses." system.weightClass)}}" data-dtype="String" disabled/>
 
   <label for="system.woundPenalty" class="resource-label">{{localize "MWDESTINY.mechanic.woundPenalty"}}</label>
   <input class="flex2" type="text" name="system.woundPenalty" value="{{system.woundPenalty}}" data-dtype="Number" disabled/>
 
-  {{!-- Row 5 --}}
+  {{!-- Row 3 --}}
   <button type="button" class="piloting-test grid-span-2">{{localize "MWDESTINY.hardware.pilotingTestBtn"}}</button>
   <button type="button" class="repair-btn grid-span-2">{{localize "MWDESTINY.hardware.repairBtn"}}</button>
 </div>

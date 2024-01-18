@@ -275,10 +275,10 @@
         },
         "heatEffects": {
             "0": "BLUE: No effects",
-            "1": "GREEN: -1 Max Movement",
-            "2": "YELLOW: -1 Max Movement, -1 Ranged Attack Mod",
-            "3": "ORANGE: -1 Max Movement, -1 Ranged Attack Mod, Shutdown (avoid on 8+)",
-            "4": "RED: -1 Max Movement, -1 Ranged Attack Mod, Ammo Explosion (avoid on 8+)",
+            "1": "GREEN: -1 Max Move",
+            "2": "YELLOW: -1 Max Move, -1 Ranged",
+            "3": "ORANGE: -1 Max Move, -1 Ranged, Shutdown (avoid on 8+)",
+            "4": "RED: -1 Max Move, -1 Ranged, Ammo Explosion (avoid on 8+)",
             "5": "CRITICAL: Automatic Shutdown"
         }
     }

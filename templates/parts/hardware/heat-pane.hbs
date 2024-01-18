@@ -1,0 +1,15 @@
+<div class="heat-pane flexcol">
+  <input type="text" class="flex-center" value="{{localize system.heatEffect}}" disabled/>
+  <div class="flexrow">
+    <div class="flexrow">
+      <label for="system.heat" class="resource-label">{{localize "MWDESTINY.hardware.heat"}}</label>
+      <input type="number" id="system.heat" name="system.heat" value="{{system.heat}}" data-dtype="Number"/>
+    </div>
+
+    <div class="flexrow">
+      <label for="system.heatDissipation" class="resource-label">{{localize "MWDESTINY.hardware.heatDissipation"}}</div>
+      <input type="number" id="system.heatDissipation" name="system.heatDissipation" value="{{system.heatDissipation}}" data-dtype="Number"/>
+    </div>
+
+    <button type="button" class="dissipate-btn">{{localize "MWDESTINY.hardware.dissipateHeat"}}</button>
+</div>
