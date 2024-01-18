@@ -54,6 +54,7 @@ export const MWDESTINY = {
     gunneryMech: "rfl",
     gunneryAerospace: "rfl",
     gunneryVehicle: "rfl",
+    gunnery: "rfl",
   },
   pilotingSkillTypes: Object.fromEntries(
       ["mech", "aerospace", "combatVehicle"]
