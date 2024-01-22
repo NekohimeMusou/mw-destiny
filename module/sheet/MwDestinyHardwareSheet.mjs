@@ -245,7 +245,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
             .forEach((loc) => ["armor", "structure"]
                 .forEach((s) => loc[s].value = loc[s].max)));
 
-    await this.actor.update({"system.hp": hp});
+    await this.actor.update({"system.hp": hp, "system.heatBuildup": 0, "system.heat": 0});
   }
 
   async #onPhysicalAttack(event) {

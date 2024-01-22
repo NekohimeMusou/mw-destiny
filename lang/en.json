@@ -254,7 +254,7 @@
             "armor": "Armor",
             "structure": "Structure",
             "heat": "Heat",
-            "dissipateHeat": "Dissipate Heat",
+            "heatBuildup": "Heat Buildup",
             "location": "Location",
             "loc": "Loc",
             "missileCount": "Missile Dice",

@@ -1,5 +1,9 @@
 # Roadmap
 
+## Bugs
+
+- "Roll Piloting Test" button doesn't work
+
 ## Stuff to do
 
 - Tie heat into init tracker
