@@ -27,4 +27,11 @@
     <input type="checkbox" id="system.hasJumpJets" name="system.hasJumpJets" {{checked system.hasJumpJets}}/>
   </div>
   {{/if}}
+
+  {{#if (eq system.hardwareType "mech")}}
+  <div class="flexrow">
+    <label for="system.hasMasc" class="resource-label">{{localize "MWDESTINY.hardware.hasMasc"}}</label>
+    <input type="checkbox" id="system.hasMasc" name="system.hasMasc" data-dtype="Boolean" {{checked system.hasMasc}}/>
+  </div>
+  {{/if}}
 </section>

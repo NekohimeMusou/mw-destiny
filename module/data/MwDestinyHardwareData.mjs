@@ -45,16 +45,15 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       jumpJetMod: new fields.NumberField({integer: true, initial: 0}),
       canPunch: new fields.BooleanField({initial: true}),
       canKick: new fields.BooleanField({initial: true}),
-      mascActive: new fields.BooleanField({initial: false}),
+      hasMasc: new fields.BooleanField({initial: false}),
       pilotId: new fields.StringField(),
     };
   }
 
   get movement() {
-    const mascBonus = Number(this.mascActive);
     const heatMod = this.heat > 0 ? -1 : 0;
 
-    return Math.max(this.baseMovement + mascBonus + heatMod, 1);
+    return Math.max(this.baseMovement + heatMod, 1);
   }
 
   get weightClass() {

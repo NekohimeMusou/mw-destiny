@@ -273,7 +273,8 @@
             "totalDamage": "Total: {damage}",
             "missileDamage": "Missile {num}: {dmg} Damage",
             "hardwarePoints": "Hardware Points",
-            "hitLocation": "Location: {loc} ({roll})"
+            "hitLocation": "Location: {loc} ({roll})",
+            "hasMasc": "MASC?"
         },
         "heatEffects": {
             "0": "BLUE: No effects",
