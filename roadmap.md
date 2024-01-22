@@ -1,9 +1,5 @@
 # Roadmap
 
-## Bugs/Oversights
-
-Check Warhammer in compendium
-
 ## Stuff to do
 
 - Tie heat into init tracker
