@@ -1,10 +1,14 @@
 export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
   skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0,
   targetName=null, targetHwType=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0,
-  missileMax=0, heatMod=0, cluster=0, special=""}={}) {
+  missileMax=0, heatMod=0, cluster=0, special="", weaponHeat=0}={}) {
   const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName});
 
   if (cancelled) return;
+
+  if (actor && actor.type === "hardware") {
+    await actor.update({"system.heatBuildup": weaponHeat});
+  }
 
   const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${scaleMod} + ${speedMod} + ${heatMod} + ${mod}`;
 
