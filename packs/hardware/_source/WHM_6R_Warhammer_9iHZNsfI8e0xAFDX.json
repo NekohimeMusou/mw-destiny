@@ -554,6 +554,64 @@
         "lastModifiedBy": "go8IVTazJxmHGjsW"
       },
       "_key": "!actors.items!9iHZNsfI8e0xAFDX.CvequzbpQq8YCxqR"
+    },
+    {
+      "folder": "mOQWApGvjIl0Bvym",
+      "name": "2 S Lasers, 2 MGs",
+      "type": "heavyWeapon",
+      "_id": "A3eTBgRmVxQy8Su3",
+      "img": "icons/svg/item-bag.svg",
+      "system": {
+        "description": "",
+        "baseDamage": 4,
+        "range": {
+          "pointblank": {
+            "usable": true,
+            "mod": null
+          },
+          "short": {
+            "usable": true,
+            "mod": null
+          },
+          "medium": {
+            "usable": false,
+            "mod": null
+          },
+          "long": {
+            "usable": false,
+            "mod": null
+          }
+        },
+        "missileCount": null,
+        "missileMax": null,
+        "cluster": null,
+        "heat": null,
+        "primary": false,
+        "weaponSkillType": "gunnery",
+        "damageType": "E, B",
+        "location": "T"
+      },
+      "effects": [],
+      "flags": {
+        "core": {
+          "sourceId": "Compendium.mw-destiny.heavy-weapons.Item.dMdeRlG9SsEEksvM"
+        }
+      },
+      "_stats": {
+        "systemId": "mw-destiny",
+        "systemVersion": "0.8.1",
+        "coreVersion": "11.315",
+        "createdTime": 1703035450138,
+        "modifiedTime": 1705893314163,
+        "lastModifiedBy": "41fHwUXZV7abkWOD"
+      },
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "go8IVTazJxmHGjsW": 3,
+        "41fHwUXZV7abkWOD": 3
+      },
+      "_key": "!actors.items!9iHZNsfI8e0xAFDX.A3eTBgRmVxQy8Su3"
     }
   ],
   "effects": [],
@@ -565,11 +623,11 @@
   "flags": {},
   "_stats": {
     "systemId": "mw-destiny",
-    "systemVersion": "0.5.0",
+    "systemVersion": "0.8.1",
     "coreVersion": "11.315",
     "createdTime": 1702950205098,
-    "modifiedTime": 1703035511883,
-    "lastModifiedBy": "go8IVTazJxmHGjsW"
+    "modifiedTime": 1705893314163,
+    "lastModifiedBy": "41fHwUXZV7abkWOD"
   },
   "_key": "!actors!9iHZNsfI8e0xAFDX"
 }
