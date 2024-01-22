@@ -1,18 +1,16 @@
 # Roadmap
 
-## Fixed in 0.7.4
+## Bugs/Oversights
 
-- Can now select tokens as hardware pilots
-- Added Piloting as a weapon skill type similar to Gunnery
-- Auto heat movement/accuracy penalties
-- Allow untargeted weapon rolls (hack fix for attacking buildings)
-- Automatically roll on hit location table on weapon hit
+Check Warhammer in compendium
 
 ## Stuff to do
 
-- Leverage initiative tracker
-  - Enhanced heat tracking
-  - Jump jet effects (status + active effect?)
+- Tie heat into init tracker
+  - Add heat to "buffer" when weapons are fired; at end of narration, add buffer to current heat, subtract dissipation, apply effects
+  - Make piloting tests automatically?
+- Use active effect + status for jump jets
+  - Also tie into init tracker
 - Limited PC sheet
 - XP tracking/automation
 
