@@ -33,7 +33,7 @@ Hooks.once("init", async function() {
   registerSheetApplications();
   registerHandlebarsHelpers();
   registerHooks();
-  // initializeStatusEffects();
+  initializeStatusEffects();
   preloadHandlebarsTemplates();
 });
 
@@ -92,6 +92,6 @@ function registerHooks() {
   });
 }
 
-// function initializeStatusEffects() {
-//   CONFIG.statusEffects = CONFIG.statusEffects.concat(CONFIG.MWDESTINY.statuses);
-// }
+function initializeStatusEffects() {
+  CONFIG.statusEffects = CONFIG.statusEffects.concat(CONFIG.MWDESTINY.statusEffects);
+}

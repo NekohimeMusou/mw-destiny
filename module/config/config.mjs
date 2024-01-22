@@ -105,7 +105,7 @@ MWDESTINY.statusEffects = [
   {
     id: "overheat1",
     name: "MWDESTINY.status.overheat1",
-    icon: `${iconPath}/overheat.svg`,
+    icon: `${iconPath}/overheat1.svg`,
     changes: [
       {
         key: "system.movement",
@@ -116,14 +116,9 @@ MWDESTINY.statusEffects = [
   },
   {
     id: "overheat2",
-    name: "MWDESTINY.hardware.overheat2",
-    icon: `${iconPath}/overheat.svg`,
+    name: "MWDESTINY.status.overheat2",
+    icon: `${iconPath}/overheat2.svg`,
     changes: [
-      {
-        key: "system.movement",
-        value: -1,
-        mode: ADD,
-      },
       {
         key: "system.rangedHeatMod",
         value: -1,
@@ -133,7 +128,7 @@ MWDESTINY.statusEffects = [
   },
   {
     id: "jumpJetsActive",
-    name: "MWDESTINY.hardware.jumpJetsActive",
+    name: "MWDESTINY.status.jumpJetsActive",
     icon: `${iconPath}/jumpJets.svg`,
     changes: [
       {
