@@ -1,60 +1,4 @@
-export const MWDESTINY = {
-  // statuses: [
-  //   {
-  //     id: "overheat1",
-  //     name: `${game.i18n.localize("MWDESTINY.hardware.overheating")} 1`,
-  //     icon: "icons/svg/fire.svg",
-  //     changes: [
-  //       {
-  //         key: "system.movement",
-  //         value: -1,
-  //         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: "overheat2",
-  //     name: `${game.i18n.localize("MWDESTINY.hardware.overheating")} 2`,
-  //     icon: "icons/svg/explosion.svg",
-  //     changes: [
-  //       {
-  //         key: "system.movement",
-  //         value: -1,
-  //         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-  //       },
-  //       {
-  //         key: "system.rangedAttackMod",
-  //         value: -1,
-  //         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: "jumpJets",
-  //     name: game.i18n.localize("MWDESTINY.hardware.jumpJets"),
-  //     icon: "icons/svg/wing.svg",
-  //     changes: [
-  //       {
-  //         key: "system.jumpJetMod",
-  //         value: 1,
-  //         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: "mascActive",
-  //     name: game.i18n.localize("MWDESTINY.hardware.mascActive"),
-  //     icon: "icons/svg/lightning.svg",
-  //     changes: [
-  //       {
-  //         key: "system.movement",
-  //         value: 1,
-  //         mode: CONST.ACTIVE_EFFECT_MODES.ADD,
-  //       },
-  //     ],
-  //   },
-  // ],
-};
+export const MWDESTINY = {};
 
 const animalAttributes = ["str", "rfl", "int", "wil"];
 const npcAttributes = animalAttributes.concat(["cha"]);
@@ -153,3 +97,62 @@ MWDESTINY.physAttackInfo = {
 
 MWDESTINY.xpLevels = Object.fromEntries(["green", "regular", "veteran", "elite"]
     .map((lv) => [lv, `MWDESTINY.xpLevels.${lv}`]));
+
+const iconPath = "systems/mw-destiny/assets/img/icon";
+const {ADD} = CONST.ACTIVE_EFFECT_MODES;
+
+MWDESTINY.statusEffects = [
+  {
+    id: "overheat1",
+    name: "MWDESTINY.status.overheat1",
+    icon: `${iconPath}/overheat.svg`,
+    changes: [
+      {
+        key: "system.movement",
+        value: -1,
+        mode: ADD,
+      },
+    ],
+  },
+  {
+    id: "overheat2",
+    name: "MWDESTINY.hardware.overheat2",
+    icon: `${iconPath}/overheat.svg`,
+    changes: [
+      {
+        key: "system.movement",
+        value: -1,
+        mode: ADD,
+      },
+      {
+        key: "system.rangedHeatMod",
+        value: -1,
+        mode: ADD,
+      },
+    ],
+  },
+  {
+    id: "jumpJetsActive",
+    name: "MWDESTINY.hardware.jumpJetsActive",
+    icon: `${iconPath}/jumpJets.svg`,
+    changes: [
+      {
+        key: "system.jumpJetMod",
+        value: 1,
+        mode: ADD,
+      },
+    ],
+  },
+  {
+    id: "mascActive",
+    name: "MWDESTINY.status.mascActive",
+    icon: `${iconPath}/masc.svg`,
+    changes: [
+      {
+        key: "system.movement",
+        value: 1,
+        mode: ADD,
+      },
+    ],
+  },
+];
