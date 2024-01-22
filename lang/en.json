@@ -255,6 +255,7 @@
             "structure": "Structure",
             "heat": "Heat",
             "heatBuildup": "Heat Buildup",
+            "overheating": "Overheating",
             "location": "Location",
             "loc": "Loc",
             "missileCount": "Missile Dice",

@@ -17,6 +17,7 @@
             "discord": "nekohime.musou"
         }
     ],
+    "initiative": "1d20",
     "esmodules": [
         "module/mw-destiny.mjs"
     ],

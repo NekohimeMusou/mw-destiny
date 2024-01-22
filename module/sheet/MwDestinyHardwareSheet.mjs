@@ -218,13 +218,16 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
     const speedMod = usePiloting ? actorData.movement - targetData.movement : 0;
+    const jumpJetMod = targetData?.jumpJetMod || 0;
+    const rangedHeatMod = targetData?.rangedHeatMod || 0;
 
     const weaponHeat = weaponData.heat || 0;
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType, heatMod,
-          baseDamage, missileCount, missileMax, cluster, special, weaponHeat});
+          baseDamage, missileCount, missileMax, cluster, special, weaponHeat,
+          jumpJetMod, rangedHeatMod});
   }
 
   async #onRepair(event) {
@@ -294,11 +297,12 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const targetDefMod = targetRfl + pilotingOrRfl;
     const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
     const speedMod = target.type === "hardware" ? actorData.movement - targetData.movement : 0;
+    const jumpJetMod = targetData?.jumpJetMod || 0;
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType,
-          baseDamage, special});
+          baseDamage, special, jumpJetMod});
   }
 
   async #onHeatDissipate(event) {

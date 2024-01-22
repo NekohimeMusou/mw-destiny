@@ -32,6 +32,8 @@ Hooks.once("init", async function() {
   registerDocumentClasses();
   registerSheetApplications();
   registerHandlebarsHelpers();
+  registerHooks();
+  // initializeStatusEffects();
   preloadHandlebarsTemplates();
 });
 
@@ -61,3 +63,35 @@ function registerSheetApplications() {
 function registerHandlebarsHelpers() {
   Handlebars.registerHelper("caps", (str) => str.toUpperCase?.() || str);
 }
+
+function registerHooks() {
+  Hooks.on("combatTurn", async function(combat, updateData, updateOptions) {
+    const tokenId = combat.combatant.tokenId;
+    const token = combat.scene.tokens.get(tokenId);
+    const actor = token.actor;
+    const actorData = actor.system;
+
+    if (!actor.type === "hardware") {
+      return;
+    }
+
+    // FIXME: Keep track of state for rewinding
+
+    // Handle heat
+
+    const heatBuildup = actorData?.heatBuildup || 0;
+    const currentHeat = actorData?.heat || 0;
+    const dissipation = actorData?.heatDissipation || 0;
+
+    const newHeat = Math.max(heatBuildup + currentHeat - dissipation, 0);
+
+    // Handle jump jet effect
+
+    // Update actor
+    await actor.update({"system.heat": newHeat, "system.heatBuildup": 0});
+  });
+}
+
+// function initializeStatusEffects() {
+//   CONFIG.statusEffects = CONFIG.statusEffects.concat(CONFIG.MWDESTINY.statuses);
+// }
