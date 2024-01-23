@@ -7,6 +7,8 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       delete source.baseMovement;
     }
 
+    source.heat = source.heat || 0;
+
     return super.migrateData(source);
   }
 

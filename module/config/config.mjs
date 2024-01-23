@@ -103,28 +103,9 @@ const {ADD} = CONST.ACTIVE_EFFECT_MODES;
 
 MWDESTINY.statusEffects = [
   {
-    id: "overheat1",
-    name: "MWDESTINY.status.overheat1",
-    icon: `${iconPath}/overheat1.svg`,
-    changes: [
-      {
-        key: "system.movement",
-        value: -1,
-        mode: ADD,
-      },
-    ],
-  },
-  {
-    id: "overheat2",
-    name: "MWDESTINY.status.overheat2",
-    icon: `${iconPath}/overheat2.svg`,
-    changes: [
-      {
-        key: "system.rangedHeatMod",
-        value: -1,
-        mode: ADD,
-      },
-    ],
+    id: "overheating",
+    name: "MWDESTINY.status.overheating",
+    icon: `${iconPath}/overheating.svg`,
   },
   {
     id: "jumpJetsActive",

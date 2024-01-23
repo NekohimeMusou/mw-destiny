@@ -284,8 +284,7 @@
             "5": "CRITICAL: Automatic Shutdown"
         },
         "status": {
-            "overheat1": "Overheating 1",
-            "overheat2": "Overheating 2",
+            "overheating": "Overheating",
             "jumpJetsActive": "Jump Jets Active",
             "mascActive": "MASC Active"
         }

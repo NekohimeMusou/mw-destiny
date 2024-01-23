@@ -29,4 +29,87 @@ export default class MwDestinyActor extends Actor {
 
     return rollData;
   }
+
+  async toggleStatus(id, activate) {
+    const originalEffect = this.effects.find((e) => e.statuses.has(id));
+
+    if (activate && !originalEffect) {
+      const newEffect = CONFIG.statusEffects.find((e) => e.id === id);
+
+      if (!newEffect) {
+        return;
+      }
+
+      newEffect.statuses = [id];
+      newEffect.name = game.i18n.localize(newEffect.name);
+
+      await this.createEmbeddedDocuments("ActiveEffect", [newEffect]);
+    } else if (!activate && originalEffect) {
+      await this.deleteEmbeddedDocuments("ActiveEffect", [originalEffect.id]);
+    }
+  }
+
+  async dissipateHeat() {
+    if (!this.type === "hardware") {
+      return;
+    }
+
+    const actorData = this.system;
+    const heatBuildup = actorData.heatBuildup || 0;
+    const prevHeat = actorData.heat || 0;
+    const dissipation = actorData.heatDissipation || 0;
+
+    const currentHeat = Math.max(heatBuildup + prevHeat - dissipation, 0);
+
+    await this.update({"system.heat": currentHeat, "system.heatBuildup": 0});
+
+    // Remove overheating effect (re-apply it each time for now)
+    const heatEffectIds = this.effects.filter((e) => e.statuses.has("overheating")).map((e) => e.id);
+    await this.deleteEmbeddedDocuments("ActiveEffect", heatEffectIds);
+
+    // If there's no heat remaining, we're done
+    if (currentHeat < 1) {
+      return;
+    }
+
+    // Otherwise, apply an active effect as appropriate
+    const {ADD} = CONST.ACTIVE_EFFECT_MODES;
+
+    const changes = [
+      {
+        key: "system.movement",
+        value: -1,
+        mode: ADD,
+      },
+    ];
+
+    if (currentHeat > 1) {
+      changes.push({
+        key: "system.rangedHeatMod",
+        value: -1,
+        mode: ADD,
+      });
+    }
+
+    const effect = {
+      name: `${game.i18n.localize("MWDESTINY.status.overheating")} (${currentHeat})`,
+      icon: "systems/mw-destiny/assets/img/icon/overheating.svg",
+      statuses: ["overheating"],
+      changes,
+    };
+
+    this.createEmbeddedDocuments("ActiveEffect", [effect]);
+
+    // Do shutdown and ammo explosion rolls
+
+    // if (currentHeat >= 4) {
+    //   // AMMO EXPLOSION
+    // }
+
+    // if (currentHeat >= 5) {
+    //   // AUTO SHUTDOWN
+    // } else if (currentHeat >= 3) {
+    //   // SHUTDOWN ROLL
+    // }
+  }
 }

@@ -6,7 +6,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   if (cancelled) return;
 
-  if (actor && actor.type === "hardware") {
+  if (actor?.type === "hardware") {
     const heatBuildup = actor.system?.heatBuildup || 0;
     await actor.update({"system.heatBuildup": heatBuildup + weaponHeat});
   }
