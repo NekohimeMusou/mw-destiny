@@ -7,23 +7,31 @@ export default function registerHooks() {
 }
 
 async function _onCombatStart(combat, updateData) {
-  return;
+  await _turnUpdate(combat);
 }
 
 // REMEMBER TO DISSIPATE HEAT
 async function _onCombatTurn(combat, updateData, updateOptions) {
-  const current = combat.combatant.actor;
-  // const next = combat.nextCombatant.actor;
-
-  // Since the current player's narration is over, dissipate heat
-  current.dissipateHeat();
+  await _turnUpdate(combat);
 }
 
 async function _onCombatRound(combat, updateData, updateOptions) {
-  const current = combat.combatant.actor;
-  // const next = combat.nextCombatant.actor;
-
-  // Since the current player's narration is over, dissipate heat
-  current.dissipateHeat();
+  await _turnUpdate(combat);
 }
 
+async function _turnUpdate(combat, updateData, updateOptions={}) {
+  const current = combat.combatant?.actor;
+  const next = combat.nextCombatant.actor;
+
+  // Turn off jump jets for the current actor, if applicable
+  current.toggleStatus?.("jumpJetsActive", false);
+
+  // Turn off MASC for the current actor, if applicable
+  current.toggleStatus?.("mascActive", false);
+
+  // Turn on MASC for the next one, if applicable
+  next.toggleStatus("mascActive", next.system.hasMasc);
+
+  // Since the current player's narration is over, dissipate heat
+  current.dissipateHeat?.();
+}
