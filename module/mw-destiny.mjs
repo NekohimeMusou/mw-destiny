@@ -87,6 +87,8 @@ function registerHooks() {
 
     // Handle jump jet effect
 
+    // Handle MASC
+
     // Update actor
     await actor.update({"system.heat": newHeat, "system.heatBuildup": 0});
   });

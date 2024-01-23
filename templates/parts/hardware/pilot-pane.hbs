@@ -1,20 +1,20 @@
 <div class="grid grid-4col">
   {{!-- Row 1 --}}
-  <label for="system.hardwareType" class="resource-label">{{localize "MWDESTINY.hardware.type"}}</label>
+  <label class="resource-label">{{localize "MWDESTINY.hardware.type"}}</label>
   <select class="flex2" name="system.hardwareType">
     {{selectOptions MWDESTINY.hardwareTypes selected=system.hardwareType localize=true}}
   </select>
 
-  <label for="system.pilotId" class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
+  <label class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
   <select class="flex2" name="system.pilotId">
     {{selectOptions pilots nameAttr="id" labelAttr="name" blank="———" selected=system.pilotId}}
   </select>
 
   {{!-- Row 2 --}}
-  <label for="system.weightClass" class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</label>
+  <label class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</label>
   <input class="flex2" type="text" name="system.weightClass" value="{{localize (concat "MWDESTINY.hardware.weightClasses." system.weightClass)}}" data-dtype="String" disabled/>
 
-  <label for="system.woundPenalty" class="resource-label">{{localize "MWDESTINY.mechanic.woundPenalty"}}</label>
+  <label class="resource-label">{{localize "MWDESTINY.mechanic.woundPenalty"}}</label>
   <input class="flex2" type="text" name="system.woundPenalty" value="{{system.woundPenalty}}" data-dtype="Number" disabled/>
 
   {{!-- Row 3 --}}

@@ -248,7 +248,6 @@
             },
             "tonnage": "Tonnage",
             "movement": "Movement",
-            "baseMovement": "Base Movement",
             "jumpJets": "Jump Jets",
             "heatDissipation": "Heat Dissipation",
             "armor": "Armor",
