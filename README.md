@@ -7,3 +7,4 @@ Extremely slapdash system for the other current BattleTech RPG, MechWarrior: Des
 <https://commons.wikimedia.org/wiki/File:Muscle_icon.svg>
 <https://commons.wikimedia.org/wiki/File:Bootstrap_fire.svg>
 <https://svgsilh.com/image/528071.html>
+<https://commons.wikimedia.org/wiki/File:Smoking_pictogram_(black).svg>

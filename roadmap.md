@@ -14,7 +14,7 @@
 
 ## Stuff to do
 
-- Engine crit status
+- GM heat management
 - Limited PC sheet
 - XP tracking/automation
 

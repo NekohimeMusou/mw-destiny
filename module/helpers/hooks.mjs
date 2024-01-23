@@ -32,6 +32,11 @@ async function _turnUpdate(combat) {
   // Turn on MASC for the next one, if applicable
   next.toggleStatus("mascActive", next.system.hasMasc);
 
+  // If the current actor has an engine crit, increase their heat
+  if (next.system.engineCrit) {
+    await next.update({"system.heat": next.system.heat + 1});
+  }
+
   // Since the current player's narration is over, dissipate heat
   current.dissipateHeat?.();
 }
