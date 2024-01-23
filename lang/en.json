@@ -91,7 +91,8 @@
             "addItem": "Add Item",
             "editItem": "Edit Item",
             "deleteItem": "Delete Item",
-            "newItem": "New {name}"
+            "newItem": "New {name}",
+            "fireJumpJets": "Fire Jump Jets"
         },
         "effects": {
             "newEffect": "New Effect",

@@ -11,7 +11,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     await actor.update({"system.heatBuildup": heatBuildup + weaponHeat});
   }
 
-  const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${scaleMod} + ${speedMod} + ${heatMod} + ${mod}`;
+  const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${scaleMod} + ${speedMod} + ${heatMod} + ${jumpJetMod} + ${rangedHeatMod} + ${mod}`;
 
   const playerRoll = await new Roll(rollFormula, rollData).roll({async: true});
 

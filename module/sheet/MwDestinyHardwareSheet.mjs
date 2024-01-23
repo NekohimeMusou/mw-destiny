@@ -75,7 +75,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".repair-btn").click((ev) => this.#onRepair(ev));
     html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
     html.find(".phys-attack").click((ev) => this.#onPhysicalAttack(ev));
-    html.find(".dissipate-btn").click((ev) => this.#onHeatDissipate(ev));
+    html.find(".jump-jet-btn").click((ev) => this.#onJumpJetFire(ev));
   }
 
   /**
@@ -305,14 +305,20 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
           baseDamage, special, jumpJetMod});
   }
 
-  async #onHeatDissipate(event) {
+  async #onJumpJetFire(event) {
     event.preventDefault();
 
-    const currentHeat = this.actor.system.heat || 0;
-    const dissipation = this.actor.system.heatDissipation || 0;
+    if (!this.actor.system.hasJumpJets) {
+      return;
+    }
 
-    const newHeat = Math.max(currentHeat - dissipation, 0);
+    const jumpJetsActive = this.actor.effects.some((e) => e.statuses.has("jumpJetsActive"));
 
-    await this.actor.update({"system.heat": newHeat});
+    if (jumpJetsActive) {
+      this.actor.toggleStatus("jumpJetsActive", false);
+    } else {
+      await this.actor.update({"system.heatBuildup": this.actor.system.heatBuildup + 1});
+      this.actor.toggleStatus("jumpJetsActive", true);
+    }
   }
 }

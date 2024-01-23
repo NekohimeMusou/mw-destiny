@@ -19,12 +19,12 @@ async function _onCombatRound(combat, updateData, updateOptions) {
   await _turnUpdate(combat);
 }
 
-async function _turnUpdate(combat, updateData, updateOptions={}) {
+async function _turnUpdate(combat) {
   const current = combat.combatant?.actor;
   const next = combat.nextCombatant.actor;
 
-  // Turn off jump jets for the current actor, if applicable
-  current.toggleStatus?.("jumpJetsActive", false);
+  // Turn off jump jets for the next actor, if applicable
+  next.toggleStatus("jumpJetsActive", false);
 
   // Turn off MASC for the current actor, if applicable
   current.toggleStatus?.("mascActive", false);
