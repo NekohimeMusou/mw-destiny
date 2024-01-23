@@ -16,6 +16,8 @@ import MwDestinyItemSheet from "./sheet/MwDestinyItemSheet.mjs";
 // Import helper/utility classes and constants
 import {MWDESTINY} from "./config/config.mjs";
 import preloadHandlebarsTemplates from "./config/templates.mjs";
+// Import hooks
+import registerHooks from "./helpers/hooks.mjs";
 
 Hooks.once("init", async function() {
   console.log("MWDESTINY | Initializing MechWarrior: Destiny game system");
@@ -62,46 +64,6 @@ function registerSheetApplications() {
 
 function registerHandlebarsHelpers() {
   Handlebars.registerHelper("caps", (str) => str.toUpperCase?.() || str);
-}
-
-function registerHooks() {
-  Hooks.on("combatStart", async function(combat, updateData) {
-    // Check if next combatant has MASC and activate it
-    return;
-  });
-
-  Hooks.on("combatRound", async function(combat, updateData, updateOptions) {
-    //  Check if next combatant has MASC and activate it
-    return;
-  });
-
-  Hooks.on("combatTurn", async function(combat, updateData, updateOptions) {
-    const tokenId = combat.combatant.tokenId;
-    const token = combat.scene.tokens.get(tokenId);
-    const actor = token.actor;
-    const actorData = actor.system;
-
-    if (!actor.type === "hardware") {
-      return;
-    }
-
-    // FIXME: Keep track of state for rewinding
-
-    // Handle heat
-
-    const heatBuildup = actorData?.heatBuildup || 0;
-    const currentHeat = actorData?.heat || 0;
-    const dissipation = actorData?.heatDissipation || 0;
-
-    const newHeat = Math.max(heatBuildup + currentHeat - dissipation, 0);
-
-    // Handle jump jet effect
-
-    // Handle MASC
-
-    // Update actor
-    await actor.update({"system.heat": newHeat, "system.heatBuildup": 0});
-  });
 }
 
 function initializeStatusEffects() {
