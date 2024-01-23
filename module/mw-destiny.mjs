@@ -65,6 +65,16 @@ function registerHandlebarsHelpers() {
 }
 
 function registerHooks() {
+  Hooks.on("combatStart", async function(combat, updateData) {
+    // Check if next combatant has MASC and activate it
+    return;
+  });
+
+  Hooks.on("combatRound", async function(combat, updateData, updateOptions) {
+    //  Check if next combatant has MASC and activate it
+    return;
+  });
+
   Hooks.on("combatTurn", async function(combat, updateData, updateOptions) {
     const tokenId = combat.combatant.tokenId;
     const token = combat.scene.tokens.get(tokenId);
