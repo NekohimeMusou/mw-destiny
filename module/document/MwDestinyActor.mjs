@@ -50,8 +50,9 @@ export default class MwDestinyActor extends Actor {
   }
 
   async dissipateHeat() {
-    if (!this.type === "hardware") {
-      return;
+    // Don't do anything unless this is a mech or aerofighter
+    if (this.system?.hardwareType !== "mech" || this.system?.hardwareType !== "aerospace") {
+      return 0;
     }
 
     const actorData = this.system;
@@ -69,7 +70,7 @@ export default class MwDestinyActor extends Actor {
 
     // If there's no heat remaining, we're done
     if (currentHeat < 1) {
-      return;
+      return currentHeat;
     }
 
     // Otherwise, apply an active effect as appropriate
@@ -100,16 +101,6 @@ export default class MwDestinyActor extends Actor {
 
     this.createEmbeddedDocuments("ActiveEffect", [effect]);
 
-    // Do shutdown and ammo explosion rolls
-
-    // if (currentHeat >= 4) {
-    //   // AMMO EXPLOSION
-    // }
-
-    // if (currentHeat >= 5) {
-    //   // AUTO SHUTDOWN
-    // } else if (currentHeat >= 3) {
-    //   // SHUTDOWN ROLL
-    // }
+    return currentHeat;
   }
 }

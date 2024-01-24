@@ -20,23 +20,56 @@ async function _onCombatRound(combat, updateData, updateOptions) {
 }
 
 async function _turnUpdate(combat) {
-  const current = combat.combatant?.actor;
-  const next = combat.nextCombatant.actor;
+  // FIXME: Get a list of mechs the actor pilots and iterate
+  // This code pretends that the guys in init are mechs
+  await _handleCurrentActor(combat.combatant?.actor);
+  await _handleNextActor(combat.nextCombatant.actor);
+}
 
-  // Turn off jump jets for the next actor, if applicable
-  next.toggleStatus("jumpJetsActive", false);
-
-  // Turn off MASC for the current actor, if applicable
-  current.toggleStatus?.("mascActive", false);
-
-  // Turn on MASC for the next one, if applicable
-  next.toggleStatus("mascActive", next.system.hasMasc);
-
-  // If the current actor has an engine crit, increase their heat
-  if (next.system.engineCrit) {
-    await next.update({"system.heat": next.system.heat + 1});
+async function _handleCurrentActor(actor) {
+  // If there's no actor, like it's the first turn, stop
+  if (!actor) {
+    return;
   }
 
-  // Since the current player's narration is over, dissipate heat
-  current.dissipateHeat?.();
+  // Turn off MASC
+  actor.toggleStatus("mascActive", false);
+
+  // Cool down first, then check for engine restart
+  // Only display cooldown/restart if a mech is being piloted
+
+  // If 4+, roll for ammo explosion; don't stop, in case the mech doesn't carry ammo
+  // If 5+, auto shutdown
+  // Else if 3+, roll for shutdown
+  // Only mechs and aerofighters heat up
+  if (actor.system?.hardwareType === "mech" || actor.system?.hardwareType === "aerospace") {
+    const heat = actor.dissipateHeat();
+    if (heat >= 4 && !actor.system.isShutDown) {
+      // Roll for ammo explosion
+    }
+
+    if (heat >= 5 && !actor.system.isShutDown) {
+      // Show auto shutdown notice
+    }
+  }
+
+  if (actor.system.engineCrit && !actor.system.isShutDown) {
+    await actor.update({"system.heat": actor.system.heat + 1});
+  }
+
+  // Engine crit heat doesn't apply until the Narration AFTER the engine is
+  // restarted. Seems reasonable to me, but I'm not sure if it's correct
+}
+
+async function _handleNextActor(actor) {
+  // There should always be a next actor, but check anyway
+  if (!actor) {
+    return;
+  }
+
+  // Turn off jump jets for the next actor, if applicable
+  actor.toggleStatus("jumpJetsActive", false);
+
+  // Turn on MASC for the next one, if applicable
+  actor.toggleStatus("mascActive", actor.system.hasMasc);
 }

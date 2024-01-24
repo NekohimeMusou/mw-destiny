@@ -49,6 +49,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       canKick: new fields.BooleanField({initial: true}),
       hasMasc: new fields.BooleanField(),
       engineCrit: new fields.BooleanField(),
+      isShutDown: new fields.BooleanField(),
       pilotId: new fields.StringField(),
     };
   }
