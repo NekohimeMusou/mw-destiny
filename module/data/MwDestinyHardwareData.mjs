@@ -37,7 +37,8 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       }),
       hardwarePoints: new fields.NumberField({integer: true}),
       tonnage: new fields.NumberField(),
-      movement: new fields.NumberField({integer: true, initial: 0}),
+      // See if this plays nice with active effects
+      movement: new fields.NumberField({min: 0, integer: true, initial: 0}),
       hasJumpJets: new fields.BooleanField(),
       heatDissipation: new fields.NumberField({integer: true}),
       hp,

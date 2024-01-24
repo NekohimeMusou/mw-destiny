@@ -34,7 +34,7 @@ export default class MwDestinyActor extends Actor {
     const originalEffect = this.effects.find((e) => e.statuses.has(id));
 
     if (activate && !originalEffect) {
-      const newEffect = CONFIG.statusEffects.find((e) => e.id === id);
+      const newEffect = deepClone(CONFIG.statusEffects.find((e) => e.id === id));
 
       if (!newEffect) {
         return;

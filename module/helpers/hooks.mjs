@@ -22,18 +22,28 @@ async function _onCombatRound(combat, updateData, updateOptions) {
 async function _turnUpdate(combat) {
   // FIXME: Get a list of mechs the actor pilots and iterate
   // This code pretends that the guys in init are mechs
-  await _handleCurrentActor(combat.combatant?.actor);
-  await _handleNextActor(combat.nextCombatant.actor);
+  await _handleTurnEnd(combat.combatant);
+  await _handleTurnStart(combat.nextCombatant);
 }
 
-async function _handleCurrentActor(actor) {
-  // If there's no actor, like it's the first turn, stop
-  if (!actor) {
-    return;
-  }
+async function _handleTurnEnd(combatant) {
+  // Get controlled hardware actors from tokens in current scene
+  const controlledHardware = _getControlledHardware(combatant);
 
+  for (const hardware of controlledHardware) {
+    await _hardwareTurnEnd(hardware);
+  }
+}
+
+async function _hardwareTurnEnd(actor) {
   // Turn off MASC
   actor.toggleStatus("mascActive", false);
+
+  // Dissipate heat (check for shutdown!)
+  // Roll for startup
+  // TODO: return ChatMessage for use with map()
+
+  // PASTED FROM OLD FUNC
 
   // Cool down first, then check for engine restart
   // Only display cooldown/restart if a mech is being piloted
@@ -61,15 +71,32 @@ async function _handleCurrentActor(actor) {
   // restarted. Seems reasonable to me, but I'm not sure if it's correct
 }
 
-async function _handleNextActor(actor) {
+async function _handleTurnStart(combatant) {
+  const controlledHardware = _getControlledHardware(combatant);
+
+  for (const hardware of controlledHardware) {
+    await _hardwareTurnStart(hardware);
+  }
+}
+
+async function _hardwareTurnStart(actor) {
+  // Turn off jump jets
+  actor.toggleStatus("jumpJetsActive", false);
+
+  // Turn on MASC, if applicable
+  actor.toggleStatus("mascActive", actor.system.hasMasc);
+}
+
+function _getControlledHardware(combatant) {
+  const actor = combatant?.actor;
+  const scene = game.scenes.get(combatant?.sceneId);
+
   // There should always be a next actor, but check anyway
-  if (!actor) {
+  if (!actor || !scene) {
     return;
   }
 
-  // Turn off jump jets for the next actor, if applicable
-  actor.toggleStatus("jumpJetsActive", false);
-
-  // Turn on MASC for the next one, if applicable
-  actor.toggleStatus("mascActive", actor.system.hasMasc);
+  // Get controlled hardware actors from tokens in current scene
+  return scene.tokens.filter((t) => t.actor.system?.pilotId === actor.id)
+      .map((t) => t.actor);
 }

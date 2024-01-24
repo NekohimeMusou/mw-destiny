@@ -99,7 +99,7 @@ MWDESTINY.xpLevels = Object.fromEntries(["green", "regular", "veteran", "elite"]
     .map((lv) => [lv, `MWDESTINY.xpLevels.${lv}`]));
 
 const iconPath = "systems/mw-destiny/assets/img/icon";
-const {OVERRIDE} = CONST.ACTIVE_EFFECT_MODES;
+const {ADD, OVERRIDE} = CONST.ACTIVE_EFFECT_MODES;
 
 MWDESTINY.statusEffects = [
   {
@@ -111,20 +111,53 @@ MWDESTINY.statusEffects = [
     id: "jumpJetsActive",
     name: "MWDESTINY.status.jumpJetsActive",
     icon: `${iconPath}/jumpJets.svg`,
+    changes: [
+      {
+        key: "system.jumpJetMod",
+        value: 1,
+        mode: OVERRIDE,
+      },
+    ],
   },
   {
     id: "mascActive",
     name: "MWDESTINY.status.mascActive",
     icon: `${iconPath}/masc.svg`,
+    changes: [
+      {
+        key: "system.movement",
+        value: 1,
+        mode: ADD,
+      },
+    ],
   },
   {
     id: "engineCrit",
     name: "MWDESTINY.status.engineCrit",
     icon: `${iconPath}/engineCrit.svg`,
-    changes: {
-      key: "system.engineCrit",
-      value: true,
-      mode: OVERRIDE,
-    },
+    changes: [
+      {
+        key: "system.engineCrit",
+        value: true,
+        mode: OVERRIDE,
+      },
+    ],
+  },
+  {
+    id: "shutdown",
+    name: "MWDESTINY.status.shutdown",
+    icon: `${iconPath}/shutdown.svg`,
+    changes: [
+      {
+        key: "system.isShutDown",
+        value: true,
+        mode: OVERRIDE,
+      },
+      {
+        key: "system.movement",
+        value: 0,
+        mode: OVERRIDE,
+      },
+    ],
   },
 ];
