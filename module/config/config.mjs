@@ -106,6 +106,13 @@ MWDESTINY.statusEffects = [
     id: "overheating",
     name: "MWDESTINY.status.overheating",
     icon: `${iconPath}/overheating.svg`,
+    changes: [
+      {
+        key: "system.movement",
+        value: -1,
+        mode: ADD,
+      },
+    ],
   },
   {
     id: "jumpJetsActive",

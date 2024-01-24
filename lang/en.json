@@ -288,7 +288,8 @@
             "overheating": "Overheating",
             "jumpJetsActive": "Jump Jets Active",
             "mascActive": "MASC Active",
-            "engineCrit": "Engine Crit"
+            "engineCrit": "Engine Crit",
+            "shutdown": "Shut Down"
         }
     }
 }

@@ -37,7 +37,7 @@ async function _handleTurnEnd(combatant) {
 
 async function _hardwareTurnEnd(actor) {
   // Turn off MASC
-  actor.toggleStatus("mascActive", false);
+  await actor.toggleStatus("mascActive", false);
 
   // Dissipate heat (check for shutdown!)
   // Roll for startup
@@ -81,10 +81,10 @@ async function _handleTurnStart(combatant) {
 
 async function _hardwareTurnStart(actor) {
   // Turn off jump jets
-  actor.toggleStatus("jumpJetsActive", false);
+  await actor.toggleStatus("jumpJetsActive", false);
 
   // Turn on MASC, if applicable
-  actor.toggleStatus("mascActive", actor.system.hasMasc);
+  await actor.toggleStatus("mascActive", actor.system.hasMasc);
 }
 
 function _getControlledHardware(combatant) {
