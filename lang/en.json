@@ -229,7 +229,7 @@
             "type": "Type",
             "types": {
                 "mech": "BattleMech",
-                "aerospace": "Aerospace Fighter",
+                "aerospace": "Aerofighter",
                 "combatVehicle": "Combat Vehicle",
                 "turretVehicle": "Combat Vehicle (Turret)",
                 "vtol": "VTOL",
@@ -279,10 +279,10 @@
         "heatEffects": {
             "0": "BLUE: No effects",
             "1": "GREEN: -1 Max Move",
-            "2": "YELLOW: -1 Max Move, -1 Ranged",
-            "3": "ORANGE: -1 Max Move, -1 Ranged, Shutdown (avoid on 8+)",
-            "4": "RED: -1 Max Move, -1 Ranged, Ammo Explosion (avoid on 8+)",
-            "5": "CRITICAL: Automatic Shutdown"
+            "2": "YELLOW: -1 Move, -1 Ranged",
+            "3": "ORANGE: -1 Move, -1 Ranged, Shutdown (avoid on 8+)",
+            "4": "RED: -1 Move, -1 Ranged, Shutdown (avoid on 8+), Ammo Explosion (avoid on 8+)",
+            "5": "CRITICAL: Automatic Shutdown, Ammo Explosion (avoid on 8+)"
         },
         "status": {
             "overheating": "Overheating",
@@ -290,6 +290,25 @@
             "mascActive": "MASC Active",
             "engineCrit": "Engine Crit",
             "shutdown": "Shut Down"
+        },
+        "heat": {
+            "heatLevelMsg": "Heat level {heat}: {heatLevel}",
+            "heatDissipatedMsg": "{dissipated} heat dissipated.",
+            "shutdownInitiatedMsg": "Shutdown sequence initiated.",
+            "shutdownOverrideMsg": "Shutdown sequence overridden.",
+            "autoShutdownMsg": "Thermal threshold exceeded.",
+            "shutdownMsg": "Shutting down.",
+            "shutdownRollMsg": "Shutdown Roll: {total}",
+            "engineCritTurnMsg": "Engine crit! +1 Heat token.",
+            "ammoExplosionRollMsg": "Ammo Explosion Roll",
+            "ammoExplosionAvoidMsg": "Ammo explosion avoided.",
+            "ammoExplosionMsg": "Internal ammo explosion detected.",
+            "shutdownAtTurnStartMsg": "{hardwareType} is shut down.",
+            "restartAttemptMsg": "Attempting restart.",
+            "restartSuccessMsg": "Reactor online. Sensors online. Weapons online. {status}",
+            "restartFailMsg": "Unable to restart.",
+            "restartStatusNominal": "All systems nominal.",
+            "restartStatusEngineCrit": "Warning: Engine shielding critical."
         }
     }
 }

@@ -121,4 +121,8 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
 
     return `MWDESTINY.heatEffects.${index}`;
   }
+
+  get jumpJetsActive() {
+    return this.parent.effects.some((e) => e.statuses.has("jumpJetsActive"));
+  }
 }

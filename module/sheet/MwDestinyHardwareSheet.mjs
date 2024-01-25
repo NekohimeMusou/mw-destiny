@@ -308,17 +308,6 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
   async #onJumpJetFire(event) {
     event.preventDefault();
 
-    if (!this.actor.system?.hasJumpJets) {
-      return;
-    }
-
-    const jumpJetsActive = this.actor.effects.some((e) => e.statuses.has("jumpJetsActive"));
-
-    if (jumpJetsActive) {
-      await this.actor.toggleStatus("jumpJetsActive", false);
-    } else {
-      await this.actor.update({"system.heatBuildup": this.actor.system.heatBuildup + 1});
-      await this.actor.toggleStatus("jumpJetsActive", true);
-    }
+    this.actor.fireJumpJets();
   }
 }

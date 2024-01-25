@@ -62,6 +62,7 @@ export default class MwDestinyActor extends Actor {
     const dissipation = actorData.heatDissipation || 0;
 
     const currentHeat = Math.max(heatBuildup + prevHeat - dissipation, 0);
+    const dissipatedHeat = prevHeat - currentHeat;
 
     await this.update({"system.heat": currentHeat, "system.heatBuildup": 0});
 
@@ -70,7 +71,7 @@ export default class MwDestinyActor extends Actor {
 
     // If there's no heat remaining, we're done
     if (currentHeat < 1) {
-      return 0;
+      return [0, dissipatedHeat];
     }
 
     // If we've got more than 1 heat, add the ranged attack penalty to the status
@@ -86,6 +87,16 @@ export default class MwDestinyActor extends Actor {
 
     await this.toggleStatus("overheating", true, changes);
 
-    return currentHeat;
+    return dissipatedHeat;
+  }
+
+  async fireJumpJets() {
+    if (!this.system.hasJumpJets || this.system.jumpJetsActive) {
+      return;
+    }
+
+    // TODO: Consider adding chat output?
+    await this.toggleStatus("jumpJetsActive", true);
+    await this.actor.update({"system.heatBuildup": this.actor.system.heatBuildup + 1});
   }
 }
