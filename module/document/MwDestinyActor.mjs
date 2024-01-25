@@ -52,7 +52,7 @@ export default class MwDestinyActor extends Actor {
 
   async dissipateHeat() {
     // Don't do anything unless this is a mech or aerofighter
-    if (this.system?.hardwareType !== "mech" || this.system?.hardwareType !== "aerospace") {
+    if (this.system?.hardwareType !== "mech" && this.system?.hardwareType !== "aerospace") {
       return 0;
     }
 
@@ -71,7 +71,7 @@ export default class MwDestinyActor extends Actor {
 
     // If there's no heat remaining, we're done
     if (currentHeat < 1) {
-      return [0, dissipatedHeat];
+      return dissipatedHeat;
     }
 
     // If we've got more than 1 heat, add the ranged attack penalty to the status

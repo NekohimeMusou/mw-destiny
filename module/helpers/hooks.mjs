@@ -59,7 +59,7 @@ async function _applyHeatEffects(actor) {
 
   const currentHeat = actor.system.heat || 0;
 
-  const content = [`<p>${game.i18n.format("MWDESTINY.heat.heatLevelMsg", {heatLevel: actor.system.heatEffect, heat: currentHeat})}</p>`];
+  const content = [`<p>${game.i18n.format("MWDESTINY.heat.heatLevelMsg", {heatLevel: game.i18n.localize(actor.system.heatEffect), heat: currentHeat})}</p>`];
   const rolls = [];
 
   if (dissipatedHeat > 0) {
@@ -103,7 +103,7 @@ async function _applyHeatEffects(actor) {
     }
   }
 
-  return {heatContent: content, rolls};
+  return {heatContent: content, heatRolls: rolls};
 }
 
 async function _restartEngine(actor) {
@@ -167,7 +167,7 @@ async function _hardwareTurnStart(token) {
 
 function _getControlledHardware(combatant) {
   const actor = combatant?.actor;
-  const scene = combatant?.scene;
+  const scene = game.scenes.get(combatant.sceneId);
 
   if (!actor || !scene) {
     return [];
