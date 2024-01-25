@@ -76,6 +76,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
     html.find(".phys-attack").click((ev) => this.#onPhysicalAttack(ev));
     html.find(".jump-jet-btn").click((ev) => this.#onJumpJetFire(ev));
+    html.find(".pilot-select-btn").click((ev) => this.#onPilotSelect(ev));
   }
 
   /**
@@ -309,5 +310,12 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     event.preventDefault();
 
     this.actor.fireJumpJets();
+  }
+
+  async #onPilotSelect(event) {
+    event.preventDefault();
+
+    // Remember to get BOTH the token and scene id:
+    // {tokenId, sceneId}
   }
 }

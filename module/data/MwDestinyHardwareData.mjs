@@ -7,7 +7,11 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       delete source.baseMovement;
     }
 
+    // 0.9.0 heat fix
     source.heat = source.heat || 0;
+
+    // 0.9.0 hardware pilot changes
+    delete source.pilotId;
 
     return super.migrateData(source);
   }
@@ -51,7 +55,10 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       hasMasc: new fields.BooleanField(),
       engineCrit: new fields.BooleanField(),
       isShutDown: new fields.BooleanField(),
-      pilotId: new fields.StringField(),
+      pilotData: new fields.SchemaField({
+        tokenId: new fields.StringField(),
+        sceneId: new fields.StringField(),
+      }),
     };
   }
 
@@ -74,9 +81,11 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return "superheavy";
   }
 
-
   get pilot() {
-    return game.actors.get(this.pilotId);
+    const {tokenId, sceneId} = this.pilotData;
+    const scene = game.scenes.get(sceneId);
+
+    return scene?.tokens?.find((t) => t.id === tokenId)?.actor;
   }
 
   // Convenience reference to the pilot's wound penalty

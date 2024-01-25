@@ -161,5 +161,7 @@ async function _hardwareTurnStart(token) {
   await actor.toggleStatus("jumpJetsActive", false);
 
   // Turn on MASC, if applicable
-  await actor.toggleStatus("mascActive", actor.system.hasMasc);
+  if (!actor.isShutDown) {
+    await actor.toggleStatus("mascActive", actor.system.hasMasc);
+  }
 }
