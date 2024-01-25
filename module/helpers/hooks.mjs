@@ -12,11 +12,10 @@ async function _turnUpdate(combat, updateData, updateOptions={}) {
 }
 
 async function _handleTurnEnd(combatant) {
-  // Get controlled hardware actors from tokens in current scene
-  const controlledHardware = _getControlledHardware(combatant);
+  const actor = combatant.actor;
 
-  for (const hardware of controlledHardware) {
-    await _hardwareTurnEnd(hardware);
+  if (actor?.type === "hardware") {
+    await _hardwareTurnEnd(actor);
   }
 }
 
@@ -148,10 +147,10 @@ async function _restartEngine(actor) {
 }
 
 async function _handleTurnStart(combatant) {
-  const controlledHardware = _getControlledHardware(combatant);
+  const actor = combatant.actor;
 
-  for (const hardware of controlledHardware) {
-    await _hardwareTurnStart(hardware);
+  if (actor?.type === "hardware") {
+    await _hardwareTurnStart(actor);
   }
 }
 
@@ -163,16 +162,4 @@ async function _hardwareTurnStart(token) {
 
   // Turn on MASC, if applicable
   await actor.toggleStatus("mascActive", actor.system.hasMasc);
-}
-
-function _getControlledHardware(combatant) {
-  const actor = combatant?.actor;
-  const scene = game.scenes.get(combatant.sceneId);
-
-  if (!actor || !scene) {
-    return [];
-  }
-
-  // Get controlled hardware actors from tokens in current scene
-  return scene.tokens.filter((t) => t.actor.system?.pilotId === actor.id);
 }
