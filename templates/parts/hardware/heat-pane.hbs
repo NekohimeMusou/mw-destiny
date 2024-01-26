@@ -19,11 +19,9 @@
         <label for="movement" class="resource-label">{{localize "MWDESTINY.hardware.movement"}}</label>
         <input type="number" id="movement" value="{{system.movement}}" data-dtype="Number" disabled/>
       </div>
-      {{#if }}
       <button type="button" class="jump-jet-btn"{{#unless (and system.hasJumpJets (or (eq system.hardwareType "mech") (eq system.hardwareType "battleArmor")))}}disabled{{/unless}}>
         {{localize "MWDESTINY.sheet.fireJumpJets"}}
       </button>
-      {{/if}}
     </div>
   </div>
 </section>
