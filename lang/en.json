@@ -20,7 +20,10 @@
                 "opposing": "Opposing",
                 "easy": "Easy (2d6)",
                 "average": "Average (3d6)",
-                "hard": "Hard (4d6)"
+                "hard": "Hard (4d6)",
+                "2d6": "Easy (2d6)",
+                "3d6": "Average (3d6)",
+                "4d6": "Hard (4d6)"
             },
             "rollButton": "Roll",
             "cancelButton": "Cancel",

@@ -16,9 +16,12 @@ MWDESTINY.attributes = {
 MWDESTINY.lifeModuleStages = ["faction", "childhood", "higherEd", "realLife"];
 
 MWDESTINY.rollDifficultyDice = {
-  easy: "2d6",
-  average: "3d6",
-  hard: "4d6",
+  "easy": "2d6",
+  "average": "3d6",
+  "hard": "4d6",
+  "2d6": "MWDESTINY.dialog.difficulties.easy",
+  "3d6": "MWDESTINY.dialog.difficulties.average",
+  "4d6": "MWDESTINY.dialog.difficulties.hard",
 };
 
 // HACK
