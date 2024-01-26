@@ -2,10 +2,16 @@ import getSharedActorData from "./shared-actor-data.mjs";
 export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   /** @inheritdoc */
   static migrateData(source) {
-    if (!("baseMovement" in source) && source?.movement > 0) {
-      source.baseMovement = source.movement;
-      delete source.movement;
+    if ("baseMovement" in source) {
+      source.movement = source.baseMovement || 0;
+      delete source.baseMovement;
     }
+
+    // 0.9.0 heat fix
+    source.heat = source.heat || 0;
+
+    // 0.9.0 hardware pilot changes
+    delete source.pilotId;
 
     return super.migrateData(source);
   }
@@ -35,23 +41,25 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       }),
       hardwarePoints: new fields.NumberField({integer: true}),
       tonnage: new fields.NumberField(),
-      baseMovement: new fields.NumberField({integer: true}),
+      // See if this plays nice with active effects
+      movement: new fields.NumberField({min: 0, integer: true, initial: 0}),
       hasJumpJets: new fields.BooleanField(),
       heatDissipation: new fields.NumberField({integer: true}),
       hp,
       heat: new fields.NumberField({min: 0, integer: true, initial: 0}),
+      heatBuildup: new fields.NumberField({min: 0, integer: true, initial: 0}),
+      rangedHeatMod: new fields.NumberField({integer: true, initial: 0}),
+      jumpJetMod: new fields.NumberField({integer: true, initial: 0}),
       canPunch: new fields.BooleanField({initial: true}),
       canKick: new fields.BooleanField({initial: true}),
-      mascActive: new fields.BooleanField({initial: false}),
-      pilotId: new fields.StringField(),
+      hasMasc: new fields.BooleanField(),
+      engineCrit: new fields.BooleanField(),
+      isShutDown: new fields.BooleanField(),
+      pilotData: new fields.SchemaField({
+        tokenId: new fields.StringField(),
+        sceneId: new fields.StringField(),
+      }),
     };
-  }
-
-  get movement() {
-    const mascBonus = Number(this.mascActive);
-    const heatMod = this.heat > 0 ? -1 : 0;
-
-    return this.baseMovement + mascBonus + heatMod;
   }
 
   get weightClass() {
@@ -73,9 +81,18 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return "superheavy";
   }
 
-
   get pilot() {
-    return game.actors.get(this.pilotId);
+    const {tokenId, sceneId} = this.pilotData;
+    const scene = game.scenes.get(sceneId);
+
+    return scene?.tokens?.find((t) => t.id === tokenId)?.actor;
+  }
+
+  get pilotName() {
+    const {tokenId, sceneId} = this.pilotData;
+    const scene = game.scenes.get(sceneId);
+
+    return scene?.tokens?.find((t) => t.id === tokenId)?.name;
   }
 
   // Convenience reference to the pilot's wound penalty
@@ -119,5 +136,9 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     const index = Math.min(this.heat, 5);
 
     return `MWDESTINY.heatEffects.${index}`;
+  }
+
+  get jumpJetsActive() {
+    return this.parent.effects.some((e) => e.statuses.has("jumpJetsActive"));
   }
 }

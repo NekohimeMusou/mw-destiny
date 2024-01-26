@@ -1,0 +1,22 @@
+<section class="pane hw-controls flexcol flex0">
+  <div class="flexrow">
+    {{!-- Roll Piloting Test | Inc/Dec Heat --}}
+    <button type="button" class="piloting-test-btn">{{localize "MWDESTINY.hardware.pilotingTestBtn"}}</button>
+    <div class="flexrow">
+      <button type="button" class="heat-adjust-btn" data-increment="-1">{{localize "MWDESTINY.sheet.decrementHeat"}}</button>
+      <button type="button" class="heat-adjust-btn" data-increment="1">{{localize "MWDESTINY.sheet.incrementHeat"}}</button>
+    </div>
+  </div>
+  <div class="flexrow">
+    {{!-- Fire Jump Jets | Reset Heat --}}
+    <button type="button" class="jump-jet-btn"{{#unless (and system.hasJumpJets (or (eq system.hardwareType "mech") (eq system.hardwareType "battleArmor")))}}disabled{{/unless}}>
+      {{localize "MWDESTINY.sheet.fireJumpJets"}}
+    </button>
+    <button type="button" class="heat-reset-btn">{{localize "MWDESTINY.sheet.resetHeat"}}</button>
+  </div>
+  <div class="flexrow">
+    {{!-- Assign Pilot | Repair HW --}}
+    <button type="button" class="assign-pilot-btn">{{localize "MWDESTINY.sheet.assignPilot"}}</button>
+    <button type="button" class="repair-btn">{{localize "MWDESTINY.hardware.repairBtn"}}</button>
+  </div>
+</section>

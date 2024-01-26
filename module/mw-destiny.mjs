@@ -16,6 +16,8 @@ import MwDestinyItemSheet from "./sheet/MwDestinyItemSheet.mjs";
 // Import helper/utility classes and constants
 import {MWDESTINY} from "./config/config.mjs";
 import preloadHandlebarsTemplates from "./config/templates.mjs";
+// Import hooks
+import registerHooks from "./helpers/hooks.mjs";
 
 Hooks.once("init", async function() {
   console.log("MWDESTINY | Initializing MechWarrior: Destiny game system");
@@ -32,6 +34,8 @@ Hooks.once("init", async function() {
   registerDocumentClasses();
   registerSheetApplications();
   registerHandlebarsHelpers();
+  registerHooks();
+  initializeStatusEffects();
   preloadHandlebarsTemplates();
 });
 
@@ -60,4 +64,8 @@ function registerSheetApplications() {
 
 function registerHandlebarsHelpers() {
   Handlebars.registerHelper("caps", (str) => str.toUpperCase?.() || str);
+}
+
+function initializeStatusEffects() {
+  CONFIG.statusEffects = CONFIG.statusEffects.concat(CONFIG.MWDESTINY.statusEffects);
 }

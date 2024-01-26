@@ -1,28 +1,24 @@
-<div class="heat-pane flexcol">
+<section class="pane heat flexcol flex0">
   <input type="text" class="flex-center" value="{{localize system.heatEffect}}" disabled/>
-  <div class="flexrow">
-    <div class="flexrow">
-      <label for="system.heat" class="resource-label">{{localize "MWDESTINY.hardware.heat"}}</label>
-      <input type="number" id="system.heat" name="system.heat" value="{{system.heat}}" data-dtype="Number"/>
-    </div>
-
-    <div class="flexrow">
-      <label for="system.movement" class="resource-label">{{localize "MWDESTINY.hardware.movement"}}</label>
-      <input type="number" id="system.movement" value="{{system.movement}}" data-dtype="Number" disabled/>
-    </div>
-
-    <div class="flexrow">
-      <label for="system.mascActive" class="resource-label">{{localize "MWDESTINY.hardware.mascActive"}}</label>
-      <input type="checkbox" id="system.mascActive" name="system.mascActive" data-dtype="Boolean" {{checked system.mascActive}}/>
-    </div>
-  </div>
 
   <div class="flexrow">
-    <div class="flexrow">
-      <label for="system.heatDissipation" class="resource-label">{{localize "MWDESTINY.hardware.heatDissipation"}}</label>
-      <input type="number" id="system.heatDissipation" name="system.heatDissipation" value="{{system.heatDissipation}}" data-dtype="Number"/>
+    <div class="flexcol">
+      <div class="flexrow">
+        <label for="heat" class="resource-label">{{localize "MWDESTINY.hardware.heat"}}</label>
+        <input type="number" id="heat" name="system.heat" value="{{system.heat}}" data-dtype="Number" disabled/>
+      </div>
+
+      <div class="flexrow">
+        <label for="heatBuildup" class="resource-label">{{localize "MWDESTINY.hardware.heatBuildup"}}</label>
+        <input type="number" id="heatBuildup" name="system.heatBuildup" value="{{system.heatBuildup}}" data-dtype="Number" disabled/>
+      </div>
     </div>
 
-    <button type="button" class="dissipate-btn">{{localize "MWDESTINY.hardware.dissipateHeat"}}</button>
+    <div class="flexcol">
+      <div class="flexrow">
+        <label for="movement" class="resource-label">{{localize "MWDESTINY.hardware.movement"}}</label>
+        <input type="number" id="movement" value="{{system.movement}}" data-dtype="Number" disabled/>
+      </div>
+    </div>
   </div>
-</div>
+</section>

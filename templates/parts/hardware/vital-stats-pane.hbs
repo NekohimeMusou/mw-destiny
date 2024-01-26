@@ -1,15 +1,37 @@
-<div class="pane vital-stats grid grid-2col">
-  <div class="resource-label">{{localize "MWDESTINY.hardware.hardwarePoints"}}</div>
-  <input type="number" name="system.hardwarePoints" value="{{system.hardwarePoints}}" data-dtype="Number"/>
+<section class="pane vital-stats flexcol">
+  <div class="flexrow">
+    <label for="hardwarePoints" class="resource-label">{{localize "MWDESTINY.hardware.hardwarePoints"}}</label>
+    <input type="number" name="system.hardwarePoints" id="hardwarePoints" value="{{system.hardwarePoints}}" data-dtype="Number"/>
+  </div>
 
-  <div class="resource-label">{{localize "MWDESTINY.hardware.tonnage"}}</div>
-  <input type="number" name="system.tonnage" value="{{system.tonnage}}" data-dtype="Number"/>
+  <div class="flexrow">
+    <label for="tonnage" class="resource-label">{{localize "MWDESTINY.hardware.tonnage"}}</label>
+    <input type="number" id="tonnage" name="system.tonnage" value="{{system.tonnage}}" data-dtype="Number"/>
+  </div>
 
-  <div class="resource-label">{{localize "MWDESTINY.hardware.baseMovement"}}</div>
-  <input type="number" name="system.baseMovement" value="{{system.baseMovement}}" data-dtype="Number"/>
+  <div class="flexrow">
+    <label class="resource-label" for="movement-vitalstats">{{localize "MWDESTINY.hardware.movement"}}</label>
+    <input type="number" id="movement-vitalstats" name="system.movement" value="{{system.movement}}" data-dtype="Number"/>
+  </div>
+
+  {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}}
+  <div class="flexrow">
+    <label for="heatDissipation" class="resource-label">{{localize "MWDESTINY.hardware.heatDissipation"}}</label>
+    <input type="number" id="heatDissipation" name="system.heatDissipation" value="{{system.heatDissipation}}" data-dtype="Number"/>
+  </div>
+  {{/if}}
 
   {{#if (or (eq system.hardwareType "mech") (eq system.hardwareType "battleArmor"))}}
-  <div class="resource-label">{{localize "MWDESTINY.hardware.jumpJets"}}?</div>
-  <input type="checkbox" name="system.hasJumpJets" {{checked system.hasJumpJets}}/>
+  <div class="flexrow">
+    <label for="hasJumpJets" class="resource-label">{{localize "MWDESTINY.hardware.jumpJets"}}?</label>
+    <input type="checkbox" id="hasJumpJets" name="system.hasJumpJets" {{checked system.hasJumpJets}}/>
+  </div>
   {{/if}}
-</div>
+
+  {{#if (eq system.hardwareType "mech")}}
+  <div class="flexrow">
+    <label for="hasMasc" class="resource-label">{{localize "MWDESTINY.hardware.hasMasc"}}</label>
+    <input type="checkbox" id="hasMasc" name="system.hasMasc" data-dtype="Boolean" {{checked system.hasMasc}}/>
+  </div>
+  {{/if}}
+</section>

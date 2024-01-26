@@ -71,11 +71,14 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
 
     html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
-    html.find(".piloting-test").click((ev) => this.#onPilotingTest(ev));
+    html.find(".piloting-test-btn").click((ev) => this.#onPilotingTest(ev));
     html.find(".repair-btn").click((ev) => this.#onRepair(ev));
     html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
     html.find(".phys-attack").click((ev) => this.#onPhysicalAttack(ev));
-    html.find(".dissipate-btn").click((ev) => this.#onHeatDissipate(ev));
+    html.find(".jump-jet-btn").click((ev) => this.#onJumpJetFire(ev));
+    html.find(".assign-pilot-btn").click((ev) => this.#onPilotSelect(ev));
+    html.find(".heat-adjust-btn").click((ev) => this.#onHeatAdjust(ev));
+    html.find(".heat-reset-btn").click((ev) => this.#onHeatReset(ev));
   }
 
   /**
@@ -218,11 +221,16 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
     const speedMod = usePiloting ? actorData.movement - targetData.movement : 0;
+    const jumpJetMod = targetData?.jumpJetMod || 0;
+    const rangedHeatMod = targetData?.rangedHeatMod || 0;
+
+    const weaponHeat = weaponData.heat || 0;
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType, heatMod,
-          baseDamage, missileCount, missileMax, cluster, special});
+          baseDamage, missileCount, missileMax, cluster, special, weaponHeat,
+          jumpJetMod, rangedHeatMod});
   }
 
   async #onRepair(event) {
@@ -245,7 +253,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
             .forEach((loc) => ["armor", "structure"]
                 .forEach((s) => loc[s].value = loc[s].max)));
 
-    await this.actor.update({"system.hp": hp});
+    await this.actor.update({"system.hp": hp, "system.heatBuildup": 0, "system.heat": 0});
   }
 
   async #onPhysicalAttack(event) {
@@ -292,21 +300,68 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const targetDefMod = targetRfl + pilotingOrRfl;
     const targetDefLabel = usePiloting ? ": Piloting" : ": RFL+RFL";
     const speedMod = target.type === "hardware" ? actorData.movement - targetData.movement : 0;
+    const jumpJetMod = targetData?.jumpJetMod || 0;
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType,
-          baseDamage, special});
+          baseDamage, special, jumpJetMod});
   }
 
-  async #onHeatDissipate(event) {
+  async #onJumpJetFire(event) {
     event.preventDefault();
 
-    const currentHeat = this.actor.system.heat || 0;
-    const dissipation = this.actor.system.heatDissipation || 0;
+    this.actor.fireJumpJets();
+  }
 
-    const newHeat = Math.max(currentHeat - dissipation, 0);
+  async #onPilotSelect(event) {
+    event.preventDefault();
 
-    await this.actor.update({"system.heat": newHeat});
+    if (game.user.targets.size > 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.tooManyPilots"));
+    } else if (game.user.targets.size < 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
+    }
+
+    const target = game.user.targets.first();
+
+    if (target.actor.type !== "pc" && target.actor.type !== "npc") {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.nonHumanPilot"));
+    }
+
+    const pilotData = {
+      tokenId: target.id,
+      sceneId: target.scene.id,
+    };
+
+    await this.actor.update({"system.pilotData": pilotData});
+
+    return ui.notifications.notify(game.i18n.format("MWDESTINY.notifications.assignPilot", {pilot: target.name, hardware: this.actor.name}));
+  }
+
+  async #onHeatAdjust(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const increment = Number(element.dataset.increment) || 0;
+
+    const newHeat = Math.max(this.actor.system.heatBuildup + increment, 0);
+
+    await this.actor.update({"system.heatBuildup": newHeat});
+  }
+
+  async #onHeatReset(event) {
+    event.preventDefault();
+
+    const confirmReset = await Dialog.confirm({
+      title: game.i18n.localize("MWDESTINY.dialog.confirmHeatResetTitle"),
+      content: `<p>${game.i18n.localize("MWDESTINY.dialog.confirmHeatResetPrompt")}</p>`,
+      yes: () => true,
+      no: () => false,
+      defaultYes: false,
+    });
+
+    if (!confirmReset) return;
+
+    await this.actor.update({"system.heatBuildup": 0, "system.heat": 0});
   }
 }
