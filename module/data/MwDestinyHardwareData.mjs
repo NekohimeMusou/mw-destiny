@@ -88,6 +88,13 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return scene?.tokens?.find((t) => t.id === tokenId)?.actor;
   }
 
+  get pilotName() {
+    const {tokenId, sceneId} = this.pilotData;
+    const scene = game.scenes.get(sceneId);
+
+    return scene?.tokens?.find((t) => t.id === tokenId)?.name;
+  }
+
   // Convenience reference to the pilot's wound penalty
   get woundPenalty() {
     return this.pilot?.system?.woundPenalty || 0;

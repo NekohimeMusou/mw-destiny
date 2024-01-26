@@ -97,6 +97,6 @@ export default class MwDestinyActor extends Actor {
 
     // TODO: Consider adding chat output?
     await this.toggleStatus("jumpJetsActive", true);
-    await this.actor.update({"system.heatBuildup": this.actor.system.heatBuildup + 1});
+    await this.update({"system.heatBuildup": this.system.heatBuildup + 1});
   }
 }

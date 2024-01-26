@@ -8,8 +8,11 @@
             "description": "Description"
         },
         "notifications": {
-            "noTarget": "Please select a target for your attack!",
-            "noPilot": "Can't do that without a pilot assigned!"
+            "noTarget": "No target selected!",
+            "noPilot": "Can't do that without a pilot assigned!",
+            "tooManyPilots": "Can't fit that many people in the driver's seat!",
+            "nonHumanPilot": "That's not sapient enough to be a MechWarrior!",
+            "assignPilot": "{pilot} assigned as pilot of {hardware}."
         },
         "dialog": {
             "rollModifier": "Roll Modifier",
@@ -24,7 +27,9 @@
             "hardwareRepairDialogTitle": "Repair Hardware",
             "hardwareRepairPrompt": "Repair hardware armor and structure?",
             "confirmDeleteDialogTitle": "Delete Item",
-            "confirmDeletePrompt": "Really delete {name}?"
+            "confirmDeletePrompt": "Really delete {name}?",
+            "confirmHeatResetTitle": "Confirm Heat Reset",
+            "confirmHeatResetPrompt": "Reset all heat to 0?"
         },
         "bio": {
             "history": "History",
@@ -92,7 +97,11 @@
             "editItem": "Edit Item",
             "deleteItem": "Delete Item",
             "newItem": "New {name}",
-            "fireJumpJets": "Fire Jump Jets"
+            "fireJumpJets": "Fire Jump Jets",
+            "incrementHeat": "Heat +",
+            "decrementHeat": "Heat -",
+            "assignPilot": "Assign Pilot",
+            "resetHeat": "Reset Heat"
         },
         "effects": {
             "newEffect": "New Effect",

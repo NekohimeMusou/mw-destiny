@@ -1,23 +1,28 @@
-<div class="grid grid-4col">
-  {{!-- Row 1 --}}
-  <label class="resource-label">{{localize "MWDESTINY.hardware.type"}}</label>
-  <select class="flex2" name="system.hardwareType">
-    {{selectOptions MWDESTINY.hardwareTypes selected=system.hardwareType localize=true}}
-  </select>
+<section class="pane pilot flexcol flex0">
+  <div class="flexrow">
+    {{!-- HW type | Pilot name --}}
+    <div class="hardware-type flexrow">
+      <label class="resource-label">{{localize "MWDESTINY.hardware.type"}}</label>
+      <select name="system.hardwareType">
+        {{selectOptions MWDESTINY.hardwareTypes selected=system.hardwareType localize=true}}
+      </select>
+    </div>
 
-  <label class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
-  <select class="flex2" name="system.pilotId">
-    {{selectOptions pilots nameAttr="id" labelAttr="name" blank="———" selected=system.pilotId}}
-  </select>
+    <div class="pilot-name flexrow">
+      <label class="resource-label">{{localize "MWDESTINY.hardware.pilot"}}</label>
+      <input type="text" class="flex2" value="{{system.pilotName}}" disabled/>
+    </div>
+  </div>
 
-  {{!-- Row 2 --}}
-  <label class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</label>
-  <input class="flex2" type="text" name="system.weightClass" value="{{localize (concat "MWDESTINY.hardware.weightClasses." system.weightClass)}}" data-dtype="String" disabled/>
+  <div class="flexrow">
+    <div class="weight-class flexrow">
+      <label class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</label>
+      <input class="flex2" type="text" name="system.weightClass" value="{{localize (concat "MWDESTINY.hardware.weightClasses." system.weightClass)}}" data-dtype="String" disabled/>
+    </div>
 
-  <label class="resource-label">{{localize "MWDESTINY.mechanic.woundPenalty"}}</label>
-  <input class="flex2" type="text" name="system.woundPenalty" value="{{system.woundPenalty}}" data-dtype="Number" disabled/>
-
-  {{!-- Row 3 --}}
-  <button type="button" class="piloting-test grid-span-2">{{localize "MWDESTINY.hardware.pilotingTestBtn"}}</button>
-  <button type="button" class="repair-btn grid-span-2">{{localize "MWDESTINY.hardware.repairBtn"}}</button>
-</div>
+    <div class="wound-penalty flexrow">
+      <label class="resource-label">{{localize "MWDESTINY.mechanic.woundPenalty"}}</label>
+      <input class="flex2" type="text" name="system.woundPenalty" value="{{system.woundPenalty}}" data-dtype="Number" disabled/>
+    </div>
+  </div>
+</section>

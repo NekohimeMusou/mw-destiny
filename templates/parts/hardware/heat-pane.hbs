@@ -1,4 +1,4 @@
-<section class="heat-pane flexcol flex0">
+<section class="pane heat flexcol flex0">
   <input type="text" class="flex-center" value="{{localize system.heatEffect}}" disabled/>
 
   <div class="flexrow">
@@ -19,9 +19,6 @@
         <label for="movement" class="resource-label">{{localize "MWDESTINY.hardware.movement"}}</label>
         <input type="number" id="movement" value="{{system.movement}}" data-dtype="Number" disabled/>
       </div>
-      <button type="button" class="jump-jet-btn"{{#unless (and system.hasJumpJets (or (eq system.hardwareType "mech") (eq system.hardwareType "battleArmor")))}}disabled{{/unless}}>
-        {{localize "MWDESTINY.sheet.fireJumpJets"}}
-      </button>
     </div>
   </div>
 </section>

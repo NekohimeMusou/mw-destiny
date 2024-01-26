@@ -71,12 +71,14 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".effect-control").click((ev) => onManageActiveEffect(ev, this.actor));
 
     html.find(".item-field").change((ev) => this.#onItemFieldUpdate(ev));
-    html.find(".piloting-test").click((ev) => this.#onPilotingTest(ev));
+    html.find(".piloting-test-btn").click((ev) => this.#onPilotingTest(ev));
     html.find(".repair-btn").click((ev) => this.#onRepair(ev));
     html.find(".weapon-attack").click((ev) => this.#onWeaponAttack(ev));
     html.find(".phys-attack").click((ev) => this.#onPhysicalAttack(ev));
     html.find(".jump-jet-btn").click((ev) => this.#onJumpJetFire(ev));
-    html.find(".pilot-select-btn").click((ev) => this.#onPilotSelect(ev));
+    html.find(".assign-pilot-btn").click((ev) => this.#onPilotSelect(ev));
+    html.find(".heat-adjust-btn").click((ev) => this.#onHeatAdjust(ev));
+    html.find(".heat-reset-btn").click((ev) => this.#onHeatReset(ev));
   }
 
   /**
@@ -315,7 +317,51 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
   async #onPilotSelect(event) {
     event.preventDefault();
 
-    // Remember to get BOTH the token and scene id:
-    // {tokenId, sceneId}
+    if (game.user.targets.size > 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.tooManyPilots"));
+    } else if (game.user.targets.size < 1) {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.noTarget"));
+    }
+
+    const target = game.user.targets.first();
+
+    if (target.actor.type !== "pc" && target.actor.type !== "npc") {
+      return ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.nonHumanPilot"));
+    }
+
+    const pilotData = {
+      tokenId: target.id,
+      sceneId: target.scene.id,
+    };
+
+    await this.actor.update({"system.pilotData": pilotData});
+
+    return ui.notifications.notify(game.i18n.format("MWDESTINY.notifications.assignPilot", {pilot: target.name, hardware: this.actor.name}));
+  }
+
+  async #onHeatAdjust(event) {
+    event.preventDefault();
+    const element = event.currentTarget;
+    const increment = Number(element.dataset.increment) || 0;
+
+    const newHeat = Math.max(this.actor.system.heatBuildup + increment, 0);
+
+    await this.actor.update({"system.heatBuildup": newHeat});
+  }
+
+  async #onHeatReset(event) {
+    event.preventDefault();
+
+    const confirmReset = await Dialog.confirm({
+      title: game.i18n.localize("MWDESTINY.dialog.confirmHeatResetTitle"),
+      content: `<p>${game.i18n.localize("MWDESTINY.dialog.confirmHeatResetPrompt")}</p>`,
+      yes: () => true,
+      no: () => false,
+      defaultYes: false,
+    });
+
+    if (!confirmReset) return;
+
+    await this.actor.update({"system.heatBuildup": 0, "system.heat": 0});
   }
 }
