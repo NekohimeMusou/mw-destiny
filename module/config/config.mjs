@@ -21,7 +21,12 @@ MWDESTINY.rollDifficultyDice = {
   hard: "4d6",
 };
 
-MWDESTINY.rollDifficulties = Object.values(MWDESTINY.rollDifficultyDice).map((d) => [d, `MWDESTINY.dialog.difficulties.${d}`]);
+// HACK
+MWDESTINY.rollDifficulties = {
+  "2d6": "MWDESTINY.dialog.difficulties.easy",
+  "3d6": "MWDESTINY.dialog.difficulties.average",
+  "4d6": "MWDESTINY.dialog.difficulties.hard",
+};
 
 const personalDamageTypes = ["ballistic", "energy"];
 const heavyDamageTypes = personalDamageTypes.concat(["missile"]);
