@@ -3,7 +3,6 @@
 ## Bugs
 
 - "Roll Piloting Test" button doesn't work
-- Mechs seem to dissipate more heat than they should
 
 ## Stuff to do
 

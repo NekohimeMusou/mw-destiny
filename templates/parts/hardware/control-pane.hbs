@@ -3,16 +3,19 @@
     {{!-- Roll Piloting Test | Inc/Dec Heat --}}
     <button type="button" class="piloting-test-btn">{{localize "MWDESTINY.hardware.pilotingTestBtn"}}</button>
     <div class="flexrow">
-      <button type="button" class="heat-adjust-btn" data-increment="-1">{{localize "MWDESTINY.sheet.decrementHeat"}}</button>
+      <button type="button" class="heat-adjust-btn" data-increment="-1"{{#unless (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}} disabled>{{/unless}}{{localize "MWDESTINY.sheet.decrementHeat"}}</button>
       <button type="button" class="heat-adjust-btn" data-increment="1">{{localize "MWDESTINY.sheet.incrementHeat"}}</button>
     </div>
   </div>
   <div class="flexrow">
     {{!-- Fire Jump Jets | Reset Heat --}}
-    <button type="button" class="jump-jet-btn"{{#unless (and system.hasJumpJets (or (eq system.hardwareType "mech") (eq system.hardwareType "battleArmor")))}}disabled{{/unless}}>
+    <button type="button" class="jump-jet-btn"{{#unless (and system.hasJumpJets (or (eq system.hardwareType "mech") (eq system.hardwareType "battleArmor")))}} disabled{{/unless}}>
       {{localize "MWDESTINY.sheet.fireJumpJets"}}
     </button>
-    <button type="button" class="heat-reset-btn">{{localize "MWDESTINY.sheet.resetHeat"}}</button>
+    <div class="flexrow">
+      <button type="button" class="heat-reset-btn"{{#unless (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}} disabled>{{/unless}}>{{localize "MWDESTINY.sheet.resetHeat"}}</button>
+      <button type="button" class="heat-dissipate-btn"{{#unless (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}} disabled>{{/unless}}>{{localize "MWDESTINY.sheet.dissipateHeat"}}</button>
+    </div>
   </div>
   <div class="flexrow">
     {{!-- Assign Pilot | Repair HW --}}
