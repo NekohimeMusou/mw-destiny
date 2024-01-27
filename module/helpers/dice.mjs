@@ -33,7 +33,7 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
   const missileHtml = [];
 
   if (difficulty || damageCode) {
-    const difficultyDice = `${difficulty}` || `2d6 + ${targetDefMod}`;
+    const difficultyDice = difficulty ? `${difficulty}` : `2d6 + ${targetDefMod}`;
 
     const difficultyRoll = await new Roll(difficultyDice, rollData).roll({async: true});
 
