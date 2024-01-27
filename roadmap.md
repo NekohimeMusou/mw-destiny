@@ -1,24 +1,15 @@
 # Roadmap
 
-## Done
-
-- Tie heat into init tracker
-  - Add heat to "buffer" when weapons are fired; at end of narration, add buffer to current heat, subtract dissipation, apply effects
-  - Make piloting tests automatically?
-- Use active effect + status for jump jets
-  - Also tie into init tracker
-
 ## Bugs
 
 - "Roll Piloting Test" button doesn't work
+- Mechs seem to dissipate more heat than they should
 
 ## Stuff to do
 
+- Manual Dissipate Heat button (next to Reset)
+- Have difficulty selector always appear; targeted tests are another radio button
+- Display pilot name in output from hardware rolls
 - GM heat management
 - Limited PC sheet
 - XP tracking/automation
-
-## QoL/Low Priority
-
-- More elegant way to designate tokens as pilots instead of actors
-- More elegant way to handle MASC
