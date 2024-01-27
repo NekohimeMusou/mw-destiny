@@ -32,7 +32,9 @@
             "confirmDeleteDialogTitle": "Delete Item",
             "confirmDeletePrompt": "Really delete {name}?",
             "confirmHeatResetTitle": "Confirm Heat Reset",
-            "confirmHeatResetPrompt": "Reset all heat to 0?"
+            "confirmHeatResetPrompt": "Reset all heat to 0?",
+            "confirmHeatDissipateTitle": "Confirm Heat Dissipation",
+            "confirmHeatDissipatePrompt": "Dissipate Heat?"
         },
         "bio": {
             "history": "History",
@@ -104,7 +106,8 @@
             "incrementHeat": "Heat +",
             "decrementHeat": "Heat -",
             "assignPilot": "Assign Pilot",
-            "resetHeat": "Reset Heat"
+            "resetHeat": "Reset Heat",
+            "dissipateHeat": "Dissipate Heat"
         },
         "effects": {
             "newEffect": "New Effect",

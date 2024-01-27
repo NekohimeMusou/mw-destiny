@@ -91,9 +91,11 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 
   const content = `<div class="flexcol">\n${parts.join("\n")}\n</div>`;
 
+  const speaker = ChatMessage.getSpeaker(actor?.type === "hardware" && actor?.system?.pilotToken ? {token: actor.system.pilotToken}: {actor});
+
   const chatData = {
     user: game.user.id,
-    speaker: ChatMessage.getSpeaker({actor}),
+    speaker,
     rolls,
     content,
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,

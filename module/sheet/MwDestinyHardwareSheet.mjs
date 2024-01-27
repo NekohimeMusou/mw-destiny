@@ -79,6 +79,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".assign-pilot-btn").click((ev) => this.#onPilotSelect(ev));
     html.find(".heat-adjust-btn").click((ev) => this.#onHeatAdjust(ev));
     html.find(".heat-reset-btn").click((ev) => this.#onHeatReset(ev));
+    html.find(".heat-dissipate-btn").click((ev) => this.#onHeatDissipate(ev));
   }
 
   /**
@@ -363,5 +364,21 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     if (!confirmReset) return;
 
     await this.actor.update({"system.heatBuildup": 0, "system.heat": 0});
+  }
+
+  async #onHeatDissipate(event) {
+    event.preventDefault();
+
+    const confirmDissipate = await Dialog.confirm({
+      title: game.i18n.localize("MWDESTINY.dialog.confirmHeatDissipateTitle"),
+      content: `<p>${game.i18n.localize("MWDESTINY.dialog.confirmHeatDissipatePrompt")}</p>`,
+      yes: () => true,
+      no: () => false,
+      defaultYes: false,
+    });
+
+    if (!confirmDissipate) return;
+
+    await this.actor.dissipateHeat();
   }
 }
