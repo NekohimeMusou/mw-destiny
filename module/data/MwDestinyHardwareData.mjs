@@ -7,9 +7,6 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
       delete source.baseMovement;
     }
 
-    // 0.9.0 heat fix
-    source.heat = source.heat || 0;
-
     // 0.9.0 hardware pilot changes
     delete source.pilotId;
 
