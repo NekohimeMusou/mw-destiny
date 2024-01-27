@@ -1,14 +1,12 @@
 # Roadmap
 
-## Bugs
-
-- "Roll Piloting Test" button doesn't work
+- Added a manual heat dissipation button in case of shenanigans
+- Target name is now more prominent in roll dialogs
+- Irrelevant heat buttons are now dimmed for non-mech, non-aero units
 
 ## Stuff to do
 
-- Manual Dissipate Heat button (next to Reset)
 - Have difficulty selector always appear; targeted tests are another radio button
-- Display pilot name in output from hardware rolls
 - GM heat management
 - Limited PC sheet
 - XP tracking/automation

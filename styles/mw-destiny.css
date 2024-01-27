@@ -223,6 +223,10 @@
   text-align: center;
 }
 
+.dialog-label {
+  font-weight: bold;
+}
+
 /* Styles limited to Dark Souls sheets */
 /* .mw-destiny { /*
   /* ----------------------------------------- */
