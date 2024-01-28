@@ -212,8 +212,6 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const scaleMod = usePiloting || actorData.hardwareType === "battleArmor" ? 0 : -2;
 
-    const heatMod = (actorData.hardwareType === "mech" || actorData.hardwareType === "aerospace" ) && actorData.heat > 1 ? -1 : 0;
-
     const targetPilotData = targetData?.pilot?.system;
     const targetRfl = (targetPilotData?.attributes?.rfl ?? targetData?.attributes?.rfl ?? 0);
     const pilotingOrRfl = usePiloting ? targetData?.pilotingSkill?.system?.rank || 0 : targetRfl;
@@ -229,7 +227,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     return await rollTest(actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
-          scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType, heatMod,
+          scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType,
           baseDamage, missileCount, missileMax, cluster, special, weaponHeat,
           jumpJetMod, rangedHeatMod});
   }
