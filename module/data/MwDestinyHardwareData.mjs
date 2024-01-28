@@ -86,7 +86,7 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
   }
 
   get pilotName() {
-    return this.pilotToken.name;
+    return this.pilotToken?.name || "";
   }
 
   get pilotToken() {
