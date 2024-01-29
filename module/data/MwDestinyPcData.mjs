@@ -60,27 +60,52 @@ export default class MwDestinyPcData extends foundry.abstract.DataModel {
     return 2;
   }
 
-  get woundPenalty() {
+  get physWoundPenalty() {
     if (this.ignoreWoundPenalty) return 0;
-    let total = 0;
 
-    for (const [hpPool, attr] of [["physDamage", "str"], ["fatigueDamage", "wil"]]) {
-      const current = this[hpPool].value;
-      const max = this[hpPool].max;
+    return this.#calculateWoundPenalty(this.physDamage.value, this.physDamage.max, this.attributes.str);
+  }
 
-      if (current === max || current > 11 || (current === 11 && this.attributes[attr] < 4)) {
-        continue;
-      } else if (current > 8) {
-        total -= 1;
-      } else if (current > 5) {
-        total -= 2;
-      } else if (current > 2) {
-        total -= 3;
-      } else {
-        total -= 4;
-      }
+  get fatigueWoundPenalty() {
+    if (this.ignoreWoundPenalty) return 0;
+
+    return this.#calculateWoundPenalty(this.fatigueDamage.value, this.fatigueDamage.max, this.attributes.wil);
+  }
+
+  get woundPenalty() {
+    return this.physWoundPenalty + this.fatigueWoundPenalty;
+  }
+
+  get conCheckTn() {
+    if (this.physDamage.value === 1) {
+      return 11;
     }
 
-    return total;
+    switch (this.physWoundPenalty) {
+      case -1:
+        return 3;
+      case -2:
+        return 5;
+      case -3:
+        return 7;
+      case -4:
+        return 10;
+      default:
+        return 0;
+    }
+  }
+
+  #calculateWoundPenalty(currentHp, maxHp, attr) {
+    if (currentHp === maxHp || currentHp > 11 || (currentHp === 11 && attr < 4)) {
+      return 0;
+    } else if (currentHp > 8) {
+      return -1;
+    } else if (currentHp > 5) {
+      return -2;
+    } else if (currentHp > 2) {
+      return -3;
+    } else {
+      return -4;
+    }
   }
 }
