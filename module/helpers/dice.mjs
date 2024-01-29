@@ -105,6 +105,10 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
   return await ChatMessage.create(chatData);
 }
 
+export async function rollGenericCheck({tn=0, title="Check", successMsg="Success!", failureMsg="Failure!"}={}) {
+
+}
+
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
 async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
   targetName=null}={}) {

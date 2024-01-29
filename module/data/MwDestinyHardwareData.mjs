@@ -101,6 +101,10 @@ export default class MwDestinyHardwareData extends foundry.abstract.DataModel {
     return this.pilot?.system?.woundPenalty || 0;
   }
 
+  get conCheckTn() {
+    return this.pilot?.system?.conCheckTn || 0;
+  }
+
   // The type of piloting skill required. VTOLs count as "combat vehicles".
   get pilotingSkillType() {
     if (this.hardwareType === "vtol" || this.hardwareType === "vehicle") return "combatVehicle";

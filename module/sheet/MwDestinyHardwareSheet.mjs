@@ -80,6 +80,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".heat-adjust-btn").click((ev) => this.#onHeatAdjust(ev));
     html.find(".heat-reset-btn").click((ev) => this.#onHeatReset(ev));
     html.find(".heat-dissipate-btn").click((ev) => this.#onHeatDissipate(ev));
+    html.find(".con-check-btn").click((ev) => this.#onConCheck(ev));
   }
 
   /**
@@ -378,5 +379,14 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     if (!confirmDissipate) return;
 
     await this.actor.dissipateHeat();
+  }
+
+  // TODO: Finish rollGenericCheck in dice.mjs
+  async #onConCheck(event) {
+    const tn = this.actor.system?.pilot?.conCheckTn || 0;
+
+    if (tn < 1) {
+      return await ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.conCheckFullHp"));
+    }
   }
 }

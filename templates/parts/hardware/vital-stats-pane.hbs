@@ -1,4 +1,16 @@
 <section class="pane vital-stats flexcol">
+  <div class="hardware-type flexrow">
+    <label class="resource-label">{{localize "MWDESTINY.hardware.type"}}</label>
+    <select name="system.hardwareType">
+      {{selectOptions MWDESTINY.hardwareTypes selected=system.hardwareType localize=true}}
+    </select>
+  </div>
+
+  <div class="weight-class flexrow">
+    <label class="resource-label">{{localize "MWDESTINY.hardware.weightClass"}}</label>
+    <input class="flex2" type="text" name="system.weightClass" value="{{localize (concat "MWDESTINY.hardware.weightClasses." system.weightClass)}}" data-dtype="String" disabled/>
+  </div>
+
   <div class="flexrow">
     <label for="hardwarePoints" class="resource-label">{{localize "MWDESTINY.hardware.hardwarePoints"}}</label>
     <input type="number" name="system.hardwarePoints" id="hardwarePoints" value="{{system.hardwarePoints}}" data-dtype="Number"/>

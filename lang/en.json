@@ -12,7 +12,8 @@
             "noPilot": "Can't do that without a pilot assigned!",
             "tooManyPilots": "Can't fit that many people in the driver's seat!",
             "nonHumanPilot": "That's not sapient enough to be a MechWarrior!",
-            "assignPilot": "{pilot} assigned as pilot of {hardware}."
+            "assignPilot": "{pilot} assigned as pilot of {hardware}.",
+            "conCheckFullHp": "No CON checks at full health."
         },
         "dialog": {
             "rollModifier": "Roll Modifier",
@@ -107,7 +108,9 @@
             "decrementHeat": "Heat -",
             "assignPilot": "Assign Pilot",
             "resetHeat": "Reset Heat",
-            "dissipateHeat": "Dissipate Heat"
+            "dissipateHeat": "Dissipate Heat",
+            "conCheckTn": "CON Check",
+            "conCheckBtn": "Roll CON Check"
         },
         "effects": {
             "newEffect": "New Effect",
