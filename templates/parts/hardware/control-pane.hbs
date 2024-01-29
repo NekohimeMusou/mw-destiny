@@ -3,7 +3,7 @@
     {{!-- Roll Piloting Test | Inc/Dec Heat --}}
     <button type="button" class="piloting-test-btn">{{localize "MWDESTINY.hardware.pilotingTestBtn"}}</button>
     <div class="flexrow">
-      <button type="button" class="heat-adjust-btn" data-increment="-1"{{#unless (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}} disabled>{{/unless}}{{localize "MWDESTINY.sheet.decrementHeat"}}</button>
+      <button type="button" class="heat-adjust-btn" data-increment="-1"{{#unless (or (eq system.hardwareType "mech") (eq system.hardwareType "aerospace"))}} disabled{{/unless}}>{{localize "MWDESTINY.sheet.decrementHeat"}}</button>
       <button type="button" class="heat-adjust-btn" data-increment="1">{{localize "MWDESTINY.sheet.incrementHeat"}}</button>
     </div>
   </div>
