@@ -314,16 +314,16 @@
             "autoShutdownMsg": "Thermal threshold exceeded.",
             "shutdownMsg": "Shutting down.",
             "shutdownRollMsg": "Shutdown Roll: {total}",
-            "engineCritTurnMsg": "Engine crit! +1 Heat token.",
-            "ammoExplosionRollMsg": "Ammo Explosion Roll",
-            "ammoExplosionAvoidMsg": "Ammo explosion avoided.",
+            "engineCritTurnMsg": "Engine shielding critical. (+1 Heat token.)",
+            "ammoExplosionRollMsg": "Ammo bin temperature critical.",
+            "ammoExplosionAvoidMsg": "Shunting heat.",
             "ammoExplosionMsg": "Internal ammo explosion detected.",
             "shutdownAtTurnStartMsg": "{hardwareType} is shut down.",
             "restartAttemptMsg": "Attempting restart.",
             "restartSuccessMsg": "Reactor online. Sensors online. Weapons online. {status}",
             "restartFailMsg": "Unable to restart.",
             "restartStatusNominal": "All systems nominal.",
-            "restartStatusEngineCrit": "Warning: Engine shielding critical."
+            "restartStatusEngineCrit": "Engine shielding critical."
         }
     }
 }
