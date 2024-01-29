@@ -106,7 +106,8 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
 }
 
 export async function rollGenericCheck({tn=0, flavor="Check",
-  successMsg="Success!", failureMsg="Failure!", actor=null}={}) {
+  successMsg="Success!", failureMsg="Failure!", actor=null,
+  token=null, create=true}={}) {
   const roll = await new Roll("2d6").roll({async: true});
   const total = roll.total;
 
@@ -118,14 +119,14 @@ export async function rollGenericCheck({tn=0, flavor="Check",
 
   const chatData = {
     user: game.user.id,
-    speaker: ChatMessage.getSpeaker({actor}),
+    speaker: ChatMessage.getSpeaker({actor, token}),
     rolls: [roll],
     content,
     type: CONST.CHAT_MESSAGE_TYPES.ROLL,
     flavor,
   };
 
-  return await ChatMessage.create(chatData);
+  return create ? await ChatMessage.create(chatData) : chatData;
 }
 
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks

@@ -13,7 +13,8 @@
             "tooManyPilots": "Can't fit that many people in the driver's seat!",
             "nonHumanPilot": "That's not sapient enough to be a MechWarrior!",
             "assignPilot": "{pilot} assigned as pilot of {hardware}.",
-            "conCheckFullHp": "No CON checks at full health."
+            "conCheckFullHp": "No CON checks at full health.",
+            "noCritLocations": "No crit table for this hardware type."
         },
         "dialog": {
             "rollModifier": "Roll Modifier",
@@ -114,7 +115,10 @@
             "resetHeat": "Reset Heat",
             "dissipateHeat": "Dissipate Heat",
             "conCheckTn": "CON Check",
-            "conCheckBtn": "Roll CON Check"
+            "conCheckBtn": "Roll CON Check",
+            "criticalHitCheck": "Critical Hit Check",
+            "critCheckSuccess": "Critical system damage registered.",
+            "critCheckFailure": "No system damage registered."
         },
         "effects": {
             "newEffect": "New Effect",
@@ -331,6 +335,51 @@
             "restartFailMsg": "Unable to restart.",
             "restartStatusNominal": "All systems nominal.",
             "restartStatusEngineCrit": "Engine shielding critical."
+        },
+        "critLocations": {
+            "mech": {
+                "torso": {
+                    "ammoExplosion": "Ammo explosion ('Mech destroyed) OR Primary Weapon/Torso Weapon Group is destroyed.",
+                    "weaponGroupDestroyed": "Primary Weapon / Torso Weapon Group destroyed.",
+                    "gyroDamaged": "-2 penalty to Piloting Tests. A second hit renders the 'Mech unable to spend movement.",
+                    "engineDamaged": "Engine shielding is damaged. Gain 1 Heat token at the end of each of this 'Mech's narrations. A second engine critical hit destroys the engine, which destroys the 'Mech."
+                },
+                "arm": {
+                    "ammoExplosion": "Ammo explosion (Arm destroyed) OR Primary Weapon/Weapon Group is destroyed.",
+                    "weaponGroupDestroyed": "Primary Weapon / Weapon Group destroyed."
+                },
+                "leg": {
+                    "ammoExplosion": "Ammo explosion (Leg destroyed) OR Leg Weapon Group is destroyed.",
+                    "actuatorDamage": "-1 maximum Movement."
+                }
+            },
+            "combatVehicle": {
+                "front": {
+                    "crewCompartmentHit": "3 Physical Damage to all crew.",
+                    "crewStunned": "-2 to all Tests during all affected characters' next Narration.",
+                    "weaponGroupDestroyed": "Front Weapon Group is destroyed."
+                },
+                "turret": {
+                    "crewCompartmentHit": "3 Physical Damage to all crew. (VTOL: Unit destroyed)",
+                    "crewStunned": "-2 to all Tests during all affected characters' next Narration. (VTOL: Unit destroyed)",
+                    "weaponGroupDestroyed":"Turret Weapon Group destroyed. (VTOL: Unit destroyed)"
+                },
+                "rear": {
+                    "ammoExplosion":"Ammo explosion (vehicle destroyed) OR -1 maximum Movement.",
+                    "motiveDamage": "-1 maximum Movement."
+                }
+            },
+            "aerospace": {
+                "noseWeaponGroupDestroyed": "Nose Weapon Group is destroyed.",
+                "avionicsDamage": "Avionics are damaged. -2 to Piloting Tests.",
+                "fuelTankHit": "Fuel tank is hit: roll 2d6: on 10+, the fuel tank explodes; unit is destroyed.",
+                "wingRightWeaponGroupDestroyed": "Right Wing Weapon Group is destroyed.",
+                "engineDamaged": "Engine: Engine shielding is damaged. -1 maximum Movement. Add +2 Heat tokens at the end of the unit's next Narration. A second hit destroys the engine, which destroys the aerospace fighter.",
+                "wingLeftWeaponGroupDestroyed": "Left Wing Weapon Group is destroyed.",
+                "ammoExplosion": "Ammo explosion: Unit is destroyed.",
+                "bombDamage": "Bomb: Carried bomb is rendered useless; bomb does not explode.",
+                "cockpit": "Pilot takes 3 Physical damage."
+            }
         }
     }
 }
