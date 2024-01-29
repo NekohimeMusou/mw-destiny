@@ -105,10 +105,10 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
   return await ChatMessage.create(chatData);
 }
 
-export async function rollGenericCheck({tn=0, flavor="Check",
+export async function rollGenericCheck({tn=0, formula="2d6", flavor="Check",
   successMsg="Success!", failureMsg="Failure!", actor=null,
   token=null, create=true}={}) {
-  const roll = await new Roll("2d6").roll({async: true});
+  const roll = await new Roll(formula).roll({async: true});
   const total = roll.total;
 
   const content = [

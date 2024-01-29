@@ -99,8 +99,9 @@ MWDESTINY.hitLocations = {
 };
 
 MWDESTINY.critLocations = {
-  mech: ["torso", "arm", "leg"],
+  mech: ["torso", "arm", "leg", "head"],
   combatVehicle: ["front", "turret", "side", "rear"],
+  vtol: ["front", "rotor", "side", "rear"],
 };
 
 MWDESTINY.physAttackInfo = {
