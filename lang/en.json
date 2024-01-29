@@ -35,7 +35,11 @@
             "confirmHeatResetTitle": "Confirm Heat Reset",
             "confirmHeatResetPrompt": "Reset all heat to 0?",
             "confirmHeatDissipateTitle": "Confirm Heat Dissipation",
-            "confirmHeatDissipatePrompt": "Dissipate Heat?"
+            "confirmHeatDissipatePrompt": "Dissipate Heat?",
+            "conCheckTitle": "CON Check",
+            "conCheckPrompt": "CON Check: TN {tn}",
+            "conCheckSuccess": "Success! Pilot is conscious.",
+            "conCheckFailure": "Failed! Pilot is unconscious."
         },
         "bio": {
             "history": "History",

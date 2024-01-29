@@ -1,5 +1,5 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/active-effects.mjs";
-import {rollTest} from "../helpers/dice.mjs";
+import {rollGenericCheck, rollTest} from "../helpers/dice.mjs";
 
 export default class MwDestinyHardwareSheet extends ActorSheet {
   /** @override */
@@ -383,10 +383,17 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
   // TODO: Finish rollGenericCheck in dice.mjs
   async #onConCheck(event) {
-    const tn = this.actor.system?.pilot?.conCheckTn || 0;
+    const tn = this.actor.system?.pilot?.system.conCheckTn || 0;
 
     if (tn < 1) {
       return await ui.notifications.notify(game.i18n.localize("MWDESTINY.notifications.conCheckFullHp"));
     }
+
+    const flavor = game.i18n.localize("MWDESTINY.dialog.conCheckTitle");
+    // const content = game.i18n.format("MWDESTINY.dialog.conCheckPrompt", {tn});
+    const successMsg = game.i18n.localize("MWDESTINY.dialog.conCheckSuccess");
+    const failureMsg = game.i18n.localize("MWDESTINY.dialog.conCheckFailure");
+
+    return await rollGenericCheck({tn, flavor, successMsg, failureMsg});
   }
 }
