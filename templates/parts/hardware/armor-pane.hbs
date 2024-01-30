@@ -1,4 +1,6 @@
 <div class="pane armor flexcol flex-group-center">
+  {{!-- FIXME: Find a real home for this button --}}
+  <button type="button" class="crit-check-btn">{{localize "MWDESTINY.sheet.criticalHitCheck"}}</button>
   {{#each (lookup system.hp system.hardwareType)}}
   <div class="resource-label">{{localize (concat "MWDESTINY.hitLocation." ../system.hardwareType "." @key)}}</div>
   {{#unless (or (eq @key "structuralIntegrity") (eq @key "durability"))}}

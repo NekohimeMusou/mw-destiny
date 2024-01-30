@@ -14,7 +14,7 @@ export async function rollCritEffect() {
 
     const isAerospace = hardwareType === "aerospace";
 
-    const {critLocation: hitLocation, cancelled} = isAerospace ? null : showCritLocationDialog(hardwareType);
+    const {hitLocation, cancelled} = await showCritLocationDialog(hardwareType);
 
     if (cancelled) {
       return;
@@ -29,7 +29,7 @@ export async function rollCritEffect() {
 
     const parts = [
       `<p>${game.i18n.localize("MWDESTINY.sheet.criticalHitCheck")}</p>`,
-      critChanceRoll.render(),
+      await critChanceRoll.render(),
       `<p>${successMsg}</p>`,
     ];
 
@@ -42,14 +42,14 @@ export async function rollCritEffect() {
       const critEffect = getCritEffect(hardwareType, hitLocation, critEffectRoll.total);
 
       if (!critEffect.endsWith("none")) {
-        parts.push(critEffectRoll.render());
+        parts.push(await critEffectRoll.render());
         rolls.push(critEffectRoll);
       }
 
       parts.push(`<p>${game.i18n.localize(critEffect)}</p>`);
     }
 
-    const content = `div class="flexcol">\n${parts.join("\n")}\n</div>`;
+    const content = `<div class="flexcol">\n${parts.join("\n")}\n</div>`;
 
     chatCards.push({
       user: game.user.id,
@@ -92,7 +92,7 @@ async function showCritLocationDialog(hardwareType) {
 }
 
 async function _processRollOptions(form) {
-  return {hitLocation: form.hitLocation.value};
+  return {hitLocation: form.hitLocation?.value};
 }
 
 // Returns localizable string

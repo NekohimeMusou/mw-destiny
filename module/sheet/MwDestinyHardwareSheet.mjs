@@ -1,4 +1,5 @@
 import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/active-effects.mjs";
+import {rollCritEffect} from "../helpers/critical-hits.mjs";
 import {rollGenericCheck, rollTest} from "../helpers/dice.mjs";
 
 export default class MwDestinyHardwareSheet extends ActorSheet {
@@ -81,6 +82,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     html.find(".heat-reset-btn").click((ev) => this.#onHeatReset(ev));
     html.find(".heat-dissipate-btn").click((ev) => this.#onHeatDissipate(ev));
     html.find(".con-check-btn").click((ev) => this.#onConCheck(ev));
+    html.find(".crit-check-btn").click((ev) => this.#onCritCheck(ev));
   }
 
   /**
@@ -383,6 +385,8 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
   // TODO: Finish rollGenericCheck in dice.mjs
   async #onConCheck(event) {
+    event.preventDefault();
+
     const tn = this.actor.system?.pilot?.system.conCheckTn || 0;
 
     if (tn < 1) {
@@ -395,5 +399,11 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
     const failureMsg = game.i18n.localize("MWDESTINY.dialog.conCheckFailure");
 
     return await rollGenericCheck({tn, flavor, successMsg, failureMsg});
+  }
+
+  async #onCritCheck(event) {
+    event.preventDefault();
+
+    rollCritEffect();
   }
 }

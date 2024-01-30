@@ -339,46 +339,56 @@
         "critLocations": {
             "mech": {
                 "torso": {
+                    "location": "Torso",
                     "ammoExplosion": "Ammo explosion ('Mech destroyed) OR Primary Weapon/Torso Weapon Group is destroyed.",
                     "weaponGroupDestroyed": "Primary Weapon / Torso Weapon Group destroyed.",
                     "gyroDamaged": "-2 penalty to Piloting Tests. A second hit renders the 'Mech unable to spend movement.",
                     "engineShieldingDamaged": "Engine shielding is damaged. Gain 1 Heat token at the end of each of this 'Mech's narrations. A second engine critical hit destroys the engine, which destroys the 'Mech."
                 },
                 "arm": {
+                    "location": "Arm",
                     "ammoExplosion": "Ammo explosion (Arm destroyed) OR Primary Weapon/Weapon Group is destroyed.",
                     "weaponGroupDestroyed": "Primary Weapon / Weapon Group destroyed."
                 },
                 "leg": {
+                    "location": "Leg",
                     "ammoExplosion": "Ammo explosion (Leg destroyed) OR Leg Weapon Group is destroyed.",
                     "actuatorDamage": "-1 maximum Movement."
                 },
                 "head": {
+                    "location": "Head",
                     "none": "None. Destroying the Structure of the head destroys a 'Mech."
                 }
             },
             "combatVehicle": {
                 "front": {
+                    "location": "Front",
                     "crewCompartmentHit": "3 Physical Damage to all crew.",
                     "crewStunned": "-2 to all Tests during all affected characters' next Narration.",
                     "weaponGroupDestroyed": "Front Weapon Group is destroyed."
                 },
                 "turret": {
+                    "location": "Turret",
                     "crewCompartmentHit": "3 Physical Damage to all crew.",
                     "crewStunned": "-2 to all Tests during all affected characters' next Narration.",
                     "weaponGroupDestroyed":"Turret Weapon Group destroyed."
                 },
                 "rotor": {
+                    "location": "Rotor",
                     "none": "None. Destroying the structure of a VTOL's rotor destroys the unit."
                 },
                 "rear": {
+                    "location": "Rear",
                     "ammoExplosion":"Ammo explosion (vehicle destroyed) OR -1 maximum Movement.",
                     "motiveDamage1": "-1 maximum Movement."
                 },
                 "side": {
+                    "location": "Side",
                     "none": "Motive system damaged. -2 maximum Movement."
                 }
             },
             "aerospace": {
+                "location": "Aerospace",
                 "noseWeaponGroupDestroyed": "Nose Weapon Group is destroyed.",
                 "avionicsDamage": "Avionics are damaged. -2 to Piloting Tests.",
                 "fuelTankHit": "Fuel tank is hit: roll 2d6: on 10+, the fuel tank explodes; unit is destroyed.",
