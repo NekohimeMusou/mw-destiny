@@ -99,9 +99,12 @@ MWDESTINY.hitLocations = {
 };
 
 MWDESTINY.critLocations = {
-  mech: ["torso", "arm", "leg", "head"],
-  combatVehicle: ["front", "turret", "side", "rear"],
-  vtol: ["front", "rotor", "side", "rear"],
+  mech: Object.fromEntries(["head", "torso", "arm", "leg"].map(
+      (loc) => [loc, `MWDESTINY.mech.${loc}`],
+  )),
+  combatVehicle: Object.fromEntries(["front", "side", "turret", "rotor", "rear"].map(
+      (loc) => [loc, `MWDESTINY.combatVehicle.${loc}`],
+  )),
 };
 
 MWDESTINY.physAttackInfo = {
