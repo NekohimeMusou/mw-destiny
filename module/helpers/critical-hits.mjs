@@ -147,7 +147,7 @@ function getMechCritEffect(hitLocation, rollTotal) {
       }
       break;
     case "head":
-      critEffect = "headHit";
+      critEffect = "none";
   }
 
   return `MWDESTINY.critLocations.mech.${hitLocation}.${critEffect}`;
