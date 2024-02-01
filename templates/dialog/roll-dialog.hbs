@@ -34,8 +34,7 @@
   {{#if range}}
   <div class="flexcol flex-group-left">
     <label>{{localize "MWDESTINY.mechanic.range"}}</label>
-    {{radioBoxes "rangeMod" (lookup MWDESTINY.weaponRange (ifThen (eq weaponType "weapon") "personal" "heavy"))
-    checked=(ifThen (eq weaponType "weapon") "close" "short") localize=true}}
+    {{radioBoxes "range" range checked=(ifThen (eq weaponType "weapon") "close" "short") localize=true}}
   </div>
   {{/if}}
   <div class="flexrow">

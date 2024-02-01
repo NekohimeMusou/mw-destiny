@@ -4,6 +4,13 @@ export async function rollTest(rollData, title, {actor=null, attr=null,
   scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0,
   cluster=0, special="", weaponHeat=0, jumpJetMod=0, rangedHeatMod=0,
   range=null, weaponType=null}={}) {
+  if (range && weaponType) {
+    const rangeType = weaponType === "weapon" ? "personal" : "heavy";
+
+    range = Object.fromEntries(Object.entries(range).filter(([_, data]) => data.usable)
+        .map(([r, data]) => [data.mod, `MWDESTINY.range.${rangeType}.${r}`]));
+  }
+
   const {mod, difficulty, term2, attr2, rangeMod, cancelled} = await showRollDialog(title,
       {attr, skillRank, skillName, targetName, range, weaponType});
 
@@ -153,7 +160,7 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
       difficulty: form.difficulty?.value,
       term2,
       attr2,
-      rangeMod: parseInt(form.rangeMod.value || 0),
+      rangeMod: parseInt(form.range || 0),
     };
   }
 
