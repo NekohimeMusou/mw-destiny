@@ -1,8 +1,11 @@
-export async function rollTest(rollData, title, {actor=null, attr=null, skillRank=null,
-  skillName=null, damageCode=null, woundPenalty=0, targetDefLabel="", targetDefMod=0,
-  targetName=null, targetHwType=null, scaleMod=0, speedMod=0, baseDamage=0, missileCount=0,
-  missileMax=0, cluster=0, special="", weaponHeat=0, jumpJetMod=0, rangedHeatMod=0}={}) {
-  const {mod, difficulty, term2, attr2, cancelled} = await showRollDialog(title, {attr, skillRank, skillName, targetName});
+export async function rollTest(rollData, title, {actor=null, attr=null,
+  skillRank=null, skillName=null, damageCode=null, woundPenalty=0,
+  targetDefLabel="", targetDefMod=0, targetName=null, targetHwType=null,
+  scaleMod=0, speedMod=0, baseDamage=0, missileCount=0, missileMax=0,
+  cluster=0, special="", weaponHeat=0, jumpJetMod=0, rangedHeatMod=0,
+  range=null, weaponType=null}={}) {
+  const {mod, difficulty, term2, attr2, rangeMod, cancelled} = await showRollDialog(title,
+      {attr, skillRank, skillName, targetName, range, weaponType});
 
   if (cancelled) return;
 
@@ -11,7 +14,14 @@ export async function rollTest(rollData, title, {actor=null, attr=null, skillRan
     await actor.update({"system.heatBuildup": heatBuildup + weaponHeat});
   }
 
-  const rollFormula = `2d6 + @${attr} + ${term2} + ${woundPenalty} + ${scaleMod} + ${speedMod} + ${jumpJetMod} + ${rangedHeatMod} + ${mod}`;
+  // HACK: Filter out 0s and undefineds.
+  // I should have done this in a more robust way from the start, but
+  // the number of zeroes in the rolls is getting crazy
+  const modList = [woundPenalty, scaleMod, speedMod, jumpJetMod, rangedHeatMod, rangeMod, mod];
+
+  const mods = modList.filter((n) => n).map((n) => ` + ${n}`).join("");
+
+  const rollFormula = `2d6 + @${attr} + ${term2}${mods}`;
 
   const playerRoll = await new Roll(rollFormula, rollData).roll({async: true});
 
@@ -131,7 +141,7 @@ export async function rollGenericCheck({tn=0, formula="2d6", flavor="Check",
 
 // Return the 2nd term directly: "0" or "@[stat]" or the skill ranks
 async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
-  targetName=null}={}) {
+  targetName=null, range=null, weaponType=null}={}) {
   async function _processRollOptions(form) {
     // If skillRank is 0/empty AND attr2 is empty, it's an unskilled roll
     // If skillRank > 0, it's a skill roll: return the skill ranks as an int
@@ -143,12 +153,13 @@ async function showRollDialog(title, {attr=null, skillRank=null, skillName=null,
       difficulty: form.difficulty?.value,
       term2,
       attr2,
+      rangeMod: parseInt(form.rangeMod.value || 0),
     };
   }
 
   const template = "systems/mw-destiny/templates/dialog/roll-dialog.hbs";
   const content = await renderTemplate(template, {title, attr, skillRank,
-    skillName, targetName, MWDESTINY: CONFIG.MWDESTINY});
+    skillName, targetName, range, weaponType, MWDESTINY: CONFIG.MWDESTINY});
 
   return new Promise((resolve) => new Dialog({
     title,

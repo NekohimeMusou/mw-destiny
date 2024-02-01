@@ -183,8 +183,10 @@ export default class MwDestinyPcSheet extends ActorSheet {
     const skillRank = skillData?.rank || 0;
     const attr = skillData?.link || CONFIG.MWDESTINY.weaponSkillLinks[weaponData.weaponSkillType];
 
+    const weaponType = weapon.type;
     const damageCode = weaponData.damageCode;
     const baseDamage = weaponData.damage;
+    const range = weaponData.range;
     const special = weaponData.special;
 
     const woundPenalty = actorData.woundPenalty;
@@ -211,6 +213,7 @@ export default class MwDestinyPcSheet extends ActorSheet {
 
     return await rollTest(this.actor.getRollData(), rollLabel,
         {actor, attr, skillRank, skillName, damageCode, woundPenalty,
-          targetDefLabel, targetDefMod, targetName, scaleMod, baseDamage, special});
+          targetDefLabel, targetDefMod, targetName, scaleMod, baseDamage,
+          range, special, weaponType});
   }
 }

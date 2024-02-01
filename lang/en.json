@@ -93,7 +93,8 @@
             "psr": "Piloting Skill Test",
             "woundPenalty": "Wound Penalty",
             "xp": "XP",
-            "xpLevel": "Experience Level"
+            "xpLevel": "Experience Level",
+            "range": "Range"
         },
         "dice": {
             "success": "Success",

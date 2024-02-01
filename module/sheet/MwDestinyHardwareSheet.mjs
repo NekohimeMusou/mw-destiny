@@ -200,6 +200,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     const damageCode = weaponData.damageCode;
     const baseDamage = weaponData.damage;
+    const range = weaponData.range;
     const missileCount = weaponData.missileCount;
     const missileMax = weaponData.missileMax;
     const cluster = weaponData.cluster;
@@ -232,7 +233,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
         {actor, attr, skillRank, skillName, damageCode, woundPenalty, targetName,
           scaleMod, speedMod, targetDefLabel, targetDefMod, targetHwType,
           baseDamage, missileCount, missileMax, cluster, special, weaponHeat,
-          jumpJetMod, rangedHeatMod});
+          jumpJetMod, rangedHeatMod, range});
   }
 
   async #onRepair(event) {
