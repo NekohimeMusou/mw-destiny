@@ -105,6 +105,9 @@ MWDESTINY.critLocations = {
   combatVehicle: Object.fromEntries(["front", "side", "turret", "rotor", "rear"].map(
       (loc) => [loc, `MWDESTINY.critLocations.combatVehicle.${loc}.location`],
   )),
+  turretVehicle: Object.fromEntries(["front", "side", "turret", "rotor", "rear"].map(
+      (loc) => [loc, `MWDESTINY.critLocations.combatVehicle.${loc}.location`],
+  )),
   aerospace: {aerospace: "MWDESTINY.critLocations.aerospace.location"},
 };
 
