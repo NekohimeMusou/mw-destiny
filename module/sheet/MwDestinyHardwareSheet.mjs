@@ -35,7 +35,7 @@ export default class MwDestinyHardwareSheet extends ActorSheet {
 
     if (tokens) {
       const pilots = tokens
-          .filter((t) => t.isOwner && (t.actor.type === "pc" || t.actor.type === "npc"))
+          .filter((t) => t.isOwner && (t.actor?.type === "pc" || t.actor?.type === "npc"))
           .map((t) => ({name: t.name, id: t.actorId}));
 
       context.pilots = pilots;
